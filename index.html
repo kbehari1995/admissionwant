@@ -35,19 +35,25 @@
 
     <!-- Results -->
     <section>
-      <p class="section-label">Recent Results</p>
+      <p class="section-label">Results in 25–26 Cycle</p>
       <div class="admits">
         <div class="admit-item">
           <span class="admit-school">HEC Paris MBA</span>
-          <span class="admit-type">Admit</span>
+          <span class="admit-type">Awaiting Result</span>
         </div>
         <div class="admit-item">
           <span class="admit-school">Yale School of Management</span>
-          <span class="admit-type">Admit</span>
+          <span class="admit-type">
+            Admit
+            <a href="#" class="review-link" onclick="openReview(event, 'assets/testimonial-yale.png')">Review</a>
+          </span>
         </div>
         <div class="admit-item">
           <span class="admit-school">HEC Paris MBA</span>
-          <span class="admit-type">Interview Convert ×2</span>
+          <span class="admit-type">
+            Interview Convert ×2
+            <a href="#" class="review-link" onclick="openReview(event, 'assets/testimonial-hec.png')">Review</a>
+          </span>
         </div>
       </div>
       <p style="font-size: 0.85rem; color: var(--mid); font-style: italic;">Results updated each application cycle.</p>
@@ -74,13 +80,22 @@
       <p class="section-label">About</p>
       <h2>Built for the Indian MBA applicant.</h2>
       <p>
-        I'm Kunj — an IIT Kanpur graduate (Material Science & Engineering, Minor in Marketing) with an exchange at Aalto University, Finland. In my professional life, I'm a Senior AI Project Manager who has delivered data-driven strategy for American Express and major retail enterprises.
+        I'm Kunj — an IIT Kanpur graduate (Material Science &amp; Engineering, with minors in Marketing and Psychology) and an exchange alum from Aalto University, Finland, where I trained in storytelling under Bruce Oreck, the former U.S. Ambassador to Finland — on a pedestal, improvising on the go.
       </p>
       <p>
-        Before that, I founded Prepleaf's analytics training arm — trained 500+ students, achieved 90% placement rates, and saw it acquired by Masai School. I know what it takes to build something from scratch. I know how to tell a story that gets people to say yes.
+        Today I lead AI pre-sales at EXL. My job is to walk into a CXO's room and make a strategy deck feel inevitable — AI transformation, digital consulting, operations — pitched to senior leaders at American Express and major retail enterprises. Persuading busy senior people is what I do for a living.
       </p>
       <p>
-        I've developed frameworks that help applicants think clearly about their story — not just write better sentences. I also coach interview answers in what I call <em>MBA speak</em> — the specific way top programs expect you to think and communicate. It's learnable. Most applicants just never get taught it.
+        Before EXL, I founded Prepleaf's analytics training arm — trained 500+ students, hit 90% placement, and saw it acquired by Masai School. I've written Y Combinator and accelerator applications for Stempedia and Prepleaf, several of which made the final rounds. I was also selected for IC Square at the Startup Nexus program — run by the University of Texas at Austin, hosted at the U.S. Embassy in Delhi — where I pitched our startup to the U.S. Ambassador to India after an eight-week accelerator.
+      </p>
+      <p>
+        All of it is really one skill in different disguises: building a story that gets a senior person to say yes. My psychology minor and a Udacity digital marketing certification feed the same instinct — understanding how people actually make decisions.
+      </p>
+      <p>
+        I've turned that into frameworks that help applicants think clearly about their story — not just write better sentences. I also coach interview answers in what I call <em>MBA speak</em> — the specific way top programs expect you to think and communicate. It's learnable. Most applicants are just never taught this.
+      </p>
+      <p>
+        And because I'm a tech professional who earned his way into a European program on exchange, I know what sits on the other side of these applications — which is what lets me build stories that actually land.
       </p>
       <p>
         I work with a small number of clients each cycle so every application gets the attention it deserves.
@@ -98,15 +113,22 @@
       <div class="services-grid">
         <div class="service-item">
           <h3>School Selection &amp; Strategy</h3>
-          <p>Build a balanced, realistic list based on your profile, goals, and risk appetite. No guesswork, no generic targets. This is always free.</p>
+          <p>I help you build a balanced mix — realistic schools where you have a strong chance, and moonshot bets worth swinging at — along with a round-by-round plan for how to sequence them. This is entirely free.</p>
+          <div style="margin-top: 1rem;">
+            <a class="btn" href="https://calendar.app.google/ZUXSy2Vv6fV9judR7" target="_blank">Start with a Free Strategy Call</a>
+          </div>
         </div>
         <div class="service-item">
           <h3>Essay Development</h3>
           <p>From blank page to final draft. I ghostwrite — meaning I dig into your career, your decisions, your ambitions, and find the narrative thread that makes your application coherent and unmistakably you.</p>
         </div>
         <div class="service-item">
-          <h3>Resume &amp; LOR Guidance</h3>
-          <p>Position your experience the way business schools think, not the way your LinkedIn reads. Your LOR strategy stays consistent across all schools — so you pay once per cycle.</p>
+          <h3>Resume &amp; LOR</h3>
+          <p>I take full ownership. Your resume, essays, and LORs are built together — not in silos — so the same narrative shows up in every piece of your application. That's how adcoms read coherent candidates. You pay once per cycle.</p>
+        </div>
+        <div class="service-item">
+          <h3>Application Review &amp; Short Answers</h3>
+          <p>Beyond the essays, there are dozens of small free-form fields — goals, activities, short descriptions — that most applicants treat as filler. I review the full application end-to-end and help you write these so they reinforce your story instead of flattening it. I won't fill forms on your behalf, but every word that reaches the adcom will have been thought through.</p>
         </div>
         <div class="service-item">
           <h3>Interview Preparation</h3>
@@ -146,11 +168,21 @@
           <td>Free</td>
         </tr>
         <tr>
-          <td>HEC Paris / INSEAD &amp; extended European applications</td>
+          <td>HEC Paris / INSEAD &amp; extended European applications <a href="#" class="why-link" onclick="toggleWhy(event)">Why?</a></td>
           <td>₹1,00,000</td>
         </tr>
+        <tr class="why-row" id="whyRow">
+          <td colspan="2">
+            <div class="why-content">
+              <p class="why-title">Why European applications cost more</p>
+              <p>· European applications are substantially longer than US ones — more essays, more short answers, higher total word counts.</p>
+              <p>· They demand a much deeper, more coherent story built across every piece, not a strong <em>Why MBA</em> alone.</p>
+              <p>· Positioning has to be more strategic. Schools like HEC and INSEAD read applications with far more care than most US programs, and weak positioning is caught instantly.</p>
+            </div>
+          </td>
+        </tr>
         <tr>
-          <td>Resume &amp; LOR Guidance <span style="font-size:0.8rem; color: var(--mid);">(once per cycle)</span></td>
+          <td>Resume &amp; LOR <span style="font-size:0.8rem; color: var(--mid);">(once per cycle)</span></td>
           <td>₹25,000</td>
         </tr>
         <tr>
@@ -195,6 +227,35 @@
       <a href="resources.html">Resources</a>
     </div>
   </footer>
+
+  <!-- Review lightbox -->
+  <div id="reviewModal" class="review-modal" onclick="closeReview(event)">
+    <div class="review-modal-inner" onclick="event.stopPropagation()">
+      <button class="review-modal-close" onclick="closeReview(event)" aria-label="Close">&times;</button>
+      <img id="reviewImg" src="" alt="Client testimonial">
+    </div>
+  </div>
+
+  <script>
+    function toggleWhy(e) {
+      e.preventDefault();
+      document.getElementById('whyRow').classList.toggle('open');
+    }
+    function openReview(e, src) {
+      if (e) e.preventDefault();
+      document.getElementById('reviewImg').src = src;
+      document.getElementById('reviewModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeReview(e) {
+      if (e) e.preventDefault();
+      document.getElementById('reviewModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeReview();
+    });
+  </script>
 
 </body>
 </html>

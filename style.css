@@ -460,3 +460,132 @@ footer {
     align-items: flex-start;
   }
 }
+
+/* ── Review link on results ── */
+.review-link {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--faint);
+  margin-left: 0.75rem;
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.review-link:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* ── Review modal / lightbox ── */
+.review-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.82);
+  z-index: 1000;
+  padding: 2rem 1rem;
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.review-modal.open {
+  display: flex;
+}
+
+.review-modal-inner {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  background: var(--bg);
+  padding: 2.5rem 1.25rem 1.25rem;
+  margin: 2rem auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.review-modal-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.review-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--mid);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-family: inherit;
+  transition: color 0.2s;
+}
+
+.review-modal-close:hover {
+  color: var(--ink);
+}
+
+/* ── Pricing: Why link + collapsible row ── */
+.why-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--faint);
+  padding-bottom: 1px;
+  margin-left: 0.4rem;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.why-link:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.why-row td {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.why-row .why-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 1.25rem;
+  background: #f3f1ee;
+  border-left: 2px solid var(--ink);
+}
+
+.why-row.open .why-content {
+  max-height: 600px;
+  padding: 1.1rem 1.25rem;
+  margin: 0.4rem 0 0.6rem;
+}
+
+.why-row .why-content p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.why-row .why-content p:last-child {
+  margin-bottom: 0;
+}
+
+.why-row .why-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.6rem !important;
+  color: var(--ink);
+}
