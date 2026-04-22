@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 30 Global MBA Programs — AdmissionWant</title>
+  <meta name="description" content="School profiles, getting-in data, outcomes, and essay prompts for the 30 most relevant MBA programs. Updated each cycle. Free tool by AdmissionWant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Root ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #faf9f7;
+  --ink: #111111;
+  --mid: #555555;
+  --faint: #cccccc;
+  --rule: #e0dedd;
+  --max: 680px;
+  /* functional palette — kept for data density */
+  --t-blue-bg:#E6F1FB;   --t-blue-ink:#0C447C;
+  --t-teal-bg:#E1F5EE;   --t-teal-ink:#085041;
+  --t-amber-bg:#FAEEDA;  --t-amber-ink:#633806;
+  --t-purple-bg:#EEEDFE; --t-purple-ink:#3C3489;
+  --t-green-bg:#EAF3DE;  --t-green-ink:#27500A;
+  --t-red-bg:#FCEBEB;    --t-red-ink:#791F1F;
+  --t-gray-bg:#f0efed;   --t-gray-ink:#555555;
+  --good: #27500A;
+  --warn: #633806;
+  --bad:  #A32D2D;
+}
+html { font-size: 18px; scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'EB Garamond', Georgia, serif;
+  line-height: 1.75;
+  padding: 0 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Nav ── */
+nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--rule);
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--mid);
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--ink); }
+
+/* ── Page header ── */
+.tool-header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3.5rem 0 2rem;
+}
+.tool-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+.tool-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+.tool-header h1 em { font-style: italic; font-weight: 300; }
+.tool-sub {
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.7;
+}
+
+/* ── Tool wrapper ── */
+.tool-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0;
+  padding: 0;
+}
+.tab {
+  padding: 0.6rem 1.2rem 0.55rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--mid);
+  border: none;
+  border-bottom: 1.5px solid transparent;
+  background: none;
+  transition: color 0.15s;
+  margin-bottom: -1px;
+}
+.tab.active {
+  color: var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+}
+.tab:hover { color: var(--ink); }
+
+/* ── Controls ── */
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 1rem 0 0.75rem;
+  align-items: center;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0;
+}
+.controls input {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.88rem;
+  padding: 0.4rem 0.75rem;
+  border: 0.5px solid var(--rule);
+  border-radius: 0;
+  background: var(--bg);
+  color: var(--ink);
+  width: 220px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.controls input:focus { border-color: var(--ink); }
+.controls input::placeholder { color: var(--faint); }
+.reg-group { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.rbtn {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.85rem;
+  border: 0.5px solid var(--faint);
+  cursor: pointer;
+  background: var(--bg);
+  color: var(--mid);
+  transition: all 0.15s;
+}
+.rbtn.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.rbtn:hover:not(.active) { border-color: var(--ink); color: var(--ink); }
+.meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--faint);
+  margin-left: auto;
+  text-transform: uppercase;
+}
+
+/* ── Table wrapper ── */
+.table-outer { width: 100%; overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1900px;
+  font-size: 12px;
+  font-family: 'EB Garamond', serif;
+}
+thead { position: sticky; top: 0; z-index: 10; }
+th {
+  background: var(--bg);
+  font-family: 'EB Garamond', serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  padding: 0.55rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+th:hover { color: var(--ink); }
+td {
+  padding: 0.55rem 0.6rem;
+  border-bottom: 0.5px solid var(--rule);
+  vertical-align: top;
+  color: var(--ink);
+  line-height: 1.45;
+}
+tr:hover td { background: #f4f2ef; }
+
+/* ── Cell components ── */
+.sn { font-weight: 500; font-size: 12px; }
+.ss { font-size: 10px; color: var(--mid); margin-top: 1px; }
+.sub { font-size: 10px; color: var(--mid); line-height: 1.4; }
+.rank { font-size: 11px; font-weight: 500; color: var(--faint); text-align: center; min-width: 28px; }
+.est { font-size: 9px; color: var(--warn); vertical-align: super; margin-left: 1px; font-weight: 500; }
+
+/* ── Tags ── */
+.tag {
+  display: inline-block;
+  font-family: 'EB Garamond', serif;
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin: 1px 1px 0 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.t-blue   { background: var(--t-blue-bg);   color: var(--t-blue-ink); }
+.t-teal   { background: var(--t-teal-bg);   color: var(--t-teal-ink); }
+.t-amber  { background: var(--t-amber-bg);  color: var(--t-amber-ink); }
+.t-purple { background: var(--t-purple-bg); color: var(--t-purple-ink); }
+.t-green  { background: var(--t-green-bg);  color: var(--t-green-ink); }
+.t-red    { background: var(--t-red-bg);    color: var(--t-red-ink); }
+.t-gray   { background: var(--t-gray-bg);   color: var(--t-gray-ink); }
+.tbd-badge {
+  display: inline-block;
+  font-size: 10px;
+  background: var(--t-amber-bg);
+  color: var(--t-amber-ink);
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+/* ── Progress bars ── */
+.bar { height: 4px; border-radius: 0; background: var(--rule); margin-top: 3px; overflow: hidden; min-width: 60px; }
+.bar-fill { height: 100%; border-radius: 0; }
+.bf-b { background: #378ADD; }
+.bf-g { background: #1D9E75; }
+.bf-a { background: #BA7517; }
+.bf-p { background: #7F77DD; }
+.pct { font-size: 10px; color: var(--mid); }
+
+/* ── Good / Med / Hard ── */
+.good { color: var(--good); font-weight: 500; }
+.med  { color: var(--warn); font-weight: 500; }
+.hard { color: var(--bad);  font-weight: 500; }
+
+/* ── Cycle blocks ── */
+.cycle-block { margin-bottom: 3px; }
+.cycle-lbl {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  display: inline-block;
+  min-width: 32px;
+}
+
+/* ── Essay tab ── */
+#essayWrap { padding: 2rem 0; }
+.essay-card {
+  background: var(--bg);
+  border: 0.5px solid var(--rule);
+  padding: 1.5rem 1.75rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.essay-card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+.essay-rank {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--faint);
+  min-width: 30px;
+}
+.essay-school {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+.essay-school-sub { font-size: 0.78rem; color: var(--mid); letter-spacing: 0.03em; margin-top: 1px; }
+.essay-cycles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+@media(max-width: 600px) { .essay-cycles { grid-template-columns: 1fr; } }
+.essay-cycle {
+  background: #f4f2ef;
+  padding: 0.85rem 1rem;
+}
+.essay-cycle-title {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--mid);
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.essay-item {
+  padding: 0.4rem 0;
+  border-bottom: 0.5px solid var(--rule);
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.45;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.essay-item:last-child { border-bottom: none; padding-bottom: 0; }
+.essay-q { flex: 1; }
+.essay-limit { font-size: 10px; color: var(--mid); white-space: nowrap; padding-top: 2px; }
+.essay-tbd-msg { font-size: 12px; color: var(--warn); font-style: italic; line-height: 1.5; }
+.essay-tbd-note { font-size: 10px; color: var(--mid); margin-top: 4px; line-height: 1.4; }
+.essay-flag { font-size: 9px; letter-spacing: 0.04em; color: var(--warn); margin-top: 4px; text-transform: uppercase; }
+
+/* ── Essay CTA ── */
+.essay-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+}
+.essay-cta-note {
+  font-size: 0.8rem;
+  color: var(--mid);
+  line-height: 1.5;
+  font-style: italic;
+}
+.essay-btn {
+  display: inline-block;
+  font-family: 'EB Garamond', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.5rem 1.25rem;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.essay-btn:hover { background: var(--ink); color: var(--bg); }
+
+/* ── Footer ── */
+footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+.footer-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--ink); }
+@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 1.2rem; }
+  .nav-links { gap: 1.2rem; }
+  footer { flex-direction: column; }
+  .footer-links { align-items: flex-start; }
+  .tool-header { padding: 2rem 0 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AdmissionWant</a>
+  <ul class="nav-links">
+    <li><a href="blog/index.html">Writing</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="https://calendar.app.google/ZUXSy2Vv6fV9judR7" target="_blank">Book a Call</a></li>
+  </ul>
+</nav>
+
+<div class="tool-header">
+  <p class="tool-eyebrow">Free Resource</p>
+  <h1>Top 30 Global MBA Programs<br><em>— everything in one place.</em></h1>
+  <p class="tool-sub">School profiles, getting-in data, outcomes and essay prompts for the 30 most relevant programs. Filter by region. Updated each cycle.</p>
+</div>
+
+<div class="tool-wrap">
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab(0,this)">School Profile</button>
+    <button class="tab" onclick="showTab(1,this)">Getting In</button>
+    <button class="tab" onclick="showTab(2,this)">Outcomes</button>
+    <button class="tab" onclick="showTab(3,this)">Essays</button>
+  </div>
+
+  <div class="controls">
+    <input id="search" placeholder="Search school, location, sector…" oninput="filter()">
+    <div class="reg-group" id="regs">
+      <button class="rbtn active" data-r="all"    onclick="setReg(this)">All</button>
+      <button class="rbtn"        data-r="us"     onclick="setReg(this)">USA</button>
+      <button class="rbtn"        data-r="europe" onclick="setReg(this)">Europe</button>
+      <button class="rbtn"        data-r="asia"   onclick="setReg(this)">Asia-Pacific</button>
+    </div>
+    <span class="meta" id="cnt">Showing 30 of 30</span>
+  </div>
+
+  <div class="table-outer" id="tableWrap">
+    <table id="tbl"><thead id="thead"></thead><tbody id="tbody"></tbody></table>
+  </div>
+  <div id="essayWrap" style="display:none"></div>
+
+</div><!-- /tool-wrap -->
+
+<footer>
+  <span class="footer-brand">AdmissionWant</span>
+  <div class="footer-links">
+    <a href="https://calendar.app.google/ZUXSy2Vv6fV9judR7" target="_blank">Book a Strategy Call</a>
+    <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
+    <a href="resources.html">← Back to Resources</a>
+  </div>
+</footer>
+
+<script>
+const schools=[
+{rank:1,name:"Wharton (UPenn)",sub:"Philadelphia, PA, USA",r:"us",
+ usp:"World's #1 finance MBA; 200+ electives; 105K alumni",focus:["Finance","Consulting","PE/VC"],
+ cls:840,intl:35,ind:15,pri:"Finance / IB",sec:"Consulting (MBB)",ter:"PE / VC / Tech",
+ tuition:"$174,740 (2yr)",living:"$28–32K/yr",housing:"On-campus + off-campus apts",schol:"High",scholn:"Merit fellowships auto-considered; ~40% receive aid",
+ gmatRange:"710–760",greRange:"324–334",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"5–7 yrs",
+ accept:21,
+ intfmt:"Team-Based Discussion (TBD) + individual blind interview",invrate:"~30% of applicants",
+ r1_2526:"Sep 3 2025",r2_2526:"Jan 8 2026",r3_2526:"Apr 1 2026",
+ notif_2526:"R1: Dec 2025 | R2: Apr 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (~250–400w each) + 1 short answer; no video essay",
+ essayPrompts_2526:[
+   {q:"What do you hope to gain professionally from the Wharton MBA?",limit:"~500w"},
+   {q:"Why is now the best time for you to join the Wharton MBA?",limit:"~250w (short answer)"},
+   {q:"Optional: Additional information for the committee",limit:"~500w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required; wait 1 yr",
+ deposit:"$6,000 on acceptance",
+ emp3m:88,salary:"$175–185K base (USD)",hiring:["McKinsey / Bain / BCG","Goldman / JPMorgan","Amazon / Google"],
+ sectors:"Finance #1, Consulting #2, Tech #3"},
+
+{rank:2,name:"Harvard Business School",sub:"Boston, MA, USA",r:"us",
+ usp:"Case method pioneer; highest CEO alumni density; strongest global brand",focus:["General Mgmt","Entrepreneurship","Consulting"],
+ cls:930,intl:35,ind:12,pri:"Consulting (MBB)",sec:"PE / VC",ter:"Entrepreneurship",
+ tuition:"$157,400 (2yr)",living:"$26–30K/yr",housing:"On-campus dorms + off-campus apts",schol:"High",scholn:"~50% get need-based aid; avg $100K over 2 yrs; no merit aid",
+ gmatRange:"720–770",greRange:"326–336",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–6 yrs",
+ accept:13,
+ intfmt:"Adcom-led; NOT blind (reads full app); 30 min; 15–25 probing questions",invrate:"~20–25% of applicants",
+ r1_2526:"Sep 4 2025",r2_2526:"Jan 6 2026",r3_2526:"Mar 26 2026",
+ notif_2526:"R1: Dec 15 2025 | R2: Mar 31 2026 | R3: May 20 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"1 main essay (up to 900w) + post-interview reflection",
+ essayPrompts_2526:[
+   {q:"As we review your application, what more would you like us to know as we consider your candidacy?",limit:"No limit (~900w)"},
+   {q:"Post-Interview Reflection (submitted after interview)",limit:"~400w"}
+ ],
+ lors:"2 professional LORs (3rd optional)",reapp:"Can reapply any round; reapplicant statement required",
+ deposit:"$3,500 on acceptance",
+ emp3m:90,salary:"$184,500 base (USD)",hiring:["McKinsey / BCG / Bain","Goldman Sachs / JPMorgan","General Atlantic / KKR"],
+ sectors:"Financial Services #1 (38%), Consulting #2, Tech #3"},
+
+{rank:3,name:"MIT Sloan",sub:"Cambridge, MA, USA",r:"us",
+ usp:"FT #1 2026; deepest tech & AI integration; Action Learning Labs",focus:["Technology","Innovation","Entrepreneurship"],
+ cls:406,intl:40,ind:14,pri:"Tech / Product",sec:"Consulting",ter:"Finance / VC",
+ tuition:"$173,060 (2yr)",living:"$28–32K/yr",housing:"On-campus + MIT grad housing",schol:"High",scholn:"100+ merit fellowships auto-considered at admission",
+ gmatRange:"710–760",greRange:"324–334",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:18,
+ intfmt:"Behavioral virtual interview + pre-interview short answer questions",invrate:"~30% of applicants",
+ r1_2526:"Sep 29 2025",r2_2526:"Jan 13 2026",r3_2526:"Apr 6 2026",
+ notif_2526:"R1: Dec 2025 | R2: Apr 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"1 cover letter (300w) + 1 video statement (1 min); unique format",
+ essayPrompts_2526:[
+   {q:"Cover Letter: Motivation for pursuing MIT Sloan MBA + professional goals",limit:"300w"},
+   {q:"Video Statement: Most significant challenge in leading others + how it shaped you",limit:"60 sec video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply after 1 yr; reapplicant essay required",
+ deposit:"$3,000 on acceptance",
+ emp3m:82,salary:"~$175K base (USD)",hiring:["McKinsey / BCG / Bain","Amazon / Google / Microsoft","VC / Growth Equity funds"],
+ sectors:"Consulting #1 (30%), Tech #2, Finance #3"},
+
+{rank:4,name:"Stanford GSB",sub:"Stanford, CA, USA",r:"us",
+ usp:"Silicon Valley epicentre; highest post-MBA salary; lowest acceptance rate",focus:["Entrepreneurship","Technology","Social Impact"],
+ cls:417,intl:41,ind:10,pri:"Tech / Entrepreneurship",sec:"PE / VC",ter:"Consulting",
+ tuition:"$171,510 (2yr)",living:"$32–38K/yr",housing:"On-campus grad housing (limited) + off-campus Palo Alto",schol:"High",scholn:"~50% receive need-based fellowships; no merit aid; avg $44K/yr",
+ gmatRange:"720–770",greRange:"326–336",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"3–6 yrs",
+ accept:7,
+ intfmt:"Alumni-led, blind (resume only), 60 min; free-flowing conversation",invrate:"~15–20% of applicants",
+ r1_2526:"Sep 9 2025",r2_2526:"Jan 8 2026",r3_2526:"Apr 1 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays: 'What matters most to you?' (650w) + 'Why Stanford?' (400w)",
+ essayPrompts_2526:[
+   {q:"Essay A: What matters most to you, and why?",limit:"650w"},
+   {q:"Essay B: Why Stanford MBA?",limit:"400w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; strong reapplicant essay expected",
+ deposit:"$4,000 on acceptance",
+ emp3m:80,salary:"~$185K base (USD)",hiring:["McKinsey / Bain / BCG","VC / PE / Growth Equity","Tech (Google/Apple/Meta)"],
+ sectors:"Entrepreneurship #1 (~20%), Consulting #2, Finance #3"},
+
+{rank:5,name:"HEC Paris",sub:"Paris / Jouy-en-Josas, France",r:"europe",
+ usp:"QS #5; gateway to European luxury & finance; 95% international cohort",focus:["Luxury","Finance","Consulting"],
+ cls:320,intl:95,ind:7,pri:"Finance / Consulting",sec:"Luxury / FMCG",ter:"Entrepreneurship",
+ tuition:"€98K (16 mths)",living:"€22–26K/yr",housing:"On-campus residence + off-campus Paris suburbs",schol:"Medium",scholn:"Merit up to 50% tuition; €1M+ distributed/yr via HEC Foundation",
+ gmatRange:"660–720",greRange:"314–326",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:18,
+ intfmt:"Dual interview (2 separate alumni interviewers) + 10-min personal presentation",invrate:"~30–35% of applicants",
+ r1_2526:"Sep 15 2025",r2_2526:"Oct 15 2025",r3_2526:"Jan 15 2026",
+ notif_2526:"R1: Dec 2025 | R2: Jan 2026 | R3: Apr 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (various lengths) + motivation letter; no standalone video essay",
+ essayPrompts_2526:[
+   {q:"Short-term & long-term career goals + Why HEC MBA?",limit:"~500w"},
+   {q:"Personal achievement you are most proud of + skills demonstrated",limit:"~500w"},
+   {q:"Motivation letter",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no mandatory wait period; updated essays required",
+ deposit:"€2,000 on acceptance",
+ emp3m:90,salary:"€85–100K base (EU avg)",hiring:["McKinsey / BCG / Bain","BNP Paribas / Société Générale","LVMH / Kering / L'Oréal"],
+ sectors:"Consulting #1, Finance #2, Luxury/FMCG #3"},
+
+{rank:6,name:"London Business School",sub:"London, UK",r:"europe",
+ usp:"90+ nationalities; London financial hub; most globally diverse class outside INSEAD",focus:["Finance","Consulting","Technology"],
+ cls:320,intl:95,ind:15,pri:"Consulting (MBB+)",sec:"Finance / IB",ter:"Technology",
+ tuition:"£109,700 (15–21 mths)",living:"£24–30K/yr",housing:"LBS residence halls + private rentals",schol:"Medium",scholn:"Named merit awards (Laidlaw, Santander, Gallifrey); ~25% receive aid",
+ gmatRange:"670–730",greRange:"316–328",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:20,
+ intfmt:"Alumni-led + Kira video essay (2 spontaneous video questions); 45–60 min",invrate:"~35% of applicants",
+ r1_2526:"Sep 8 2025",r2_2526:"Jan 5 2026",r3_2526:"Mar 30 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (~500w each) + video essay embedded in application",
+ essayPrompts_2526:[
+   {q:"Post-MBA goals + how LBS MBA helps achieve them",limit:"~500w"},
+   {q:"Most important achievement and what it revealed about you",limit:"~500w"},
+   {q:"What would you bring to classmates' learning experience?",limit:"~500w"},
+   {q:"Kira Video Essay (2 spontaneous questions)",limit:"Recorded video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; updated essays + adcom note required",
+ deposit:"£2,000 on acceptance",
+ emp3m:91,salary:"£80–95K base (GBP)",hiring:["McKinsey / BCG / Bain","Goldman / Barclays / HSBC","Amazon / Apple / Google"],
+ sectors:"Consulting #1 (34%), Finance #2, Tech #3"},
+
+{rank:7,name:"Chicago Booth",sub:"Chicago, IL, USA",r:"us",
+ usp:"Most analytical MBA; most flexible curriculum; 12 Nobel economics alumni",focus:["Finance","Consulting","Entrepreneurship"],
+ cls:540,intl:37,ind:13,pri:"Finance / IB",sec:"Consulting",ter:"Entrepreneurship / Ops",
+ tuition:"$167,400 (2yr)",living:"$24–28K/yr",housing:"On-campus apts + Hyde Park rentals",schol:"High",scholn:"Merit auto-considered; Distinguished Fellowship (full tuition); Polsky PE fellowships",
+ gmatRange:"710–750",greRange:"324–332",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:27,
+ intfmt:"Blind virtual or in-person interview, alumni-led; 30–45 min",invrate:"~30% of applicants",
+ r1_2526:"Sep 11 2025",r2_2526:"Jan 3 2026",r3_2526:"Apr 3 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (~250–500w) + optional short answer; no video essay",
+ essayPrompts_2526:[
+   {q:"How will Booth MBA help your immediate and long-term post-MBA goals?",limit:"250w"},
+   {q:"How does the Booth MBA align with your personal values, beliefs, or perspectives?",limit:"250w"},
+   {q:"Optional: Additional context for the committee",limit:"~300w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply same or next year; reapplicant optional essay",
+ deposit:"$3,000 on acceptance",
+ emp3m:86,salary:"~$175K base (USD)",hiring:["McKinsey / Bain / BCG","Goldman Sachs / Citadel","Amazon / Deloitte"],
+ sectors:"Consulting #1 (27%), Finance #2, Tech #3"},
+
+{rank:8,name:"INSEAD",sub:"Fontainebleau, France / Singapore",r:"europe",
+ usp:"92% international; only truly multi-campus MBA (France/Singapore/UAE)",focus:["General Mgmt","Consulting","FMCG"],
+ cls:1000,intl:92,ind:9,pri:"Consulting (MBB)",sec:"Finance / IB",ter:"FMCG / General Mgmt",
+ tuition:"€97–98.5K (10 mths)",living:"€25–32K/yr",housing:"Campus housing (Fontainebleau) + Singapore campus housing",schol:"Medium",scholn:"150+ scholarships; ~36% receive aid; avg €21K; diversity awards",
+ gmatRange:"670–730",greRange:"316–328",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:30,
+ intfmt:"Two separate blind alumni interviews (unique dual-interview system); 45 min each",invrate:"~40% of applicants",
+ r1_2526:"Sep 16 2025",r2_2526:"Nov 4 2025",r3_2526:"Jan 20 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"5 essays (300–500w each); video essay also required (spontaneous, Kira platform)",
+ essayPrompts_2526:[
+   {q:"Job description of each position held (since graduation)",limit:"~250w each"},
+   {q:"Give a candid description of yourself — strengths, weaknesses, and growth",limit:"~500w"},
+   {q:"Describe an achievement of which you are most proud",limit:"~400w"},
+   {q:"Extra-professional activities relevant to your application",limit:"~300w"},
+   {q:"Optional: Anything else you want to share?",limit:"~300w"},
+   {q:"Kira Video Essay (spontaneous)",limit:"Recorded video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; updated essays required; no formal waiting period",
+ deposit:"€2,000 on acceptance",
+ emp3m:90,salary:"€90–110K base (EU avg); varies by campus",hiring:["McKinsey / BCG / Bain","Goldman / Deutsche Bank","Nestlé / Unilever / LVMH"],
+ sectors:"Consulting #1 (29%), Finance #2, FMCG/Industry #3"},
+
+{rank:9,name:"Kellogg (Northwestern)",sub:"Evanston, IL, USA",r:"us",
+ usp:"Best marketing MBA globally; most collaborative M7 culture; most generous M7 scholarships",focus:["Marketing","Healthcare","Consumer Goods"],
+ cls:470,intl:37,ind:15,pri:"Marketing / FMCG",sec:"Consulting",ter:"Healthcare / Tech",
+ tuition:"$172,740 (2yr)",living:"$22–26K/yr",housing:"On-campus grad housing + Evanston rentals",schol:"Very High",scholn:"Most generous M7; $41K–$110K/yr; auto-considered; Zell Fellowship",
+ gmatRange:"710–760",greRange:"324–334",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:29,
+ intfmt:"Alumni-led blind interview + mandatory video essay (Kira platform); virtual or in-person",invrate:"~30–35% of applicants",
+ r1_2526:"Sep 10 2025",r2_2526:"Jan 7 2026",r3_2526:"Apr 1 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (one is a 1-min video essay); focus on values + impact",
+ essayPrompts_2526:[
+   {q:"Kellogg Leaders are defined by character and values. Describe a time you demonstrated a Kellogg value.",limit:"~450w"},
+   {q:"Video Essay: Why MBA now / what will you contribute?",limit:"60 sec video"},
+   {q:"Optional: Additional context",limit:"~250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required",
+ deposit:"$3,000 on acceptance",
+ emp3m:86,salary:"$175K base (USD)",hiring:["McKinsey / Bain / BCG","Kellogg alum firms (CPG/FMCG)","Amazon / Google / Abbott"],
+ sectors:"Consulting #1 (38%), Finance #2 (21%), Tech #3 (19%)"},
+
+{rank:10,name:"Columbia Business School",sub:"New York City, NY, USA",r:"us",
+ usp:"NYC financial epicentre; Value Investing legacy; Early Decision binding option",focus:["Finance","Media / Entertainment","Technology"],
+ cls:550,intl:44,ind:15,pri:"Finance / IB",sec:"Tech / Media",ter:"Real Estate / Retail",
+ tuition:"$182,344 (2yr)",living:"$32–40K/yr",housing:"Columbia affiliates housing + Manhattan/Brooklyn rentals",schol:"Medium",scholn:"R1/R2 prioritised; merit + need-based; ~30% receive aid",
+ gmatRange:"700–750",greRange:"322–332",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:21,
+ intfmt:"Blind virtual interview (2nd year student or alum); 30–60 min; friendly/conversational",invrate:"~35% of applicants",
+ r1_2526:"Sep 26 2025 (ED binding)",r2_2526:"Jan 6 2026",r3_2526:"Mar 26 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (~250–500w) + 1 short answer; no video essay",
+ essayPrompts_2526:[
+   {q:"Short answer: What is your immediate post-MBA professional goal?",limit:"50w (strict)"},
+   {q:"Why are you pursuing an MBA, and why Columbia Business School?",limit:"500w"},
+   {q:"What do you value most in a community, and how has a community impacted you?",limit:"250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required; ED applicants may reapply as regular",
+ deposit:"$6,000 (ED) / $2,000 (RD)",
+ emp3m:88,salary:"~$175K base (USD)",hiring:["Goldman / JPMorgan / Morgan Stanley","McKinsey / BCG / Bain","Amazon / Google"],
+ sectors:"Financial Services #1, Consulting #2, Tech #3"},
+
+{rank:11,name:"IESE Business School",sub:"Barcelona, Spain",r:"europe",
+ usp:"Jesuit values; Europe–Latin America network; pioneered case method in Europe",focus:["Consulting","General Mgmt","Entrepreneurship"],
+ cls:340,intl:80,ind:4,pri:"Consulting",sec:"Finance",ter:"General Mgmt / Entrepreneurship",
+ tuition:"€79.5K (15 mths)",living:"€16–20K/yr",housing:"IESE residence + Barcelona private apts",schol:"Medium",scholn:"Merit up to 40% tuition; Women in Business, Diversity, Skoll awards",
+ gmatRange:"650–710",greRange:"312–324",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:26,
+ intfmt:"Two-panel interview (adcom + alumni); competency-based; 45–60 min",invrate:"~35% of applicants",
+ r1_2526:"Sep 8 2025",r2_2526:"Jan 5 2026",r3_2526:"Mar 23 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (400–600w) + short answer; no video essay",
+ essayPrompts_2526:[
+   {q:"Career goals: short-term + long-term + why IESE?",limit:"400–600w"},
+   {q:"Personal achievement and skills demonstrated",limit:"400–600w"},
+   {q:"Team experience: contribution + lessons learned",limit:"400–600w"}
+ ],
+ lors:"2 professional LORs (academic optional)",reapp:"Can reapply; updated motivation letter required",
+ deposit:"€2,000 on acceptance",
+ emp3m:91,salary:"€80–95K base (EU avg)",hiring:["McKinsey / BCG / Bain","BBVA / Santander","Consulting / Private Equity"],
+ sectors:"Consulting #1, Finance #2, Entrepreneurship #3"},
+
+{rank:12,name:"Yale School of Management",sub:"New Haven, CT, USA",r:"us",
+ usp:"Integrated curriculum; Skoll Centre; strongest non-profit MBA in USA",focus:["Social Impact","Finance","Consulting"],
+ cls:340,intl:44,ind:12,pri:"Finance",sec:"Consulting",ter:"Non-profit / Social Enterprise",
+ tuition:"$167K (2yr)",living:"$22–26K/yr",housing:"Yale grad housing + New Haven rentals",schol:"Medium",scholn:"Skoll Full Scholarship; merit + need; ~35% receive aid",
+ gmatRange:"700–745",greRange:"322–330",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:28,
+ intfmt:"Video essay (Kira) required; interview by invitation — blind, alumni-led; rolling invites",invrate:"~30–35% of applicants",
+ r1_2526:"Sep 10 2025",r2_2526:"Jan 7 2026",r3_2526:"Apr 1 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w) + 1 short answer + video essay (part of app)",
+ essayPrompts_2526:[
+   {q:"Describe the biggest commitment you have ever made",limit:"500w"},
+   {q:"Short answer: Why Yale SOM?",limit:"~250w"},
+   {q:"Kira Video Essay (embedded in application)",limit:"Recorded video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; Silver Scholars track available for fresh grads",
+ deposit:"$2,500 on acceptance",
+ emp3m:85,salary:"~$170K base (USD)",hiring:["McKinsey / Bain","Goldman / JPMorgan","Non-profits / Social Impact orgs"],
+ sectors:"Finance #1, Consulting #2, Non-profit/Gov #3"},
+
+{rank:13,name:"NYU Stern",sub:"New York City, NY, USA",r:"us",
+ usp:"Wall Street address; fashion/luxury/media MBA; urban NYC immersion",focus:["Finance / IB","Media / Fashion","Technology"],
+ cls:350,intl:40,ind:15,pri:"Finance / IB",sec:"Media / Entertainment",ter:"Fashion / Luxury / Tech",
+ tuition:"$168K (2yr)",living:"$32–40K/yr",housing:"NYU affiliated housing + Manhattan/Brooklyn rentals",schol:"Medium-High",scholn:"Dean's Scholarships; Forte Fellowships; $10K to full tuition; competitive",
+ gmatRange:"710–760",greRange:"324–334",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:24,
+ intfmt:"Virtual blind interview (adcom or 2nd year); 30–45 min; behavioral",invrate:"~30% of applicants",
+ r1_2526:"Sep 15 2025",r2_2526:"Jan 15 2026",r3_2526:"Mar 15 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: Apr 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (250–400w) including 'Pick Six' visual grid; no standalone video",
+ essayPrompts_2526:[
+   {q:"Pick Six: 6 images + captions representing who you are (visual grid essay)",limit:"Captions only"},
+   {q:"Short-term post-MBA goal",limit:"250w"},
+   {q:"Why Stern MBA?",limit:"250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required",
+ deposit:"$3,000 on acceptance",
+ emp3m:86,salary:"~$172K base (USD)",hiring:["Goldman / JPMorgan / Citi","McKinsey / Deloitte","ViacomCBS / NBCUniversal"],
+ sectors:"Financial Services #1, Consulting #2, Media/Ent #3"},
+
+{rank:14,name:"Dartmouth Tuck",sub:"Hanover, NH, USA",r:"us",
+ usp:"Deepest alumni loyalty globally; intimate cohort; residential MBA experience",focus:["Consulting","Finance","General Mgmt"],
+ cls:290,intl:35,ind:10,pri:"Consulting",sec:"Finance",ter:"General Mgmt / FMCG",
+ tuition:"$163K (2yr)",living:"$19–23K/yr",housing:"On-campus Tuck housing + Hanover private homes",schol:"Medium",scholn:"Named fellowships; merit + need; Dean's Scholarships; ~35% receive aid",
+ gmatRange:"700–750",greRange:"322–332",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:22,
+ intfmt:"Blind alumni or adcom interview; in-person strongly preferred; 45–60 min",invrate:"~35% of applicants",
+ r1_2526:"Sep 9 2025",r2_2526:"Jan 8 2026",r3_2526:"Mar 26 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (250–500w); personal + career-focused",
+ essayPrompts_2526:[
+   {q:"Why are you pursuing an MBA, and why Tuck specifically?",limit:"500w"},
+   {q:"Describe a time you were an effective leader",limit:"500w"},
+   {q:"Optional: Additional information for the committee",limit:"250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; brief reapplicant statement required",
+ deposit:"$3,000 on acceptance",
+ emp3m:90,salary:"~$172K base (USD)",hiring:["McKinsey / Bain / BCG","Goldman / JPMorgan","P&G / Unilever / FMCG"],
+ sectors:"Consulting #1, Finance #2, FMCG #3"},
+
+{rank:15,name:"Duke Fuqua",sub:"Durham, NC, USA",r:"us",
+ usp:"'Team Fuqua' culture; #1 healthcare MBA; CCMBA for executives",focus:["Healthcare","Consulting","Social Impact"],
+ cls:450,intl:40,ind:12,pri:"Consulting",sec:"Healthcare",ter:"Finance / Social Impact",
+ tuition:"$154K (2yr)",living:"$20–24K/yr",housing:"On-campus Fuqua apts + Durham rentals",schol:"Medium-High",scholn:"Dean's Scholarships; merit auto-considered; Health Sector Mgmt fellowships",
+ gmatRange:"700–750",greRange:"322–332",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:26,
+ intfmt:"Virtual blind interview; alumni or adcom; 30–45 min; behavioral",invrate:"~30% of applicants",
+ r1_2526:"Sep 5 2025 (Early)",r2_2526:"Oct 9 2025",r3_2526:"Jan 8 2026",
+ notif_2526:"R1: Oct 2025 | R2: Dec 2025 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays: 25 random things, leadership, career goals",
+ essayPrompts_2526:[
+   {q:"25 Random Things About Me (list format — personal, fun, revealing)",limit:"No strict limit"},
+   {q:"Leadership experience: describe a meaningful leadership role",limit:"~500w"},
+   {q:"Short-term + long-term career goals + why Fuqua?",limit:"~500w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no mandatory wait; reapplicant essay required",
+ deposit:"$3,000 on acceptance",
+ emp3m:85,salary:"$175K base (USD)",hiring:["McKinsey / BCG / Bain","Johnson & Johnson / UnitedHealth","Amazon / Deloitte"],
+ sectors:"Consulting #1, Healthcare #2, Finance #3"},
+
+{rank:16,name:"Michigan Ross",sub:"Ann Arbor, MI, USA",r:"us",
+ usp:"MAP (Multidisciplinary Action Projects); automotive/industrial ties; strong consulting pipeline",focus:["Consulting","Finance","Automotive / Ops"],
+ cls:400,intl:38,ind:14,pri:"Consulting",sec:"Finance",ter:"Manufacturing / Automotive",
+ tuition:"$140K (2yr)",living:"$18–22K/yr",housing:"Ross/UM on-campus + Ann Arbor rentals (affordable midwest)",schol:"Medium-High",scholn:"Ross Scholarships; Consortium fellowships; merit + need; generous",
+ gmatRange:"690–740",greRange:"320–330",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"3–7 yrs",
+ accept:24,
+ intfmt:"Blind virtual or in-person; alumni or adcom; 30–45 min",invrate:"~35% of applicants",
+ r1_2526:"Sep 15 2025",r2_2526:"Nov 15 2025",r3_2526:"Jan 15 2026",
+ notif_2526:"R1: Dec 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (300–500w) + short answer + resume",
+ essayPrompts_2526:[
+   {q:"What are you most proud of outside of work, and why?",limit:"300w"},
+   {q:"Describe your short-term and long-term career goals + why Ross?",limit:"500w"},
+   {q:"Optional: Is there anything important not covered elsewhere?",limit:"~250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay recommended",
+ deposit:"$3,000 on acceptance",
+ emp3m:87,salary:"~$170K base (USD)",hiring:["McKinsey / Deloitte / BCG","Ford / GM / Amazon","Goldman / JPMorgan"],
+ sectors:"Consulting #1, Finance #2, Automotive/Ops #3"},
+
+{rank:17,name:"UC Berkeley Haas",sub:"Berkeley / SF Bay Area, USA",r:"us",
+ usp:"'Defining leader' culture; sustainability/ESG leader; Bay Area tech ecosystem",focus:["Technology","Entrepreneurship","Sustainability"],
+ cls:290,intl:38,ind:15,pri:"Tech / Product Mgmt",sec:"Finance",ter:"Consulting / Sustainability",
+ tuition:"$145K (2yr)",living:"$32–38K/yr",housing:"UC Berkeley grad housing + Oakland/Berkeley rentals (SF Bay — expensive)",schol:"Medium",scholn:"Merit fellowships; Deloitte, Forte awards; ~30% receive aid; STEM OPT eligible",
+ gmatRange:"710–760",greRange:"324–334",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:15,
+ intfmt:"Virtual interview (live or pre-recorded option); alumni-led; blind; 30–45 min",invrate:"~35% of applicants",
+ r1_2526:"Sep 10 2025",r2_2526:"Jan 7 2026",r3_2526:"Apr 1 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (250–500w); one optional; leadership + innovation focus",
+ essayPrompts_2526:[
+   {q:"If you could change one thing about how organizations are led, what would it be and why?",limit:"~300w"},
+   {q:"What makes you feel alive outside of work? How does this define your leadership?",limit:"~300w"},
+   {q:"Optional: Additional context",limit:"~250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required",
+ deposit:"$3,500 on acceptance",
+ emp3m:85,salary:"~$175K base (USD)",hiring:["McKinsey / Deloitte / BCG","Google / Apple / Amazon","Salesforce / Sequoia (VC)"],
+ sectors:"Tech #1, Consulting #2, Finance #3"},
+
+{rank:18,name:"UCLA Anderson",sub:"Los Angeles, CA, USA",r:"us",
+ usp:"Entertainment/media capital MBA; strong venture ecosystem; diverse LA access",focus:["Entertainment / Media","Technology","Entrepreneurship"],
+ cls:360,intl:35,ind:12,pri:"Entertainment / Media",sec:"Consulting",ter:"Finance / VC",
+ tuition:"$136K (2yr)",living:"$28–34K/yr",housing:"UCLA grad housing + Westwood/Culver City rentals",schol:"High",scholn:"Full rides available; $120K merit reported; auto-considered; Forte",
+ gmatRange:"680–740",greRange:"318–330",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"3–6 yrs",
+ accept:28,
+ intfmt:"Blind virtual or in-person; alumni-led; 30–45 min; behavioral",invrate:"~35% of applicants",
+ r1_2526:"Sep 29 2025",r2_2526:"Jan 13 2026",r3_2526:"Apr 6 2026",
+ notif_2526:"R1: Dec 2025 | R2: Apr 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w each) + short answer; values + career focus",
+ essayPrompts_2526:[
+   {q:"What are your short-term and long-term career goals, and why is now the right time for your MBA?",limit:"500w"},
+   {q:"Describe your experience in a team setting — contribution and lessons",limit:"500w"},
+   {q:"Optional: Anything else to share with the committee?",limit:"~250w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant essay required",
+ deposit:"$2,000 on acceptance",
+ emp3m:84,salary:"~$165K base (USD)",hiring:["McKinsey / Deloitte","Netflix / Disney / Warner","Google / Amazon"],
+ sectors:"Consulting #1, Entertainment/Media #2, Tech #3"},
+
+{rank:19,name:"Cambridge Judge",sub:"Cambridge, UK",r:"europe",
+ usp:"1-year accelerated; Cambridge 800yr research ecosystem; strongest entrepreneurship in UK",focus:["Technology","Finance","Entrepreneurship"],
+ cls:160,intl:90,ind:15,pri:"Finance / Consulting",sec:"Technology",ter:"Entrepreneurship / Social Ent.",
+ tuition:"~£59K (1yr)",living:"£20–26K/yr",housing:"College accommodation (limited) + Cambridge private rentals",schol:"Low-Medium",scholn:"Gates Cambridge, Chevening (external); limited Judge-specific scholarships",
+ gmatRange:"650–720",greRange:"312–326",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–8 yrs",
+ accept:30,
+ intfmt:"In-person or Zoom; adcom/alumni panel; 30–45 min; competency-based",invrate:"~40% of applicants",
+ r1_2526:"Sep 1 2025",r2_2526:"Oct 1 2025",r3_2526:"Nov 3 2025",
+ notif_2526:"R1: Oct 2025 | R2: Nov 2025 | R3: Dec 2025",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w) + short questions; entrepreneurship focus",
+ essayPrompts_2526:[
+   {q:"What are your career goals and how will the Cambridge MBA help you achieve them?",limit:"500w"},
+   {q:"What has been your greatest challenge and what did you learn about yourself?",limit:"500w"},
+   {q:"Short answers on leadership + innovation",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"£2,500 on acceptance",
+ emp3m:88,salary:"£70–85K base (GBP)",hiring:["McKinsey / BCG","Goldman / Barclays","Cambridge tech ecosystem (startups)"],
+ sectors:"Consulting #1, Finance #2, Tech/Entrepreneurship #3"},
+
+{rank:20,name:"Oxford Saïd",sub:"Oxford, UK",r:"europe",
+ usp:"1-year program; Skoll Centre; Oxford brand globally; interdisciplinary access",focus:["Finance","Social Enterprise","Technology"],
+ cls:320,intl:85,ind:12,pri:"Finance",sec:"Consulting",ter:"Social Enterprise / Tech",
+ tuition:"~£74.6K (1yr)",living:"£20–26K/yr",housing:"College accommodation + Oxford private rentals",schol:"Medium",scholn:"Skoll (full); Saïd Foundation; Oxford-Weidenfeld; ~30% receive some aid",
+ gmatRange:"650–710",greRange:"312–324",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–8 yrs",
+ accept:25,
+ intfmt:"Alumni or adcom interview; in-person preferred in Oxford; 30–45 min; blind",invrate:"~35% of applicants",
+ r1_2526:"Sep 8 2025",r2_2526:"Jan 5 2026",r3_2526:"Mar 30 2026",
+ notif_2526:"R1: Dec 2025 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 questions (400–600w) + short motivational statement",
+ essayPrompts_2526:[
+   {q:"What are your career goals and how will the Oxford MBA help you achieve them?",limit:"400–600w"},
+   {q:"Describe a leadership experience and what it revealed about you",limit:"400–600w"},
+   {q:"Why Oxford Saïd specifically?",limit:"~300w motivational statement"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"£2,000 on acceptance",
+ emp3m:89,salary:"£70–85K base (GBP)",hiring:["McKinsey / BCG","Goldman / Barclays","Oxford-linked social enterprises"],
+ sectors:"Finance #1, Consulting #2, Social Enterprise #3"},
+
+{rank:21,name:"IMD",sub:"Lausanne, Switzerland",r:"europe",
+ usp:"Smallest elite cohort (~90); most experiential real-world MBA; #1 executive development",focus:["General Mgmt","Family Business","Operations"],
+ cls:90,intl:95,ind:8,pri:"Manufacturing / Operations",sec:"Finance",ter:"General Mgmt / Consulting",
+ tuition:"CHF 95K (1yr)",living:"CHF 28–38K/yr",housing:"IMD-assisted housing + Lausanne private apts",schol:"Medium",scholn:"IMD MBA scholarships; Debiopharm, Nestlé, SG scholarships; partial only",
+ gmatRange:"640–700",greRange:"310–322",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"6–10 yrs",
+ accept:33,
+ intfmt:"In-person in Lausanne; panel interview; presentation required; 1–2 hours",invrate:"~40% of applicants",
+ r1_2526:"Sep 1 2025",r2_2526:"Oct 1 2025",r3_2526:"Nov 3 2025",
+ notif_2526:"R1: Oct 2025 | R2: Nov 2025 | R3: Dec 2025",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays + video essay; heavy focus on leadership experience",
+ essayPrompts_2526:[
+   {q:"What are your professional goals, and how will the IMD MBA help you achieve them?",limit:"varies"},
+   {q:"Describe a professional situation where you successfully led a team through a challenge",limit:"varies"},
+   {q:"What kind of leader are you?",limit:"varies"},
+   {q:"Video Essay: Personal leadership journey",limit:"Recorded video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; updated application required",
+ deposit:"CHF 5,000 on acceptance",
+ emp3m:91,salary:"CHF 120–150K base",hiring:["Nestlé / ABB / Novartis","McKinsey / Roland Berger","Private Equity / Family Offices"],
+ sectors:"Manufacturing/Ops #1, Finance #2, Consulting #3"},
+
+{rank:22,name:"ESADE",sub:"Barcelona, Spain",r:"europe",
+ usp:"Triple accreditation; sustainability/ESG pioneer; strong tech startups; Barcelona ecosystem",focus:["Sustainability","Technology","Consulting"],
+ cls:140,intl:85,ind:5,pri:"Consulting",sec:"Tech / Startups",ter:"Social Impact / ESG",
+ tuition:"€64.5K (15 mths)",living:"€14–18K/yr",housing:"ESADE student housing + Barcelona private apts",schol:"Medium",scholn:"Merit-based partial; Women in Leadership; emerging markets awards",
+ gmatRange:"630–690",greRange:"308–320",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:30,
+ intfmt:"Competency-based panel interview; in-person or virtual; 45 min",invrate:"~40% of applicants",
+ r1_2526:"Oct 1 2025",r2_2526:"Dec 1 2025",r3_2526:"Feb 1 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (400–600w) + motivation letter; sustainability angle valued",
+ essayPrompts_2526:[
+   {q:"Career goals + why ESADE MBA?",limit:"400–600w"},
+   {q:"Describe a situation where you made a meaningful positive impact",limit:"400–600w"},
+   {q:"Motivation letter",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no mandatory wait",
+ deposit:"€1,500 on acceptance",
+ emp3m:88,salary:"€75–90K base (EU avg)",hiring:["McKinsey / Deloitte / Accenture","Startup ecosystem (Barcelona)","Sustainability-focused firms"],
+ sectors:"Consulting #1, Tech/Startups #2, ESG/Sustainability #3"},
+
+{rank:23,name:"IE Business School",sub:"Madrid, Spain",r:"europe",
+ usp:"Hybrid learning pioneer; most entrepreneurial school in Europe; 130+ nationalities",focus:["Entrepreneurship","Technology","Innovation"],
+ cls:300,intl:90,ind:5,pri:"Tech / Entrepreneurship",sec:"Consulting",ter:"Finance / VC",
+ tuition:"€72K (11–18 mths)",living:"€15–18K/yr",housing:"IE student housing + Madrid private apts",schol:"Medium",scholn:"IE Foundation merit scholarships; up to 30% tuition; diversity awards",
+ gmatRange:"620–680",greRange:"306–318",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"3–6 yrs",
+ accept:32,
+ intfmt:"Virtual interview; adcom-led; 30–45 min; entrepreneurial mindset assessed",invrate:"~45% of applicants",
+ r1_2526:"Oct 1 2025",r2_2526:"Dec 1 2025",r3_2526:"Feb 1 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (400w) + video essay; entrepreneurship-heavy prompts",
+ essayPrompts_2526:[
+   {q:"What are your career goals and why IE MBA now?",limit:"400w"},
+   {q:"Describe an entrepreneurial experience or initiative you led",limit:"400w"},
+   {q:"What do you bring to the IE community?",limit:"400w"},
+   {q:"Video Essay",limit:"Short video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no mandatory wait period",
+ deposit:"€1,500 on acceptance",
+ emp3m:87,salary:"€70–85K base (EU avg)",hiring:["Accenture / Deloitte","IE startup network","BCG / KPMG"],
+ sectors:"Entrepreneurship #1, Consulting #2, Finance #3"},
+
+{rank:24,name:"NUS Business School",sub:"Singapore",r:"asia",
+ usp:"Top Asian MBA (QS #23); Asia-Pacific gateway; dual-degree options with UCLA/Yale",focus:["Finance","Technology","Asia-Pacific Biz"],
+ cls:150,intl:80,ind:12,pri:"Finance / Banking",sec:"Technology",ter:"Consulting / Government",
+ tuition:"~S$75K (1yr)",living:"S$30–40K/yr",housing:"NUS on-campus housing + Clementi/Buona Vista rentals",schol:"Medium",scholn:"NUS MBA scholarships; ASEAN scholarships; ~25% receive aid",
+ gmatRange:"630–700",greRange:"308–322",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:30,
+ intfmt:"Panel interview; in-person or virtual; adcom-led; 45–60 min",invrate:"~40% of applicants",
+ r1_2526:"Oct 15 2025",r2_2526:"Dec 15 2025",r3_2526:"Feb 15 2026",
+ notif_2526:"R1: Jan 2026 | R2: Feb 2026 | R3: Apr 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w) + short answers; Asia-career focus",
+ essayPrompts_2526:[
+   {q:"Career goals + why NUS MBA + why now?",limit:"500w"},
+   {q:"What do you bring to the NUS MBA class?",limit:"500w"},
+   {q:"Short answers on leadership and Asia relevance",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; updated essays required",
+ deposit:"S$3,000 on acceptance",
+ emp3m:90,salary:"S$100–130K base (SGD)",hiring:["DBS / OCBC / UOB","McKinsey / BCG (Singapore)","Google / GovTech"],
+ sectors:"Finance/Banking #1, Tech #2, Consulting #3"},
+
+{rank:25,name:"CEIBS",sub:"Shanghai, China",r:"asia",
+ usp:"FT top-10 globally; deepest China market access; CEIBS alumni = China business elite",focus:["China Business","Finance","Consulting"],
+ cls:200,intl:30,ind:3,pri:"Consulting",sec:"Finance / Banking",ter:"FMCG / China Biz",
+ tuition:"~¥388K (18 mths)",living:"¥120–160K/yr",housing:"CEIBS campus housing + Pudong private apts",schol:"Low-Medium",scholn:"CEIBS Excellence scholarship; partial awards; limited for non-Chinese nationals",
+ gmatRange:"590–650",greRange:"300–312",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"5–8 yrs",
+ accept:25,
+ intfmt:"Panel interview; in-person preferred at Shanghai campus; 45–60 min",invrate:"~40% of applicants",
+ r1_2526:"Oct 1 2025",r2_2526:"Dec 1 2025",r3_2526:"Feb 1 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (400–600w); China-focused career goals essential",
+ essayPrompts_2526:[
+   {q:"Career goals + why China / Asia + why CEIBS?",limit:"400–600w"},
+   {q:"Leadership experience with cross-cultural elements",limit:"400–600w"},
+   {q:"What will you contribute to the CEIBS community?",limit:"400–600w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"¥20,000 on acceptance",
+ emp3m:91,salary:"¥450–700K base (CNY)",hiring:["McKinsey / BCG (China)","Alibaba / Tencent / JD.com","China state-owned enterprises"],
+ sectors:"Consulting #1, Finance #2, Tech/China Biz #3"},
+
+{rank:26,name:"Tsinghua SEM",sub:"Beijing, China",r:"asia",
+ usp:"State-connected; top China tech ecosystem; Tsinghua-MIT partnership; government access",focus:["Technology / Innovation","Finance","Government / Policy"],
+ cls:170,intl:40,ind:5,pri:"Technology / Innovation",sec:"Finance",ter:"Government / Policy",
+ tuition:"~¥238K (2yr)",living:"¥100–140K/yr",housing:"Tsinghua campus housing + Haidian District rentals",schol:"Low-Medium",scholn:"Government scholarships for internationals; Tsinghua fellowships; limited",
+ gmatRange:"570–640",greRange:"296–310",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:30,
+ intfmt:"Panel interview; predominantly in-person Beijing; Mandarin proficiency assessed",invrate:"~40% of applicants",
+ r1_2526:"Oct 1 2025",r2_2526:"Dec 15 2025",r3_2526:"Feb 15 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays; strong China/Asia ambition required",
+ essayPrompts_2526:[
+   {q:"Career goals + why Tsinghua + why China?",limit:"varies"},
+   {q:"Leadership and teamwork experience",limit:"varies"},
+   {q:"What is your vision for contributing to China / Asia?",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"¥15,000 on acceptance",
+ emp3m:88,salary:"¥400–600K base (CNY)",hiring:["Huawei / Alibaba / ByteDance","McKinsey / BCG (Beijing)","China state-owned enterprises"],
+ sectors:"Tech/Innovation #1, Government/Policy #2, Finance #3"},
+
+{rank:27,name:"Rotman (Toronto)",sub:"Toronto, Canada",r:"asia",
+ usp:"Canada's #1 MBA; design thinking + behavioural economics; multicultural Toronto",focus:["Finance","Technology","Consulting"],
+ cls:250,intl:50,ind:20,pri:"Finance / Banking",sec:"Consulting",ter:"Technology / Analytics",
+ tuition:"~CAD 125K (2yr)",living:"CAD 28–36K/yr",housing:"U of T student housing + Toronto private rentals",schol:"Medium",scholn:"Rotman Fellowships; Dean's Excellence; merit + need; ~30% receive aid",
+ gmatRange:"640–700",greRange:"310–322",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:35,
+ intfmt:"Kira Talent video essay + in-person or virtual interview; adcom-led; 45 min",invrate:"~45% of applicants",
+ r1_2526:"Oct 15 2025",r2_2526:"Jan 6 2026",r3_2526:"Mar 31 2026",
+ notif_2526:"R1: Jan 2026 | R2: Mar 2026 | R3: May 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (300–500w) + short answers",
+ essayPrompts_2526:[
+   {q:"Why an MBA and why Rotman?",limit:"500w"},
+   {q:"Describe a time you influenced others without formal authority",limit:"300–500w"},
+   {q:"What do you bring to the Rotman community?",limit:"300w"},
+   {q:"Kira Video Essay",limit:"Recorded video"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; reapplicant statement recommended",
+ deposit:"CAD 3,000 on acceptance",
+ emp3m:87,salary:"CAD 110–140K base",hiring:["TD / RBC / BMO","McKinsey / Deloitte (Toronto)","Amazon / Shopify"],
+ sectors:"Finance/Banking #1, Consulting #2, Tech #3"},
+
+{rank:28,name:"Melbourne Business School",sub:"Melbourne, Australia",r:"asia",
+ usp:"Asia-Pacific pivot strategy; compact cohort; strong in resources/mining sector",focus:["Asia-Pacific Biz","Finance","Consulting"],
+ cls:120,intl:55,ind:15,pri:"Finance / Banking",sec:"Consulting",ter:"Government / Resources",
+ tuition:"~AUD 97K (1yr)",living:"AUD 32–40K/yr",housing:"MBS affiliated housing + Carlton/CBD rentals",schol:"Medium-Low",scholn:"MBS Scholarship Fund; partial merit awards; limited full scholarships",
+ gmatRange:"620–680",greRange:"306–318",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–8 yrs",
+ accept:35,
+ intfmt:"In-person preferred at Melbourne campus; adcom-led; 45 min",invrate:"~45% of applicants",
+ r1_2526:"Oct 1 2025",r2_2526:"Dec 1 2025",r3_2526:"Feb 1 2026",
+ notif_2526:"R1: Nov 2025 | R2: Jan 2026 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w) + motivational statement",
+ essayPrompts_2526:[
+   {q:"What are your career goals and how will the Melbourne MBA support them?",limit:"500w"},
+   {q:"Describe a significant professional challenge and how you overcame it",limit:"500w"},
+   {q:"Motivational statement: Why now?",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"AUD 2,000 on acceptance",
+ emp3m:86,salary:"AUD 120–150K base",hiring:["McKinsey / BCG (Australia)","ANZ / Westpac / NAB","BHP / Rio Tinto"],
+ sectors:"Finance/Banking #1, Consulting #2, Resources/Energy #3"},
+
+{rank:29,name:"SDA Bocconi",sub:"Milan, Italy",r:"europe",
+ usp:"Fashion/luxury capital MBA; strong Italian corporate ties; Bocconi alumni across Europe",focus:["Fashion / Luxury","Finance","General Mgmt"],
+ cls:120,intl:80,ind:8,pri:"Finance / Consulting",sec:"Fashion / Luxury / FMCG",ter:"General Mgmt / Ops",
+ tuition:"€50K (12 mths)",living:"€14–18K/yr",housing:"Bocconi residence halls + Milan private apts",schol:"Low-Medium",scholn:"Bocconi Merit Scholarships; partial; limited full awards; competitive",
+ gmatRange:"600–670",greRange:"302–316",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:38,
+ intfmt:"Panel interview; in-person in Milan; 45–60 min; case + competency",invrate:"~50% of applicants",
+ r1_2526:"Oct 15 2025",r2_2526:"Jan 15 2026",r3_2526:"Mar 15 2026",
+ notif_2526:"R1: Dec 2025 | R2: Feb 2026 | R3: Apr 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"2 essays (500w) + short answers; fashion/luxury interest valued",
+ essayPrompts_2526:[
+   {q:"Career goals + why Bocconi MBA + why Milan?",limit:"500w"},
+   {q:"Describe a leadership or teamwork experience",limit:"500w"},
+   {q:"Short answers on personal background and motivation",limit:"varies"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply; no formal restriction",
+ deposit:"€1,500 on acceptance",
+ emp3m:89,salary:"€75–90K base (EU avg)",hiring:["KPMG / Deloitte / Accenture","LVMH / Prada / Gucci","UniCredit / Mediobanca"],
+ sectors:"Finance/Consulting #1, Fashion/Luxury #2, General Mgmt #3"},
+
+{rank:30,name:"ISB",sub:"Hyderabad / Mohali, India",r:"asia",
+ usp:"India's top-ranked MBA; ISB-Wharton/Kellogg ties; largest Indian alumni network; 1yr",focus:["IT / Technology","Consulting","Finance / BFSI"],
+ cls:880,intl:5,ind:95,pri:"IT / Technology",sec:"Consulting (MBB+Big4)",ter:"Finance / BFSI / FMCG",
+ tuition:"~₹40L (1yr)",living:"₹10–14L/yr",housing:"ISB on-campus hostels + Hyderabad/Mohali private",schol:"Medium-High",scholn:"ISB need + merit scholarships; corporate scholarships; YLP awards; ~30% receive aid",
+ gmatRange:"680–730",greRange:"318–328",greEst:true,gmatAccepted:true,greAccepted:true,
+ workex:"4–7 yrs",
+ accept:15,
+ intfmt:"Adcom-led personal interview; in-person at Hyderabad/Mohali campus; 30–45 min",invrate:"~25% of applicants",
+ r1_2526:"Sep 15 2025",r2_2526:"Oct 15 2025",r3_2526:"Jan 15 2026",
+ notif_2526:"R1: Nov 2025 | R2: Dec 2025 | R3: Mar 2026",
+ r1_2627:"TBD",r2_2627:"TBD",r3_2627:"TBD",notif_2627:"TBD",
+ essays:"3 essays (300–500w) + optional short answer",
+ essayPrompts_2526:[
+   {q:"What are your short-term and long-term career goals, and how will ISB help you achieve them?",limit:"300–500w"},
+   {q:"Describe a situation where you led change in your organisation",limit:"300–500w"},
+   {q:"What will you contribute to ISB, and what do you hope to gain from peers?",limit:"300–500w"},
+   {q:"Optional: Additional context",limit:"~200w"}
+ ],
+ lors:"2 professional LORs",reapp:"Can reapply after 1 yr; fresh essays required",
+ deposit:"₹2,00,000 on acceptance",
+ emp3m:97,salary:"₹34L median base (INR)",hiring:["McKinsey / BCG / Bain (India)","Amazon / Flipkart / Google India","Goldman / JP Morgan (India)"],
+ sectors:"Consulting #1, Tech #2, Finance/BFSI #3"}
+];
+
+const tabDefs=[
+  {
+    label:"School Profile",
+    heads:["#","School","Location","USP","Focus Industries","Class Size","Intl Mix","Indian Mix","Primary Profile","Secondary Profile","Tertiary Profile","Total Tuition","Est. Living Cost","Housing","Scholarship Ease"],
+    render(d){
+      const tags=(arr,cls)=>arr.map(f=>`<span class="tag ${cls}">${f}</span>`).join("");
+      const bar=(v,c)=>`<div class="pct">${v}%</div><div class="bar"><div class="bar-fill ${c}" style="width:${Math.min(v,100)}%"></div></div>`;
+      const sc=d.schol.startsWith("Very")||d.schol.startsWith("High")?"good":d.schol.startsWith("Med")?"med":"hard";
+      return[
+        `<td class="rank">${d.rank}</td>`,
+        `<td><div class="sn">${d.name}</div><div class="ss">${d.sub}</div></td>`,
+        `<td style="min-width:100px">${d.sub.split(",").slice(-2).join(",").trim()}</td>`,
+        `<td style="min-width:170px"><span class="sub">${d.usp}</span></td>`,
+        `<td style="min-width:130px">${tags(d.focus,"t-blue")}</td>`,
+        `<td style="text-align:center;min-width:65px"><strong>${d.cls.toLocaleString()}</strong><div class="ss">per yr</div></td>`,
+        `<td style="min-width:85px">${bar(d.intl,"bf-b")}</td>`,
+        `<td style="min-width:85px">${bar(d.ind,"bf-g")}</td>`,
+        `<td style="min-width:105px"><span class="tag t-purple">${d.pri}</span></td>`,
+        `<td style="min-width:105px"><span class="tag t-blue">${d.sec}</span></td>`,
+        `<td style="min-width:105px"><span class="tag t-teal">${d.ter}</span></td>`,
+        `<td style="min-width:100px"><strong>${d.tuition}</strong></td>`,
+        `<td style="min-width:90px">${d.living}</td>`,
+        `<td style="min-width:140px"><span class="sub">${d.housing}</span></td>`,
+        `<td style="min-width:130px"><span class="${sc}">${d.schol}</span><div class="sub">${d.scholn}</div></td>`
+      ].join("");
+    }
+  },
+  {
+    label:"Getting In",
+    heads:["#","School","Accept Rate","GMAT Range","GMAT ✓","GRE Range","GRE ✓","Work Ex","Interview Format","Invite Rate","R1 Deadline","R2 Deadline","R3 Deadline","Notification","# Essays","LORs","Reapplicant","Deposit"],
+    render(d){
+      const ar=d.accept<10?"hard":d.accept<20?"med":"good";
+      const dl=(v2526,v2627)=>`
+        <div class="cycle-block"><span class="cycle-lbl">25-26</span> <span class="tag t-amber" style="font-size:10px">${v2526}</span></div>
+        <div class="cycle-block"><span class="cycle-lbl">26-27</span> <span class="${v2627==="TBD"?"tbd-badge":"tag t-amber"}" style="font-size:10px">${v2627}</span></div>`;
+      const notifCell=`
+        <div class="cycle-block"><span class="cycle-lbl">25-26</span><div class="sub">${d.notif_2526}</div></div>
+        <div class="cycle-block"><span class="cycle-lbl">26-27</span><span class="tbd-badge">TBD</span></div>`;
+      return[
+        `<td class="rank">${d.rank}</td>`,
+        `<td><div class="sn">${d.name}</div><div class="ss">${d.sub}</div></td>`,
+        `<td style="min-width:80px;text-align:center"><span class="${ar}" style="font-size:14px">${d.accept}%</span></td>`,
+        `<td style="text-align:center;min-width:80px"><strong>${d.gmatRange}</strong></td>`,
+        `<td style="text-align:center;min-width:60px"><span class="tag t-green" style="font-size:11px">✓</span></td>`,
+        `<td style="text-align:center;min-width:90px"><strong>${d.greRange}</strong><span class="est">est</span></td>`,
+        `<td style="text-align:center;min-width:60px"><span class="tag t-green" style="font-size:11px">✓</span></td>`,
+        `<td style="min-width:80px">${d.workex}</td>`,
+        `<td style="min-width:200px"><span class="sub">${d.intfmt}</span></td>`,
+        `<td style="min-width:90px">${d.invrate}</td>`,
+        `<td style="min-width:130px">${dl(d.r1_2526,d.r1_2627)}</td>`,
+        `<td style="min-width:130px">${dl(d.r2_2526,d.r2_2627)}</td>`,
+        `<td style="min-width:130px">${dl(d.r3_2526||"—",d.r3_2627)}</td>`,
+        `<td style="min-width:150px">${notifCell}</td>`,
+        `<td style="min-width:150px"><span class="sub">${d.essays}</span></td>`,
+        `<td style="min-width:80px">${d.lors}</td>`,
+        `<td style="min-width:120px"><span class="sub">${d.reapp}</span></td>`,
+        `<td style="min-width:100px">${d.deposit}</td>`
+      ].join("");
+    }
+  },
+  {
+    label:"Outcomes",
+    heads:["#","School","% Employed (3 mths)","Median Base Salary","Top 3 Hiring Firms","Sector Breakdown"],
+    render(d){
+      const cl=d.emp3m>=90?"good":d.emp3m>=85?"med":"hard";
+      return[
+        `<td class="rank">${d.rank}</td>`,
+        `<td><div class="sn">${d.name}</div><div class="ss">${d.sub}</div></td>`,
+        `<td style="min-width:120px"><span class="${cl}" style="font-size:16px">${d.emp3m}%</span><div class="bar" style="min-width:80px;margin-top:4px"><div class="bar-fill bf-g" style="width:${d.emp3m}%"></div></div></td>`,
+        `<td style="min-width:150px"><strong>${d.salary}</strong></td>`,
+        `<td style="min-width:200px">${d.hiring.map(h=>`<div class="sub">· ${h}</div>`).join("")}</td>`,
+        `<td style="min-width:200px"><span class="sub">${d.sectors}</span></td>`
+      ].join("");
+    }
+  }
+];
+
+let tab=0, region="all";
+
+function showTab(i,btn){
+  tab=i;
+  document.querySelectorAll(".tab").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById("tableWrap").style.display=i===3?"none":"block";
+  document.getElementById("essayWrap").style.display=i===3?"block":"none";
+  filter();
+}
+
+function setReg(btn){
+  document.querySelectorAll(".rbtn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+  region=btn.dataset.r;
+  filter();
+}
+
+function searchStr(d){
+  return(d.name+d.sub+d.usp+(d.focus||[]).join(" ")+d.pri+d.sec+d.ter+(d.salary||"")+(d.sectors||"")).toLowerCase();
+}
+
+function renderEssayCards(rows){
+  const tbdNote=`<div class="essay-tbd-note">26–27 prompts typically released Jul–Sep 2026. Check the school website for updates.</div>`;
+  return rows.map(d=>{
+    const prompts=d.essayPrompts_2526||[];
+    const promptsHtml=prompts.length?prompts.map(p=>
+      `<div class="essay-item"><span class="essay-q">${p.q}</span><span class="essay-limit">${p.limit||""}</span></div>`
+    ).join(""):`<div class="essay-item"><span class="sub">${d.essays}</span></div>`;
+
+    // REPLACE href="#" WITH YOUR GOOGLE FORM LINK FOR THIS SCHOOL
+    // e.g. href="https://forms.gle/your-form-id"
+    const ctaHref = "#"; // ← replace with Google Form link
+
+    return`<div class="essay-card">
+      <div class="essay-card-head">
+        <span class="essay-rank">#${d.rank}</span>
+        <div>
+          <div class="essay-school">${d.name}</div>
+          <div class="essay-school-sub">${d.sub}</div>
+        </div>
+        <span class="tag t-gray" style="margin-left:auto;font-size:10px">${d.essays.match(/\d+\s*essay/i)?d.essays.match(/\d+\s*essay/i)[0]:"essays"}</span>
+      </div>
+      <div class="essay-cycles">
+        <div class="essay-cycle">
+          <div class="essay-cycle-title">25–26 Cycle</div>
+          ${promptsHtml}
+          <div class="essay-flag">Verify exact prompts &amp; word limits at school website</div>
+        </div>
+        <div class="essay-cycle">
+          <div class="essay-cycle-title">26–27 Cycle</div>
+          <div class="essay-tbd-msg">Prompts not yet released.</div>
+          ${tbdNote}
+        </div>
+      </div>
+      <div class="essay-cta">
+        <p class="essay-cta-note">Want help writing essays for ${d.name}? Start with a free strategy call.</p>
+        <!-- REPLACE href WITH YOUR GOOGLE FORM LINK FOR ${d.name.toUpperCase()} -->
+        <a class="essay-btn" href="${ctaHref}" target="_blank">Get Essay Guidance →</a>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function filter(){
+  const q=document.getElementById("search").value.toLowerCase();
+  const rows=schools.filter(d=>{
+    const mr=region==="all"||d.r===region;
+    const mq=!q||searchStr(d).includes(q);
+    return mr&&mq;
+  });
+  document.getElementById("cnt").textContent=`Showing ${rows.length} of 30`;
+
+  if(tab===3){
+    document.getElementById("essayWrap").innerHTML=renderEssayCards(rows);
+    return;
+  }
+
+  const def=tabDefs[tab];
+  document.getElementById("thead").innerHTML=`<tr>${def.heads.map(h=>`<th>${h}</th>`).join("")}</tr>`;
+  document.getElementById("tbody").innerHTML=rows.map(d=>`<tr>${def.render(d)}</tr>`).join("");
+}
+
+filter();
+</script>
+</body>
+</html>
