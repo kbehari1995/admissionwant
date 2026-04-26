@@ -179,16 +179,6 @@
           <td>HEC Paris / INSEAD &amp; extended European applications <a href="#" class="why-link" onclick="toggleWhy(event)">Why?</a></td>
           <td>₹75,000</td>
         </tr>
-        <tr class="why-row" id="whyRow">
-          <td colspan="2">
-            <div class="why-content">
-              <p class="why-title">Why European applications cost more</p>
-              <p>· European applications are substantially longer than US ones — more essays, more short answers, higher total word counts.</p>
-              <p>· They demand a much deeper, more coherent story built across every piece, not a strong <em>Why MBA</em> alone.</p>
-              <p>· Positioning has to be more strategic. Schools like HEC and INSEAD read applications with far more care than most US programs, and weak positioning is caught instantly.</p>
-            </div>
-          </td>
-        </tr>
         <tr>
           <td>Resume &amp; LOR <span style="font-size:0.8rem; color: var(--mid);">(once per cycle)</span></td>
           <td>₹25,000</td>
@@ -198,6 +188,13 @@
           <td>₹25,000 *</td>
         </tr>
       </table>
+
+      <div class="why-popup" id="whyPopup">
+        <p class="why-title">Why European applications cost more</p>
+        <p>· European applications are substantially longer than US ones — more essays, more short answers, higher total word counts.</p>
+        <p>· They demand a much deeper, more coherent story built across every piece, not a strong <em>Why MBA</em> alone.</p>
+        <p>· Positioning has to be more strategic. Schools like HEC and INSEAD read applications with far more care than most US programs, and weak positioning is caught instantly.</p>
+      </div>
 
       <p class="pricing-note">
         Interview prep is billed only when you receive an interview invitation. No interview, no charge.
@@ -326,7 +323,7 @@
   <script>
     function toggleWhy(e) {
       e.preventDefault();
-      document.getElementById('whyRow').classList.toggle('open');
+      document.getElementById('whyPopup').classList.toggle('open');
     }
     function openReview(e, src) {
       if (e) e.preventDefault();

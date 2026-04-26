@@ -552,39 +552,35 @@ footer {
   border-bottom-color: var(--ink);
 }
 
-.why-row td {
-  padding: 0 !important;
-  border-bottom: none !important;
-  text-align: left !important;
-}
-
-.why-row .why-content {
+/* ── Pricing: Why popup (outside table, no overflow issues) ── */
+.why-popup {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s ease, padding 0.35s ease;
   padding: 0 1.25rem;
   background: #f3f1ee;
   border-left: 2px solid var(--ink);
+  margin: 0 0 0.6rem;
 }
 
-.why-row.open .why-content {
+.why-popup.open {
   max-height: 600px;
   padding: 1.1rem 1.25rem;
-  margin: 0.4rem 0 0.6rem;
+  margin: -0.3rem 0 0.6rem;
 }
 
-.why-row .why-content p {
+.why-popup p {
   font-size: 0.9rem;
   line-height: 1.65;
   color: var(--ink);
   margin-bottom: 0.5rem;
 }
 
-.why-row .why-content p:last-child {
+.why-popup p:last-child {
   margin-bottom: 0;
 }
 
-.why-row .why-title {
+.why-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.05rem;
   font-weight: 500;
