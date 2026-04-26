@@ -220,6 +220,73 @@
       </div>
     </section>
 
+    <!-- Contact form -->
+    <section id="contact">
+      <p class="section-label">Get in Touch</p>
+      <h2>Have a question?<br><em>Write to me directly.</em></h2>
+      <p>
+        Fill in the form and I'll get back to you within 24 hours. If your question is time-sensitive, WhatsApp works faster.
+      </p>
+
+      <form name="contact" method="POST" data-netlify="true" style="margin-top: 2rem;">
+        <input type="hidden" name="form-name" value="contact">
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+            <div>
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Name</label>
+              <input type="text" name="name" required
+                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Email</label>
+              <input type="email" name="email" required
+                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+            <div>
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Phone Number</label>
+              <input type="tel" name="phone"
+                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Subject</label>
+              <input type="text" name="subject"
+                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
+                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"
+                placeholder="e.g. HEC Paris application, GMAT planning">
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Your Message</label>
+            <textarea name="message" rows="5" required
+              style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; resize: none; transition: border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"></textarea>
+          </div>
+
+          <div style="margin-top: 0.5rem;">
+            <button type="submit" class="btn" style="cursor: pointer; background: transparent; font-family: 'EB Garamond', serif;">Send Message</button>
+          </div>
+
+        </div>
+      </form>
+
+      <!-- Mobile: single column -->
+      <style>
+        @media (max-width: 600px) {
+          #contact form .grid-2 { grid-template-columns: 1fr !important; }
+        }
+      </style>
+
+    </section>
+
   </div>
 
   <footer>
