@@ -228,7 +228,7 @@
         Fill in the form and I'll get back to you within 24 hours. If your question is time-sensitive, WhatsApp works faster.
       </p>
 
-      <form name="contact" method="POST" data-netlify="true" style="margin-top: 2rem;">
+      <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" style="margin-top: 2rem;">
         <input type="hidden" name="form-name" value="contact">
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
@@ -269,6 +269,13 @@
             <textarea name="message" rows="5" required
               style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; resize: none; transition: border-color 0.2s;"
               onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"></textarea>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Attachment <span style="text-transform: none; letter-spacing: 0; font-style: italic;">— optional</span></label>
+            <input type="file" name="attachment"
+              style="width: 100%; font-family: 'EB Garamond', serif; font-size: 0.9rem; color: var(--mid); padding: 0.4rem 0; border: none; border-bottom: 1px solid var(--rule); background: transparent; outline: none; cursor: pointer;">
+            <p style="font-size: 0.78rem; color: var(--mid); margin-top: 0.4rem; margin-bottom: 0;">Resume, transcript, or anything relevant. Max 10 MB.</p>
           </div>
 
           <div style="margin-top: 0.5rem;">
