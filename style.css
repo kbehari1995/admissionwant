@@ -241,9 +241,11 @@ p:last-child {
 /* ── Pricing ── */
 .pricing-table {
   width: 100%;
+  max-width: var(--max);
   border-collapse: collapse;
   margin: 2rem 0;
   font-size: 0.95rem;
+  table-layout: fixed;
 }
 
 .pricing-table tr {
