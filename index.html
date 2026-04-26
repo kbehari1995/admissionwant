@@ -244,8 +244,10 @@
         Fill in the form and I'll get back to you within 24 hours. If your question is time-sensitive, WhatsApp works faster.
       </p>
 
-      <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" style="margin-top: 2rem;">
-        <input type="hidden" name="form-name" value="contact">
+      <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" style="margin-top: 2rem;">
+        <input type="hidden" name="access_key" value="4a942f12-7564-4b9a-83c7-eb13e0a3df88">
+        <input type="hidden" name="subject" value="New enquiry — AdmissionWant">
+        <input type="hidden" name="botcheck" value="" style="display: none;">
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
 
