@@ -245,7 +245,6 @@ p:last-child {
   border-collapse: collapse;
   margin: 2rem 0;
   font-size: 0.95rem;
-  table-layout: fixed;
 }
 
 .pricing-table tr {
@@ -555,6 +554,8 @@ footer {
 .why-row td {
   padding: 0 !important;
   border-bottom: none !important;
+  text-align: left !important;
+  width: 100% !important;
 }
 
 .why-row .why-content {
