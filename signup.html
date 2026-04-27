@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up — AdmissionWant</title>
+  <meta name="description" content="Start your MBA application journey with AdmissionWant. Full application support or interview preparation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #111111;
+      --mid: #555555;
+      --faint: #cccccc;
+      --rule: #e0dedd;
+      --max: 640px;
+    }
+
+    html { font-size: 18px; scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.75;
+      padding: 0 1.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.5rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a.active { color: var(--ink); }
+
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    /* ── Hero ── */
+    .hero { padding: 5rem 0 2rem; }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 6vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .hero h1 em { font-style: italic; font-weight: 300; }
+    .hero-sub { font-size: 1rem; color: var(--mid); line-height: 1.7; }
+
+    /* ── Choice cards ── */
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2.5rem 0 5rem;
+    }
+    @media (max-width: 560px) { .choice-grid { grid-template-columns: 1fr; } }
+
+    .choice-card {
+      border: 1px solid var(--rule);
+      padding: 2rem 1.75rem;
+      text-align: left;
+      cursor: pointer;
+      background: transparent;
+      font-family: 'EB Garamond', serif;
+      transition: border-color 0.2s;
+      display: block;
+      width: 100%;
+    }
+    .choice-card:hover { border-color: var(--ink); }
+    .choice-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .choice-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .choice-desc { font-size: 0.88rem; color: var(--mid); line-height: 1.6; }
+
+    /* ── Back to choice ── */
+    .back-choice {
+      display: inline-block;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      cursor: pointer;
+      padding: 2rem 0 0;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      font-family: 'EB Garamond', serif;
+    }
+    .back-choice:hover { color: var(--ink); }
+
+    /* ── Progress ── */
+    .progress-wrap { padding: 1.5rem 0 0; }
+    .step-labels { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+    .step-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--faint);
+      transition: color 0.3s;
+    }
+    .step-label.active { color: var(--ink); }
+    .step-label.done { color: var(--mid); }
+    .progress-track {
+      height: 1px;
+      background: var(--rule);
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    .progress-fill {
+      position: absolute;
+      left: 0; top: 0; height: 100%;
+      background: var(--ink);
+      transition: width 0.5s ease;
+    }
+
+    /* ── Steps ── */
+    .step { display: none; }
+    .step.active { display: block; }
+
+    .step-eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+    }
+    .step-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .step-title em { font-style: italic; }
+    .step-desc {
+      font-size: 0.95rem;
+      color: var(--mid);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+    }
+
+    /* ── Fields ── */
+    .field { margin-bottom: 1.75rem; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    @media (max-width: 520px) { .field-row { grid-template-columns: 1fr; } }
+
+    label {
+      display: block;
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.5rem;
+    }
+    label .optional {
+      font-size: 0.7rem;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--faint);
+      font-style: italic;
+      margin-left: 0.4rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1rem;
+      color: var(--ink);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--rule);
+      padding: 0.5rem 0;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+    }
+    input:focus, textarea:focus { border-bottom-color: var(--ink); }
+    input::placeholder, textarea::placeholder { color: var(--faint); font-style: italic; }
+    textarea { resize: vertical; min-height: 90px; line-height: 1.6; }
+
+    .hint { font-size: 0.78rem; color: var(--faint); font-style: italic; margin-top: 0.35rem; }
+
+    /* ── Toggle group (binary / few options in a strip) ── */
+    .toggle-group { display: flex; gap: 0; border: 1px solid var(--rule); }
+    .toggle-opt {
+      flex: 1;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--mid);
+      font-family: 'EB Garamond', Georgia, serif;
+      transition: all 0.2s;
+    }
+    .toggle-opt.selected { background: var(--ink); color: var(--bg); }
+
+    /* ── Option buttons (multi single-select, wrapping) ── */
+    .option-grid { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0.5rem; }
+    .opt-btn {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.85rem;
+      padding: 5px 14px;
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      background: transparent;
+      color: var(--mid);
+      transition: all 0.15s;
+    }
+    .opt-btn.selected { border-color: var(--ink); color: var(--ink); }
+    .opt-btn:hover:not(.selected) { border-color: var(--mid); }
+
+    /* ── School rows ── */
+    .school-row-header {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 2rem;
+      gap: 0.75rem;
+      padding-bottom: 0.25rem;
+    }
+    .school-row-header span {
+      font-size: 0.63rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    @media (max-width: 560px) { .school-row-header { display: none; } }
+
+    .school-rows { margin-bottom: 0.75rem; }
+    .school-row {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 2rem;
+      gap: 0.75rem;
+      align-items: end;
+      padding: 0.6rem 0;
+      border-bottom: 0.5px solid var(--rule);
+    }
+    @media (max-width: 560px) {
+      .school-row { grid-template-columns: 1fr 2rem; row-gap: 0.6rem; }
+      .school-row input { grid-column: 1; }
+      .school-row .remove-row { grid-column: 2; grid-row: 1; align-self: center; }
+    }
+    .school-row input { font-size: 0.95rem; }
+    .remove-row {
+      background: none;
+      border: none;
+      color: var(--faint);
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.25rem;
+      line-height: 1;
+      transition: color 0.2s;
+      align-self: end;
+    }
+    .remove-row:hover { color: var(--ink); }
+    .add-school-btn {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: none;
+      border: 1px solid var(--rule);
+      color: var(--mid);
+      padding: 0.45rem 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .add-school-btn:hover { border-color: var(--ink); color: var(--ink); }
+
+    /* ── File upload ── */
+    .file-zone {
+      border: 1px dashed var(--rule);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .file-zone:hover { border-color: var(--mid); }
+    .file-zone.has-file { border-style: solid; border-color: var(--ink); }
+    .file-zone input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .file-zone-label { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--mid); }
+    .file-zone-sub { font-size: 0.75rem; color: var(--faint); margin-top: 0.25rem; }
+    .file-name { font-size: 0.85rem; color: var(--ink); margin-top: 0.5rem; font-style: italic; }
+
+    /* ── Conditional ── */
+    .conditional { display: none; margin-top: 1.5rem; }
+    .conditional.visible { display: block; }
+
+    /* ── Terms step ── */
+    .terms-block {
+      padding: 2rem 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+    .terms-block p {
+      font-size: 0.95rem;
+      color: var(--mid);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    .terms-block p:last-child { margin-bottom: 0; }
+
+    /* ── Checkbox ── */
+    .check-field {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+    }
+    .check-field input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+      min-width: 1rem;
+      border: 1px solid var(--mid);
+      cursor: pointer;
+      margin-top: 0.3rem;
+      accent-color: var(--ink);
+      flex-shrink: 0;
+    }
+    .check-field label {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--mid);
+      line-height: 1.65;
+      cursor: pointer;
+    }
+    .check-field label a { color: var(--ink); }
+
+    /* ── Form nav ── */
+    .form-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.5rem 0 5rem;
+      border-top: 1px solid var(--rule);
+      margin-top: 2rem;
+    }
+    .btn-back {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      color: var(--mid);
+      cursor: pointer;
+      padding: 0;
+      transition: color 0.2s;
+    }
+    .btn-back:hover { color: var(--ink); }
+    .btn-next, .btn-submit {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      padding: 0.75rem 2.5rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-next:hover, .btn-submit:hover { opacity: 0.82; }
+    .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .status-msg { font-size: 0.85rem; color: #a00; margin-top: 0.75rem; font-style: italic; }
+
+    /* ── Confirmation ── */
+    .confirm-wrap { display: none; padding: 5rem 0; text-align: center; }
+    .confirm-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+    .confirm-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .confirm-sub {
+      font-size: 0.95rem;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+    }
+    .btn-wa {
+      display: inline-block;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--ink);
+      border: 1px solid var(--ink);
+      padding: 0.75rem 2rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-wa:hover { opacity: 0.82; }
+
+    /* ── Footer ── */
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+    .footer-links a { font-size: 0.82rem; color: var(--mid); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 600px) {
+      nav { flex-direction: column; gap: 1.2rem; }
+      .nav-links { gap: 1.2rem; }
+      footer { flex-direction: column; }
+      .footer-links { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AdmissionWant</a>
+  <ul class="nav-links">
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="signup.html" class="active">Sign Up</a></li>
+    <li><a href="https://calendar.app.google/ZUXSy2Vv6fV9judR7" target="_blank">Book a Call</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <!-- ══════════ CHOICE SECTION ══════════ -->
+  <div id="choiceSection">
+    <div class="hero">
+      <p class="hero-eyebrow">Let's begin</p>
+      <h1>What do you<br><em>need help with?</em></h1>
+      <p class="hero-sub">Choose the right path and I'll ask only what's relevant.</p>
+    </div>
+    <div class="choice-grid">
+      <button class="choice-card" onclick="selectForm('full')">
+        <span class="choice-eyebrow">Full Application</span>
+        <div class="choice-title">I need help with my application</div>
+        <div class="choice-desc">Essays, school selection, strategy — the full cycle.</div>
+      </button>
+      <button class="choice-card" onclick="selectForm('interview')">
+        <span class="choice-eyebrow">Interview Prep</span>
+        <div class="choice-title">I have an interview</div>
+        <div class="choice-desc">I need to prepare for a specific school's interview.</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════ FULL APPLICATION FORM ══════════ -->
+  <div id="fullFormWrap" style="display:none">
+
+    <button class="back-choice" onclick="backToChoice()">← Change</button>
+
+    <div class="progress-wrap">
+      <div class="step-labels">
+        <span class="step-label active" id="f-lbl-1">You</span>
+        <span class="step-label" id="f-lbl-2">Scores</span>
+        <span class="step-label" id="f-lbl-3">Schools</span>
+        <span class="step-label" id="f-lbl-4">Goals</span>
+        <span class="step-label" id="f-lbl-5">Documents</span>
+        <span class="step-label" id="f-lbl-6">Terms</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="fProgressFill" style="width:16.66%"></div>
+      </div>
+    </div>
+
+    <form id="fullForm">
+      <!-- Hidden fields for Forminit -->
+      <input type="hidden" name="fi-text-formType" value="Full Application">
+      <input type="hidden" id="f-workEx"      name="fi-text-workEx"      value="">
+      <input type="hidden" id="f-testType"    name="fi-text-testType"    value="GMAT">
+      <input type="hidden" id="f-reapplicant" name="fi-text-reapplicant" value="">
+      <input type="hidden" id="f-prevOutcome" name="fi-text-prevOutcome" value="">
+      <input type="hidden" id="f-targetSchools" name="fi-text-targetSchools" value="">
+      <input type="hidden" id="f-howFound"    name="fi-text-howFound"    value="">
+
+      <!-- ── Step 1: You ── -->
+      <div class="step active" id="f-step-1">
+        <p class="step-eyebrow">Step 1 of 6</p>
+        <h1 class="step-title">Tell me<br><em>about you.</em></h1>
+        <p class="step-desc">The basics first. Everything else follows from who you are.</p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-firstName">First name</label>
+            <input type="text" id="f-firstName" name="fi-sender-firstName" placeholder="Arjun" required>
+          </div>
+          <div class="field">
+            <label for="f-lastName">Last name</label>
+            <input type="text" id="f-lastName" name="fi-sender-lastName" placeholder="Mehta" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="fi-sender-email" placeholder="arjun@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">Phone</label>
+          <input type="tel" id="f-phone" name="fi-text-phone" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="field">
+          <label for="f-linkedin">LinkedIn</label>
+          <input type="text" id="f-linkedin" name="fi-text-linkedin" placeholder="linkedin.com/in/arjunmehta" required>
+        </div>
+
+        <div class="field">
+          <label for="f-role">Current role &amp; company</label>
+          <input type="text" id="f-role" name="fi-text-currentRole" placeholder="Senior Analyst, McKinsey &amp; Company" required>
+        </div>
+
+        <div class="field">
+          <label>Years of full-time work experience</label>
+          <div class="option-grid">
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','Less than 2 yrs')">Less than 2 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','2–3 yrs')">2–3 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','3–4 yrs')">3–4 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','4–5 yrs')">4–5 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','5–6 yrs')">5–6 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','6–8 yrs')">6–8 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-workEx','8+ yrs')">8+ yrs</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Step 2: Scores ── -->
+      <div class="step" id="f-step-2">
+        <p class="step-eyebrow">Step 2 of 6</p>
+        <h1 class="step-title">Scores &amp;<br><em>academics.</em></h1>
+        <p class="step-desc">The numbers the committee will see first. Be precise — there's no judgment here, only strategy.</p>
+
+        <div class="field">
+          <label>Test taken</label>
+          <div class="toggle-group">
+            <button type="button" class="toggle-opt selected" onclick="selectToggle(this,'f-testType','GMAT'); showEl('fScoreField',true)">GMAT</button>
+            <button type="button" class="toggle-opt" onclick="selectToggle(this,'f-testType','GRE'); showEl('fScoreField',true)">GRE</button>
+            <button type="button" class="toggle-opt" onclick="selectToggle(this,'f-testType','Not yet taken'); showEl('fScoreField',false)">Not yet taken</button>
+          </div>
+        </div>
+
+        <div class="field" id="fScoreField">
+          <label for="f-score">Score</label>
+          <input type="text" id="f-score" name="fi-text-testScore" placeholder="e.g. 720 for GMAT, 328 for GRE">
+          <p class="hint">If you've taken it multiple times, enter your highest score.</p>
+        </div>
+
+        <div class="field">
+          <label for="f-undergrad">Undergraduate college</label>
+          <input type="text" id="f-undergrad" name="fi-text-undergrad" placeholder="IIT Bombay" required>
+        </div>
+
+        <div class="field">
+          <label for="f-degree">Degree &amp; specialisation</label>
+          <input type="text" id="f-degree" name="fi-text-degree" placeholder="B.Tech, Computer Science" required>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="f-gradYear">Graduation year</label>
+            <input type="number" id="f-gradYear" name="fi-text-gradYear" placeholder="2019">
+          </div>
+          <div class="field">
+            <label for="f-gpa">GPA / CGPA <span class="optional">optional</span></label>
+            <input type="text" id="f-gpa" name="fi-text-gpa" placeholder="8.4 / 10 or 3.7 / 4.0">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Are you a reapplicant?</label>
+          <div class="toggle-group">
+            <button type="button" class="toggle-opt" onclick="selectToggle(this,'f-reapplicant','No'); toggleConditional('fReappBlock',false); showEl('fPrevEssaysField',false)">No</button>
+            <button type="button" class="toggle-opt" onclick="selectToggle(this,'f-reapplicant','Yes'); toggleConditional('fReappBlock',true); showEl('fPrevEssaysField',true)">Yes</button>
+          </div>
+        </div>
+
+        <div class="conditional" id="fReappBlock">
+          <div class="field">
+            <label for="f-prevSchools">Which schools did you apply to last cycle?</label>
+            <input type="text" id="f-prevSchools" name="fi-text-prevSchools" placeholder="HEC Paris, INSEAD, ISB">
+          </div>
+          <div class="field">
+            <label>Outcome</label>
+            <div class="option-grid">
+              <button type="button" class="opt-btn" onclick="selectOption(this,'f-prevOutcome','All rejected')">All rejected</button>
+              <button type="button" class="opt-btn" onclick="selectOption(this,'f-prevOutcome','Waitlisted at some')">Waitlisted at some</button>
+              <button type="button" class="opt-btn" onclick="selectOption(this,'f-prevOutcome','Got interviews, no offer')">Got interviews, no offer</button>
+              <button type="button" class="opt-btn" onclick="selectOption(this,'f-prevOutcome','Accepted but deferred')">Accepted but deferred</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Step 3: Schools ── -->
+      <div class="step" id="f-step-3">
+        <p class="step-eyebrow">Step 3 of 6</p>
+        <h1 class="step-title">Target<br><em>schools.</em></h1>
+        <p class="step-desc">Add each school you're considering. Program and round are optional — add what you know. If you're unsure about the strategy, that's fine — that's part of what we'll figure out together.</p>
+
+        <div class="field">
+          <div class="school-row-header">
+            <span>School</span>
+            <span>Program</span>
+            <span>Round / Intake</span>
+            <span></span>
+          </div>
+          <div class="school-rows" id="fSchoolRows">
+            <div class="school-row">
+              <input type="text" class="school-name" placeholder="e.g. HEC Paris">
+              <input type="text" class="school-prog" placeholder="MBA (optional)">
+              <input type="text" class="school-round" placeholder="R2 / Jan 2026 (optional)">
+              <button type="button" class="remove-row" onclick="removeSchoolRow(this)" title="Remove">×</button>
+            </div>
+          </div>
+          <button type="button" class="add-school-btn" onclick="addSchoolRow('fSchoolRows')">+ Add another school</button>
+          <p class="hint" style="margin-top:0.75rem">EU schools, dual intakes, different programs at the same school — all fine. Just write what you know.</p>
+        </div>
+      </div>
+
+      <!-- ── Step 4: Goals ── -->
+      <div class="step" id="f-step-4">
+        <p class="step-eyebrow">Step 4 of 6</p>
+        <h1 class="step-title">Ambitions &amp;<br><em>aspirations.</em></h1>
+        <p class="step-desc">This is the heart of your application. Don't over-edit — tell me what you actually want.</p>
+
+        <div class="field">
+          <label for="f-whyMBA">Why an MBA, and why now?</label>
+          <textarea id="f-whyMBA" name="fi-text-whyMBA" placeholder="What's the specific gap an MBA fills for you at this point in your career?" rows="4" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="f-stGoal">Short-term goal (post-MBA, 1–3 years)</label>
+          <textarea id="f-stGoal" name="fi-text-stGoal" placeholder="What role, function, or industry do you want to move into immediately after graduating?" rows="3" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="f-ltGoal">Long-term goal (5–10 years out)</label>
+          <textarea id="f-ltGoal" name="fi-text-ltGoal" placeholder="Where do you want to be? A specific title, company type, geography, or impact you want to have." rows="3" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="f-proudOf">One professional achievement you're most proud of</label>
+          <textarea id="f-proudOf" name="fi-text-proudOf" placeholder="Be specific — numbers, context, what you personally did, and why it mattered to you." rows="4"></textarea>
+          <p class="hint">This often becomes the anchor of your application narrative.</p>
+        </div>
+
+        <div class="field">
+          <label for="f-outsideWork">Who are you outside of work? <span class="optional">optional</span></label>
+          <textarea id="f-outsideWork" name="fi-text-outsideWork" placeholder="Who you are as a human and not just a colleague." rows="3"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="f-concerns">Anything in your profile you're worried about? <span class="optional">optional</span></label>
+          <textarea id="f-concerns" name="fi-text-concerns" placeholder="Low GPA, career gap, over-represented demographic, late GMAT — tell me now so we can address it." rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- ── Step 5: Documents ── -->
+      <div class="step" id="f-step-5">
+        <p class="step-eyebrow">Step 5 of 6</p>
+        <h1 class="step-title">Upload your<br><em>documents.</em></h1>
+        <p class="step-desc">Don't worry if things aren't polished. I'm reading for substance, not formatting.</p>
+
+        <div class="field">
+          <label>Resume / CV</label>
+          <div class="file-zone" id="fResumeZone">
+            <input type="file" name="fi-file-resume" accept=".pdf,.doc,.docx" onchange="handleFile(this,'fResumeZone','fResumeFileName')">
+            <div class="file-zone-label">Drop your resume here, or click to browse</div>
+            <div class="file-zone-sub">PDF or Word · Max 5MB</div>
+            <div class="file-name" id="fResumeFileName"></div>
+          </div>
+        </div>
+
+        <div class="field" id="fPrevEssaysField" style="display:none">
+          <label>Last cycle's essays <span class="optional">reapplicants only</span></label>
+          <div class="file-zone" id="fEssaysZone">
+            <input type="file" name="fi-file-previousEssays" accept=".pdf,.doc,.docx,.zip" onchange="handleFile(this,'fEssaysZone','fEssaysFileName')">
+            <div class="file-zone-label">Drop your previous essays here, or click to browse</div>
+            <div class="file-zone-sub">PDF, Word, or ZIP · Max 20MB</div>
+            <div class="file-name" id="fEssaysFileName"></div>
+          </div>
+          <p class="hint">One file per school, or zip them together. Include the school name in the filename.</p>
+        </div>
+
+        <div class="field">
+          <label for="f-anythingElse">Anything else I should know? <span class="optional">optional</span></label>
+          <textarea id="f-anythingElse" name="fi-text-anythingElse" placeholder="Unusual career paths, personal circumstances, timeline constraints — anything." rows="3"></textarea>
+        </div>
+
+        <div class="field">
+          <label>How did you find AdmissionWant?</label>
+          <div class="option-grid">
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','LinkedIn')">LinkedIn</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Personal referral')">Personal referral</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Google Search')">Google Search</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Reddit / forums')">Reddit / forums</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Instagram')">Instagram</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Other')">Other</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Step 6: Terms ── -->
+      <div class="step" id="f-step-6">
+        <p class="step-eyebrow">Step 6 of 6</p>
+        <h1 class="step-title">Before you<br><em>submit.</em></h1>
+
+        <div class="terms-block">
+          <p>I'll read everything you've shared and come back to you within 48 hours.</p>
+          <p>Your materials stay with me. I don't share your name, your schools, or your outcome with anyone — ever.</p>
+        </div>
+
+        <div class="check-field">
+          <input type="checkbox" id="f-terms-cb" name="fi-checkbox-terms" value="agreed">
+          <label for="f-terms-cb">Everything you share is treated with complete confidentiality. By submitting this form, you confirm you've read and agreed to our <a href="nda.html">engagement terms</a>.</label>
+        </div>
+
+        <p id="fStatusMsg" class="status-msg"></p>
+      </div>
+
+      <!-- Form Nav -->
+      <div class="form-nav">
+        <button type="button" class="btn-back" id="fBtnBack" onclick="fPrev()" style="visibility:hidden">← Previous</button>
+        <div>
+          <button type="button" class="btn-next" id="fBtnNext" onclick="fNext()">Continue →</button>
+          <button type="submit" class="btn-submit" id="fBtnSubmit" style="display:none">Submit application →</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- END FULL APPLICATION -->
+
+
+  <!-- ══════════ INTERVIEW PREP FORM ══════════ -->
+  <div id="interviewFormWrap" style="display:none">
+
+    <button class="back-choice" onclick="backToChoice()">← Change</button>
+
+    <div class="progress-wrap">
+      <div class="step-labels">
+        <span class="step-label active" id="i-lbl-1">You</span>
+        <span class="step-label" id="i-lbl-2">Interview</span>
+        <span class="step-label" id="i-lbl-3">Documents</span>
+        <span class="step-label" id="i-lbl-4">Terms</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="iProgressFill" style="width:25%"></div>
+      </div>
+    </div>
+
+    <form id="interviewForm">
+      <!-- Hidden fields for Forminit -->
+      <input type="hidden" name="fi-text-formType" value="Interview Prep">
+      <input type="hidden" id="i-workEx"         name="fi-text-workEx"         value="">
+      <input type="hidden" id="i-interviewerType" name="fi-text-interviewerType" value="">
+      <input type="hidden" id="i-howFound"        name="fi-text-howFound"        value="">
+
+      <!-- ── Step 1: You ── -->
+      <div class="step active" id="i-step-1">
+        <p class="step-eyebrow">Step 1 of 4</p>
+        <h1 class="step-title">Tell me<br><em>about you.</em></h1>
+        <p class="step-desc">Quick context so I understand who I'm preparing.</p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="i-firstName">First name</label>
+            <input type="text" id="i-firstName" name="fi-sender-firstName" placeholder="Arjun" required>
+          </div>
+          <div class="field">
+            <label for="i-lastName">Last name</label>
+            <input type="text" id="i-lastName" name="fi-sender-lastName" placeholder="Mehta" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="i-email">Email</label>
+          <input type="email" id="i-email" name="fi-sender-email" placeholder="arjun@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="i-phone">Phone</label>
+          <input type="tel" id="i-phone" name="fi-text-phone" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="field">
+          <label for="i-linkedin">LinkedIn</label>
+          <input type="text" id="i-linkedin" name="fi-text-linkedin" placeholder="linkedin.com/in/arjunmehta" required>
+        </div>
+
+        <div class="field">
+          <label for="i-role">Current role &amp; company</label>
+          <input type="text" id="i-role" name="fi-text-currentRole" placeholder="Senior Analyst, McKinsey &amp; Company" required>
+        </div>
+
+        <div class="field">
+          <label>Years of full-time work experience</label>
+          <div class="option-grid">
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','Less than 2 yrs')">Less than 2 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','2–3 yrs')">2–3 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','3–4 yrs')">3–4 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','4–5 yrs')">4–5 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','5–6 yrs')">5–6 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','6–8 yrs')">6–8 yrs</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-workEx','8+ yrs')">8+ yrs</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Step 2: Interview Details ── -->
+      <div class="step" id="i-step-2">
+        <p class="step-eyebrow">Step 2 of 4</p>
+        <h1 class="step-title">Interview<br><em>details.</em></h1>
+        <p class="step-desc">Tell me everything about the interview as shared by the school. The more precise, the better I can prepare you.</p>
+
+        <div class="field">
+          <label for="i-school">School &amp; program</label>
+          <input type="text" id="i-school" name="fi-text-interviewSchool" placeholder="e.g. HEC Paris MBA" required>
+        </div>
+
+        <div class="field">
+          <label for="i-interviewDate">Interview date <span class="optional">if confirmed</span></label>
+          <input type="text" id="i-interviewDate" name="fi-text-interviewDate" placeholder="e.g. 15 May 2026, or not confirmed yet">
+        </div>
+
+        <div class="field">
+          <label>Interviewer type</label>
+          <div class="option-grid">
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-interviewerType','Alumni')">Alumni</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-interviewerType','Adcom')">Adcom</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-interviewerType','Current student')">Current student</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-interviewerType','Unknown')">Unknown</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="i-interviewFormat">Interview format — exactly as the school described it</label>
+          <textarea id="i-interviewFormat" name="fi-text-interviewFormat" placeholder="Paste the email or description from the school here. Format, duration, what to expect — anything they told you." rows="5" required></textarea>
+          <p class="hint">This gives me the precise context I need to tailor your prep.</p>
+        </div>
+
+        <div class="field">
+          <label for="i-concerns">What are you most worried about? <span class="optional">optional</span></label>
+          <textarea id="i-concerns" name="fi-text-interviewConcerns" placeholder="Weak points in your profile, types of questions you find difficult, anything specific you want to work on." rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- ── Step 3: Documents ── -->
+      <div class="step" id="i-step-3">
+        <p class="step-eyebrow">Step 3 of 4</p>
+        <h1 class="step-title">Your<br><em>materials.</em></h1>
+        <p class="step-desc">I'll read your application before we start. That's the only way to prep you properly.</p>
+
+        <div class="field">
+          <label>Resume / CV</label>
+          <div class="file-zone" id="iResumeZone">
+            <input type="file" name="fi-file-resume" accept=".pdf,.doc,.docx" onchange="handleFile(this,'iResumeZone','iResumeFileName')">
+            <div class="file-zone-label">Drop your resume here, or click to browse</div>
+            <div class="file-zone-sub">PDF or Word · Max 5MB</div>
+            <div class="file-name" id="iResumeFileName"></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Application essays <span class="optional">optional but encouraged</span></label>
+          <div class="file-zone" id="iEssaysZone">
+            <input type="file" name="fi-file-applicationEssays" accept=".pdf,.doc,.docx,.zip" onchange="handleFile(this,'iEssaysZone','iEssaysFileName')">
+            <div class="file-zone-label">Drop your essays here, or click to browse</div>
+            <div class="file-zone-sub">PDF, Word, or ZIP · Max 20MB</div>
+            <div class="file-name" id="iEssaysFileName"></div>
+          </div>
+          <p class="hint">If someone else helped with your essays, that's fine — I still want to read them.</p>
+        </div>
+
+        <div class="field">
+          <label for="i-anythingElse">Anything else I should know? <span class="optional">optional</span></label>
+          <textarea id="i-anythingElse" name="fi-text-anythingElse" placeholder="Unusual circumstances, specific things you want to focus on, timeline constraints." rows="3"></textarea>
+        </div>
+
+        <div class="field">
+          <label>How did you find AdmissionWant?</label>
+          <div class="option-grid">
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','LinkedIn')">LinkedIn</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Personal referral')">Personal referral</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Google Search')">Google Search</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Reddit / forums')">Reddit / forums</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Instagram')">Instagram</button>
+            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Other')">Other</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Step 4: Terms ── -->
+      <div class="step" id="i-step-4">
+        <p class="step-eyebrow">Step 4 of 4</p>
+        <h1 class="step-title">Before you<br><em>submit.</em></h1>
+
+        <div class="terms-block">
+          <p>I'll read your materials and come back to you within 24 hours to confirm the prep plan.</p>
+          <p>Your materials stay with me. I don't share your name, your school, or your outcome with anyone — ever.</p>
+        </div>
+
+        <div class="check-field">
+          <input type="checkbox" id="i-terms-cb" name="fi-checkbox-terms" value="agreed">
+          <label for="i-terms-cb">Everything you share is treated with complete confidentiality. By submitting this form, you confirm you've read and agreed to our <a href="nda.html">engagement terms</a>.</label>
+        </div>
+
+        <p id="iStatusMsg" class="status-msg"></p>
+      </div>
+
+      <!-- Form Nav -->
+      <div class="form-nav">
+        <button type="button" class="btn-back" id="iBtnBack" onclick="iPrev()" style="visibility:hidden">← Previous</button>
+        <div>
+          <button type="button" class="btn-next" id="iBtnNext" onclick="iNext()">Continue →</button>
+          <button type="submit" class="btn-submit" id="iBtnSubmit" style="display:none">Submit →</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- END INTERVIEW PREP -->
+
+
+  <!-- ══════════ CONFIRMATIONS ══════════ -->
+  <div class="confirm-wrap" id="confirmFull">
+    <div class="confirm-mark">✦</div>
+    <h2 class="confirm-title">Received. Thank you.</h2>
+    <p class="confirm-sub">I'll read through everything carefully and come back to you within 48 hours. If you haven't heard from me, check your spam folder or WhatsApp me directly.</p>
+    <a class="btn-wa" href="https://wa.me/919415729500" target="_blank">WhatsApp Kunj</a>
+  </div>
+
+  <div class="confirm-wrap" id="confirmInterview">
+    <div class="confirm-mark">✦</div>
+    <h2 class="confirm-title">Got it. Let's get you ready.</h2>
+    <p class="confirm-sub">I'll read your materials and come back to you within 24 hours with a prep plan. If you want to move faster, WhatsApp me directly.</p>
+    <a class="btn-wa" href="https://wa.me/919415729500" target="_blank">WhatsApp Kunj</a>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <span class="footer-brand">AdmissionWant</span>
+  <div class="footer-links">
+    <a href="https://calendar.app.google/ZUXSy2Vv6fV9judR7" target="_blank">Book a Strategy Call</a>
+    <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
+    <a href="resources.html">Resources</a>
+  </div>
+</footer>
+
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+<script>
+
+const FORM_ID = 'zvchmc1gjtq';
+let forminitInstance;
+document.addEventListener('DOMContentLoaded', () => {
+  forminitInstance = new Forminit();
+});
+
+// ── CHOICE ──
+function selectForm(type) {
+  document.getElementById('choiceSection').style.display = 'none';
+  document.getElementById(type === 'full' ? 'fullFormWrap' : 'interviewFormWrap').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function backToChoice() {
+  document.getElementById('fullFormWrap').style.display = 'none';
+  document.getElementById('interviewFormWrap').style.display = 'none';
+  document.getElementById('choiceSection').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  return false;
+}
+
+// ── FULL FORM STEPS ──
+let fStep = 1;
+const fTotal = 6;
+
+function fUpdateProgress() {
+  document.getElementById('fProgressFill').style.width = (fStep / fTotal * 100) + '%';
+  for (let i = 1; i <= fTotal; i++) {
+    const lbl = document.getElementById('f-lbl-' + i);
+    if (lbl) lbl.className = 'step-label' + (i < fStep ? ' done' : i === fStep ? ' active' : '');
+  }
+  document.getElementById('fBtnBack').style.visibility = fStep > 1 ? 'visible' : 'hidden';
+  document.getElementById('fBtnNext').style.display = fStep < fTotal ? 'inline-block' : 'none';
+  document.getElementById('fBtnSubmit').style.display = fStep === fTotal ? 'inline-block' : 'none';
+}
+
+function fNext() {
+  if (fStep < fTotal) {
+    document.getElementById('f-step-' + fStep).classList.remove('active');
+    fStep++;
+    document.getElementById('f-step-' + fStep).classList.add('active');
+    fUpdateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function fPrev() {
+  if (fStep > 1) {
+    document.getElementById('f-step-' + fStep).classList.remove('active');
+    fStep--;
+    document.getElementById('f-step-' + fStep).classList.add('active');
+    fUpdateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+// ── INTERVIEW FORM STEPS ──
+let iStep = 1;
+const iTotal = 4;
+
+function iUpdateProgress() {
+  document.getElementById('iProgressFill').style.width = (iStep / iTotal * 100) + '%';
+  for (let i = 1; i <= iTotal; i++) {
+    const lbl = document.getElementById('i-lbl-' + i);
+    if (lbl) lbl.className = 'step-label' + (i < iStep ? ' done' : i === iStep ? ' active' : '');
+  }
+  document.getElementById('iBtnBack').style.visibility = iStep > 1 ? 'visible' : 'hidden';
+  document.getElementById('iBtnNext').style.display = iStep < iTotal ? 'inline-block' : 'none';
+  document.getElementById('iBtnSubmit').style.display = iStep === iTotal ? 'inline-block' : 'none';
+}
+
+function iNext() {
+  if (iStep < iTotal) {
+    document.getElementById('i-step-' + iStep).classList.remove('active');
+    iStep++;
+    document.getElementById('i-step-' + iStep).classList.add('active');
+    iUpdateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function iPrev() {
+  if (iStep > 1) {
+    document.getElementById('i-step-' + iStep).classList.remove('active');
+    iStep--;
+    document.getElementById('i-step-' + iStep).classList.add('active');
+    iUpdateProgress();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+// ── SHARED UTILITIES ──
+
+function selectOption(btn, fieldId, value) {
+  btn.closest('.option-grid').querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  document.getElementById(fieldId).value = value;
+}
+
+function selectToggle(btn, fieldId, value) {
+  btn.closest('.toggle-group').querySelectorAll('.toggle-opt').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  document.getElementById(fieldId).value = value;
+}
+
+function showEl(id, visible) {
+  document.getElementById(id).style.display = visible ? 'block' : 'none';
+}
+
+function toggleConditional(id, show) {
+  document.getElementById(id).className = 'conditional' + (show ? ' visible' : '');
+}
+
+function handleFile(input, zoneId, nameId) {
+  const zone = document.getElementById(zoneId);
+  const nameEl = document.getElementById(nameId);
+  if (input.files && input.files.length) {
+    zone.classList.add('has-file');
+    nameEl.textContent = input.files[0].name;
+  }
+}
+
+// ── SCHOOL ROWS ──
+
+function addSchoolRow(containerId) {
+  const container = document.getElementById(containerId);
+  const row = document.createElement('div');
+  row.className = 'school-row';
+  row.innerHTML = `
+    <input type="text" class="school-name" placeholder="e.g. London Business School">
+    <input type="text" class="school-prog" placeholder="MBA (optional)">
+    <input type="text" class="school-round" placeholder="R2 / Jan 2026 (optional)">
+    <button type="button" class="remove-row" onclick="removeSchoolRow(this)" title="Remove">×</button>
+  `;
+  container.appendChild(row);
+}
+
+function removeSchoolRow(btn) {
+  const container = btn.closest('.school-rows');
+  if (container.querySelectorAll('.school-row').length > 1) {
+    btn.closest('.school-row').remove();
+  }
+}
+
+function compileSchools() {
+  const rows = document.querySelectorAll('#fSchoolRows .school-row');
+  const list = [];
+  rows.forEach(row => {
+    const name = row.querySelector('.school-name').value.trim();
+    if (!name) return;
+    const prog  = row.querySelector('.school-prog').value.trim();
+    const round = row.querySelector('.school-round').value.trim();
+    let entry = name;
+    if (prog)  entry += ` (${prog})`;
+    if (round) entry += ` — ${round}`;
+    list.push(entry);
+  });
+  document.getElementById('f-targetSchools').value = list.join('\n');
+}
+
+// ── SUBMISSIONS ──
+
+document.getElementById('fullForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (!document.getElementById('f-terms-cb').checked) {
+    document.getElementById('fStatusMsg').textContent = 'Please agree to the engagement terms to continue.';
+    return;
+  }
+
+  compileSchools();
+
+  const btn = document.getElementById('fBtnSubmit');
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  document.getElementById('fStatusMsg').textContent = '';
+
+  const { error } = await forminitInstance.submit(FORM_ID, new FormData(e.target));
+
+  if (error) {
+    btn.textContent = 'Submit application →';
+    btn.disabled = false;
+    document.getElementById('fStatusMsg').textContent = (error.message || 'Something went wrong.') + ' Please try again or WhatsApp me directly.';
+    return;
+  }
+
+  document.getElementById('fullFormWrap').style.display = 'none';
+  document.getElementById('confirmFull').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+document.getElementById('interviewForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  if (!document.getElementById('i-terms-cb').checked) {
+    document.getElementById('iStatusMsg').textContent = 'Please agree to the engagement terms to continue.';
+    return;
+  }
+
+  const btn = document.getElementById('iBtnSubmit');
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  document.getElementById('iStatusMsg').textContent = '';
+
+  const { error } = await forminitInstance.submit(FORM_ID, new FormData(e.target));
+
+  if (error) {
+    btn.textContent = 'Submit →';
+    btn.disabled = false;
+    document.getElementById('iStatusMsg').textContent = (error.message || 'Something went wrong.') + ' Please try again or WhatsApp me directly.';
+    return;
+  }
+
+  document.getElementById('interviewFormWrap').style.display = 'none';
+  document.getElementById('confirmInterview').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+</script>
+</body>
+</html>
