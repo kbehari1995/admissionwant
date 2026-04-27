@@ -244,71 +244,102 @@
         Fill in the form and I'll get back to you within 24 hours. If your question is time-sensitive, WhatsApp works faster.
       </p>
 
-      <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" style="margin-top: 2rem;">
-        <input type="hidden" name="access_key" value="4a942f12-7564-4b9a-83c7-eb13e0a3df88">
-        <input type="hidden" name="subject" value="New enquiry — AdmissionWant">
-        <input type="hidden" name="botcheck" value="" style="display: none;">
+      <form id="contact-form" style="margin-top: 2rem;">
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;" class="contact-grid-2">
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Name</label>
-              <input type="text" name="name" required
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">First Name</label>
+              <input type="text" name="fi-sender-firstName" required
                 style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
                 onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
             </div>
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Email</label>
-              <input type="email" name="email" required
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Last Name</label>
+              <input type="text" name="fi-sender-lastName"
                 style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
                 onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;" class="contact-grid-2">
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Phone Number</label>
-              <input type="tel" name="phone"
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Email</label>
+              <input type="email" name="fi-sender-email" required
                 style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
                 onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
             </div>
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Subject</label>
-              <input type="text" name="subject"
+              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Phone Number</label>
+              <input type="tel" name="fi-sender-phone" placeholder="+91 98765 43210"
                 style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"
-                placeholder="e.g. HEC Paris application, GMAT planning">
+                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
             </div>
           </div>
 
           <div>
+            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Subject</label>
+            <input type="text" name="fi-text-subject" placeholder="e.g. HEC Paris application, GMAT planning"
+              style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
+              onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+          </div>
+
+          <div>
             <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Your Message</label>
-            <textarea name="message" rows="5" required
+            <textarea name="fi-text-message" rows="5" required
               style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; resize: none; transition: border-color 0.2s;"
               onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"></textarea>
           </div>
 
           <div>
             <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Attachment <span style="text-transform: none; letter-spacing: 0; font-style: italic;">— optional</span></label>
-            <input type="file" name="attachment"
+            <input type="file" name="fi-file-attachment"
               style="width: 100%; font-family: 'EB Garamond', serif; font-size: 0.9rem; color: var(--mid); padding: 0.4rem 0; border: none; border-bottom: 1px solid var(--rule); background: transparent; outline: none; cursor: pointer;">
-            <p style="font-size: 0.78rem; color: var(--mid); margin-top: 0.4rem; margin-bottom: 0;">Resume, transcript, or anything relevant. Max 10 MB.</p>
+            <p style="font-size: 0.78rem; color: var(--mid); margin-top: 0.4rem; margin-bottom: 0;">Resume, transcript, or anything relevant. Max 25 MB.</p>
           </div>
 
           <div style="margin-top: 0.5rem;">
-            <button type="submit" class="btn" style="cursor: pointer; background: transparent; font-family: 'EB Garamond', serif;">Send Message</button>
+            <button type="submit" id="contact-submit" class="btn" style="cursor: pointer; background: transparent; font-family: 'EB Garamond', serif;">Send Message</button>
           </div>
+
+          <p id="contact-status" style="font-size: 0.9rem; color: var(--mid); font-style: italic; display: none;"></p>
 
         </div>
       </form>
 
-      <!-- Mobile: single column -->
       <style>
         @media (max-width: 600px) {
-          #contact form .grid-2 { grid-template-columns: 1fr !important; }
+          .contact-grid-2 { grid-template-columns: 1fr !important; }
         }
       </style>
+
+      <script src="https://forminit.com/sdk/v1/forminit.js"></script>
+      <script>
+        const forminit = new Forminit();
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const btn = document.getElementById('contact-submit');
+          const status = document.getElementById('contact-status');
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          status.style.display = 'none';
+          const { data, error } = await forminit.submit('zvchmc1gjtq', new FormData(e.target));
+          if (error) {
+            status.textContent = 'Something went wrong. Please try WhatsApp or email directly.';
+            status.style.color = '#A32D2D';
+            status.style.display = 'block';
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+            return;
+          }
+          status.textContent = 'Sent. I\'ll be in touch within 24 hours.';
+          status.style.color = 'var(--mid)';
+          status.style.display = 'block';
+          btn.style.display = 'none';
+          e.target.reset();
+        });
+      </script>
 
     </section>
 
