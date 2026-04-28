@@ -562,7 +562,7 @@
       <input type="hidden" id="f-reapplicant" name="fi-text-reapplicant" value="">
       <input type="hidden" id="f-prevOutcome" name="fi-text-prevOutcome" value="">
       <input type="hidden" id="f-targetSchools" name="fi-text-targetSchools" value="">
-      <input type="hidden" id="f-howFound"    name="fi-text-howFound"    value="">
+
 
       <!-- ── Step 1: You ── -->
       <div class="step active" id="f-step-1">
@@ -588,7 +588,7 @@
 
         <div class="field">
           <label for="f-phone">Phone</label>
-          <input type="tel" id="f-phone" name="fi-text-phone" placeholder="+91 98765 43210" required>
+          <input type="tel" id="f-phone" name="fi-sender-phone" placeholder="+91 98765 43210" required>
         </div>
 
         <div class="field">
@@ -779,15 +779,8 @@
         </div>
 
         <div class="field">
-          <label>How did you find AdmissionWant?</label>
-          <div class="option-grid">
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','LinkedIn')">LinkedIn</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Personal referral')">Personal referral</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Google Search')">Google Search</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Reddit / forums')">Reddit / forums</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Instagram')">Instagram</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'f-howFound','Other')">Other</button>
-          </div>
+          <label for="f-howFound">How did you find AdmissionWant?</label>
+          <input type="text" id="f-howFound" name="fi-text-howFound" placeholder="LinkedIn, friend's referral, Google, Reddit — whatever it was" required>
         </div>
       </div>
 
@@ -844,7 +837,7 @@
       <input type="hidden" name="fi-text-formType" value="Interview Prep">
       <input type="hidden" id="i-workEx"         name="fi-text-workEx"         value="">
       <input type="hidden" id="i-interviewerType" name="fi-text-interviewerType" value="">
-      <input type="hidden" id="i-howFound"        name="fi-text-howFound"        value="">
+
 
       <!-- ── Step 1: You ── -->
       <div class="step active" id="i-step-1">
@@ -870,7 +863,7 @@
 
         <div class="field">
           <label for="i-phone">Phone</label>
-          <input type="tel" id="i-phone" name="fi-text-phone" placeholder="+91 98765 43210" required>
+          <input type="tel" id="i-phone" name="fi-sender-phone" placeholder="+91 98765 43210" required>
         </div>
 
         <div class="field">
@@ -968,15 +961,8 @@
         </div>
 
         <div class="field">
-          <label>How did you find AdmissionWant?</label>
-          <div class="option-grid">
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','LinkedIn')">LinkedIn</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Personal referral')">Personal referral</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Google Search')">Google Search</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Reddit / forums')">Reddit / forums</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Instagram')">Instagram</button>
-            <button type="button" class="opt-btn" onclick="selectOption(this,'i-howFound','Other')">Other</button>
-          </div>
+          <label for="i-howFound">How did you find AdmissionWant?</label>
+          <input type="text" id="i-howFound" name="fi-text-howFound" placeholder="LinkedIn, friend's referral, Google, Reddit — whatever it was" required>
         </div>
       </div>
 

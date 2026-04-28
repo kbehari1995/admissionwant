@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engagement Terms & Confidentiality — AdmissionWant</title>
+  <meta name="description" content="Everything you share with AdmissionWant is held in complete confidence. Here is what that means.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #faf9f7;
+      --ink: #111111;
+      --mid: #555555;
+      --faint: #cccccc;
+      --rule: #e0dedd;
+      --max: 640px;
+    }
+    html { font-size: 18px; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.75;
+      padding: 0 1.5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.5rem 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .nav-back {
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--ink); }
+    .container { max-width: var(--max); margin: 0 auto; }
+    .post-header { padding: 5rem 0 3rem; }
+    .post-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+    .post-meta {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .post-body { padding-bottom: 6rem; }
+    .post-body p { margin-bottom: 1.3rem; }
+    .post-body h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.5rem;
+    }
+    .post-body ul { padding-left: 1.5rem; margin-bottom: 1.3rem; }
+    .post-body li { margin-bottom: 0.4rem; }
+    blockquote {
+      border-left: 1px solid var(--ink);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--ink);
+    }
+    .parties-box {
+      border: 1px solid var(--rule);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+    .parties-box .party { margin-bottom: 1rem; }
+    .parties-box .party:last-child { margin-bottom: 0; }
+    .party-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.25rem;
+    }
+    .signature-area {
+      border-top: 1px solid var(--rule);
+      margin-top: 4rem;
+      padding-top: 3rem;
+    }
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 500px) { .sig-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .sig-block { }
+    .sig-line {
+      border-bottom: 1px solid var(--ink);
+      height: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .sig-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .note {
+      font-size: 0.82rem;
+      color: var(--mid);
+      font-style: italic;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+    .footer-links a { font-size: 0.82rem; color: var(--mid); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+    a { color: var(--ink); }
+
+    /* Email preview section */
+    .email-preview {
+      background: #fff;
+      border: 1px solid var(--rule);
+      margin: 3rem 0;
+    }
+    .email-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.82rem;
+      color: var(--mid);
+    }
+    .email-header div { margin-bottom: 0.2rem; }
+    .email-header span { color: var(--ink); }
+    .email-body {
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .email-body p { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AdmissionWant</a>
+  <a class="nav-back" href="index.html">← Home</a>
+</nav>
+
+<div class="container">
+
+  <div class="post-header">
+    <h1>Engagement Terms &amp; Confidentiality Agreement</h1>
+    <p class="post-meta">AdmissionWant · Effective upon intake submission</p>
+  </div>
+
+  <div class="post-body">
+
+    <p>
+      Everything you share with me is held in complete confidence. This document sets out, clearly and without legalese, what that means in practice — and what both of us are committing to when we work together.
+    </p>
+
+    <blockquote>
+      The relationship between an applicant and their consultant is built entirely on trust. I treat that seriously.
+    </blockquote>
+
+    <h2>1. The parties</h2>
+
+    <div class="parties-box">
+      <div class="party">
+        <div class="party-label">Consultant</div>
+        <strong>Kunj Behari Beriwala</strong>, operating as AdmissionWant<br>
+        kunj@admissionwant.com &nbsp;·&nbsp; +91 94157 29500
+      </div>
+      <div class="party">
+        <div class="party-label">Applicant</div>
+        The individual who submits the intake form and engages AdmissionWant for MBA admissions consulting services.
+      </div>
+    </div>
+
+    <h2>2. What I keep confidential</h2>
+
+    <p>Everything. Specifically:</p>
+
+    <ul>
+      <li>Your resume, academic records, and test scores</li>
+      <li>Your career history, professional situation, and any context you share about your workplace</li>
+      <li>Your personal goals, motivations, family circumstances, and anything you share in conversation</li>
+      <li>All drafts, final essays, and application materials we work on together</li>
+      <li>The fact that you are applying to specific schools, in specific rounds, at all</li>
+      <li>Any feedback from schools — interview outcomes, rejections, waitlists, admits</li>
+    </ul>
+
+    <p>
+      I do not share your information with any third party — including schools, other consultants, or any data platform — without your explicit written consent.
+    </p>
+
+    <h2>3. What I use your information for</h2>
+
+    <p>Solely to help you build the strongest possible application. Your materials are used to:</p>
+
+    <ul>
+      <li>Understand your profile and identify your narrative thread</li>
+      <li>Develop your essays and application strategy</li>
+      <li>Prepare you for interviews</li>
+      <li>Advise you on school selection, rounds, and positioning</li>
+    </ul>
+
+    <p>
+      I may reference anonymised, unidentifiable aspects of your experience when helping other applicants think through general frameworks — for example, noting that "an applicant in investment banking successfully pivoted to sustainability" — but only in a way that makes identification impossible.
+    </p>
+
+    <h2>4. Results, testimonials, and case studies</h2>
+
+    <p>
+      I will never publish, share, or reference your outcome — admit, reject, or otherwise — without your explicit permission. If you are willing to be referenced as a result on the website (e.g. "HEC Paris — Admit"), I will ask you separately and only proceed with your confirmation.
+    </p>
+
+    <h2>5. Document storage and security</h2>
+
+    <p>
+      Your documents are stored in a private, access-controlled Google Drive folder that only I can access. Files are not shared via any third-party tool, AI platform, or cloud service beyond this. I do not use your application materials to train any model or system.
+    </p>
+
+    <p>
+      Upon written request at any time — including after our engagement ends — I will permanently delete all your materials from my systems within 7 business days.
+    </p>
+
+    <h2>6. Your obligations</h2>
+
+    <p>
+      The work we produce together — strategy, narratives, essay drafts, and frameworks — is developed specifically for your application. You agree not to share, distribute, or reproduce this work for the benefit of any other applicant.
+    </p>
+
+    <h2>7. Intellectual honesty</h2>
+
+    <p>
+      I ghostwrite. That means I write in your voice, based on your experiences, your ideas, and your words. Every story we tell in your application is true. I do not fabricate experiences, inflate credentials, or help you misrepresent yourself to any institution. If you ask me to, I will decline.
+    </p>
+
+    <h2>8. Fees and refunds</h2>
+
+    <ul>
+      <li>Fees are quoted per school and per service, confirmed in writing before work begins.</li>
+      <li>Payment is due before or upon delivery of each deliverable, as agreed.</li>
+      <li>There are no refunds once work has begun on an essay or deliverable.</li>
+      <li>Interview preparation is billed only upon receipt of an interview invitation.</li>
+      <li>If a school withdraws its invitation or cancels interviews, no interview fee is charged.</li>
+    </ul>
+
+    <h2>9. Duration</h2>
+
+    <p>
+      This agreement takes effect when you submit the intake form and remains in force indefinitely — including after our active engagement ends. Confidentiality obligations do not expire.
+    </p>
+
+    <h2>10. Governing terms</h2>
+
+    <p>
+      This agreement is governed by the laws of India. Any dispute arising from our engagement will be addressed first through direct conversation. I am reachable any time at <a href="mailto:kunj@admissionwant.com">kunj@admissionwant.com</a> or <a href="https://wa.me/919415729500">WhatsApp</a>.
+    </p>
+
+    <div class="signature-area">
+      <p style="font-size: 0.9rem; color: var(--mid);">
+        By submitting the intake form, the Applicant acknowledges having read and agreed to these terms. A printed or signed version is available on request.
+      </p>
+      <div class="sig-grid">
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-label">Applicant — name & date</div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-label">Kunj Behari Beriwala — AdmissionWant</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="note">
+      This is not a legal contract in the formal sense — it is a clear statement of how I operate and what you can expect from me. If you want a formal signed NDA before sharing anything, I am happy to provide one. Just ask.
+    </p>
+
+  </div>
+
+  <!-- Email template section -->
+  <div style="border-top: 1px solid var(--rule); padding: 4rem 0 0;">
+    <p style="font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem;">Email template — send before first call</p>
+    <p style="font-size: 0.95rem; color: var(--mid); margin-bottom: 1.5rem;">Copy, personalise the name and school list, and send from kunj@admissionwant.com.</p>
+
+    <div class="email-preview">
+      <div class="email-header">
+        <div>From: <span>Kunj Behari Beriwala &lt;kunj@admissionwant.com&gt;</span></div>
+        <div>To: <span>[Applicant name] &lt;[email]&gt;</span></div>
+        <div>Subject: <span>Before we begin — a note on how I work</span></div>
+      </div>
+      <div class="email-body">
+        <p>Hi [First name],</p>
+
+        <p>Thank you for reaching out — I've read through your intake form and I'm looking forward to our conversation on [date/time].</p>
+
+        <p>Before we begin, I want to be clear about one thing: everything you share with me — your profile, your essays, your outcomes, your personal context — is held in complete confidence. I don't share client information with anyone, I don't reference your results without your permission, and I don't use your materials for any purpose beyond helping you build your application.</p>
+
+        <p>You can read the full terms here: <strong>admissionwant.com/nda.html</strong></p>
+
+        <p>By continuing to work together, you're confirming you've read and are comfortable with how I operate. If you'd prefer a formal signed NDA before sharing anything further, just say the word and I'll send one over.</p>
+
+        <p>A few things to bring to our first call:</p>
+
+        <ul style="margin: 0.5rem 0 1rem 1.5rem;">
+          <li>An updated resume (even a rough one)</li>
+          <li>A sense of which schools matter most to you and why</li>
+          <li>Any clarity — or lack of it — around your post-MBA goals</li>
+        </ul>
+
+        <p>See you [day].</p>
+
+        <p>Kunj</p>
+
+        <p style="font-size: 0.82rem; color: #888; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee;">
+          Kunj Behari Beriwala · AdmissionWant<br>
+          kunj@admissionwant.com · +91 94157 29500<br>
+          admissionwant.com
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <span class="footer-brand">AdmissionWant</span>
+  <div class="footer-links">
+    <a href="mailto:kunj@admissionwant.com">kunj@admissionwant.com</a>
+    <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
+    <a href="index.html">← Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
