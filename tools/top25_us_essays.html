@@ -1,153 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 25 US MBA Essay Prompts — AdmissionWant</title>
-  <meta name="description" content="Essay prompts, word limits, and prompt breakdowns for the 25 leading US MBA programs. 25–26 cycle data, verified against current school sources. Updated each admissions cycle.">
+  <meta name="description"
+    content="Essay prompts, word limits, and prompt breakdowns for the 25 leading US MBA programs. 25–26 cycle data, verified against current school sources. Updated each admissions cycle.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
-    .essay-page-hero { padding: 4rem 0 2.5rem; }
+    .essay-page-hero {
+      padding: 4rem 0 2.5rem;
+    }
+
     .filter-bar {
-      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
       padding: 1.5rem 0;
       border-top: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
       margin-bottom: 2.5rem;
     }
+
     .filter-bar input {
-      font-family: 'EB Garamond', Georgia, serif; font-size: 0.95rem;
-      padding: 0.45rem 0; border: none;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 0.95rem;
+      padding: 0.45rem 0;
+      border: none;
       border-bottom: 1px solid var(--rule);
-      background: transparent; color: var(--ink);
-      width: 220px; outline: none; transition: border-color 0.2s;
+      background: transparent;
+      color: var(--ink);
+      width: 220px;
+      outline: none;
+      transition: border-color 0.2s;
     }
-    .filter-bar input:focus { border-bottom-color: var(--ink); }
-    .filter-bar input::placeholder { color: var(--faint); font-style: italic; }
-    .region-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    .filter-bar input:focus {
+      border-bottom-color: var(--ink);
+    }
+
+    .filter-bar input::placeholder {
+      color: var(--faint);
+      font-style: italic;
+    }
+
+    .region-btns {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
     .rbtn {
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;
-      padding: 4px 14px; border: 1px solid var(--rule);
-      cursor: pointer; background: transparent; color: var(--mid);
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      background: transparent;
+      color: var(--mid);
       transition: all 0.15s;
     }
-    .rbtn.active, .rbtn:hover { border-color: var(--ink); color: var(--ink); }
-    .rbtn.active { background: var(--ink); color: var(--bg); }
-    .result-count {
-      font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--mid); margin-left: auto;
+
+    .rbtn.active,
+    .rbtn:hover {
+      border-color: var(--ink);
+      color: var(--ink);
     }
+
+    .rbtn.active {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .result-count {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-left: auto;
+    }
+
     .sub-nav {
-      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
       padding: 1rem 0 1.5rem;
       border-bottom: 1px solid var(--rule);
       margin-bottom: 2rem;
       list-style: none;
     }
-    .sub-nav li { margin: 0; }
+
+    .sub-nav li {
+      margin: 0;
+    }
+
     .sub-nav a {
-      font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;
-      text-decoration: none; color: var(--mid); transition: color 0.2s;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--mid);
+      transition: color 0.2s;
       padding-bottom: 2px;
     }
-    .sub-nav a:hover, .sub-nav a.active-tool {
-      color: var(--ink); border-bottom: 1px solid var(--ink);
+
+    .sub-nav a:hover,
+    .sub-nav a.active-tool {
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
     }
-    #essayList { display: flex; flex-direction: column; gap: 0; }
+
+    #essayList {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
     .essay-card {
       border-top: 1px solid var(--rule);
       padding: 2rem 0;
     }
-    .essay-card:last-child { border-bottom: 1px solid var(--rule); }
-    .essay-card-head {
-      display: flex; align-items: baseline; gap: 1rem;
-      margin-bottom: 1.25rem; flex-wrap: wrap;
+
+    .essay-card:last-child {
+      border-bottom: 1px solid var(--rule);
     }
+
+    .essay-card-head {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+
     .essay-rank {
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--mid); min-width: 28px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      min-width: 28px;
     }
+
     .essay-school {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem; font-weight: 500;
-      color: var(--ink); line-height: 1.2;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.2;
     }
-    .essay-school-sub { font-size: 0.82rem; color: var(--mid); margin-top: 2px; }
+
+    .essay-school-sub {
+      font-size: 0.82rem;
+      color: var(--mid);
+      margin-top: 2px;
+    }
+
     .essay-count-badge {
       margin-left: auto;
-      font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--mid); border: 1px solid var(--rule);
-      padding: 3px 10px; white-space: nowrap;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: 3px 10px;
+      white-space: nowrap;
     }
-    .essay-cycles { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+    .essay-cycles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
     @media (max-width: 600px) {
-      .essay-cycles { grid-template-columns: 1fr; }
-      .filter-bar input { width: 100%; }
+      .essay-cycles {
+        grid-template-columns: 1fr;
+      }
+
+      .filter-bar input {
+        width: 100%;
+      }
     }
+
     .essay-cycle {
       background: transparent;
       border: 1px solid var(--rule);
       padding: 1.25rem 1.5rem;
     }
+
     .essay-cycle-title {
-      font-size: 0.72rem; font-weight: 500;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--mid); margin-bottom: 1rem;
-      padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
     }
+
     .essay-item {
-      padding: 0.75rem 0; border-bottom: 1px solid var(--rule);
-      font-size: 0.95rem; color: var(--ink); line-height: 1.55;
-      display: flex; justify-content: space-between; gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.55;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
       align-items: flex-start;
     }
-    .essay-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .essay-q { flex: 1; }
+
+    .essay-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .essay-q {
+      flex: 1;
+    }
+
     .essay-limit {
-      font-size: 0.78rem; color: var(--mid);
-      white-space: nowrap; padding-top: 3px; font-style: italic;
+      font-size: 0.78rem;
+      color: var(--mid);
+      white-space: nowrap;
+      padding-top: 3px;
+      font-style: italic;
     }
+
     .cycle-tbd {
-      color: var(--mid); font-style: italic;
-      font-size: 0.92rem; line-height: 1.65;
+      color: var(--mid);
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.65;
     }
+
     .cycle-tbd-note {
-      margin-top: 0.75rem; font-size: 0.78rem;
-      color: var(--faint); line-height: 1.6;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--faint);
+      line-height: 1.6;
     }
+
     .pending-badge {
       display: inline-block;
-      font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--mid); border: 1px solid var(--rule);
-      padding: 1px 7px; margin-bottom: 0.6rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: 1px 7px;
+      margin-bottom: 0.6rem;
     }
+
     .essays-hint {
-      font-size: 0.85rem; color: var(--mid);
-      font-style: italic; line-height: 1.55;
+      font-size: 0.85rem;
+      color: var(--mid);
+      font-style: italic;
+      line-height: 1.55;
       margin-top: 0.4rem;
     }
+
     .verify-note {
-      font-size: 0.72rem; color: var(--faint);
-      margin-top: 0.75rem; font-style: italic;
+      font-size: 0.72rem;
+      color: var(--faint);
+      margin-top: 0.75rem;
+      font-style: italic;
     }
+
     .data-notice {
-      background: transparent; border: 1px solid var(--rule);
-      padding: 1rem 1.25rem; font-size: 0.82rem;
-      color: var(--mid); line-height: 1.65;
+      background: transparent;
+      border: 1px solid var(--rule);
+      padding: 1rem 1.25rem;
+      font-size: 0.82rem;
+      color: var(--mid);
+      line-height: 1.65;
       margin-bottom: 2rem;
     }
-    .data-notice strong { color: var(--ink); font-weight: 500; }
+
+    .data-notice strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
     .empty-state {
-      text-align: center; padding: 4rem 0;
-      color: var(--mid); font-style: italic;
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--mid);
+      font-style: italic;
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -155,7 +309,9 @@
     <ul class="nav-links">
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../signup.html">Sign Up</a></li>
-      <li><a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Call</a></li>
+      <li><a
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+          target="_blank">Book a Call</a></li>
     </ul>
   </nav>
 
@@ -177,17 +333,21 @@
     </div>
 
     <div class="data-notice">
-      <strong>A note on accuracy.</strong> The prompts below reflect the 25–26 application cycle and are verified against current school admissions websites and admissions-consulting sources (Poets&amp;Quants, Clear Admit, mbaMission). Schools occasionally revise wording, limits, or question count between cycles. Always verify directly on the school's admissions website before finalising your essays. The 26–27 cycle prompts will be updated here as they are released — typically July–September 2026.
+      <strong>A note on accuracy.</strong> The prompts below reflect the 25–26 application cycle and are verified
+      against current school admissions websites and admissions-consulting sources (Poets&amp;Quants, Clear Admit,
+      mbaMission). Schools occasionally revise wording, limits, or question count between cycles. Always verify directly
+      on the school's admissions website before finalising your essays. The 26–27 cycle prompts will be updated here as
+      they are released — typically July–September 2026.
     </div>
 
     <div class="filter-bar">
       <input id="search" type="text" placeholder="Search school or location…" oninput="filter()">
       <div class="region-btns" id="regs">
-    <button class="rbtn active" data-r="all" onclick="setReg(this)">All</button>
-    <button class="rbtn" data-r="northeast" onclick="setReg(this)">Northeast</button>
-    <button class="rbtn" data-r="midwest" onclick="setReg(this)">Midwest</button>
-    <button class="rbtn" data-r="south" onclick="setReg(this)">South</button>
-    <button class="rbtn" data-r="west" onclick="setReg(this)">West</button>
+        <button class="rbtn active" data-r="all" onclick="setReg(this)">All</button>
+        <button class="rbtn" data-r="northeast" onclick="setReg(this)">Northeast</button>
+        <button class="rbtn" data-r="midwest" onclick="setReg(this)">Midwest</button>
+        <button class="rbtn" data-r="south" onclick="setReg(this)">South</button>
+        <button class="rbtn" data-r="west" onclick="setReg(this)">West</button>
       </div>
       <span class="result-count" id="cnt">Showing 25 of 25</span>
     </div>
@@ -198,10 +358,13 @@
       <p class="section-label">Need more than a database?</p>
       <h2>The right prompt is only the beginning.</h2>
       <p>
-        Knowing what a school asks is easy. Knowing what your answer should be — and why — is the harder part. That's what I work on with clients.
+        Knowing what a school asks is easy. Knowing what your answer should be — and why — is the harder part. That's
+        what I work on with clients.
       </p>
       <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a class="btn" href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Free Strategy Call</a>
+        <a class="btn"
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+          target="_blank">Book a Free Strategy Call</a>
         <a class="btn btn-ghost" href="../resources.html">← Back to Resources</a>
       </div>
     </section>
@@ -211,7 +374,8 @@
   <footer>
     <span class="footer-brand">AdmissionWant</span>
     <div class="footer-links">
-      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Strategy Call</a>
+      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+        target="_blank">Book a Strategy Call</a>
       <a href="mailto:kunj@admissionwant.com">kunj@admissionwant.com</a>
       <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
       <a href="../blog/index.html">Writing</a>
@@ -221,789 +385,789 @@
 
   <script>
     const schools = [
-  {
-    "rank": 1,
-    "name": "Harvard Business School",
-    "sub": "Boston, MA",
-    "r": "northeast",
-    "essays": "3 essays (300w / 250w / 250w) + 500-char short answer + post-interview reflection",
-    "verified": "v",
-    "essayPrompts_2526": [
       {
-        "q": "Business-Minded: Please reflect on how your experiences have influenced your career choices and aspirations.",
-        "limit": "up to 300w"
+        "rank": 1,
+        "name": "Harvard Business School",
+        "sub": "Boston, MA",
+        "r": "northeast",
+        "essays": "3 essays (300w / 250w / 250w) + 500-char short answer + post-interview reflection",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Business-Minded: Please reflect on how your experiences have influenced your career choices and aspirations.",
+            "limit": "up to 300w"
+          },
+          {
+            "q": "Leadership-Focused: What experiences have shaped how you invest in others and how you lead?",
+            "limit": "up to 250w"
+          },
+          {
+            "q": "Growth-Oriented: Curiosity can be seen in many ways. Please share an example of how you have demonstrated curiosity and how that has influenced your growth.",
+            "limit": "up to 250w"
+          },
+          {
+            "q": "Career Goals (short answer): Briefly tell us more about your career aspirations.",
+            "limit": "500 chars"
+          },
+          {
+            "q": "Post-Interview Reflection (submitted within 24 hrs of interview).",
+            "limit": "no fixed limit"
+          }
+        ]
       },
       {
-        "q": "Leadership-Focused: What experiences have shaped how you invest in others and how you lead?",
-        "limit": "up to 250w"
+        "rank": 2,
+        "name": "Stanford GSB",
+        "sub": "Stanford, CA",
+        "r": "west",
+        "essays": "2 essays (650w + 350w) + optional (1,200 chars)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay A: What matters most to you, and why?",
+            "limit": "up to 650w"
+          },
+          {
+            "q": "Essay B: Why Stanford? Describe your aspirations and how your Stanford GSB experience will help you realize them.",
+            "limit": "up to 350w"
+          },
+          {
+            "q": "Optional: Additional information that is critical for the committee to know and is not captured elsewhere (e.g. extenuating circumstances).",
+            "limit": "1,200 chars"
+          }
+        ]
       },
       {
-        "q": "Growth-Oriented: Curiosity can be seen in many ways. Please share an example of how you have demonstrated curiosity and how that has influenced your growth.",
-        "limit": "up to 250w"
+        "rank": 3,
+        "name": "Wharton (UPenn)",
+        "sub": "Philadelphia, PA",
+        "r": "northeast",
+        "essays": "2 short answers (50w + 150w) + 1 essay (350w) + reapplicant + optional",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Short Answer 1: What is your immediate post-MBA professional goal?",
+            "limit": "50w"
+          },
+          {
+            "q": "Short Answer 2: What are your career goals for the first three to five years after completing your MBA, and how will those build towards your long-term professional goals?",
+            "limit": "150w"
+          },
+          {
+            "q": "Essay: Taking into consideration your background — personal, professional, and/or academic — how do you plan to add meaningful value to the Wharton community?",
+            "limit": "350w"
+          },
+          {
+            "q": "Reapplicant: How you have reflected and grown since your previous application, plus relevant updates to your candidacy.",
+            "limit": "varies"
+          },
+          {
+            "q": "Optional: Any additional information that cannot be found elsewhere in your application.",
+            "limit": "varies"
+          }
+        ]
       },
       {
-        "q": "Career Goals (short answer): Briefly tell us more about your career aspirations.",
-        "limit": "500 chars"
+        "rank": 4,
+        "name": "Booth (UChicago)",
+        "sub": "Chicago, IL",
+        "r": "midwest",
+        "essays": "2 essays (250w min, no max) + optional (300w max) + 2 short-answer goals (250 chars each)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1: How will the Booth MBA help you achieve your immediate and long-term post-MBA career goals?",
+            "limit": "min 250w"
+          },
+          {
+            "q": "Essay 2 (photo prompt): The photos below represent some of the values described above that we uphold at Chicago Booth. Select one and share how it resonates with one of your own values.",
+            "limit": "min 250w"
+          },
+          {
+            "q": "Short Answer 1: What is your immediate post-MBA career goal?",
+            "limit": "250 chars"
+          },
+          {
+            "q": "Short Answer 2: What is your long-term post-MBA career goal?",
+            "limit": "250 chars"
+          },
+          {
+            "q": "Optional: Any unclear information or additional details for the committee.",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Reapplicant: Upon reflection, how has your perspective regarding your future, Chicago Booth, and/or getting an MBA changed since the time of your last application?",
+            "limit": "max 300w"
+          }
+        ]
       },
       {
-        "q": "Post-Interview Reflection (submitted within 24 hrs of interview).",
-        "limit": "no fixed limit"
+        "rank": 5,
+        "name": "Kellogg (Northwestern)",
+        "sub": "Evanston, IL",
+        "r": "midwest",
+        "essays": "2 essays (450w each) + 3 video essays (60s each) + optional + reapplicant + program-specific essay",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1: Intentionality is a key aspect of what makes our graduates successful Kellogg leaders. Help us understand your journey by articulating your motivations for pursuing an MBA, the specific goals you aim to achieve, and why you believe now is the right moment. Moreover, share why you feel Kellogg is best suited to serve as a catalyst for your career aspirations and what you will contribute to our community of lifelong learners during your time here.",
+            "limit": "450w"
+          },
+          {
+            "q": "Essay 2: Kellogg leaders are primed to tackle challenges everywhere, from the boardroom to their neighborhoods. Describe a specific professional experience where you had to make a difficult decision. Reflecting on this experience, identify the values that guided your decision-making process and how it impacted your leadership style.",
+            "limit": "450w"
+          },
+          {
+            "q": "Video Essays: 3 questions designed to help you showcase your personality and share experiences (recorded after submission, due within 96 hours).",
+            "limit": "60s each"
+          },
+          {
+            "q": "Program-Specific Essay (MMM / MBAi / JD-MBA / 1Y): How your program of choice will help you reach your post-MBA goals.",
+            "limit": "varies"
+          },
+          {
+            "q": "Optional: Additional context for the admissions committee.",
+            "limit": "~280w"
+          },
+          {
+            "q": "Reapplicant: Steps taken since last application to become a stronger candidate.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "name": "MIT Sloan",
+        "sub": "Cambridge, MA",
+        "r": "northeast",
+        "essays": "Cover letter (300w) + 2 video questions (60s each) + 'World That Shaped You' essay (250w) + organisational chart + pre-interview essay (if invited)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Cover Letter: Submit a cover letter seeking a place in the MIT Sloan MBA program. Should conform to standard business correspondence, include one or more professional examples illustrating you meet the criteria of independent, authentic, fearlessly creative leadership, and be addressed to the Admissions Committee.",
+            "limit": "300w"
+          },
+          {
+            "q": "Video Question 1: Introduce yourself to your future classmates. Be conversational and yourself.",
+            "limit": "60s video"
+          },
+          {
+            "q": "Video Question 2: A randomly generated open-ended question, with 10s prep and 60s response. No prior preparation possible.",
+            "limit": "60s video"
+          },
+          {
+            "q": "The World That Shaped You (newly mandatory): How has the world you come from shaped who you are today? Please use this opportunity to share more about your background.",
+            "limit": "250w"
+          },
+          {
+            "q": "Organisational Chart: Showing your current professional position and reporting structure.",
+            "limit": "max 2 pages"
+          },
+          {
+            "q": "Pre-Interview Essay (only if invited to interview): One of two prompts, focused on analytical/strategic thinking.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "name": "Columbia Business School",
+        "sub": "New York, NY",
+        "r": "northeast",
+        "essays": "2 short answers (50 chars each) + 3 essays (500w / 250w / ~250w) + optional (500w) + reapplicant. J-Term applicants get an extra short answer.",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Short Answer 1: What is your immediate post-MBA professional goal?",
+            "limit": "50 chars"
+          },
+          {
+            "q": "Short Answer 2: How do you plan to spend the summer after the first year of the MBA? If in an internship, please include target industry(ies) and/or function(s).",
+            "limit": "50 chars"
+          },
+          {
+            "q": "J-Term Short Answer (J-Term applicants only): Why do you prefer the January-entry term?",
+            "limit": "50 chars"
+          },
+          {
+            "q": "Essay 1: Through your résumé and recommendations, we have a clear sense of your professional path to date. What are your career goals over the next three to five years and what is your long-term dream job?",
+            "limit": "500w"
+          },
+          {
+            "q": "Essay 2: Please share a specific example of how you made a team more collaborative, more inclusive or fostered a greater sense of community within an organization.",
+            "limit": "250w"
+          },
+          {
+            "q": "Essay 3 (Co-Create): As a co-creator of your CBS MBA experience, what is your vision for engaging with the program academically, culturally, and professionally?",
+            "limit": "~250w"
+          },
+          {
+            "q": "Optional: Further information or additional context (essay or bullet points).",
+            "limit": "max 500w"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "Haas (UC Berkeley)",
+        "sub": "Berkeley, CA",
+        "r": "west",
+        "essays": "1 video essay (1-2 min, on Defining Leadership Principles) + career goals essay (~300w) + 'Distance Traveled' supplemental + optional",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Video Essay: The Berkeley MBA program develops leaders who embody our four Defining Leadership Principles. Briefly introduce yourself to the admissions committee, explain which Defining Leadership Principle resonates most with you, and tell us how you have exemplified the principle in your personal or professional life.",
+            "limit": "1–2 min video (max 2 min)"
+          },
+          {
+            "q": "Career Goals: What are your short-term and long-term career goals, and how will an MBA from Haas help you achieve those goals?",
+            "limit": "~300w"
+          },
+          {
+            "q": "Distance Traveled (supplemental): Share aspects of your background, personal circumstances, or significant experiences that have meaningfully impacted who you are today and how you've reached this point.",
+            "limit": "~300w"
+          },
+          {
+            "q": "Optional: Information not addressed elsewhere (employment gaps, academic aberrations, supplemental coursework).",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "Yale SOM",
+        "sub": "New Haven, CT",
+        "r": "northeast",
+        "essays": "1 essay (choose 1 of 3 prompts, 500w) + 3 video questions + behavioural assessment (~20 min) + optional (200w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay (choose ONE of three prompts): Describe the biggest commitment you have ever made. Why is this commitment meaningful to you and what actions have you taken to support it?",
+            "limit": "500w"
+          },
+          {
+            "q": "Essay (choose ONE of three): Describe the community that has been most meaningful to you. What is the most valuable thing you have gained from being a part of this community and what is the most important thing you have contributed to this community?",
+            "limit": "500w"
+          },
+          {
+            "q": "Essay (choose ONE of three): Describe the most significant challenge you have faced. How have you confronted this challenge and how has it shaped you as a person?",
+            "limit": "500w"
+          },
+          {
+            "q": "Video Question 1: Why an MBA, and why now?",
+            "limit": "~60s video"
+          },
+          {
+            "q": "Video Questions 2 & 3: Randomised, behavioural questions (30s prep / 90s response for Q2; 20s prep / 60s response for Q3).",
+            "limit": "video"
+          },
+          {
+            "q": "Behavioural Assessment: ~20-min online assessment of personal competencies.",
+            "limit": "~20 min"
+          },
+          {
+            "q": "Optional Information: If any aspect of your candidacy needs further explanation.",
+            "limit": "max 200w"
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "name": "Tuck (Dartmouth)",
+        "sub": "Hanover, NH",
+        "r": "northeast",
+        "essays": "3 essays (2,000 chars each ≈ 350w) + optional + reapplicant + 2 short-answer goals (300 chars each)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1: Why are you pursuing an MBA and why now? How will the distinct Tuck MBA contribute to achieving your goals and aspirations? What particular aspects of Tuck will be instrumental in your growth?",
+            "limit": "2,000 chars"
+          },
+          {
+            "q": "Essay 2: Tell us who you are. How have your values and experiences shaped your identity and character? How will your unique background contribute to Tuck and/or enhance the experience of your classmates?",
+            "limit": "2,000 chars"
+          },
+          {
+            "q": "Essay 3: Describe a time when you meaningfully invested in someone else's success without immediate benefit to yourself. What motivated you, and what was the impact?",
+            "limit": "2,000 chars"
+          },
+          {
+            "q": "Application Specifics — Short-term career goal.",
+            "limit": "300 chars"
+          },
+          {
+            "q": "Application Specifics — Long-term career goal.",
+            "limit": "300 chars"
+          },
+          {
+            "q": "Optional: Anything more about your candidacy that needs to be offered or explained.",
+            "limit": "2,000 chars"
+          },
+          {
+            "q": "Reapplicant: How have you strengthened your candidacy since you last applied? Reflect on how you have grown personally and professionally and how your understanding of Tuck has developed.",
+            "limit": "2,000 chars"
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "name": "NYU Stern",
+        "sub": "New York, NY",
+        "r": "northeast",
+        "essays": "Short answer (150w) + 'Change: ___ it' essay (350w double-spaced) + Pick Six visual essay (PDF, 6 images + captions) + optional (500w) + 1 EQ Endorsement (replaces traditional LORs)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Short Answer — Professional Aspirations: What are your short-term career goals?",
+            "limit": "150w"
+          },
+          {
+            "q": "Essay 1 — Change: ___ it: In today's global business environment, the only constant is change. Using NYU Stern's brand call to action, we want to know how you view change. Change: ___ it. Fill in the blank with a word of your choice. Why does this word resonate with you? How will you embrace your own personal tagline while at Stern? (Examples: Change: Dare it / Dream it / Drive it / Empower it / Manifest it.)",
+            "limit": "350w (double-spaced, 12pt)"
+          },
+          {
+            "q": "Essay 2 — Pick Six (PDF upload): Introduce yourself to the Admissions Committee and to your future classmates using six images and corresponding captions. Includes a 3-sentence introduction overview, six images illustrating your interests/values/motivations/perspective/personality, and a one-sentence caption per image.",
+            "limit": "PDF: 3-sentence intro + 6 images + 1-sentence captions"
+          },
+          {
+            "q": "Optional Essay: Additional information you would like to share with the Admissions Committee, including hardships, employment gaps, academic context, or reapplicant updates.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "EQ Endorsement (1 required, 1 optional): A persuasive advocate of your EQ strengths from someone who knows you personally and/or professionally — replaces traditional letters of recommendation.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "name": "Fuqua (Duke)",
+        "sub": "Durham, NC",
+        "r": "south",
+        "essays": "Short answer (100w) + 25 Random Things essay (750w / 2 pages) + 3 Ways community essay (500w / 1 page) + optional (500w) + reapplicant (500w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Short Answer — Career Goals: What are your post-MBA career goals? Share with us your first-choice career plan and your alternate plan.",
+            "limit": "100w"
+          },
+          {
+            "q": "Essay 1 — 25 Random Things: The 'Team Fuqua' spirit and community is one of the things that sets the MBA experience apart, and it is a concept that extends beyond the student body to include faculty, staff, and administration. Please share with us '25 Random Things' about you. The Admissions Committee wants to get to know YOU — beyond the professional and academic achievements listed in your resume and transcript. Share important life experiences, hobbies, achievements, fun facts, or anything that helps us understand what makes you who you are. Present in list form, numbered 1 to 25.",
+            "limit": "750w / 2 pages"
+          },
+          {
+            "q": "Essay 2 — 3 Ways at Fuqua: Fuqua prides itself on cultivating a culture of engagement. Our students enjoy a wide range of student-led organizations that provide opportunities for leadership development and personal fulfillment, as well as an outlet for contributing to society. Our student-led government, clubs, centers, and events are an integral part of the student culture and to the development of leaders. Based on your understanding of the Fuqua culture, what are 3 ways you expect to contribute at Fuqua?",
+            "limit": "500w / 1 page"
+          },
+          {
+            "q": "Optional Essay: If you feel there are circumstances of which the admissions committee should be aware, please explain them here (e.g. unexplained gaps in work, choice of recommenders, inconsistent or questionable academic performance).",
+            "limit": "max 500w / 1 page"
+          },
+          {
+            "q": "Reapplicant Essay: It is not uncommon for it to take more than one try to achieve a goal. Please share with us the self-reflection process that you underwent after last year's application and how you have grown as a result. How did it shape your commitment to Fuqua and inspire your decision to reapply?",
+            "limit": "max 500w / 1 page"
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "name": "Ross (Michigan)",
+        "sub": "Ann Arbor, MI",
+        "r": "midwest",
+        "essays": "Essay 1 (300w on career goal + Action-Based Learning) + Essay 2 (200w, choose 1 of 4 sub-prompts) + optional (250w) + AI-disclosure citation required",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Aspirations: What is your short-term career goal, and how will Ross' philosophy in Action-Based Learning help you achieve it? Please be specific. Please answer both parts of this question.",
+            "limit": "300w"
+          },
+          {
+            "q": "Essay 2 (choose 1 of 4 sub-prompts): Michigan Ross is proud to support a community of leaders and impact makers. Please choose one of the following prompts to tell us more about what makes you stand out beyond your academic and work experience. Sub-prompt A: What makes you unique?",
+            "limit": "200w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt B: Can you provide a specific example of how you've overcome a personal challenge?",
+            "limit": "200w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt C: What makes you excited to get up each morning?",
+            "limit": "200w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt D: Describe a time when you made a difference in your community or with an individual.",
+            "limit": "200w"
+          },
+          {
+            "q": "Optional Statement: Is there something in your resume or application that needs a brief explanation? Appropriate uses include explanation of an employment gap, academic outliers, choice of recommender, or completion of supplemental coursework. Bullet points are acceptable.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "AI Policy Note: If you use generative AI in your essays, you must cite using APA in-text 'Personal Communication' format e.g. (OpenAI, personal communication, September 1, 2024).",
+            "limit": "n/a"
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "name": "Darden (UVA)",
+        "sub": "Charlottesville, VA",
+        "r": "south",
+        "essays": "3 essays (200w each) + optional",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Relationships Matter Here: What would you want your classmates to know about you that is not on your resume?",
+            "limit": "200w"
+          },
+          {
+            "q": "Essay 2 — Building Community: Please describe an example of building community within your personal or professional life. What impact did this have on you and those around you? How will this experience contribute to the way you will build community at Darden?",
+            "limit": "200w"
+          },
+          {
+            "q": "Essay 3 — Career Goals: At this time how would you describe your short-term, post-MBA goal in terms of industry, function, geography, company size and/or mission and how does it align with the long-term vision you have for your career?",
+            "limit": "200w"
+          },
+          {
+            "q": "Optional Essay: If there is further information you believe would be helpful to the Admissions Committee, please provide it.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "name": "Tepper (CMU)",
+        "sub": "Pittsburgh, PA",
+        "r": "northeast",
+        "essays": "1 essay (500w, choose 1 of 2 prompts) + video essay on career goals (up to 2 min) + optional",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Required Essay (choose 1) — Option 1 (Decisions under uncertainty): At the Tepper School, we value leaders who can make confident decisions when facing complexity and uncertainty. Tell us about a time when you had to take action without having all of the answers. How did you navigate the situation and what was the outcome?",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Required Essay (choose 1) — Option 2 (Transformation): The Tepper School of Business is committed to helping students reach their full potential by supporting their professional and personal transformation. How do you hope to transform, both professionally and personally, during your time in the program? Please describe your development goals and steps you plan to achieve them.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Video Essay — Career Goals: Please describe your post-MBA career goals. Be as specific as possible (industry, role, function); if you have specific criteria for evaluating future opportunities, share those; explain how this short-term goal connects to your long-term career plan.",
+            "limit": "up to 2 min video"
+          },
+          {
+            "q": "Optional Essay: For additional information about your candidacy you may wish to share — unexplained resume gaps, context for recommender selection, etc. Reapplicants use this to explain how candidacy has strengthened.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 16,
+        "name": "Johnson (Cornell)",
+        "sub": "Ithaca, NY",
+        "r": "northeast",
+        "essays": "Goals Statement (fill-in-blank + 350w) + 1 of 2 essays (350w) + optional + Park Leadership Fellows essay (invitation only, 500w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Goals Statement (fill-in-blank): Immediately post-MBA, my goal is to work as a(n) ___(Role)___ at ___(Company)___ within ___(Industry)___ industry. In 5-10 years post-MBA, my goal is to work as a(n) ___(Role)___ within ___(Industry)___.",
+            "limit": "fill-in-blank"
+          },
+          {
+            "q": "Goals Statement (continued): Please share how you plan to utilize the resources available to you at Johnson as well as any existing resources you bring to the program to help you secure your post-MBA career goal.",
+            "limit": "max 350w"
+          },
+          {
+            "q": "Required Essay — Option 1 (Impact): At Cornell, our students and alumni share a desire to positively impact the organizations and communities they serve. How do you intend to make a meaningful impact on the Johnson community?",
+            "limit": "max 350w"
+          },
+          {
+            "q": "Required Essay — Option 2 (Unique Trait that Defines Me): What is something unique about you that others will remember you by, and how will this trait help you contribute and engage with the Cornell MBA community?",
+            "limit": "max 350w"
+          },
+          {
+            "q": "Optional Essay: To call attention to items needing clarification or to add additional details to aspects of your application that do not accurately reflect your potential.",
+            "limit": "max 350w"
+          },
+          {
+            "q": "Park Leadership Fellows Essay (invitation only): Describe a past formal or informal leadership experience and how it informs your goals for growth as a leader. How would the Park Leadership Fellowship assist with these goals?",
+            "limit": "max 500w"
+          }
+        ]
+      },
+      {
+        "rank": 17,
+        "name": "Kenan-Flagler (UNC)",
+        "sub": "Chapel Hill, NC",
+        "r": "south",
+        "essays": "2 essays (250w each) + optional (200w) + reapplicant (100w) + video essay (2 questions in 2 min total)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Path & Aspirations: We value the different paths and aspirations that each student brings to the UNC Kenan-Flagler community. Please share your goals for pursuing an MBA, or the path you're considering, and how they reflect your unique background or perspective.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Essay 2 — Core Values: UNC Kenan-Flagler is guided by four core values that shape who we are: impact, innovation, inclusion, and integrity. Which one of these Core Values resonates most deeply with your professional journey? Please share an example that demonstrates how this value has influenced your actions or decisions.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Essay 3 (Optional): We encourage you to tell us more about who you are so we can get to know you as a person and potential member of the Carolina community. Use this essay to convey information that you may not have otherwise been able to in the application.",
+            "limit": "max 200w"
+          },
+          {
+            "q": "Essay 4 (Reapplicants only): If you are re-applying to the program, we appreciate your continued interest. Please describe how your application differs from your previous submission and alert us to new test scores, a recent promotion, or other areas that demonstrate how you have strengthened your candidacy.",
+            "limit": "max 100w"
+          },
+          {
+            "q": "Video Essay: Two prompts displayed simultaneously, with 20s preparation followed by up to 2 min total to respond to both questions (you may divide your time as you wish).",
+            "limit": "2 min total video"
+          }
+        ]
+      },
+      {
+        "rank": 18,
+        "name": "McDonough (Georgetown)",
+        "sub": "Washington, DC",
+        "r": "south",
+        "essays": "1 of 3 essay options (500w / 2 pages double-spaced) + 1-min video essay + optional (300-350w) + reapplicant (300-350w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay Option 1 — Georgetown Community: Our mission is rooted in Jesuit principles of equality and respect for everyone and an ethos of caring for the whole person. Inclusivity and diversity are core to supporting a community of people with an intersectional understanding of themselves and the world around them. Share how your educational, familial, cultural, economic, social, and/or other individual life experiences will contribute to the diversity of perspectives and ideas at Georgetown University.",
+            "limit": "max 500w / 2 pages double-spaced"
+          },
+          {
+            "q": "Essay Option 2 — Cura Personalis (caring for the whole person): Reflect on a time when you supported another individual and how that experience would translate to the McDonough community.",
+            "limit": "max 500w / 2 pages double-spaced"
+          },
+          {
+            "q": "Essay Option 3 — Achieving Excellence: Georgetown McDonough is committed to achieving greater excellence to enrich the legacies of our students and alumni. Please reflect on a professional experience from your resume where you achieved outstanding results. Describe why this experience exemplified excellence, highlight the strengths or skills you utilized that contributed to this achievement, and share how these qualities will help you leave a legacy at Georgetown.",
+            "limit": "max 500w / 2 pages double-spaced"
+          },
+          {
+            "q": "Video Essay: We believe a vibrant community is built on diverse and unique individuals, and we want you to bring your whole self to Georgetown McDonough. We've learned about your professional and leadership qualities throughout the application, but now we want to know more about you beyond work. Whether it's a new hobby, a fun adventure, or a simple pleasure, in one minute, share what has recently brought you joy outside of work.",
+            "limit": "1 min video"
+          },
+          {
+            "q": "Optional Essay: Please provide any information you would like to add to your application that you have not otherwise included.",
+            "limit": "300-350w / 1 page double-spaced"
+          },
+          {
+            "q": "Reapplicant Essay: How have you strengthened your candidacy since your last application? We are particularly interested in hearing about how you have grown professionally and personally.",
+            "limit": "300-350w / 1 page double-spaced"
+          }
+        ]
+      },
+      {
+        "rank": 19,
+        "name": "Olin (WashU)",
+        "sub": "St. Louis, MO",
+        "r": "midwest",
+        "essays": "Required personal statement (500w) + career short answer (100w) + optional (250w) + extenuating circumstances (no limit). No GMAT/GRE or LOR required.",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Required Essay — Personal Statement: At WashU Olin, we recognize that our community is comprised of individuals who come to us from different pathways and perspectives. Similarly, each student's journey during and after the program is unique. Please provide a personal statement that describes how your life experiences have shaped your decision to apply to graduate school and how you believe WashU Olin will help you achieve your long-term professional and personal goals.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Career Prompt (Short Answer): Please describe what your ideal career will be immediately following graduation from business school.",
+            "limit": "max 100w"
+          },
+          {
+            "q": "Optional Essay: Is there anything else you would like to share? If so, please provide additional information not previously addressed in the application that would help the admissions committee assess your candidacy.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Extenuating Circumstances (Academic History section): If applicable, briefly describe any significant or extenuating circumstances you would like the Committee to consider in the review of your academic history.",
+            "limit": "no limit"
+          }
+        ]
+      },
+      {
+        "rank": 20,
+        "name": "McCombs (UT Austin)",
+        "sub": "Austin, TX",
+        "r": "south",
+        "essays": "2 essays (250w each) + optional (250w) + video assessment (4 questions, 90s each) + optional virtual interview",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Future-Perfect Why McCombs: Imagine yourself at the completion of your MBA journey. Why was pursuing your MBA at Texas McCombs the right decision for your personal and professional growth? Reflect on how you made the most of your time in the program — academically, through hands-on learning opportunities, and within the McCombs community. Highlight how you contributed to the McCombs community and used its resources to grow both professionally and personally.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Essay 2 — Core Value: Reflect on a core value that defines you. Share a specific example of how it has guided your decisions and actions, and explain how it will shape your contributions and growth as a McCombs MBA student. Highlight how this value has influenced your leadership style and life path, and how it will shape your MBA experience.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Optional Essay: Please explain any gaps in work experience, choice of recommender, and/or academic performance issues that may help the admissions committee in reviewing your application.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Video Assessment (required, after submission): 4 question prompts designed to reveal adaptability, resilience, empathy, inclusivity, ambition, goals, and personal interests. Not case-based — designed to be conversational.",
+            "limit": "90s per question"
+          },
+          {
+            "q": "Virtual Interview (encouraged but not required): Behavioral-question based with member of McCombs Ambassador Committee.",
+            "limit": "20-30 min"
+          }
+        ]
+      },
+      {
+        "rank": 21,
+        "name": "Marshall (USC)",
+        "sub": "Los Angeles, CA",
+        "r": "west",
+        "essays": "Required Essay 1 (400w career goals) + Essay 2 (optional for new applicants / required for reapplicants)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 (Required) — Career Goals: What are your short-term and long-term career goals, and how will an MBA from USC Marshall help you achieve those goals? Short-term career goals should be those you want to achieve within 3-5 years post-MBA, whereas long-term goals may span a decade or more and encompass broader professional aspirations.",
+            "limit": "max 400w"
+          },
+          {
+            "q": "Essay 2 (Optional for new applicants / Required for reapplicants): Please use this space to share any additional information about yourself that cannot be found elsewhere in your application and that you would like the Admissions Committee to know. Reapplicants should detail steps taken to strengthen their candidacy and any improvements since the last application.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 22,
+        "name": "Foster (UW)",
+        "sub": "Seattle, WA",
+        "r": "west",
+        "essays": "Essay 1 (750w career goals/gaps) + Essay 2 (500w mission statement) + optional info essay + optional Nurturing Our Community/inclusion essay (500w) + post-submission video interview required",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Post-MBA Plans: Tell us your ideas about what lies ahead for you in your career. What are the gaps or deficiencies currently preventing you from pursuing these potential career paths? How do you plan to use your time in the Foster MBA program to fill these gaps and advance your career?",
+            "limit": "max 750w"
+          },
+          {
+            "q": "Essay 2 — Foster Mission Statement: TOGETHER — WE FOSTER LEADERS, WE FOSTER INSIGHTS, WE FOSTER PROGRESS — TO BETTER HUMANITY. This is the Foster School's mission statement, and it serves as the north star for how we do business here. Please select one part of our mission statement and describe how it resonates with you in your personal or professional life.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Essay 3 (Optional): Include this essay if you have additional information that you believe would be helpful to the admissions committee in considering your application.",
+            "limit": "varies"
+          },
+          {
+            "q": "Essay 4 (Optional Nurturing Our Community): At the Foster School of Business, we embrace inclusion and belonging as two of the foundations of both successful business strategy and a world-class educational experience. We share the University's dedication to promoting the understanding and appreciation of human differences, and the constructive expression of ideas. We welcome you to share some of the ways you have practiced inclusion and promoted belonging. (Required for ROMBA / Forté scholarship consideration.)",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Video Interview (Required, post-submission): All applicants must complete a video interview after submission for the application to remain under review. Selected applicants are subsequently invited to a one-on-one Zoom interview with admissions staff.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 23,
+        "name": "Goizueta (Emory)",
+        "sub": "Atlanta, GA",
+        "r": "south",
+        "essays": "3 short answers (40w each) + 2 essays (300w each: leadership + biggest impact) + optional + reapplicant (200w) + 1-min 'small talk' video essay",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Short Answer 1: What are your short-term post-MBA career goals?",
+            "limit": "max 40w"
+          },
+          {
+            "q": "Short Answer 2: How will your professional experience and the Goizueta MBA help you to achieve those goals?",
+            "limit": "max 40w"
+          },
+          {
+            "q": "Short Answer 3: What's a fun fact about you that you would like the committee to know?",
+            "limit": "max 40w"
+          },
+          {
+            "q": "Essay 1 — Principled Leadership: Goizueta Business School's mission is to prepare principled leaders to have a positive influence on business and society. Choose an example of a time you effectively demonstrated your leadership skills. Respond to one of these two prompts: (a) What about this experience made you feel proud of your leadership abilities? (b) What did this experience teach you about leadership?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 2 — What Shaped You: Our lived experiences shape who we are and the aspirations we have. As a values-driven community, we care about what has shaped your life. Please share what or who has had the biggest impact on your life.",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Optional Essay: Still have more to share? This optional essay is your opportunity to share something you couldn't find a place for on your application. This is also where you should address anything the committee may question (e.g., gaps in employment, academic challenges, choice of recommender).",
+            "limit": "varies"
+          },
+          {
+            "q": "Reapplicant Essay: Explain how you have improved your candidacy for Goizueta Business School's MBA program since your last application.",
+            "limit": "max 200w"
+          },
+          {
+            "q": "Video Essay (Required) — Small Talk: Every candidate answers a 'small talk'-type question to help the admissions committee learn more about you. The question is provided extemporaneously (no advance notice) and the link is in your application portal. Goizueta evaluates poise, communication style, and ability to think on your feet rather than a perfect answer.",
+            "limit": "approx 1 min video"
+          }
+        ]
+      },
+      {
+        "rank": 24,
+        "name": "Mendoza (Notre Dame)",
+        "sub": "Notre Dame, IN",
+        "r": "midwest",
+        "essays": "Required essay (500w career plans) + Applicant Snapshot (slide presentation, required) + optional + video essay",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Required Essay — Career Plans: What are your detailed post-master's degree career plans? Illustrate how your background, experiences, interests, and personal attributes, in conjunction with your studies at the University of Notre Dame, will equip you to successfully realize these ambitions. Please share both your short-term and long-term career goals, and be specific about the industry and function you hope to pursue.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Applicant Snapshot (Required, slide presentation upload): The Applicant Snapshot offers a chance to highlight qualities and experiences that may not be reflected elsewhere in your application. This required component allows you to share personal dimensions of who you are — beyond your academic and professional background. Mendoza encourages a lighthearted tone and creative format (text, photos, drawings, infographics, etc.).",
+            "limit": "slide presentation"
+          },
+          {
+            "q": "Optional Essay: This is an opportunity to share information not covered elsewhere in your application. You can include additional context about your background, gaps in employment, unique experiences, personal challenges you have overcome, or any other insights that may not be fully represented in other sections of your application.",
+            "limit": "no fixed limit (concise preferred)"
+          },
+          {
+            "q": "Video Essay (Required): Multiple short questions to assess communication, personality, and quick thinking. Sample question types from past cycles include hobbies/interests, behavioural ('tell me about a time...'), and casual brain-teaser/estimation questions.",
+            "limit": "varies (short answers)"
+          }
+        ]
+      },
+      {
+        "rank": 25,
+        "name": "Kelley (Indiana)",
+        "sub": "Bloomington, IN",
+        "r": "midwest",
+        "essays": "Essay 1 (500w career goals + alternate path) + Essay 2 (300w, choose 1 of 4 fill-in prompts) + Essay 3 (25w fun fact) + optional (300w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Goals: Discuss your immediate post-MBA professional goals. How will your professional experience, when combined with a Kelley MBA degree, allow you to achieve these goals? Should the short-term goals you have identified not materialize, what alternate career paths might you consider?",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Essay 2 (choose 1 of 4 short prompts) — Sub-prompt A: My greatest memory is...",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt B: I'm most afraid of...",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt C: My greatest challenge has been...",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 2 — Sub-prompt D: I'm most proud of...",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 3 — Fun Fact: Share a brief fact about yourself that your classmates would find interesting, surprising, or noteworthy.",
+            "limit": "max 25w"
+          },
+          {
+            "q": "Optional Essay: Is there anything else that you think we should know as we evaluate your application? If you believe your credentials and essays represent you fairly, you shouldn't feel obligated to answer this question.",
+            "limit": "max 300w"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "rank": 2,
-    "name": "Stanford GSB",
-    "sub": "Stanford, CA",
-    "r": "west",
-    "essays": "2 essays (650w + 350w) + optional (1,200 chars)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay A: What matters most to you, and why?",
-        "limit": "up to 650w"
-      },
-      {
-        "q": "Essay B: Why Stanford? Describe your aspirations and how your Stanford GSB experience will help you realize them.",
-        "limit": "up to 350w"
-      },
-      {
-        "q": "Optional: Additional information that is critical for the committee to know and is not captured elsewhere (e.g. extenuating circumstances).",
-        "limit": "1,200 chars"
-      }
-    ]
-  },
-  {
-    "rank": 3,
-    "name": "Wharton (UPenn)",
-    "sub": "Philadelphia, PA",
-    "r": "northeast",
-    "essays": "2 short answers (50w + 150w) + 1 essay (350w) + reapplicant + optional",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Short Answer 1: What is your immediate post-MBA professional goal?",
-        "limit": "50w"
-      },
-      {
-        "q": "Short Answer 2: What are your career goals for the first three to five years after completing your MBA, and how will those build towards your long-term professional goals?",
-        "limit": "150w"
-      },
-      {
-        "q": "Essay: Taking into consideration your background — personal, professional, and/or academic — how do you plan to add meaningful value to the Wharton community?",
-        "limit": "350w"
-      },
-      {
-        "q": "Reapplicant: How you have reflected and grown since your previous application, plus relevant updates to your candidacy.",
-        "limit": "varies"
-      },
-      {
-        "q": "Optional: Any additional information that cannot be found elsewhere in your application.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 4,
-    "name": "Booth (UChicago)",
-    "sub": "Chicago, IL",
-    "r": "midwest",
-    "essays": "2 essays (250w min, no max) + optional (300w max) + 2 short-answer goals (250 chars each)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1: How will the Booth MBA help you achieve your immediate and long-term post-MBA career goals?",
-        "limit": "min 250w"
-      },
-      {
-        "q": "Essay 2 (photo prompt): The photos below represent some of the values described above that we uphold at Chicago Booth. Select one and share how it resonates with one of your own values.",
-        "limit": "min 250w"
-      },
-      {
-        "q": "Short Answer 1: What is your immediate post-MBA career goal?",
-        "limit": "250 chars"
-      },
-      {
-        "q": "Short Answer 2: What is your long-term post-MBA career goal?",
-        "limit": "250 chars"
-      },
-      {
-        "q": "Optional: Any unclear information or additional details for the committee.",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Reapplicant: Upon reflection, how has your perspective regarding your future, Chicago Booth, and/or getting an MBA changed since the time of your last application?",
-        "limit": "max 300w"
-      }
-    ]
-  },
-  {
-    "rank": 5,
-    "name": "Kellogg (Northwestern)",
-    "sub": "Evanston, IL",
-    "r": "midwest",
-    "essays": "2 essays (450w each) + 3 video essays (60s each) + optional + reapplicant + program-specific essay",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1: Intentionality is a key aspect of what makes our graduates successful Kellogg leaders. Help us understand your journey by articulating your motivations for pursuing an MBA, the specific goals you aim to achieve, and why you believe now is the right moment. Moreover, share why you feel Kellogg is best suited to serve as a catalyst for your career aspirations and what you will contribute to our community of lifelong learners during your time here.",
-        "limit": "450w"
-      },
-      {
-        "q": "Essay 2: Kellogg leaders are primed to tackle challenges everywhere, from the boardroom to their neighborhoods. Describe a specific professional experience where you had to make a difficult decision. Reflecting on this experience, identify the values that guided your decision-making process and how it impacted your leadership style.",
-        "limit": "450w"
-      },
-      {
-        "q": "Video Essays: 3 questions designed to help you showcase your personality and share experiences (recorded after submission, due within 96 hours).",
-        "limit": "60s each"
-      },
-      {
-        "q": "Program-Specific Essay (MMM / MBAi / JD-MBA / 1Y): How your program of choice will help you reach your post-MBA goals.",
-        "limit": "varies"
-      },
-      {
-        "q": "Optional: Additional context for the admissions committee.",
-        "limit": "~280w"
-      },
-      {
-        "q": "Reapplicant: Steps taken since last application to become a stronger candidate.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 6,
-    "name": "MIT Sloan",
-    "sub": "Cambridge, MA",
-    "r": "northeast",
-    "essays": "Cover letter (300w) + 2 video questions (60s each) + 'World That Shaped You' essay (250w) + organisational chart + pre-interview essay (if invited)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Cover Letter: Submit a cover letter seeking a place in the MIT Sloan MBA program. Should conform to standard business correspondence, include one or more professional examples illustrating you meet the criteria of independent, authentic, fearlessly creative leadership, and be addressed to the Admissions Committee.",
-        "limit": "300w"
-      },
-      {
-        "q": "Video Question 1: Introduce yourself to your future classmates. Be conversational and yourself.",
-        "limit": "60s video"
-      },
-      {
-        "q": "Video Question 2: A randomly generated open-ended question, with 10s prep and 60s response. No prior preparation possible.",
-        "limit": "60s video"
-      },
-      {
-        "q": "The World That Shaped You (newly mandatory): How has the world you come from shaped who you are today? Please use this opportunity to share more about your background.",
-        "limit": "250w"
-      },
-      {
-        "q": "Organisational Chart: Showing your current professional position and reporting structure.",
-        "limit": "max 2 pages"
-      },
-      {
-        "q": "Pre-Interview Essay (only if invited to interview): One of two prompts, focused on analytical/strategic thinking.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 7,
-    "name": "Columbia Business School",
-    "sub": "New York, NY",
-    "r": "northeast",
-    "essays": "2 short answers (50 chars each) + 3 essays (500w / 250w / ~250w) + optional (500w) + reapplicant. J-Term applicants get an extra short answer.",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Short Answer 1: What is your immediate post-MBA professional goal?",
-        "limit": "50 chars"
-      },
-      {
-        "q": "Short Answer 2: How do you plan to spend the summer after the first year of the MBA? If in an internship, please include target industry(ies) and/or function(s).",
-        "limit": "50 chars"
-      },
-      {
-        "q": "J-Term Short Answer (J-Term applicants only): Why do you prefer the January-entry term?",
-        "limit": "50 chars"
-      },
-      {
-        "q": "Essay 1: Through your résumé and recommendations, we have a clear sense of your professional path to date. What are your career goals over the next three to five years and what is your long-term dream job?",
-        "limit": "500w"
-      },
-      {
-        "q": "Essay 2: Please share a specific example of how you made a team more collaborative, more inclusive or fostered a greater sense of community within an organization.",
-        "limit": "250w"
-      },
-      {
-        "q": "Essay 3 (Co-Create): As a co-creator of your CBS MBA experience, what is your vision for engaging with the program academically, culturally, and professionally?",
-        "limit": "~250w"
-      },
-      {
-        "q": "Optional: Further information or additional context (essay or bullet points).",
-        "limit": "max 500w"
-      }
-    ]
-  },
-  {
-    "rank": 8,
-    "name": "Haas (UC Berkeley)",
-    "sub": "Berkeley, CA",
-    "r": "west",
-    "essays": "1 video essay (1-2 min, on Defining Leadership Principles) + career goals essay (~300w) + 'Distance Traveled' supplemental + optional",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Video Essay: The Berkeley MBA program develops leaders who embody our four Defining Leadership Principles. Briefly introduce yourself to the admissions committee, explain which Defining Leadership Principle resonates most with you, and tell us how you have exemplified the principle in your personal or professional life.",
-        "limit": "1–2 min video (max 2 min)"
-      },
-      {
-        "q": "Career Goals: What are your short-term and long-term career goals, and how will an MBA from Haas help you achieve those goals?",
-        "limit": "~300w"
-      },
-      {
-        "q": "Distance Traveled (supplemental): Share aspects of your background, personal circumstances, or significant experiences that have meaningfully impacted who you are today and how you've reached this point.",
-        "limit": "~300w"
-      },
-      {
-        "q": "Optional: Information not addressed elsewhere (employment gaps, academic aberrations, supplemental coursework).",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 9,
-    "name": "Yale SOM",
-    "sub": "New Haven, CT",
-    "r": "northeast",
-    "essays": "1 essay (choose 1 of 3 prompts, 500w) + 3 video questions + behavioural assessment (~20 min) + optional (200w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay (choose ONE of three prompts): Describe the biggest commitment you have ever made. Why is this commitment meaningful to you and what actions have you taken to support it?",
-        "limit": "500w"
-      },
-      {
-        "q": "Essay (choose ONE of three): Describe the community that has been most meaningful to you. What is the most valuable thing you have gained from being a part of this community and what is the most important thing you have contributed to this community?",
-        "limit": "500w"
-      },
-      {
-        "q": "Essay (choose ONE of three): Describe the most significant challenge you have faced. How have you confronted this challenge and how has it shaped you as a person?",
-        "limit": "500w"
-      },
-      {
-        "q": "Video Question 1: Why an MBA, and why now?",
-        "limit": "~60s video"
-      },
-      {
-        "q": "Video Questions 2 & 3: Randomised, behavioural questions (30s prep / 90s response for Q2; 20s prep / 60s response for Q3).",
-        "limit": "video"
-      },
-      {
-        "q": "Behavioural Assessment: ~20-min online assessment of personal competencies.",
-        "limit": "~20 min"
-      },
-      {
-        "q": "Optional Information: If any aspect of your candidacy needs further explanation.",
-        "limit": "max 200w"
-      }
-    ]
-  },
-  {
-    "rank": 10,
-    "name": "Tuck (Dartmouth)",
-    "sub": "Hanover, NH",
-    "r": "northeast",
-    "essays": "3 essays (2,000 chars each ≈ 350w) + optional + reapplicant + 2 short-answer goals (300 chars each)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1: Why are you pursuing an MBA and why now? How will the distinct Tuck MBA contribute to achieving your goals and aspirations? What particular aspects of Tuck will be instrumental in your growth?",
-        "limit": "2,000 chars"
-      },
-      {
-        "q": "Essay 2: Tell us who you are. How have your values and experiences shaped your identity and character? How will your unique background contribute to Tuck and/or enhance the experience of your classmates?",
-        "limit": "2,000 chars"
-      },
-      {
-        "q": "Essay 3: Describe a time when you meaningfully invested in someone else's success without immediate benefit to yourself. What motivated you, and what was the impact?",
-        "limit": "2,000 chars"
-      },
-      {
-        "q": "Application Specifics — Short-term career goal.",
-        "limit": "300 chars"
-      },
-      {
-        "q": "Application Specifics — Long-term career goal.",
-        "limit": "300 chars"
-      },
-      {
-        "q": "Optional: Anything more about your candidacy that needs to be offered or explained.",
-        "limit": "2,000 chars"
-      },
-      {
-        "q": "Reapplicant: How have you strengthened your candidacy since you last applied? Reflect on how you have grown personally and professionally and how your understanding of Tuck has developed.",
-        "limit": "2,000 chars"
-      }
-    ]
-  },
-  {
-    "rank": 11,
-    "name": "NYU Stern",
-    "sub": "New York, NY",
-    "r": "northeast",
-    "essays": "Short answer (150w) + 'Change: ___ it' essay (350w double-spaced) + Pick Six visual essay (PDF, 6 images + captions) + optional (500w) + 1 EQ Endorsement (replaces traditional LORs)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Short Answer — Professional Aspirations: What are your short-term career goals?",
-        "limit": "150w"
-      },
-      {
-        "q": "Essay 1 — Change: ___ it: In today's global business environment, the only constant is change. Using NYU Stern's brand call to action, we want to know how you view change. Change: ___ it. Fill in the blank with a word of your choice. Why does this word resonate with you? How will you embrace your own personal tagline while at Stern? (Examples: Change: Dare it / Dream it / Drive it / Empower it / Manifest it.)",
-        "limit": "350w (double-spaced, 12pt)"
-      },
-      {
-        "q": "Essay 2 — Pick Six (PDF upload): Introduce yourself to the Admissions Committee and to your future classmates using six images and corresponding captions. Includes a 3-sentence introduction overview, six images illustrating your interests/values/motivations/perspective/personality, and a one-sentence caption per image.",
-        "limit": "PDF: 3-sentence intro + 6 images + 1-sentence captions"
-      },
-      {
-        "q": "Optional Essay: Additional information you would like to share with the Admissions Committee, including hardships, employment gaps, academic context, or reapplicant updates.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "EQ Endorsement (1 required, 1 optional): A persuasive advocate of your EQ strengths from someone who knows you personally and/or professionally — replaces traditional letters of recommendation.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 12,
-    "name": "Fuqua (Duke)",
-    "sub": "Durham, NC",
-    "r": "south",
-    "essays": "Short answer (100w) + 25 Random Things essay (750w / 2 pages) + 3 Ways community essay (500w / 1 page) + optional (500w) + reapplicant (500w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Short Answer — Career Goals: What are your post-MBA career goals? Share with us your first-choice career plan and your alternate plan.",
-        "limit": "100w"
-      },
-      {
-        "q": "Essay 1 — 25 Random Things: The 'Team Fuqua' spirit and community is one of the things that sets the MBA experience apart, and it is a concept that extends beyond the student body to include faculty, staff, and administration. Please share with us '25 Random Things' about you. The Admissions Committee wants to get to know YOU — beyond the professional and academic achievements listed in your resume and transcript. Share important life experiences, hobbies, achievements, fun facts, or anything that helps us understand what makes you who you are. Present in list form, numbered 1 to 25.",
-        "limit": "750w / 2 pages"
-      },
-      {
-        "q": "Essay 2 — 3 Ways at Fuqua: Fuqua prides itself on cultivating a culture of engagement. Our students enjoy a wide range of student-led organizations that provide opportunities for leadership development and personal fulfillment, as well as an outlet for contributing to society. Our student-led government, clubs, centers, and events are an integral part of the student culture and to the development of leaders. Based on your understanding of the Fuqua culture, what are 3 ways you expect to contribute at Fuqua?",
-        "limit": "500w / 1 page"
-      },
-      {
-        "q": "Optional Essay: If you feel there are circumstances of which the admissions committee should be aware, please explain them here (e.g. unexplained gaps in work, choice of recommenders, inconsistent or questionable academic performance).",
-        "limit": "max 500w / 1 page"
-      },
-      {
-        "q": "Reapplicant Essay: It is not uncommon for it to take more than one try to achieve a goal. Please share with us the self-reflection process that you underwent after last year's application and how you have grown as a result. How did it shape your commitment to Fuqua and inspire your decision to reapply?",
-        "limit": "max 500w / 1 page"
-      }
-    ]
-  },
-  {
-    "rank": 13,
-    "name": "Ross (Michigan)",
-    "sub": "Ann Arbor, MI",
-    "r": "midwest",
-    "essays": "Essay 1 (300w on career goal + Action-Based Learning) + Essay 2 (200w, choose 1 of 4 sub-prompts) + optional (250w) + AI-disclosure citation required",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Aspirations: What is your short-term career goal, and how will Ross' philosophy in Action-Based Learning help you achieve it? Please be specific. Please answer both parts of this question.",
-        "limit": "300w"
-      },
-      {
-        "q": "Essay 2 (choose 1 of 4 sub-prompts): Michigan Ross is proud to support a community of leaders and impact makers. Please choose one of the following prompts to tell us more about what makes you stand out beyond your academic and work experience. Sub-prompt A: What makes you unique?",
-        "limit": "200w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt B: Can you provide a specific example of how you've overcome a personal challenge?",
-        "limit": "200w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt C: What makes you excited to get up each morning?",
-        "limit": "200w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt D: Describe a time when you made a difference in your community or with an individual.",
-        "limit": "200w"
-      },
-      {
-        "q": "Optional Statement: Is there something in your resume or application that needs a brief explanation? Appropriate uses include explanation of an employment gap, academic outliers, choice of recommender, or completion of supplemental coursework. Bullet points are acceptable.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "AI Policy Note: If you use generative AI in your essays, you must cite using APA in-text 'Personal Communication' format e.g. (OpenAI, personal communication, September 1, 2024).",
-        "limit": "n/a"
-      }
-    ]
-  },
-  {
-    "rank": 14,
-    "name": "Darden (UVA)",
-    "sub": "Charlottesville, VA",
-    "r": "south",
-    "essays": "3 essays (200w each) + optional",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Relationships Matter Here: What would you want your classmates to know about you that is not on your resume?",
-        "limit": "200w"
-      },
-      {
-        "q": "Essay 2 — Building Community: Please describe an example of building community within your personal or professional life. What impact did this have on you and those around you? How will this experience contribute to the way you will build community at Darden?",
-        "limit": "200w"
-      },
-      {
-        "q": "Essay 3 — Career Goals: At this time how would you describe your short-term, post-MBA goal in terms of industry, function, geography, company size and/or mission and how does it align with the long-term vision you have for your career?",
-        "limit": "200w"
-      },
-      {
-        "q": "Optional Essay: If there is further information you believe would be helpful to the Admissions Committee, please provide it.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 15,
-    "name": "Tepper (CMU)",
-    "sub": "Pittsburgh, PA",
-    "r": "northeast",
-    "essays": "1 essay (500w, choose 1 of 2 prompts) + video essay on career goals (up to 2 min) + optional",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Required Essay (choose 1) — Option 1 (Decisions under uncertainty): At the Tepper School, we value leaders who can make confident decisions when facing complexity and uncertainty. Tell us about a time when you had to take action without having all of the answers. How did you navigate the situation and what was the outcome?",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Required Essay (choose 1) — Option 2 (Transformation): The Tepper School of Business is committed to helping students reach their full potential by supporting their professional and personal transformation. How do you hope to transform, both professionally and personally, during your time in the program? Please describe your development goals and steps you plan to achieve them.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Video Essay — Career Goals: Please describe your post-MBA career goals. Be as specific as possible (industry, role, function); if you have specific criteria for evaluating future opportunities, share those; explain how this short-term goal connects to your long-term career plan.",
-        "limit": "up to 2 min video"
-      },
-      {
-        "q": "Optional Essay: For additional information about your candidacy you may wish to share — unexplained resume gaps, context for recommender selection, etc. Reapplicants use this to explain how candidacy has strengthened.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 16,
-    "name": "Johnson (Cornell)",
-    "sub": "Ithaca, NY",
-    "r": "northeast",
-    "essays": "Goals Statement (fill-in-blank + 350w) + 1 of 2 essays (350w) + optional + Park Leadership Fellows essay (invitation only, 500w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Goals Statement (fill-in-blank): Immediately post-MBA, my goal is to work as a(n) ___(Role)___ at ___(Company)___ within ___(Industry)___ industry. In 5-10 years post-MBA, my goal is to work as a(n) ___(Role)___ within ___(Industry)___.",
-        "limit": "fill-in-blank"
-      },
-      {
-        "q": "Goals Statement (continued): Please share how you plan to utilize the resources available to you at Johnson as well as any existing resources you bring to the program to help you secure your post-MBA career goal.",
-        "limit": "max 350w"
-      },
-      {
-        "q": "Required Essay — Option 1 (Impact): At Cornell, our students and alumni share a desire to positively impact the organizations and communities they serve. How do you intend to make a meaningful impact on the Johnson community?",
-        "limit": "max 350w"
-      },
-      {
-        "q": "Required Essay — Option 2 (Unique Trait that Defines Me): What is something unique about you that others will remember you by, and how will this trait help you contribute and engage with the Cornell MBA community?",
-        "limit": "max 350w"
-      },
-      {
-        "q": "Optional Essay: To call attention to items needing clarification or to add additional details to aspects of your application that do not accurately reflect your potential.",
-        "limit": "max 350w"
-      },
-      {
-        "q": "Park Leadership Fellows Essay (invitation only): Describe a past formal or informal leadership experience and how it informs your goals for growth as a leader. How would the Park Leadership Fellowship assist with these goals?",
-        "limit": "max 500w"
-      }
-    ]
-  },
-  {
-    "rank": 17,
-    "name": "Kenan-Flagler (UNC)",
-    "sub": "Chapel Hill, NC",
-    "r": "south",
-    "essays": "2 essays (250w each) + optional (200w) + reapplicant (100w) + video essay (2 questions in 2 min total)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Path & Aspirations: We value the different paths and aspirations that each student brings to the UNC Kenan-Flagler community. Please share your goals for pursuing an MBA, or the path you're considering, and how they reflect your unique background or perspective.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Essay 2 — Core Values: UNC Kenan-Flagler is guided by four core values that shape who we are: impact, innovation, inclusion, and integrity. Which one of these Core Values resonates most deeply with your professional journey? Please share an example that demonstrates how this value has influenced your actions or decisions.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Essay 3 (Optional): We encourage you to tell us more about who you are so we can get to know you as a person and potential member of the Carolina community. Use this essay to convey information that you may not have otherwise been able to in the application.",
-        "limit": "max 200w"
-      },
-      {
-        "q": "Essay 4 (Reapplicants only): If you are re-applying to the program, we appreciate your continued interest. Please describe how your application differs from your previous submission and alert us to new test scores, a recent promotion, or other areas that demonstrate how you have strengthened your candidacy.",
-        "limit": "max 100w"
-      },
-      {
-        "q": "Video Essay: Two prompts displayed simultaneously, with 20s preparation followed by up to 2 min total to respond to both questions (you may divide your time as you wish).",
-        "limit": "2 min total video"
-      }
-    ]
-  },
-  {
-    "rank": 18,
-    "name": "McDonough (Georgetown)",
-    "sub": "Washington, DC",
-    "r": "south",
-    "essays": "1 of 3 essay options (500w / 2 pages double-spaced) + 1-min video essay + optional (300-350w) + reapplicant (300-350w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay Option 1 — Georgetown Community: Our mission is rooted in Jesuit principles of equality and respect for everyone and an ethos of caring for the whole person. Inclusivity and diversity are core to supporting a community of people with an intersectional understanding of themselves and the world around them. Share how your educational, familial, cultural, economic, social, and/or other individual life experiences will contribute to the diversity of perspectives and ideas at Georgetown University.",
-        "limit": "max 500w / 2 pages double-spaced"
-      },
-      {
-        "q": "Essay Option 2 — Cura Personalis (caring for the whole person): Reflect on a time when you supported another individual and how that experience would translate to the McDonough community.",
-        "limit": "max 500w / 2 pages double-spaced"
-      },
-      {
-        "q": "Essay Option 3 — Achieving Excellence: Georgetown McDonough is committed to achieving greater excellence to enrich the legacies of our students and alumni. Please reflect on a professional experience from your resume where you achieved outstanding results. Describe why this experience exemplified excellence, highlight the strengths or skills you utilized that contributed to this achievement, and share how these qualities will help you leave a legacy at Georgetown.",
-        "limit": "max 500w / 2 pages double-spaced"
-      },
-      {
-        "q": "Video Essay: We believe a vibrant community is built on diverse and unique individuals, and we want you to bring your whole self to Georgetown McDonough. We've learned about your professional and leadership qualities throughout the application, but now we want to know more about you beyond work. Whether it's a new hobby, a fun adventure, or a simple pleasure, in one minute, share what has recently brought you joy outside of work.",
-        "limit": "1 min video"
-      },
-      {
-        "q": "Optional Essay: Please provide any information you would like to add to your application that you have not otherwise included.",
-        "limit": "300-350w / 1 page double-spaced"
-      },
-      {
-        "q": "Reapplicant Essay: How have you strengthened your candidacy since your last application? We are particularly interested in hearing about how you have grown professionally and personally.",
-        "limit": "300-350w / 1 page double-spaced"
-      }
-    ]
-  },
-  {
-    "rank": 19,
-    "name": "Olin (WashU)",
-    "sub": "St. Louis, MO",
-    "r": "midwest",
-    "essays": "Required personal statement (500w) + career short answer (100w) + optional (250w) + extenuating circumstances (no limit). No GMAT/GRE or LOR required.",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Required Essay — Personal Statement: At WashU Olin, we recognize that our community is comprised of individuals who come to us from different pathways and perspectives. Similarly, each student's journey during and after the program is unique. Please provide a personal statement that describes how your life experiences have shaped your decision to apply to graduate school and how you believe WashU Olin will help you achieve your long-term professional and personal goals.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Career Prompt (Short Answer): Please describe what your ideal career will be immediately following graduation from business school.",
-        "limit": "max 100w"
-      },
-      {
-        "q": "Optional Essay: Is there anything else you would like to share? If so, please provide additional information not previously addressed in the application that would help the admissions committee assess your candidacy.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Extenuating Circumstances (Academic History section): If applicable, briefly describe any significant or extenuating circumstances you would like the Committee to consider in the review of your academic history.",
-        "limit": "no limit"
-      }
-    ]
-  },
-  {
-    "rank": 20,
-    "name": "McCombs (UT Austin)",
-    "sub": "Austin, TX",
-    "r": "south",
-    "essays": "2 essays (250w each) + optional (250w) + video assessment (4 questions, 90s each) + optional virtual interview",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Future-Perfect Why McCombs: Imagine yourself at the completion of your MBA journey. Why was pursuing your MBA at Texas McCombs the right decision for your personal and professional growth? Reflect on how you made the most of your time in the program — academically, through hands-on learning opportunities, and within the McCombs community. Highlight how you contributed to the McCombs community and used its resources to grow both professionally and personally.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Essay 2 — Core Value: Reflect on a core value that defines you. Share a specific example of how it has guided your decisions and actions, and explain how it will shape your contributions and growth as a McCombs MBA student. Highlight how this value has influenced your leadership style and life path, and how it will shape your MBA experience.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Optional Essay: Please explain any gaps in work experience, choice of recommender, and/or academic performance issues that may help the admissions committee in reviewing your application.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Video Assessment (required, after submission): 4 question prompts designed to reveal adaptability, resilience, empathy, inclusivity, ambition, goals, and personal interests. Not case-based — designed to be conversational.",
-        "limit": "90s per question"
-      },
-      {
-        "q": "Virtual Interview (encouraged but not required): Behavioral-question based with member of McCombs Ambassador Committee.",
-        "limit": "20-30 min"
-      }
-    ]
-  },
-  {
-    "rank": 21,
-    "name": "Marshall (USC)",
-    "sub": "Los Angeles, CA",
-    "r": "west",
-    "essays": "Required Essay 1 (400w career goals) + Essay 2 (optional for new applicants / required for reapplicants)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 (Required) — Career Goals: What are your short-term and long-term career goals, and how will an MBA from USC Marshall help you achieve those goals? Short-term career goals should be those you want to achieve within 3-5 years post-MBA, whereas long-term goals may span a decade or more and encompass broader professional aspirations.",
-        "limit": "max 400w"
-      },
-      {
-        "q": "Essay 2 (Optional for new applicants / Required for reapplicants): Please use this space to share any additional information about yourself that cannot be found elsewhere in your application and that you would like the Admissions Committee to know. Reapplicants should detail steps taken to strengthen their candidacy and any improvements since the last application.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 22,
-    "name": "Foster (UW)",
-    "sub": "Seattle, WA",
-    "r": "west",
-    "essays": "Essay 1 (750w career goals/gaps) + Essay 2 (500w mission statement) + optional info essay + optional Nurturing Our Community/inclusion essay (500w) + post-submission video interview required",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Post-MBA Plans: Tell us your ideas about what lies ahead for you in your career. What are the gaps or deficiencies currently preventing you from pursuing these potential career paths? How do you plan to use your time in the Foster MBA program to fill these gaps and advance your career?",
-        "limit": "max 750w"
-      },
-      {
-        "q": "Essay 2 — Foster Mission Statement: TOGETHER — WE FOSTER LEADERS, WE FOSTER INSIGHTS, WE FOSTER PROGRESS — TO BETTER HUMANITY. This is the Foster School's mission statement, and it serves as the north star for how we do business here. Please select one part of our mission statement and describe how it resonates with you in your personal or professional life.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Essay 3 (Optional): Include this essay if you have additional information that you believe would be helpful to the admissions committee in considering your application.",
-        "limit": "varies"
-      },
-      {
-        "q": "Essay 4 (Optional Nurturing Our Community): At the Foster School of Business, we embrace inclusion and belonging as two of the foundations of both successful business strategy and a world-class educational experience. We share the University's dedication to promoting the understanding and appreciation of human differences, and the constructive expression of ideas. We welcome you to share some of the ways you have practiced inclusion and promoted belonging. (Required for ROMBA / Forté scholarship consideration.)",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Video Interview (Required, post-submission): All applicants must complete a video interview after submission for the application to remain under review. Selected applicants are subsequently invited to a one-on-one Zoom interview with admissions staff.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 23,
-    "name": "Goizueta (Emory)",
-    "sub": "Atlanta, GA",
-    "r": "south",
-    "essays": "3 short answers (40w each) + 2 essays (300w each: leadership + biggest impact) + optional + reapplicant (200w) + 1-min 'small talk' video essay",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Short Answer 1: What are your short-term post-MBA career goals?",
-        "limit": "max 40w"
-      },
-      {
-        "q": "Short Answer 2: How will your professional experience and the Goizueta MBA help you to achieve those goals?",
-        "limit": "max 40w"
-      },
-      {
-        "q": "Short Answer 3: What's a fun fact about you that you would like the committee to know?",
-        "limit": "max 40w"
-      },
-      {
-        "q": "Essay 1 — Principled Leadership: Goizueta Business School's mission is to prepare principled leaders to have a positive influence on business and society. Choose an example of a time you effectively demonstrated your leadership skills. Respond to one of these two prompts: (a) What about this experience made you feel proud of your leadership abilities? (b) What did this experience teach you about leadership?",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 2 — What Shaped You: Our lived experiences shape who we are and the aspirations we have. As a values-driven community, we care about what has shaped your life. Please share what or who has had the biggest impact on your life.",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Optional Essay: Still have more to share? This optional essay is your opportunity to share something you couldn't find a place for on your application. This is also where you should address anything the committee may question (e.g., gaps in employment, academic challenges, choice of recommender).",
-        "limit": "varies"
-      },
-      {
-        "q": "Reapplicant Essay: Explain how you have improved your candidacy for Goizueta Business School's MBA program since your last application.",
-        "limit": "max 200w"
-      },
-      {
-        "q": "Video Essay (Required) — Small Talk: Every candidate answers a 'small talk'-type question to help the admissions committee learn more about you. The question is provided extemporaneously (no advance notice) and the link is in your application portal. Goizueta evaluates poise, communication style, and ability to think on your feet rather than a perfect answer.",
-        "limit": "approx 1 min video"
-      }
-    ]
-  },
-  {
-    "rank": 24,
-    "name": "Mendoza (Notre Dame)",
-    "sub": "Notre Dame, IN",
-    "r": "midwest",
-    "essays": "Required essay (500w career plans) + Applicant Snapshot (slide presentation, required) + optional + video essay",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Required Essay — Career Plans: What are your detailed post-master's degree career plans? Illustrate how your background, experiences, interests, and personal attributes, in conjunction with your studies at the University of Notre Dame, will equip you to successfully realize these ambitions. Please share both your short-term and long-term career goals, and be specific about the industry and function you hope to pursue.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Applicant Snapshot (Required, slide presentation upload): The Applicant Snapshot offers a chance to highlight qualities and experiences that may not be reflected elsewhere in your application. This required component allows you to share personal dimensions of who you are — beyond your academic and professional background. Mendoza encourages a lighthearted tone and creative format (text, photos, drawings, infographics, etc.).",
-        "limit": "slide presentation"
-      },
-      {
-        "q": "Optional Essay: This is an opportunity to share information not covered elsewhere in your application. You can include additional context about your background, gaps in employment, unique experiences, personal challenges you have overcome, or any other insights that may not be fully represented in other sections of your application.",
-        "limit": "no fixed limit (concise preferred)"
-      },
-      {
-        "q": "Video Essay (Required): Multiple short questions to assess communication, personality, and quick thinking. Sample question types from past cycles include hobbies/interests, behavioural ('tell me about a time...'), and casual brain-teaser/estimation questions.",
-        "limit": "varies (short answers)"
-      }
-    ]
-  },
-  {
-    "rank": 25,
-    "name": "Kelley (Indiana)",
-    "sub": "Bloomington, IN",
-    "r": "midwest",
-    "essays": "Essay 1 (500w career goals + alternate path) + Essay 2 (300w, choose 1 of 4 fill-in prompts) + Essay 3 (25w fun fact) + optional (300w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Goals: Discuss your immediate post-MBA professional goals. How will your professional experience, when combined with a Kelley MBA degree, allow you to achieve these goals? Should the short-term goals you have identified not materialize, what alternate career paths might you consider?",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Essay 2 (choose 1 of 4 short prompts) — Sub-prompt A: My greatest memory is...",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt B: I'm most afraid of...",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt C: My greatest challenge has been...",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 2 — Sub-prompt D: I'm most proud of...",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 3 — Fun Fact: Share a brief fact about yourself that your classmates would find interesting, surprising, or noteworthy.",
-        "limit": "max 25w"
-      },
-      {
-        "q": "Optional Essay: Is there anything else that you think we should know as we evaluate your application? If you believe your credentials and essays represent you fairly, you shouldn't feel obligated to answer this question.",
-        "limit": "max 300w"
-      }
-    ]
-  }
-];
+    ];
 
     let region = "all";
 
@@ -1035,9 +1199,9 @@
         const has2526 = prompts.length > 0;
         const cycle2526Html = has2526
           ? prompts.map(p =>
-              `<div class="essay-item"><span class="essay-q">${p.q}</span><span class="essay-limit">${p.limit || ""}</span></div>`
-            ).join("")
-            + `<p class="verify-note">⚑ Verify exact prompts &amp; limits at school website before submitting</p>`
+            `<div class="essay-item"><span class="essay-q">${p.q}</span><span class="essay-limit">${p.limit || ""}</span></div>`
+          ).join("")
+          + `<p class="verify-note">⚑ Verify exact prompts &amp; limits at school website before submitting</p>`
           : `<span class="pending-badge">Verification in progress</span>
              <p class="cycle-tbd">Prompts being verified against current school sources.</p>
              <p class="essays-hint">${d.essays || "Application format pending verification."}</p>`;
@@ -1081,4 +1245,5 @@
   </script>
 
 </body>
+
 </html>

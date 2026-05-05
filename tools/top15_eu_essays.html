@@ -1,153 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 15 EU MBA Essay Prompts — AdmissionWant</title>
-  <meta name="description" content="Essay prompts, word limits, and prompt breakdowns for the 15 leading European MBA programs. 25–26 cycle data, verified against current school sources. Updated each admissions cycle.">
+  <meta name="description"
+    content="Essay prompts, word limits, and prompt breakdowns for the 15 leading European MBA programs. 25–26 cycle data, verified against current school sources. Updated each admissions cycle.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
   <style>
-    .essay-page-hero { padding: 4rem 0 2.5rem; }
+    .essay-page-hero {
+      padding: 4rem 0 2.5rem;
+    }
+
     .filter-bar {
-      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
       padding: 1.5rem 0;
       border-top: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
       margin-bottom: 2.5rem;
     }
+
     .filter-bar input {
-      font-family: 'EB Garamond', Georgia, serif; font-size: 0.95rem;
-      padding: 0.45rem 0; border: none;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 0.95rem;
+      padding: 0.45rem 0;
+      border: none;
       border-bottom: 1px solid var(--rule);
-      background: transparent; color: var(--ink);
-      width: 220px; outline: none; transition: border-color 0.2s;
+      background: transparent;
+      color: var(--ink);
+      width: 220px;
+      outline: none;
+      transition: border-color 0.2s;
     }
-    .filter-bar input:focus { border-bottom-color: var(--ink); }
-    .filter-bar input::placeholder { color: var(--faint); font-style: italic; }
-    .region-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    .filter-bar input:focus {
+      border-bottom-color: var(--ink);
+    }
+
+    .filter-bar input::placeholder {
+      color: var(--faint);
+      font-style: italic;
+    }
+
+    .region-btns {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
     .rbtn {
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;
-      padding: 4px 14px; border: 1px solid var(--rule);
-      cursor: pointer; background: transparent; color: var(--mid);
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      background: transparent;
+      color: var(--mid);
       transition: all 0.15s;
     }
-    .rbtn.active, .rbtn:hover { border-color: var(--ink); color: var(--ink); }
-    .rbtn.active { background: var(--ink); color: var(--bg); }
-    .result-count {
-      font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--mid); margin-left: auto;
+
+    .rbtn.active,
+    .rbtn:hover {
+      border-color: var(--ink);
+      color: var(--ink);
     }
+
+    .rbtn.active {
+      background: var(--ink);
+      color: var(--bg);
+    }
+
+    .result-count {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-left: auto;
+    }
+
     .sub-nav {
-      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
       padding: 1rem 0 1.5rem;
       border-bottom: 1px solid var(--rule);
       margin-bottom: 2rem;
       list-style: none;
     }
-    .sub-nav li { margin: 0; }
+
+    .sub-nav li {
+      margin: 0;
+    }
+
     .sub-nav a {
-      font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;
-      text-decoration: none; color: var(--mid); transition: color 0.2s;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--mid);
+      transition: color 0.2s;
       padding-bottom: 2px;
     }
-    .sub-nav a:hover, .sub-nav a.active-tool {
-      color: var(--ink); border-bottom: 1px solid var(--ink);
+
+    .sub-nav a:hover,
+    .sub-nav a.active-tool {
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
     }
-    #essayList { display: flex; flex-direction: column; gap: 0; }
+
+    #essayList {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
     .essay-card {
       border-top: 1px solid var(--rule);
       padding: 2rem 0;
     }
-    .essay-card:last-child { border-bottom: 1px solid var(--rule); }
-    .essay-card-head {
-      display: flex; align-items: baseline; gap: 1rem;
-      margin-bottom: 1.25rem; flex-wrap: wrap;
+
+    .essay-card:last-child {
+      border-bottom: 1px solid var(--rule);
     }
+
+    .essay-card-head {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+
     .essay-rank {
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--mid); min-width: 28px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      min-width: 28px;
     }
+
     .essay-school {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem; font-weight: 500;
-      color: var(--ink); line-height: 1.2;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.2;
     }
-    .essay-school-sub { font-size: 0.82rem; color: var(--mid); margin-top: 2px; }
+
+    .essay-school-sub {
+      font-size: 0.82rem;
+      color: var(--mid);
+      margin-top: 2px;
+    }
+
     .essay-count-badge {
       margin-left: auto;
-      font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--mid); border: 1px solid var(--rule);
-      padding: 3px 10px; white-space: nowrap;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: 3px 10px;
+      white-space: nowrap;
     }
-    .essay-cycles { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+    .essay-cycles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
     @media (max-width: 600px) {
-      .essay-cycles { grid-template-columns: 1fr; }
-      .filter-bar input { width: 100%; }
+      .essay-cycles {
+        grid-template-columns: 1fr;
+      }
+
+      .filter-bar input {
+        width: 100%;
+      }
     }
+
     .essay-cycle {
       background: transparent;
       border: 1px solid var(--rule);
       padding: 1.25rem 1.5rem;
     }
+
     .essay-cycle-title {
-      font-size: 0.72rem; font-weight: 500;
-      text-transform: uppercase; letter-spacing: 0.1em;
-      color: var(--mid); margin-bottom: 1rem;
-      padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--mid);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
     }
+
     .essay-item {
-      padding: 0.75rem 0; border-bottom: 1px solid var(--rule);
-      font-size: 0.95rem; color: var(--ink); line-height: 1.55;
-      display: flex; justify-content: space-between; gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.55;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
       align-items: flex-start;
     }
-    .essay-item:last-child { border-bottom: none; padding-bottom: 0; }
-    .essay-q { flex: 1; }
+
+    .essay-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .essay-q {
+      flex: 1;
+    }
+
     .essay-limit {
-      font-size: 0.78rem; color: var(--mid);
-      white-space: nowrap; padding-top: 3px; font-style: italic;
+      font-size: 0.78rem;
+      color: var(--mid);
+      white-space: nowrap;
+      padding-top: 3px;
+      font-style: italic;
     }
+
     .cycle-tbd {
-      color: var(--mid); font-style: italic;
-      font-size: 0.92rem; line-height: 1.65;
+      color: var(--mid);
+      font-style: italic;
+      font-size: 0.92rem;
+      line-height: 1.65;
     }
+
     .cycle-tbd-note {
-      margin-top: 0.75rem; font-size: 0.78rem;
-      color: var(--faint); line-height: 1.6;
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--faint);
+      line-height: 1.6;
     }
+
     .pending-badge {
       display: inline-block;
-      font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--mid); border: 1px solid var(--rule);
-      padding: 1px 7px; margin-bottom: 0.6rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid var(--rule);
+      padding: 1px 7px;
+      margin-bottom: 0.6rem;
     }
+
     .essays-hint {
-      font-size: 0.85rem; color: var(--mid);
-      font-style: italic; line-height: 1.55;
+      font-size: 0.85rem;
+      color: var(--mid);
+      font-style: italic;
+      line-height: 1.55;
       margin-top: 0.4rem;
     }
+
     .verify-note {
-      font-size: 0.72rem; color: var(--faint);
-      margin-top: 0.75rem; font-style: italic;
+      font-size: 0.72rem;
+      color: var(--faint);
+      margin-top: 0.75rem;
+      font-style: italic;
     }
+
     .data-notice {
-      background: transparent; border: 1px solid var(--rule);
-      padding: 1rem 1.25rem; font-size: 0.82rem;
-      color: var(--mid); line-height: 1.65;
+      background: transparent;
+      border: 1px solid var(--rule);
+      padding: 1rem 1.25rem;
+      font-size: 0.82rem;
+      color: var(--mid);
+      line-height: 1.65;
       margin-bottom: 2rem;
     }
-    .data-notice strong { color: var(--ink); font-weight: 500; }
+
+    .data-notice strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
     .empty-state {
-      text-align: center; padding: 4rem 0;
-      color: var(--mid); font-style: italic;
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--mid);
+      font-style: italic;
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -155,7 +309,9 @@
     <ul class="nav-links">
       <li><a href="../resources.html">Resources</a></li>
       <li><a href="../signup.html">Sign Up</a></li>
-      <li><a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Call</a></li>
+      <li><a
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+          target="_blank">Book a Call</a></li>
     </ul>
   </nav>
 
@@ -177,19 +333,23 @@
     </div>
 
     <div class="data-notice">
-      <strong>A note on accuracy.</strong> The prompts below reflect the 25–26 application cycle and are verified against current school admissions websites and admissions-consulting sources (Poets&amp;Quants, Clear Admit, mbaMission). Schools occasionally revise wording, limits, or question count between cycles. Always verify directly on the school's admissions website before finalising your essays. The 26–27 cycle prompts will be updated here as they are released — typically July–September 2026.
+      <strong>A note on accuracy.</strong> The prompts below reflect the 25–26 application cycle and are verified
+      against current school admissions websites and admissions-consulting sources (Poets&amp;Quants, Clear Admit,
+      mbaMission). Schools occasionally revise wording, limits, or question count between cycles. Always verify directly
+      on the school's admissions website before finalising your essays. The 26–27 cycle prompts will be updated here as
+      they are released — typically July–September 2026.
     </div>
 
     <div class="filter-bar">
       <input id="search" type="text" placeholder="Search school or location…" oninput="filter()">
       <div class="region-btns" id="regs">
-    <button class="rbtn active" data-r="all" onclick="setReg(this)">All</button>
-    <button class="rbtn" data-r="uk" onclick="setReg(this)">UK</button>
-    <button class="rbtn" data-r="france" onclick="setReg(this)">France</button>
-    <button class="rbtn" data-r="dach" onclick="setReg(this)">DACH</button>
-    <button class="rbtn" data-r="spain" onclick="setReg(this)">Spain</button>
-    <button class="rbtn" data-r="nordic" onclick="setReg(this)">Nordic</button>
-    <button class="rbtn" data-r="other" onclick="setReg(this)">Other</button>
+        <button class="rbtn active" data-r="all" onclick="setReg(this)">All</button>
+        <button class="rbtn" data-r="uk" onclick="setReg(this)">UK</button>
+        <button class="rbtn" data-r="france" onclick="setReg(this)">France</button>
+        <button class="rbtn" data-r="dach" onclick="setReg(this)">DACH</button>
+        <button class="rbtn" data-r="spain" onclick="setReg(this)">Spain</button>
+        <button class="rbtn" data-r="nordic" onclick="setReg(this)">Nordic</button>
+        <button class="rbtn" data-r="other" onclick="setReg(this)">Other</button>
       </div>
       <span class="result-count" id="cnt">Showing 15 of 15</span>
     </div>
@@ -200,10 +360,13 @@
       <p class="section-label">Need more than a database?</p>
       <h2>The right prompt is only the beginning.</h2>
       <p>
-        Knowing what a school asks is easy. Knowing what your answer should be — and why — is the harder part. That's what I work on with clients.
+        Knowing what a school asks is easy. Knowing what your answer should be — and why — is the harder part. That's
+        what I work on with clients.
       </p>
       <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a class="btn" href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Free Strategy Call</a>
+        <a class="btn"
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+          target="_blank">Book a Free Strategy Call</a>
         <a class="btn btn-ghost" href="../resources.html">← Back to Resources</a>
       </div>
     </section>
@@ -213,7 +376,8 @@
   <footer>
     <span class="footer-brand">AdmissionWant</span>
     <div class="footer-links">
-      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard" target="_blank">Book a Strategy Call</a>
+      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&amp;ismsaljsauthenabled&amp;ep=pcard"
+        target="_blank">Book a Strategy Call</a>
       <a href="mailto:kunj@admissionwant.com">kunj@admissionwant.com</a>
       <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
       <a href="../blog/index.html">Writing</a>
@@ -223,537 +387,537 @@
 
   <script>
     const schools = [
-  {
-    "rank": 1,
-    "name": "INSEAD",
-    "sub": "Fontainebleau, France · Singapore",
-    "r": "france",
-    "essays": "Job Desc 1 (500w career progression) + Job Desc 2 (300w goals + why INSEAD) + Motivation Essay 1 (500w candid self) + Motivation Essay 2 (400w stressful situation) + optional (300w) + extra-professional activities + required video interview (within 48hr of deadline)",
-    "verified": "v",
-    "essayPrompts_2526": [
       {
-        "q": "Job Description 1: Provide a summary of your career since graduating from university, explaining the rationale behind your key decisions and career progression. Include a description of your current (or most recent) role, covering the scope of your work, major responsibilities, employees under your supervision, budget size, clients/products, and any notable results achieved.",
-        "limit": "max 500w"
+        "rank": 1,
+        "name": "INSEAD",
+        "sub": "Fontainebleau, France · Singapore",
+        "r": "france",
+        "essays": "Job Desc 1 (500w career progression) + Job Desc 2 (300w goals + why INSEAD) + Motivation Essay 1 (500w candid self) + Motivation Essay 2 (400w stressful situation) + optional (300w) + extra-professional activities + required video interview (within 48hr of deadline)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Job Description 1: Provide a summary of your career since graduating from university, explaining the rationale behind your key decisions and career progression. Include a description of your current (or most recent) role, covering the scope of your work, major responsibilities, employees under your supervision, budget size, clients/products, and any notable results achieved.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Job Description 2: Describe your short and long-term career aspirations, including your target geography, industry, and function. How do you plan to bridge the gap between your current position and these goals, and how will INSEAD help you achieve them?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Motivation Essay 1 — Candid Self: Give a candid description of yourself as a person and a leader, emphasising the strengths and weaknesses you recognise in yourself. Explain how you are actively working on your development, sharing key experiences that have shaped you, providing specific examples where relevant.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Motivation Essay 2 — Stressful Situation: Describe a highly stressful situation you faced and how you managed it. What did this experience teach you about yourself and your interactions with others?",
+            "limit": "max 400w"
+          },
+          {
+            "q": "Optional Essay: Is there anything else that was not covered in your application that you would like to share with the Admissions Committee?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Extra-Professional Activities: Describe the activities you listed above and explain how they have enriched your life.",
+            "limit": "varies"
+          },
+          {
+            "q": "Video Interview (Required): Shortly after submitting the application form, you will receive a link to complete a video interview. Submit no later than 48 hours after the round deadline.",
+            "limit": "varies"
+          }
+        ]
       },
       {
-        "q": "Job Description 2: Describe your short and long-term career aspirations, including your target geography, industry, and function. How do you plan to bridge the gap between your current position and these goals, and how will INSEAD help you achieve them?",
-        "limit": "max 300w"
+        "rank": 2,
+        "name": "London Business School",
+        "sub": "London, UK",
+        "r": "uk",
+        "essays": "Essay 1 (500w career goals + why LBS) + Essay 2 (200w 'What makes you unique?') + optional (500w)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Goals: What are your post-MBA goals and how will your prior experience and the London Business School programme contribute towards these?",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Essay 2 — Unique: What makes you unique?",
+            "limit": "max 200w"
+          },
+          {
+            "q": "Optional Essay: Is there any other information you believe the Admissions Committee should know about you and your application to London Business School?",
+            "limit": "max 500w"
+          }
+        ]
       },
       {
-        "q": "Motivation Essay 1 — Candid Self: Give a candid description of yourself as a person and a leader, emphasising the strengths and weaknesses you recognise in yourself. Explain how you are actively working on your development, sharing key experiences that have shaped you, providing specific examples where relevant.",
-        "limit": "max 500w"
+        "rank": 3,
+        "name": "HEC Paris",
+        "sub": "Paris, France",
+        "r": "france",
+        "essays": "5 essays (3,500 chars + 4×2,000 chars) + optional (6,300 chars) + optional L'Oreal Scholarship (1,500w on creativity/innovation leadership)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Why HEC: Why are you applying to the HEC MBA Program now? What is the professional objective that will guide your career choice after your MBA, and how will the HEC MBA contribute to the achievement of this objective?",
+            "limit": "max 3,500 chars"
+          },
+          {
+            "q": "Essay 2 — Significant Achievement: What do you consider your most significant life achievement?",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Essay 3 — Leadership and Ethics: Leadership and ethics are inevitably intertwined in the business world. Describe a situation in which you have dealt with these issues and how they have influenced you.",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Essay 4 — Different Life: Imagine a life entirely different from the one you now lead, what would it be?",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Essay 5 (choose 1 of 3) — Sub-prompt A: What monument or site would you advise a first-time visitor to your country or city to discover, and why?",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Essay 5 — Sub-prompt B: Choose an otherwise universally popular book, movie, or play and critique it.",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Essay 5 — Sub-prompt C: What figure do you most admire and why? You may choose from any field (arts, literature, politics, business, etc).",
+            "limit": "max 2,000 chars"
+          },
+          {
+            "q": "Optional Essay: If there is anything else you would like to share with us that has not already been shared elsewhere in your file, please feel free to use this space.",
+            "limit": "max 6,300 chars"
+          },
+          {
+            "q": "L'Oreal Scholarship Essay (optional, separate): Discuss the style of leadership that you believe maximizes creativity and innovation.",
+            "limit": "max 1,500w"
+          }
+        ]
       },
       {
-        "q": "Motivation Essay 2 — Stressful Situation: Describe a highly stressful situation you faced and how you managed it. What did this experience teach you about yourself and your interactions with others?",
-        "limit": "max 400w"
+        "rank": 4,
+        "name": "IMD",
+        "sub": "Lausanne, Switzerland",
+        "r": "dach",
+        "essays": "Essay 1 (400w 'Tell us your story') + Essay 2 (400w personal/professional development) + optional (400w) + Career Goals short answers + Assessment Day",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Tell Us Your Story: We want to hear about the experiences that have shaped you as a person. Share the moments, challenges, and lessons that have influenced your life and personal growth. This is your chance to offer insight into who you are beyond your resume.",
+            "limit": "min 300w / max 400w"
+          },
+          {
+            "q": "Essay 2 — Development Goals: What areas of personal and professional development do you hope to explore during your time at IMD? What do you hope to gain from the experience?",
+            "limit": "max 400w"
+          },
+          {
+            "q": "Optional Essay: Is there anything else you would like the Admissions Committee to know about you?",
+            "limit": "max 400w"
+          },
+          {
+            "q": "Career Goals Short Answers: target companies, network in place, skills/experience for post-MBA goals, Plan B if ideal job not secured, and other career planning questions.",
+            "limit": "varies (50-300w each)"
+          },
+          {
+            "q": "Assessment Day (Required): All shortlisted candidates participate in a one-day on-campus assessment in Lausanne or virtually, including individual interviews, group exercises, and a presentation.",
+            "limit": "varies"
+          }
+        ]
       },
       {
-        "q": "Optional Essay: Is there anything else that was not covered in your application that you would like to share with the Admissions Committee?",
-        "limit": "max 300w"
+        "rank": 5,
+        "name": "IESE",
+        "sub": "Barcelona, Spain",
+        "r": "spain",
+        "essays": "Essay 1 (450w career goals) + Essay 2 (300w hard-cutoff Why IESE) + optional (300w) + 3-question Kira video essay + optional Assessment Day",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Goals: What are your immediate post-MBA career goal and your mid-term (5–10 years) career goal? How will the IESE MBA program help you achieve them?",
+            "limit": "max 450w"
+          },
+          {
+            "q": "Essay 2 — Why IESE: Why is IESE the right MBA program for you? What aspects of IESE's program, values, and community resonate most with your personal and professional goals? Please provide specific examples that illustrate why you believe IESE is the best fit for you.",
+            "limit": "max 300w (hard cutoff)"
+          },
+          {
+            "q": "Optional Essay: What would you like to highlight about yourself or your journey which may not have been captured in your application?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Video Essay (Required): After submitting the written application, you receive a Kira video link within 24 hours, expiring in 48 hours. Three video questions to be completed by the round deadline.",
+            "limit": "3 questions video"
+          },
+          {
+            "q": "Assessment Day (Optional, recommended): On-campus group activity day in Barcelona reflecting IESE's collaborative culture.",
+            "limit": "varies"
+          }
+        ]
       },
       {
-        "q": "Extra-Professional Activities: Describe the activities you listed above and explain how they have enriched your life.",
-        "limit": "varies"
+        "rank": 6,
+        "name": "Cambridge Judge",
+        "sub": "Cambridge, UK",
+        "r": "uk",
+        "essays": "Essay 1 (500w career goals + research) + Essay 2 (200w professional mistake) + Essay 3 (200w best team) + Essay 4 (200w someone who positively impacted you)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Plans: Please provide details of your post-MBA career plans. The statement should not exceed 500 words and must address the following: What are your short- and long-term career objectives? How will the Cambridge MBA equip you to achieve these? Looking at your short-term career goal, describe the research you have done to understand how this industry/role/location recruits MBA talent and what they are looking for in a candidate? How confident do you feel about meeting your short-term career goal? What skills/characteristics do you already have that will help you to achieve them, and what preparation are you doing now?",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Essay 2 — Professional Mistake: Tell us about a time when you made a professional mistake. How could it have ended differently?",
+            "limit": "up to 200w"
+          },
+          {
+            "q": "Essay 3 — Best Team: Tell us about the best team you worked with. What made the team successful?",
+            "limit": "up to 200w"
+          },
+          {
+            "q": "Essay 4 — Positive Impact: Tell us about someone who positively impacted your life.",
+            "limit": "up to 200w"
+          }
+        ]
       },
       {
-        "q": "Video Interview (Required): Shortly after submitting the application form, you will receive a link to complete a video interview. Submit no later than 48 hours after the round deadline.",
-        "limit": "varies"
+        "rank": 7,
+        "name": "Oxford Saïd",
+        "sub": "Oxford, UK",
+        "r": "uk",
+        "essays": "1 essay (250w — required, not optional) + 5 short career-goals questions + reapplicant essay + 1+1 Programme essay (if applicable) + online video assessment",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay (Required): Tell us something that is not covered in your application which you would like the Admissions Committee to know about you.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Career Goals Question 1 (of 5): How does the MBA fit in your plans and how will it enhance your short-term direction?",
+            "limit": "max ~1,250 chars"
+          },
+          {
+            "q": "Career Goals Questions 2-5: Additional short questions on your post-MBA career objectives, target industry/function, and rationale.",
+            "limit": "varies (short)"
+          },
+          {
+            "q": "Reapplicant Essay: What improvements have you made in your candidacy since you last applied to the Oxford MBA?",
+            "limit": "max 250w"
+          },
+          {
+            "q": "1+1 Programme Essay (if applying): Explain why you see this as particularly beneficial for you and how it fits with your career and personal development aims.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Online Assessment (Required): Kira-style video and written responses to multiple competency-focused questions assessing communication, leadership, and analytical skills.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "IE Business School",
+        "sub": "Madrid, Spain",
+        "r": "spain",
+        "essays": "1 personal statement in choice of format (550-650w written / 3-min video / 10-slide PPT) + online video assessment",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Personal Statement (Required, choice of 3 formats): What is the most important thing that you would like us to know that is not in your resume or application? Format Option A: Written essay (550-650 words).",
+            "limit": "550-650w"
+          },
+          {
+            "q": "Personal Statement — Format Option B: Video presentation.",
+            "limit": "max 3 min video"
+          },
+          {
+            "q": "Personal Statement — Format Option C: PowerPoint presentation.",
+            "limit": "max 10 slides"
+          },
+          {
+            "q": "Online Assessment (Required): Kira-style video questions answered in real-time after submission. Designed to assess communication, clarity, and personality under time pressure.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "SDA Bocconi",
+        "sub": "Milan, Italy",
+        "r": "other",
+        "essays": "Multiple essay questions (~280w each: community/cultural responsibilities, free-time interests, significant achievements, strong points, MBA goals, alternatives considered, other schools applied to) + video pre-interview within 1 week of submission + 45-min interview (Milan / city / online)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay — Career Goals: Discuss your short- and long-term post-MBA career aspirations and the rationale behind your choices.",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Community/Cultural Responsibilities: Write down, in order of importance, all possible past or present community or cultural responsibilities.",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Free-Time Interests: What interests and occupations do you pursue in your free time?",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Personal Growth: Explain the most significant goals you think you have achieved so far and the reasons for their importance in your personal growth.",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Strong Points: Describe your strong points, personal and professional, explaining why you see them as such.",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Why MBA Now: Why do you want to pursue an MBA, and why now in your career?",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — What you hope to gain: What do you hope to get from the MBA program?",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Alternatives Considered: What other possibilities have you seriously considered, apart from the MBA program, for reaching your goals of personal and professional growth?",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Essay — Other Schools Applied To: Have you applied to other business schools in Italy or elsewhere? If yes, which ones? Why?",
+            "limit": "max 280w"
+          },
+          {
+            "q": "Financial Independence Question: Describe how you plan to support yourself during the MBA program.",
+            "limit": "varies"
+          },
+          {
+            "q": "Video Pre-Interview (Required, within 1 week of submission): Tests ability to articulate professional narrative under time pressure.",
+            "limit": "varies"
+          },
+          {
+            "q": "Interview (Required for shortlisted): ~45 min, on-campus in Milan, in your home city via alumni interviewer, or online.",
+            "limit": "~45 min"
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "name": "ESADE",
+        "sub": "Barcelona, Spain",
+        "r": "spain",
+        "essays": "4 essays (3,000 chars each): improvements/tools + diversity contribution + motivations/goals/why ESADE + complete 2 of 4 short prompts (proud of / surprising / biggest challenge / historical figure) + required interview",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Improvements: Which aspects have you improved on during your academic and professional career so far? Which tools or values have helped you achieve this?",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 2 — Contribution to Community: How will your background, values and non-work-related activities enhance the experience of other ESADE MBA students and add to the diverse culture we strive for at ESADE? (Note: The goal of this essay is to get a sense of who you are, rather than what you have accomplished).",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 3 — Motivations & Goals: What are your motivations in pursuing a full-time MBA at this point in your life? Describe your mid-term and long-term visions for your post-MBA career path. What is it about ESADE you think will help you reach your goals?",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 4 — Sub-prompt A (complete 2 of 4): I am most proud of...",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 4 — Sub-prompt B: People may be surprised to learn that I...",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 4 — Sub-prompt C: What has your biggest challenge been and what did it help you learn about yourself?",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Essay 4 — Sub-prompt D: Which historical figure do you most identify with and why?",
+            "limit": "max 3,000 chars"
+          },
+          {
+            "q": "Interview (Required upon notification): Held in person at admissions events, on campus in Barcelona, or via Skype.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "name": "RSM Rotterdam",
+        "sub": "Rotterdam, Netherlands",
+        "r": "other",
+        "essays": "Choose 1 of 2 essays (500w): being a force for positive change OR how RSM will prepare you to be one + Optional (50w max) + Kira Talent video response post-interview-invite + optional RSM Business Admissions Test (BAT) in lieu of GMAT/GRE",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay (Choose ONE of two prompts) — Option 1: Share how you've already been a force for positive change in your world. Your example can be large or small, global or local, but must highlight the positive impact you've had through your efforts. Tell us your story.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Essay (Choose ONE) — Option 2: Discuss how the RSM MBA will prepare you to become a force for positive change, either in your personal or professional life.",
+            "limit": "max 500w"
+          },
+          {
+            "q": "Optional Essay: Please feel free to supply any additional information that you believe would be helpful to the Admissions Committee in making the final decision on your application.",
+            "limit": "max 50w"
+          },
+          {
+            "q": "Kira Talent Video (Required post-interview-invite): Candidates invited to interview must complete a video response via Kira Talent.",
+            "limit": "varies"
+          },
+          {
+            "q": "RSM Business Admissions Test (BAT, optional alternative): 2.5-hour online assessment evaluating academic aptitude and leadership potential — accepted in lieu of GMAT/GRE.",
+            "limit": "2.5 hours"
+          }
+        ]
+      },
+      {
+        "rank": 12,
+        "name": "Mannheim Business School",
+        "sub": "Mannheim, Germany",
+        "r": "dach",
+        "essays": "Letter of Motivation (~300-500w covering career goals + why MBA + why Mannheim + why now) + possible second short answer on differentiation + two-stage interview (intro + case study)",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Letter of Motivation (Primary essay): Undertaking an MBA will accelerate and transform your future career path. Why is this the right time for you to join our MBA, and how will the Mannheim MBA help you achieve your goals? Address: Why MBA? Why now? Why Mannheim? What are your short-term goals? What are your long-term goals?",
+            "limit": "max ~300-500w (1 page)"
+          },
+          {
+            "q": "Differentiation Question: In your opinion, what differentiates Mannheim from other MBA programs?",
+            "limit": "max ~200w"
+          },
+          {
+            "q": "Video Presentation: Per admissions guidelines, applicants receive instructions for a video presentation as part of the application process.",
+            "limit": "varies"
+          },
+          {
+            "q": "First Interview: Online interview with Admissions Manager — introduce yourself and explain your motivation for pursuing an MBA.",
+            "limit": "varies"
+          },
+          {
+            "q": "Case Study + Second Interview: Successful first-interview candidates work on a take-home case study, then complete a second interview with the Career Development team to demonstrate critical thinking and reasoning skills.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "name": "WHU Otto Beisheim",
+        "sub": "Vallendar, Germany",
+        "r": "dach",
+        "essays": "4 essays via MBA Questionnaire: Essay 1 (300w reasons + skills/competencies to develop) + Essay 2 (~320w 3-5 year + long-term career goals + how WHU helps) + Essay 3 (200w Why WHU?) + Essay 4 (190w What sets you apart?) + financing question + multi-step admission process",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Reasons for MBA: What are your reasons, both professional and personal, for applying for an MBA program? What are some skills or key competencies you would like to develop when studying at WHU?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 2 — Career Plans: What are your plans for the first 3-5 years after graduation? What are your long-term career aspirations? How do you think the WHU MBA will help you to achieve your goals?",
+            "limit": "max ~320w"
+          },
+          {
+            "q": "Essay 3 — Why WHU: Why do you want to study at WHU?",
+            "limit": "max 200w"
+          },
+          {
+            "q": "Essay 4 — What Sets You Apart: What sets you apart from other applicants? Why are you a perfect fit for the WHU MBA?",
+            "limit": "max 190w"
+          },
+          {
+            "q": "Financing Question: Please let us know how you plan to finance your MBA degree.",
+            "limit": "varies"
+          },
+          {
+            "q": "Interview (Required, multi-step admission process): Final round includes personal interview as part of the WHU admissions test process.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "name": "Copenhagen Business School",
+        "sub": "Copenhagen, Denmark",
+        "r": "nordic",
+        "essays": "4 essays (200-500w each: motivations, achievements, career goals, personal reflections) + interview + Leadership Discovery Process",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Why CBS: Why have you chosen Copenhagen Business School to pursue your MBA? Show how the Scandinavian business model, the school's intimate ~40-50 student community, and Copenhagen's positioning as a hub for green tech, fintech, and logistics align with your trajectory.",
+            "limit": "max 250w (range: 200-500w)"
+          },
+          {
+            "q": "Essay 2 — Post-MBA Career Ambitions: What are your post-MBA career ambitions after graduation? Please answer this question from a three-to-five year perspective post MBA.",
+            "limit": "max ~300-500w"
+          },
+          {
+            "q": "Essay 3 — Leadership & Impact: How have you made a positive impact in your world? What does leadership mean to you, and how do you embody it personally and professionally? Show maturity, wisdom, and reflection rather than a list of achievements.",
+            "limit": "max ~300-500w"
+          },
+          {
+            "q": "Essay 4 — Sustainable Business Management: Discuss your interest in sustainable, responsible leadership grounded in Nordic values. Connect your experience to the school's commitment to sustainability and the Nordic Nine capabilities (ethical thinking, systems perspective, long-term value creation).",
+            "limit": "max ~300-500w"
+          },
+          {
+            "q": "Scholarship Essay (if applying): Demonstrate alignment across at least 3 of CBS's evaluation criteria (academic excellence, career progression, leadership potential, sustainability passion, international experience, drive). Root your answer in concrete impact and specificity.",
+            "limit": "max 250w"
+          },
+          {
+            "q": "Video Submission: Required as part of the application — covers introduction, motivations, and fit with the program.",
+            "limit": "varies"
+          },
+          {
+            "q": "Interview (Required for shortlisted, ~1 hour): After holistic review of resume, essays, and test scores. Probes whether you've reflected on your career, done your homework on Copenhagen and CBS, and will contribute to classroom discussion.",
+            "limit": "~1 hour"
+          },
+          {
+            "q": "Leadership Discovery Process (LDP, during program): Year-long requirement to develop responsible leadership style — applicants should reference engagement with this process.",
+            "limit": "varies"
+          }
+        ]
+      },
+      {
+        "rank": 15,
+        "name": "Warwick Business School",
+        "sub": "Coventry, UK",
+        "r": "uk",
+        "essays": "Essay 1 (350w career goals + how WBS helps) + Essay 2 (300w organizational strategic objectives + your contribution) + Essay 3 (300w scholarship rationale, if applying) + 1000w organizational analysis essay (choose 1 of 2) + Optional (300w) + 60-min interview + Change Maker competencies",
+        "verified": "v",
+        "essayPrompts_2526": [
+          {
+            "q": "Essay 1 — Career Goals: Describe the short and long-term career goals you have set yourself and how the WBS MBA will help you to achieve these?",
+            "limit": "max 350w"
+          },
+          {
+            "q": "Essay 2 — Organizational Contribution: Outline the top strategic objectives for your current or previous organisation and in what ways you have helped contribute to achieving these objectives?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 3 — Scholarship Rationale (if applying): If you are self-funding and interested in applying for a scholarship, please outline why you believe you are a worthy candidate?",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Essay 4 — Organizational Analysis (Choose 1 of 2): Option A: In your opinion, what are the key issues facing your organization over the next five years?",
+            "limit": "max 1,000w"
+          },
+          {
+            "q": "Essay 4 — Organizational Analysis Option B: Identify the major strengths and weaknesses of an organization of your choice. If you were the CEO, what three things would you change?",
+            "limit": "max 1,000w"
+          },
+          {
+            "q": "Optional Essay: Please use this for any additional information that was not captured within your application. If you feel you've already provided sufficient information about yourself, you need not add anything here.",
+            "limit": "max 300w"
+          },
+          {
+            "q": "Change Maker Core Competencies (evidence throughout application): Strategic Thinking + Creativity + Drive for Results + Personal Impact + Ability to Lead Others.",
+            "limit": "varies"
+          },
+          {
+            "q": "Interview (Required for shortlisted): Approximately 60 minutes, conducted face-to-face or via Microsoft Teams by Recruitment team, CareersPlus team, or academic.",
+            "limit": "~60 min"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "rank": 2,
-    "name": "London Business School",
-    "sub": "London, UK",
-    "r": "uk",
-    "essays": "Essay 1 (500w career goals + why LBS) + Essay 2 (200w 'What makes you unique?') + optional (500w)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Goals: What are your post-MBA goals and how will your prior experience and the London Business School programme contribute towards these?",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Essay 2 — Unique: What makes you unique?",
-        "limit": "max 200w"
-      },
-      {
-        "q": "Optional Essay: Is there any other information you believe the Admissions Committee should know about you and your application to London Business School?",
-        "limit": "max 500w"
-      }
-    ]
-  },
-  {
-    "rank": 3,
-    "name": "HEC Paris",
-    "sub": "Paris, France",
-    "r": "france",
-    "essays": "5 essays (3,500 chars + 4×2,000 chars) + optional (6,300 chars) + optional L'Oreal Scholarship (1,500w on creativity/innovation leadership)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Why HEC: Why are you applying to the HEC MBA Program now? What is the professional objective that will guide your career choice after your MBA, and how will the HEC MBA contribute to the achievement of this objective?",
-        "limit": "max 3,500 chars"
-      },
-      {
-        "q": "Essay 2 — Significant Achievement: What do you consider your most significant life achievement?",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Essay 3 — Leadership and Ethics: Leadership and ethics are inevitably intertwined in the business world. Describe a situation in which you have dealt with these issues and how they have influenced you.",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Essay 4 — Different Life: Imagine a life entirely different from the one you now lead, what would it be?",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Essay 5 (choose 1 of 3) — Sub-prompt A: What monument or site would you advise a first-time visitor to your country or city to discover, and why?",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Essay 5 — Sub-prompt B: Choose an otherwise universally popular book, movie, or play and critique it.",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Essay 5 — Sub-prompt C: What figure do you most admire and why? You may choose from any field (arts, literature, politics, business, etc).",
-        "limit": "max 2,000 chars"
-      },
-      {
-        "q": "Optional Essay: If there is anything else you would like to share with us that has not already been shared elsewhere in your file, please feel free to use this space.",
-        "limit": "max 6,300 chars"
-      },
-      {
-        "q": "L'Oreal Scholarship Essay (optional, separate): Discuss the style of leadership that you believe maximizes creativity and innovation.",
-        "limit": "max 1,500w"
-      }
-    ]
-  },
-  {
-    "rank": 4,
-    "name": "IMD",
-    "sub": "Lausanne, Switzerland",
-    "r": "dach",
-    "essays": "Essay 1 (400w 'Tell us your story') + Essay 2 (400w personal/professional development) + optional (400w) + Career Goals short answers + Assessment Day",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Tell Us Your Story: We want to hear about the experiences that have shaped you as a person. Share the moments, challenges, and lessons that have influenced your life and personal growth. This is your chance to offer insight into who you are beyond your resume.",
-        "limit": "min 300w / max 400w"
-      },
-      {
-        "q": "Essay 2 — Development Goals: What areas of personal and professional development do you hope to explore during your time at IMD? What do you hope to gain from the experience?",
-        "limit": "max 400w"
-      },
-      {
-        "q": "Optional Essay: Is there anything else you would like the Admissions Committee to know about you?",
-        "limit": "max 400w"
-      },
-      {
-        "q": "Career Goals Short Answers: target companies, network in place, skills/experience for post-MBA goals, Plan B if ideal job not secured, and other career planning questions.",
-        "limit": "varies (50-300w each)"
-      },
-      {
-        "q": "Assessment Day (Required): All shortlisted candidates participate in a one-day on-campus assessment in Lausanne or virtually, including individual interviews, group exercises, and a presentation.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 5,
-    "name": "IESE",
-    "sub": "Barcelona, Spain",
-    "r": "spain",
-    "essays": "Essay 1 (450w career goals) + Essay 2 (300w hard-cutoff Why IESE) + optional (300w) + 3-question Kira video essay + optional Assessment Day",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Goals: What are your immediate post-MBA career goal and your mid-term (5–10 years) career goal? How will the IESE MBA program help you achieve them?",
-        "limit": "max 450w"
-      },
-      {
-        "q": "Essay 2 — Why IESE: Why is IESE the right MBA program for you? What aspects of IESE's program, values, and community resonate most with your personal and professional goals? Please provide specific examples that illustrate why you believe IESE is the best fit for you.",
-        "limit": "max 300w (hard cutoff)"
-      },
-      {
-        "q": "Optional Essay: What would you like to highlight about yourself or your journey which may not have been captured in your application?",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Video Essay (Required): After submitting the written application, you receive a Kira video link within 24 hours, expiring in 48 hours. Three video questions to be completed by the round deadline.",
-        "limit": "3 questions video"
-      },
-      {
-        "q": "Assessment Day (Optional, recommended): On-campus group activity day in Barcelona reflecting IESE's collaborative culture.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 6,
-    "name": "Cambridge Judge",
-    "sub": "Cambridge, UK",
-    "r": "uk",
-    "essays": "Essay 1 (500w career goals + research) + Essay 2 (200w professional mistake) + Essay 3 (200w best team) + Essay 4 (200w someone who positively impacted you)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Plans: Please provide details of your post-MBA career plans. The statement should not exceed 500 words and must address the following: What are your short- and long-term career objectives? How will the Cambridge MBA equip you to achieve these? Looking at your short-term career goal, describe the research you have done to understand how this industry/role/location recruits MBA talent and what they are looking for in a candidate? How confident do you feel about meeting your short-term career goal? What skills/characteristics do you already have that will help you to achieve them, and what preparation are you doing now?",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Essay 2 — Professional Mistake: Tell us about a time when you made a professional mistake. How could it have ended differently?",
-        "limit": "up to 200w"
-      },
-      {
-        "q": "Essay 3 — Best Team: Tell us about the best team you worked with. What made the team successful?",
-        "limit": "up to 200w"
-      },
-      {
-        "q": "Essay 4 — Positive Impact: Tell us about someone who positively impacted your life.",
-        "limit": "up to 200w"
-      }
-    ]
-  },
-  {
-    "rank": 7,
-    "name": "Oxford Saïd",
-    "sub": "Oxford, UK",
-    "r": "uk",
-    "essays": "1 essay (250w — required, not optional) + 5 short career-goals questions + reapplicant essay + 1+1 Programme essay (if applicable) + online video assessment",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay (Required): Tell us something that is not covered in your application which you would like the Admissions Committee to know about you.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Career Goals Question 1 (of 5): How does the MBA fit in your plans and how will it enhance your short-term direction?",
-        "limit": "max ~1,250 chars"
-      },
-      {
-        "q": "Career Goals Questions 2-5: Additional short questions on your post-MBA career objectives, target industry/function, and rationale.",
-        "limit": "varies (short)"
-      },
-      {
-        "q": "Reapplicant Essay: What improvements have you made in your candidacy since you last applied to the Oxford MBA?",
-        "limit": "max 250w"
-      },
-      {
-        "q": "1+1 Programme Essay (if applying): Explain why you see this as particularly beneficial for you and how it fits with your career and personal development aims.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Online Assessment (Required): Kira-style video and written responses to multiple competency-focused questions assessing communication, leadership, and analytical skills.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 8,
-    "name": "IE Business School",
-    "sub": "Madrid, Spain",
-    "r": "spain",
-    "essays": "1 personal statement in choice of format (550-650w written / 3-min video / 10-slide PPT) + online video assessment",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Personal Statement (Required, choice of 3 formats): What is the most important thing that you would like us to know that is not in your resume or application? Format Option A: Written essay (550-650 words).",
-        "limit": "550-650w"
-      },
-      {
-        "q": "Personal Statement — Format Option B: Video presentation.",
-        "limit": "max 3 min video"
-      },
-      {
-        "q": "Personal Statement — Format Option C: PowerPoint presentation.",
-        "limit": "max 10 slides"
-      },
-      {
-        "q": "Online Assessment (Required): Kira-style video questions answered in real-time after submission. Designed to assess communication, clarity, and personality under time pressure.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 9,
-    "name": "SDA Bocconi",
-    "sub": "Milan, Italy",
-    "r": "other",
-    "essays": "Multiple essay questions (~280w each: community/cultural responsibilities, free-time interests, significant achievements, strong points, MBA goals, alternatives considered, other schools applied to) + video pre-interview within 1 week of submission + 45-min interview (Milan / city / online)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay — Career Goals: Discuss your short- and long-term post-MBA career aspirations and the rationale behind your choices.",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Community/Cultural Responsibilities: Write down, in order of importance, all possible past or present community or cultural responsibilities.",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Free-Time Interests: What interests and occupations do you pursue in your free time?",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Personal Growth: Explain the most significant goals you think you have achieved so far and the reasons for their importance in your personal growth.",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Strong Points: Describe your strong points, personal and professional, explaining why you see them as such.",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Why MBA Now: Why do you want to pursue an MBA, and why now in your career?",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — What you hope to gain: What do you hope to get from the MBA program?",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Alternatives Considered: What other possibilities have you seriously considered, apart from the MBA program, for reaching your goals of personal and professional growth?",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Essay — Other Schools Applied To: Have you applied to other business schools in Italy or elsewhere? If yes, which ones? Why?",
-        "limit": "max 280w"
-      },
-      {
-        "q": "Financial Independence Question: Describe how you plan to support yourself during the MBA program.",
-        "limit": "varies"
-      },
-      {
-        "q": "Video Pre-Interview (Required, within 1 week of submission): Tests ability to articulate professional narrative under time pressure.",
-        "limit": "varies"
-      },
-      {
-        "q": "Interview (Required for shortlisted): ~45 min, on-campus in Milan, in your home city via alumni interviewer, or online.",
-        "limit": "~45 min"
-      }
-    ]
-  },
-  {
-    "rank": 10,
-    "name": "ESADE",
-    "sub": "Barcelona, Spain",
-    "r": "spain",
-    "essays": "4 essays (3,000 chars each): improvements/tools + diversity contribution + motivations/goals/why ESADE + complete 2 of 4 short prompts (proud of / surprising / biggest challenge / historical figure) + required interview",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Improvements: Which aspects have you improved on during your academic and professional career so far? Which tools or values have helped you achieve this?",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 2 — Contribution to Community: How will your background, values and non-work-related activities enhance the experience of other ESADE MBA students and add to the diverse culture we strive for at ESADE? (Note: The goal of this essay is to get a sense of who you are, rather than what you have accomplished).",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 3 — Motivations & Goals: What are your motivations in pursuing a full-time MBA at this point in your life? Describe your mid-term and long-term visions for your post-MBA career path. What is it about ESADE you think will help you reach your goals?",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 4 — Sub-prompt A (complete 2 of 4): I am most proud of...",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 4 — Sub-prompt B: People may be surprised to learn that I...",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 4 — Sub-prompt C: What has your biggest challenge been and what did it help you learn about yourself?",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Essay 4 — Sub-prompt D: Which historical figure do you most identify with and why?",
-        "limit": "max 3,000 chars"
-      },
-      {
-        "q": "Interview (Required upon notification): Held in person at admissions events, on campus in Barcelona, or via Skype.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 11,
-    "name": "RSM Rotterdam",
-    "sub": "Rotterdam, Netherlands",
-    "r": "other",
-    "essays": "Choose 1 of 2 essays (500w): being a force for positive change OR how RSM will prepare you to be one + Optional (50w max) + Kira Talent video response post-interview-invite + optional RSM Business Admissions Test (BAT) in lieu of GMAT/GRE",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay (Choose ONE of two prompts) — Option 1: Share how you've already been a force for positive change in your world. Your example can be large or small, global or local, but must highlight the positive impact you've had through your efforts. Tell us your story.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Essay (Choose ONE) — Option 2: Discuss how the RSM MBA will prepare you to become a force for positive change, either in your personal or professional life.",
-        "limit": "max 500w"
-      },
-      {
-        "q": "Optional Essay: Please feel free to supply any additional information that you believe would be helpful to the Admissions Committee in making the final decision on your application.",
-        "limit": "max 50w"
-      },
-      {
-        "q": "Kira Talent Video (Required post-interview-invite): Candidates invited to interview must complete a video response via Kira Talent.",
-        "limit": "varies"
-      },
-      {
-        "q": "RSM Business Admissions Test (BAT, optional alternative): 2.5-hour online assessment evaluating academic aptitude and leadership potential — accepted in lieu of GMAT/GRE.",
-        "limit": "2.5 hours"
-      }
-    ]
-  },
-  {
-    "rank": 12,
-    "name": "Mannheim Business School",
-    "sub": "Mannheim, Germany",
-    "r": "dach",
-    "essays": "Letter of Motivation (~300-500w covering career goals + why MBA + why Mannheim + why now) + possible second short answer on differentiation + two-stage interview (intro + case study)",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Letter of Motivation (Primary essay): Undertaking an MBA will accelerate and transform your future career path. Why is this the right time for you to join our MBA, and how will the Mannheim MBA help you achieve your goals? Address: Why MBA? Why now? Why Mannheim? What are your short-term goals? What are your long-term goals?",
-        "limit": "max ~300-500w (1 page)"
-      },
-      {
-        "q": "Differentiation Question: In your opinion, what differentiates Mannheim from other MBA programs?",
-        "limit": "max ~200w"
-      },
-      {
-        "q": "Video Presentation: Per admissions guidelines, applicants receive instructions for a video presentation as part of the application process.",
-        "limit": "varies"
-      },
-      {
-        "q": "First Interview: Online interview with Admissions Manager — introduce yourself and explain your motivation for pursuing an MBA.",
-        "limit": "varies"
-      },
-      {
-        "q": "Case Study + Second Interview: Successful first-interview candidates work on a take-home case study, then complete a second interview with the Career Development team to demonstrate critical thinking and reasoning skills.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 13,
-    "name": "WHU Otto Beisheim",
-    "sub": "Vallendar, Germany",
-    "r": "dach",
-    "essays": "4 essays via MBA Questionnaire: Essay 1 (300w reasons + skills/competencies to develop) + Essay 2 (~320w 3-5 year + long-term career goals + how WHU helps) + Essay 3 (200w Why WHU?) + Essay 4 (190w What sets you apart?) + financing question + multi-step admission process",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Reasons for MBA: What are your reasons, both professional and personal, for applying for an MBA program? What are some skills or key competencies you would like to develop when studying at WHU?",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 2 — Career Plans: What are your plans for the first 3-5 years after graduation? What are your long-term career aspirations? How do you think the WHU MBA will help you to achieve your goals?",
-        "limit": "max ~320w"
-      },
-      {
-        "q": "Essay 3 — Why WHU: Why do you want to study at WHU?",
-        "limit": "max 200w"
-      },
-      {
-        "q": "Essay 4 — What Sets You Apart: What sets you apart from other applicants? Why are you a perfect fit for the WHU MBA?",
-        "limit": "max 190w"
-      },
-      {
-        "q": "Financing Question: Please let us know how you plan to finance your MBA degree.",
-        "limit": "varies"
-      },
-      {
-        "q": "Interview (Required, multi-step admission process): Final round includes personal interview as part of the WHU admissions test process.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 14,
-    "name": "Copenhagen Business School",
-    "sub": "Copenhagen, Denmark",
-    "r": "nordic",
-    "essays": "4 essays (200-500w each: motivations, achievements, career goals, personal reflections) + interview + Leadership Discovery Process",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Why CBS: Why have you chosen Copenhagen Business School to pursue your MBA? Show how the Scandinavian business model, the school's intimate ~40-50 student community, and Copenhagen's positioning as a hub for green tech, fintech, and logistics align with your trajectory.",
-        "limit": "max 250w (range: 200-500w)"
-      },
-      {
-        "q": "Essay 2 — Post-MBA Career Ambitions: What are your post-MBA career ambitions after graduation? Please answer this question from a three-to-five year perspective post MBA.",
-        "limit": "max ~300-500w"
-      },
-      {
-        "q": "Essay 3 — Leadership & Impact: How have you made a positive impact in your world? What does leadership mean to you, and how do you embody it personally and professionally? Show maturity, wisdom, and reflection rather than a list of achievements.",
-        "limit": "max ~300-500w"
-      },
-      {
-        "q": "Essay 4 — Sustainable Business Management: Discuss your interest in sustainable, responsible leadership grounded in Nordic values. Connect your experience to the school's commitment to sustainability and the Nordic Nine capabilities (ethical thinking, systems perspective, long-term value creation).",
-        "limit": "max ~300-500w"
-      },
-      {
-        "q": "Scholarship Essay (if applying): Demonstrate alignment across at least 3 of CBS's evaluation criteria (academic excellence, career progression, leadership potential, sustainability passion, international experience, drive). Root your answer in concrete impact and specificity.",
-        "limit": "max 250w"
-      },
-      {
-        "q": "Video Submission: Required as part of the application — covers introduction, motivations, and fit with the program.",
-        "limit": "varies"
-      },
-      {
-        "q": "Interview (Required for shortlisted, ~1 hour): After holistic review of resume, essays, and test scores. Probes whether you've reflected on your career, done your homework on Copenhagen and CBS, and will contribute to classroom discussion.",
-        "limit": "~1 hour"
-      },
-      {
-        "q": "Leadership Discovery Process (LDP, during program): Year-long requirement to develop responsible leadership style — applicants should reference engagement with this process.",
-        "limit": "varies"
-      }
-    ]
-  },
-  {
-    "rank": 15,
-    "name": "Warwick Business School",
-    "sub": "Coventry, UK",
-    "r": "uk",
-    "essays": "Essay 1 (350w career goals + how WBS helps) + Essay 2 (300w organizational strategic objectives + your contribution) + Essay 3 (300w scholarship rationale, if applying) + 1000w organizational analysis essay (choose 1 of 2) + Optional (300w) + 60-min interview + Change Maker competencies",
-    "verified": "v",
-    "essayPrompts_2526": [
-      {
-        "q": "Essay 1 — Career Goals: Describe the short and long-term career goals you have set yourself and how the WBS MBA will help you to achieve these?",
-        "limit": "max 350w"
-      },
-      {
-        "q": "Essay 2 — Organizational Contribution: Outline the top strategic objectives for your current or previous organisation and in what ways you have helped contribute to achieving these objectives?",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 3 — Scholarship Rationale (if applying): If you are self-funding and interested in applying for a scholarship, please outline why you believe you are a worthy candidate?",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Essay 4 — Organizational Analysis (Choose 1 of 2): Option A: In your opinion, what are the key issues facing your organization over the next five years?",
-        "limit": "max 1,000w"
-      },
-      {
-        "q": "Essay 4 — Organizational Analysis Option B: Identify the major strengths and weaknesses of an organization of your choice. If you were the CEO, what three things would you change?",
-        "limit": "max 1,000w"
-      },
-      {
-        "q": "Optional Essay: Please use this for any additional information that was not captured within your application. If you feel you've already provided sufficient information about yourself, you need not add anything here.",
-        "limit": "max 300w"
-      },
-      {
-        "q": "Change Maker Core Competencies (evidence throughout application): Strategic Thinking + Creativity + Drive for Results + Personal Impact + Ability to Lead Others.",
-        "limit": "varies"
-      },
-      {
-        "q": "Interview (Required for shortlisted): Approximately 60 minutes, conducted face-to-face or via Microsoft Teams by Recruitment team, CareersPlus team, or academic.",
-        "limit": "~60 min"
-      }
-    ]
-  }
-];
+    ];
 
     let region = "all";
 
@@ -785,9 +949,9 @@
         const has2526 = prompts.length > 0;
         const cycle2526Html = has2526
           ? prompts.map(p =>
-              `<div class="essay-item"><span class="essay-q">${p.q}</span><span class="essay-limit">${p.limit || ""}</span></div>`
-            ).join("")
-            + `<p class="verify-note">⚑ Verify exact prompts &amp; limits at school website before submitting</p>`
+            `<div class="essay-item"><span class="essay-q">${p.q}</span><span class="essay-limit">${p.limit || ""}</span></div>`
+          ).join("")
+          + `<p class="verify-note">⚑ Verify exact prompts &amp; limits at school website before submitting</p>`
           : `<span class="pending-badge">Verification in progress</span>
              <p class="cycle-tbd">Prompts being verified against current school sources.</p>
              <p class="essays-hint">${d.essays || "Application format pending verification."}</p>`;
@@ -831,4 +995,5 @@
   </script>
 
 </body>
+
 </html>

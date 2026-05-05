@@ -1,165 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Top 15 EU MBA Programs — AdmissionWant</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#faf9f7;--ink:#111;--mid:#555;--faint:#aaa;--rule:#e0dedd;
-  --tb:#E6F1FB;--ti:#0C447C;--gb:#E1F5EE;--gi:#085041;
-  --ab:#FAEEDA;--ai:#633806;--pb:#EEEDFE;--pi:#3C3489;
-  --rb:#FCEBEB;--ri:#791F1F;--xb:#f0efed;--xi:#555;
-  --good:#27500A;--warn:#633806;--bad:#A32D2D;
-}
-html{font-size:17px;scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'EB Garamond',Georgia,serif;line-height:1.7;padding:0 1.5rem;-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}
-nav{max-width:800px;margin:0 auto;padding:2rem 0 1.5rem;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule)}
-.nb{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
-.nl{display:flex;gap:1.75rem;list-style:none}
-.nl a{font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);transition:color .2s}
-.nl a:hover{color:var(--ink)}
-.hdr{max-width:900px;margin:0 auto;padding:3rem 0 1.75rem}
-.eye{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.6rem}
-.hdr h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:.6rem}
-.hdr h1 em{font-style:italic}
-.hsub{font-size:.9rem;color:var(--mid);margin-bottom:.85rem}
-.legend{display:flex;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--mid);padding:.6rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:.5rem}
-.legend strong{color:var(--ink);font-weight:500}
-.legend-item{display:inline-flex;align-items:center;gap:.3rem}
-.legend-item .badge{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;font-size:9px;font-weight:600}
-.bv{background:#dbe9d7;color:var(--good)}
-.bu{background:#f5e1c2;color:var(--warn)}
-.be{background:#e8e7f5;color:var(--pi)}
-.wrap{max-width:1440px;margin:0 auto;padding-bottom:5rem}
-.tabs{display:flex;border-bottom:1px solid var(--rule)}
-.tab{padding:.55rem 1.1rem .5rem;font-family:'EB Garamond',serif;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;color:var(--mid);border:none;border-bottom:2px solid transparent;background:none;transition:color .15s;margin-bottom:-1px}
-.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
-.tab:hover{color:var(--ink)}
-.ctrl{display:flex;gap:.6rem;flex-wrap:wrap;padding:.9rem 0 .7rem;align-items:center;border-bottom:1px solid var(--rule)}
-.ctrl input{font-family:'EB Garamond',serif;font-size:.85rem;padding:.35rem .7rem;border:.5px solid var(--rule);background:var(--bg);color:var(--ink);width:230px;outline:none;transition:border-color .15s}
-.ctrl input:focus{border-color:var(--ink)}
-.ctrl input::placeholder{color:var(--faint)}
-.rg{display:flex;gap:.35rem;flex-wrap:wrap}
-.rb{font-family:'EB Garamond',serif;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;padding:.28rem .8rem;border:.5px solid var(--faint);cursor:pointer;background:var(--bg);color:var(--mid);transition:all .15s}
-.rb.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.rb:hover:not(.on){border-color:var(--ink);color:var(--ink)}
-.cnt{font-size:.7rem;letter-spacing:.05em;color:var(--faint);margin-left:auto;text-transform:uppercase}
-.to{width:100%;overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:1700px;font-size:12px;font-family:'EB Garamond',serif}
-thead tr{border-bottom:1.5px solid var(--ink)}
-th{text-align:left;padding:.45rem .55rem;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;color:var(--mid);white-space:nowrap}
-tbody tr{border-bottom:1px solid var(--rule);transition:background .1s}
-tbody tr:hover{background:#f3f1ee}
-td{padding:.55rem .55rem;vertical-align:middle}
-.rk{font-size:10px;color:var(--faint);width:26px;text-align:center}
-.sn{font-weight:500;font-size:13px;line-height:1.3;display:flex;align-items:baseline;gap:.3rem}
-.ss{font-size:10.5px;color:var(--mid);line-height:1.3}
-.sub{font-size:11px;color:var(--mid);line-height:1.5}
-.est{font-size:8px;color:var(--faint);vertical-align:super;margin-left:2px}
-.tg{display:inline-block;font-size:10px;padding:1px 6px;line-height:1.7;white-space:nowrap;margin:1px 2px 1px 0}
-.tb{background:var(--tb);color:var(--ti)}
-.tg2{background:var(--gb);color:var(--gi)}
-.ta{background:var(--ab);color:var(--ai)}
-.tp{background:var(--pb);color:var(--pi)}
-.tr{background:var(--rb);color:var(--ri)}
-.tx{background:var(--xb);color:var(--xi)}
-.good{color:var(--good)}
-.med{color:var(--warn)}
-.hrd{color:var(--bad)}
-.pct{font-size:11px;font-weight:500;line-height:1}
-.bar{height:4px;background:var(--rule);margin-top:3px;min-width:60px}
-.bf{height:100%;background:var(--ti)}
-.bg2{height:100%;background:var(--good)}
-.tbd{display:inline-block;font-size:10px;padding:1px 6px;background:var(--xb);color:var(--faint);letter-spacing:.03em}
-.cl{margin-bottom:2px;line-height:1.4}
-.cl span.lbl{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-right:4px}
-.vbadge{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;font-size:9px;font-weight:600;flex-shrink:0;cursor:help}
-.vbadge.v{background:#dbe9d7;color:var(--good)}
-.vbadge.u{background:#f5e1c2;color:var(--warn)}
-.vbadge.e{background:#e8e7f5;color:var(--pi)}
-.prog{font-size:11px;font-weight:500;color:var(--ink);line-height:1.3}
-.prog-sub{font-size:10px;color:var(--mid);line-height:1.4;margin-top:1px}
-</style>
-</head>
-<body>
-<nav>
-  <a class="nb" href="../index.html">AdmissionWant</a>
-  <ul class="nl">
-    <li><a href="top40_global.html">Top 40 Global</a></li>
-    <li><a href="top25_us.html">Top 25 US</a></li>
-    <li><a href="top15_eu.html">Top 15 EU</a></li>
-  </ul>
-</nav>
-<div class="hdr">
-  <p class="eye">AdmissionWant · European MBA Guide 2025–27</p>
-  <h1>Top 15 <em>European</em> MBA Programs</h1>
-  <p class="hsub">Reference tool covering School Profile, Admissions, and Outcomes. Data is being progressively verified — hover the badge next to each school name to see verification status. Cycle data: 2025–26 confirmed where verified, 2026–27 pending school release.</p>
-  <div class="legend">
-  <span><strong>Verification:</strong></span>
-  <span class="legend-item"><span class="badge bv">✓</span> Verified against current school sources</span>
-  <span class="legend-item"><span class="badge bu">⚠</span> Pending verification — best estimate</span>
-  <span class="legend-item"><span class="badge be">ⓘ</span> Estimate — derived from comparable peers</span>
-</div>
-</div>
-<div class="wrap">
-  <div class="tabs">
-    <button class="tab on" onclick="showTab(0,this)">School Profile</button>
-    <button class="tab" onclick="showTab(1,this)">Getting In</button>
-    <button class="tab" onclick="showTab(2,this)">Outcomes</button>
-  </div>
-  <div class="ctrl">
-    <input id="sq" type="text" placeholder="Search school, sector, location, program…" oninput="render()">
-    <div class="rg">
-      <button class="rb on" data-r="all" onclick="setReg(this)">All</button>
-      <button class="rb" data-r="uk" onclick="setReg(this)">United Kingdom</button>
-      <button class="rb" data-r="france" onclick="setReg(this)">France</button>
-      <button class="rb" data-r="spain" onclick="setReg(this)">Spain</button>
-      <button class="rb" data-r="dach" onclick="setReg(this)">DACH</button>
-      <button class="rb" data-r="nordic" onclick="setReg(this)">Nordic</button>
-      <button class="rb" data-r="other" onclick="setReg(this)">Other EU</button>
-    </div>
-    <span class="cnt" id="cnt"></span>
-  </div>
-  <div class="to">
-    <table>
-      <thead id="th"></thead>
-      <tbody id="tb2"></tbody>
-    </table>
-  </div>
-</div>
-<script>
-const schools=[{"rank": 1, "name": "INSEAD", "sub": "Fontainebleau, France · Singapore", "r": "france", "usp": "World's largest MBA; 90+ nationalities; truly global 1-yr program; dual campuses", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 1000, "intl": 92, "ind": 12, "pri": "Consulting (MBB+)", "sec": "Finance / IB", "ter": "General Management", "tuition": "€103,500 (Aug '25) / €107,600 (Jan '26)", "living": "~€30–32K (10 mo)", "housing": "Fontainebleau + Singapore campus housing", "schol": "Medium", "scholn": "170+ scholarships; merit + need + diversity; ~30% receive aid", "gmatRange": "680–740 (avg ~710)", "greRange": "316–330", "greEst": true, "workex": "3–8 yrs (avg ~5.5)", "accept": 31, "intfmt": "Two alumni interviews (separate); 1 hr each + mandatory video essay", "invrate": "~40% of applicants", "r1_2526": "Sep 16 2025", "r2_2526": "Nov 4 2025", "r3_2526": "Jan 20 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6–8 wks after each round (rolling)", "essays": "7 essays (4 motivation, 3 personal) + 4 video essays", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€12,000 (first installment, non-refundable)", "emp3m": 88, "salary": "€113,400 base + ~€25K bonus", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / HSBC", "Amazon / Google / Meta"], "sectors": "Consulting #1 · Finance #2 · Tech #3", "program": "MBA (10–12 mo)", "programSub": "Aug intake (10 mo, no internship) · Jan intake (12 mo, with internship) · Also: GEMBA, EMFin, MIM", "verified": "v"}, {"rank": 2, "name": "London Business School", "sub": "London, UK", "r": "uk", "usp": "London finance hub; 15–21 month flexible length; strongest EU PE & IB placement", "focus": ["Finance / PE", "Consulting", "Technology"], "cls": 431, "intl": 90, "ind": 11, "pri": "Finance / PE / IB", "sec": "Consulting (MBB)", "ter": "Technology", "tuition": "£123,950 (2026 intake; covers full 15–21 mo)", "living": "~£25–30K (London)", "housing": "LBS accommodation + London private market", "schol": "Medium-High", "scholn": "175+ scholarships; admitted students auto-considered; ~30% receive aid", "gmatRange": "680–740 (avg 708)", "greRange": "320–333", "greEst": true, "workex": "~5.5 yrs (avg)", "accept": 20, "intfmt": "Alumni interview with case discussion component; 1 hr", "invrate": "~40% of applicants", "r1_2526": "Sep 5 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 23 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~8 wks after each round (rolling)", "essays": "2 essays + optional + reapplicant if applicable", "lors": "2 professional", "reapp": "Can reapply after 1 yr", "deposit": "£3,500 commitment + £6,500 reservation (£10K total)", "emp3m": 85, "salary": "£90K base (UK median) + bonus", "hiring": ["Goldman / JPM / Barclays", "McKinsey / BCG / Bain", "Blackstone / KKR / Advent"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "MBA (15–21 mo, flexible)", "programSub": "Also: EMBA · MiM · MFA · Sloan Masters · LBS-Columbia EMBA", "verified": "v"}, {"rank": 3, "name": "HEC Paris", "sub": "Paris, France", "r": "france", "usp": "Grande École prestige; #1 in France; luxury, consulting & finance; 16 months", "focus": ["Consulting", "Finance", "Luxury / FMCG"], "cls": 268, "intl": 95, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "Luxury / FMCG", "tuition": "€102,000 (12 or 16 mo, same price)", "living": "~€25–30K (16 mo)", "housing": "HEC campus residence + Paris off-campus", "schol": "Medium", "scholn": "Merit + need + diversity; ~25% receive aid; up to 50% tuition; €1M+ HEC Foundation/yr", "gmatRange": "650–730 (avg 690)", "greRange": "314–325", "greEst": true, "workex": "2–10 yrs (avg ~6)", "accept": 18, "intfmt": "Two separate alumni interviews; ~1 hr each; in-person or virtual", "invrate": "~35% of applicants", "r1_2526": "Sep 24 2025", "r2_2526": "Nov 12 2025", "r3_2526": "Jan 21 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after each round; rolling decisions", "essays": "3 essays + motivation letter + video questions", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€9,000 (first installment)", "emp3m": 75, "salary": "$109,847 base + $25,301 sign-on (avg)", "hiring": ["McKinsey / BCG / Bain", "LVMH / L'Oréal / Kering", "Goldman / BNP Paribas / Lazard"], "sectors": "Consulting #1 · Finance #2 · Luxury/FMCG #3", "program": "MBA (12 or 16 mo)", "programSub": "12-mo accelerated (Jan intake only) · 16-mo (both intakes) · Also: EMBA · MiM", "verified": "v"}, {"rank": 4, "name": "IMD", "sub": "Lausanne, Switzerland", "r": "dach", "usp": "Most experienced cohort globally; general management excellence; 1 yr; leadership-first", "focus": ["General Mgmt", "Consulting", "Industry / Ops"], "cls": 90, "intl": 97, "ind": 15, "pri": "General Management", "sec": "Consulting", "ter": "Industry / Operations", "tuition": "CHF 80,000 + CHF 17,500 mandatory fees (~CHF 97,500 total)", "living": "~CHF 35–55K (12 mo Lausanne)", "housing": "Lausanne private market only", "schol": "Medium", "scholn": "Merit, diversity, need-based; ~30% receive aid; Future Leaders, Women in Mgmt awards", "gmatRange": "555–755 (avg ~680)", "greRange": "310–325", "greEst": true, "workex": "~7 yrs (avg)", "accept": 30, "intfmt": "Full-day Assessment Day in Lausanne (group + individual + case + interview)", "invrate": "~25% of applicants", "r1_2526": "Sep 15 2025 (Jan '26 intake)", "r2_2526": "Oct 15 2025", "r3_2526": "Jan 15 2026 (Jan '27 intake R1)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after assessment day (rolling)", "essays": "3 essays + recommender questions", "lors": "3 professional (incl. direct supervisor)", "reapp": "Can reapply next year", "deposit": "CHF ~15,600 (1st installment, non-refundable)", "emp3m": 92, "salary": "$180K USD median post-MBA", "hiring": ["McKinsey / BCG / Roland Berger", "Nestlé / Novartis / ABB", "UBS / Julius Baer"], "sectors": "Consulting #1 · Industry/FMCG #2 · Finance #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · Master in Sustainability", "verified": "v"}, {"rank": 5, "name": "IESE", "sub": "Barcelona, Spain", "r": "spain", "usp": "Case method; values-driven leadership; 15 months; strong global alumni network", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 400, "intl": 85, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "General Management", "tuition": "€114,000 (2 yrs)", "living": "~€24–30K/yr (Barcelona)", "housing": "Barcelona private market; IESE housing support", "schol": "Medium-High", "scholn": "Merit + need + diversity; up to 50% tuition; ~50% receive aid", "gmatRange": "545–715 (avg ~680)", "greRange": "310–325", "greEst": true, "workex": "~5.4 yrs (avg)", "accept": 26, "intfmt": "By invitation; on Barcelona campus, video, or with travelling adcom", "invrate": "~40% of applicants", "r1_2526": "Sep 25 2025", "r2_2526": "Jan 9 2026", "r3_2526": "Mar 12 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after submission (rolling, reviewed every 2 wks)", "essays": "3 essays + Kira video questions", "lors": "2 professional", "reapp": "Fresh application required", "deposit": "€4,500 commitment + €5,500 deposit (€10K total)", "emp3m": 94, "salary": "€99,500–101,600 base + €35K bonus", "hiring": ["McKinsey / BCG / Bain", "BBVA / Santander / Sabadell", "Airbus / Siemens / Inditex"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "Full-Time MBA (15–19 mo)", "programSub": "Also: EMBA · GEMBA · MiM · AMP", "verified": "v"}, {"rank": 6, "name": "Cambridge Judge", "sub": "Cambridge, UK", "r": "uk", "usp": "Cambridge brand; 1 yr; tech & entrepreneurship strength; Cambridge innovation ecosystem", "focus": ["Consulting", "Technology / VC", "Finance"], "cls": 244, "intl": 98, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Technology / VC", "ter": "Finance / Banking", "tuition": "£74,000 (2025-26) → £80,000 (2026-27)", "living": "~£19,860/yr (Cambridge)", "housing": "Cambridge college accommodation + private", "schol": "Medium", "scholn": "Multiple scholarships; Dean's £15K, Professional Diversity £32K; auto-considered", "gmatRange": "650–730 (avg 697)", "greRange": "315–328", "greEst": true, "workex": "~6 yrs (avg, age 29)", "accept": 28, "intfmt": "Interview by professor; on-campus or virtual; 30–45 min", "invrate": "~45% of applicants", "r1_2526": "Aug 26 2025", "r2_2526": "Oct 6 2025", "r3_2526": "Jan 5 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~3 wks after interview; 5 rounds (R4: Mar 30 2026; R5: May 5 2026)", "essays": "3 essays (career objectives + 2 reflective) + recommender form", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "15% of program fee (~£11K) within 3 wks of offer", "emp3m": 79, "salary": "£76,138 base + £17K bonus = £93K total", "hiring": ["McKinsey / BCG / Deloitte", "Amazon / Google / Microsoft", "Goldman / Barclays / HSBC"], "sectors": "Consulting #1 · Tech #2 · Finance #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · MiM · MFin · MPhil programs", "verified": "v"}, {"rank": 7, "name": "Oxford Saïd", "sub": "Oxford, UK", "r": "uk", "usp": "Oxford brand; 1 yr; global health & social enterprise strength; vast alumni access", "focus": ["Finance", "Consulting", "Social Enterprise"], "cls": 332, "intl": 96, "ind": 10, "pri": "Finance / Banking", "sec": "Consulting (MBB+Big4)", "ter": "Social Enterprise / NGO", "tuition": "£88,800 (2025-26 1-yr program)", "living": "~£17,100–£24,420/yr (Oxford)", "housing": "Oxford college accommodation + private", "schol": "Medium", "scholn": "Up to £30K via Skoll, FORTÉ, Black Leaders; Stage 4 deadline for scholarships", "gmatRange": "650–720 (avg 690)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 20, "intfmt": "Interview by adcom + online assessment; ~45 min", "invrate": "~35% of applicants", "r1_2526": "Sep 1 2025", "r2_2526": "Oct 1 2025", "r3_2526": "Nov 3 2025", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "5 stages: Stage 4 (Jan 7 2026, scholarship) → Mar 6 | Stage 5 (Mar 16) → Apr 24 2026", "essays": "3 essays + online video assessment (Kira)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~£11K (within 1 month of offer)", "emp3m": 70, "salary": "£74,143 base avg (Class 2024)", "hiring": ["McKinsey / BCG / Deloitte", "Goldman / JP Morgan / Barclays", "Amazon / Google / Meta"], "sectors": "Finance #1 · Consulting #2 · Social Enterprise #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · MFE · 1+1 MBA · MSc Major Programme Mgmt", "verified": "v"}, {"rank": 8, "name": "IE Business School", "sub": "Madrid, Spain", "r": "spain", "usp": "Entrepreneurship-first; most diverse European MBA; 13 months; tech-driven curriculum", "focus": ["Entrepreneurship", "Technology", "Finance"], "cls": 400, "intl": 92, "ind": 15, "pri": "Entrepreneurship / VC", "sec": "Technology", "ter": "Finance / Banking", "tuition": "€82,300 (11/15-mo intl MBA) + €1,200 IE Foundation", "living": "~€10–20K/yr (Madrid)", "housing": "IE campus area + Madrid private market", "schol": "Medium-High", "scholn": "Merit + diversity awards up to 50% tuition; up to 3 scholarships per applicant (1 awarded)", "gmatRange": "640–720 (avg 680)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg, age 29; min 3 yrs req)", "accept": 35, "intfmt": "Interview + Kira video assessment; rolling, decisions in 1–3 wks after interview", "invrate": "~50% of applicants", "r1_2526": "Rolling (Sep 1 2025 final for Sep '25 intake)", "r2_2526": "Rolling (Dec 30 2025 final for Jan '26 intake)", "r3_2526": "Rolling — apply 6+ mo before intake for scholarships", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "1–3 wks after complete application + interview", "essays": "1 essay + Kira online assessment (1 written + 2 video)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~€8,000 reservation fee", "emp3m": 91, "salary": "€113,770 avg base (per ClearAdmit; varies by industry)", "hiring": ["McKinsey / BCG / Accenture", "Amazon / Google / Telefónica", "Santander / BBVA / CaixaBank"], "sectors": "Consulting #1 · Tech #2 · Finance #3", "program": "Global Online MBA / IE MBA (11–18 mo)", "programSub": "Also: Executive MBA · International MBA · MiM", "verified": "v"}, {"rank": 9, "name": "SDA Bocconi", "sub": "Milan, Italy", "r": "other", "usp": "Italian/EU business hub; luxury & fashion access; finance strength; 1 yr", "focus": ["Finance", "Luxury / Fashion", "Consulting"], "cls": 146, "intl": 79, "ind": 12, "pri": "Finance / Banking", "sec": "Luxury / Fashion", "ter": "Consulting", "tuition": "€82,000 total (4 installments)", "living": "~€20–30K (12–15 mo Milan)", "housing": "Bocconi campus area + Milan private market", "schol": "High", "scholn": "€1M annual budget; merit waivers 10–80%; women, athletes, diversity awards", "gmatRange": "620–700 (avg ~650)", "greRange": "310–325", "greEst": true, "workex": "~6 yrs (avg, age 29)", "accept": 38, "intfmt": "Adcom interview; on-campus, alumni or virtual; 45–60 min; pre-interview video", "invrate": "~50% of applicants", "r1_2526": "Nov 4 2025", "r2_2526": "Jan 13 2026", "r3_2526": "Mar 3 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "4 rounds (R4: May 18 2026); rolling decisions; final deadline Apr 15 2026", "essays": "Online form short answers + pre-interview video + 2 references", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€2,500 (within 4 wks of admission)", "emp3m": 79, "salary": "€110,000 avg total package + €24K bonus", "hiring": ["KPMG / Deloitte / Accenture", "LVMH / Prada / Gucci", "UniCredit / Mediobanca / Intesa"], "sectors": "Finance #1 · Luxury/Fashion #2 · Consulting #3", "program": "Full-Time MBA (12 mo)", "programSub": "Also: EMBA · MiM · MISB · MISM", "verified": "v"}, {"rank": 10, "name": "ESADE", "sub": "Barcelona, Spain", "r": "spain", "usp": "Values-based management; trilingual campus; strong consulting network; 15 months", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 190, "intl": 95, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "General Management", "tuition": "€78,500 (2025-26)", "living": "~€14–28K/yr (Barcelona)", "housing": "Barcelona private market; ESADE housing service", "schol": "Medium", "scholn": "Scholarships cover 50–85% tuition; merit, women, diversity awards", "gmatRange": "610–710 (avg 660)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (min 2 yrs req)", "accept": 35, "intfmt": "Conversational interview by adcom; in-person or virtual; ~45–60 min", "invrate": "~50% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Nov 19 2025", "r3_2526": "Jan 14 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "9 rounds total through Jun 24 2026; rolling decisions", "essays": "4–5 essays (3,000 chars each) + optional + recommender", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "€2,500 reservation fee", "emp3m": 91, "salary": "€108,500 avg post-MBA (~$113,400)", "hiring": ["McKinsey / BCG / Deloitte", "Santander / CaixaBank / BBVA", "Amazon / Meta / Telefónica"], "sectors": "Consulting #1 · Finance #2 · Tech #3", "program": "Full-Time MBA (12, 15, or 18 mo)", "programSub": "Also: Executive MBA · MiM · MS programs", "verified": "v"}, {"rank": 11, "name": "RSM Rotterdam", "sub": "Rotterdam, Netherlands", "r": "other", "usp": "Sustainability focus; EU logistics hub; strong consulting pipeline; 1 yr", "focus": ["Consulting", "Finance", "Sustainability / ESG"], "cls": 100, "intl": 95, "ind": 15, "pri": "Consulting", "sec": "Finance / Banking", "ter": "Sustainability / ESG", "tuition": "€70,000 (Jan 2027 intake; was €65K prior)", "living": "~€21,600/yr (~€1,800/mo incl housing + insurance)", "housing": "RSM campus area + Rotterdam private market", "schol": "Medium-High", "scholn": "Erasmus MBA Scholarship up to 50%; RSM Fellows (3 × 50% per yr); various awards", "gmatRange": "610–700 (RSM BAT also accepted)", "greRange": "308–322", "greEst": true, "workex": "~5 yrs (avg)", "accept": 40, "intfmt": "Interview with adcom (in person or video); 35–60 min; conversational", "invrate": "~50% of applicants", "r1_2526": "Feb 11 2025", "r2_2526": "Apr 6 / Jun 8 / Aug 3 2025", "r3_2526": "Oct 5 / Nov 2 2025 (~6 rounds total for Jan 2026 intake)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~6 wks after submission; Jan 2027 intake rounds open Apr 2026", "essays": "3–4 essays (~500w each) + RSM BAT (2.5hr online; alternative to GMAT/GRE)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€5,000 (admissions fee, not waived)", "emp3m": 91, "salary": "~€63,200 (US$68,711) base avg (Class 2023)", "hiring": ["Deloitte / McKinsey / Accenture", "Shell / Unilever / Heineken", "ABN AMRO / ING / Rabobank"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "International Full-Time MBA (1 yr)", "programSub": "Also: Executive MBA · Global EMBA · Part-Time MBA", "verified": "v"}, {"rank": 12, "name": "Mannheim Business School", "sub": "Mannheim, Germany", "r": "dach", "usp": "Germany's most selective MBA; rigorous analytics; finance & consulting stronghold; 1 yr", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 60, "intl": 85, "ind": 15, "pri": "Consulting", "sec": "Finance / Banking", "ter": "Industry / Manufacturing", "tuition": "€47,000 (Sep 2026 intake; total cost €59–65K with living)", "living": "~€12–18K/yr (Mannheim)", "housing": "Mannheim private market; housing service", "schol": "Low-Medium", "scholn": "Industry Diversity (€2K each, top 3/industry); Women in Business; Outstanding Candidate; up to 50% tuition", "gmatRange": "600–700 (avg 640–660)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (avg, min 3 yrs postgrad)", "accept": 20, "intfmt": "Personal online consultation + interview with admissions manager; selection interviews online", "invrate": "~55% of applicants", "r1_2526": "Nov 30 2025 (EB1, €4K disc)", "r2_2526": "Jan 31 2026 (EB2, €3K) / Mar 31 2026 (EB3, €2K)", "r3_2526": "Apr 30 2026 (EB4, €1K) / Jun 30 2026 (final)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; scholarship deadline Jul 31 2026 for Sep 2026 intake", "essays": "2–3 essays + leadership/motivation prompts", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€8,500 (within 3 wks of admission)", "emp3m": 95, "salary": "€85,000+ avg post-MBA (77% increase); ~US$110,264", "hiring": ["McKinsey / BCG / Roland Berger", "Bosch / SAP / BASF", "Deutsche Bank / Commerzbank"], "sectors": "Consulting #1 · Industry #2 · Finance #3", "program": "Full-Time MBA (12 mo)", "programSub": "Also: Mannheim & Tongji EMBA · ESSEC & Mannheim EMBA · Part-Time MBA", "verified": "v"}, {"rank": 13, "name": "WHU Otto Beisheim", "sub": "Vallendar, Germany", "r": "dach", "usp": "Germany's top private B-school; 1 yr; finance & consulting; strong German corporate ties", "focus": ["Finance", "Consulting", "Entrepreneurship"], "cls": 75, "intl": 85, "ind": 15, "pri": "Finance / Banking", "sec": "Consulting", "ter": "Entrepreneurship", "tuition": "€47,500–49,500 (12-mo program total)", "living": "~€12–15K/yr (Vallendar/Düsseldorf)", "housing": "Vallendar private market; WHU housing support", "schol": "Low-Medium", "scholn": "~20% receive aid; DAAD, Haniel Stiftung; Women, Diversity, GMAT-based scholarships", "gmatRange": "600–680 (recommended for scholarship)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (min 3 yrs preferred)", "accept": 35, "intfmt": "Admissions interview + WHU admission test; campus or online", "invrate": "~50% of applicants", "r1_2526": "Dec 15 2025 (final for Apr 2026 intake)", "r2_2526": "May 31 2026 (final for Sep 2026 intake)", "r3_2526": "Rolling between intake deadlines", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~4 wks after submission; both Sep and Apr intakes", "essays": "3 essays (300w each) + WHU questionnaire", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "€1,500–2,000 (acceptance)", "emp3m": 90, "salary": "~€85–110K avg post-MBA", "hiring": ["McKinsey / BCG / Oliver Wyman", "Deutsche Bank / Goldman Frankfurt", "Allianz / Munich Re / DHL"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Part-Time MBA · Kellogg-WHU EMBA", "verified": "v"}, {"rank": 14, "name": "Copenhagen Business School", "sub": "Copenhagen, Denmark", "r": "nordic", "usp": "Scandinavia's top MBA; sustainability & CSR expertise; EU market access; 1 yr", "focus": ["Finance", "Sustainability / ESG", "Consulting"], "cls": 45, "intl": 92, "ind": 15, "pri": "Finance / Banking", "sec": "Sustainability / ESG", "ter": "Consulting", "tuition": "DKK 330,000 (~€44,000) — 1-yr full-time MBA", "living": "~€16–20K/yr (Copenhagen; high)", "housing": "Copenhagen private market; CBS housing support", "schol": "Medium", "scholn": "~20% receive aid; sustainability-focused awards; merit-based", "gmatRange": "600–720 (avg 655); GRE avg 320", "greRange": "316–328", "greEst": false, "workex": "~7 yrs (avg, mature cohort)", "accept": 15, "intfmt": "Continuous review; admissions interview after profile assessment", "invrate": "~50% of applicants", "r1_2526": "Nov 10 2025 (R1)", "r2_2526": "Jan 10 2026 (R2)", "r3_2526": "Apr 10 2026 (R3); Jun 10 2026 (final non-EU); Jul 10 2026 (final EU)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; rolling scholarship awards", "essays": "Sustainability leadership essay + motivation + 2 references; CBS MBA Admissions Test alternative", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~€8,000 (estimated)", "emp3m": 92, "salary": "DKK 660,000 median (~€88K, US$96K) + DKK 52,600 sign-on", "hiring": ["McKinsey / BCG / Deloitte", "Maersk / Novo Nordisk / Vestas", "Nordea / Danske Bank"], "sectors": "Finance #1 · Consulting #2 · Sustainability #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Executive MBA · Flex MBA · MSc programs", "verified": "v"}, {"rank": 15, "name": "Warwick Business School", "sub": "Coventry, UK", "r": "uk", "usp": "Finance & fintech focus; Gillmore Centre; top UK full-time MBA; strong corporate ties", "focus": ["Finance / Fintech", "Consulting", "General Mgmt"], "cls": 75, "intl": 85, "ind": 15, "pri": "Finance / Fintech", "sec": "Consulting", "ter": "General Management", "tuition": "£57,500 (Sep 2025); £59,500 (2026/27)", "living": "~£15–20K/yr (Coventry; affordable)", "housing": "Warwick campus + Coventry/Leamington private", "schol": "Medium-High", "scholn": "Up to £29,750 scholarships for Sep 2026 entry; merit + diversity", "gmatRange": "610–720 (avg 670, 10th ed; 615 Focus)", "greRange": "316–328 (160 V/Q)", "greEst": false, "workex": "~5 yrs (min 3 yrs req)", "accept": 30, "intfmt": "Adcom interview (in-person or virtual); ~40–45 min; conversational", "invrate": "~50% of applicants", "r1_2526": "Oct 5 2025 (R1)", "r2_2526": "6 rounds through Aug 2026", "r3_2526": "May 31 2026 (final intl) / Aug 2026 (final EU)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~3–4 wks after each round; scholarships auto-considered", "essays": "Essays + 2 professional references; Warwick Test alternative to GMAT/GRE (selectively post-interview)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "£2,500 within 4 weeks", "emp3m": 89, "salary": "$132,522 weighted avg (~£104K); 44% salary increase", "hiring": ["Deloitte / KPMG / PwC", "Barclays / HSBC / Lloyds", "Amazon / Jaguar Land Rover"], "sectors": "Finance/Fintech #1 · Consulting #2 · Industry #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Distance Learning MBA · Executive MBA", "verified": "v"}];
 
-function vb(v){
-  if(!v) return '';
-  if(v==='v') return '<span class="vbadge v" title="Verified against current school sources">\u2713</span>';
-  if(v==='u') return '<span class="vbadge u" title="Pending verification \u2014 best estimate">\u26A0</span>';
-  if(v==='e') return '<span class="vbadge e" title="Estimate \u2014 derived from comparable peers">\u24D8</span>';
-  return '';
-}
-const T=[
- {
-  lbl:"School Profile",
-  ths:["#","School","Program","Location","USP","Focus Areas","Class Size","Intl %","Indian %","Primary Sector","Secondary Sector","Tertiary Sector","Total Tuition","Living Cost","Housing","Scholarship"],
-  row(d){
-   const v=d.verified||'u';
-   const tgs=(a,c)=>a.map(x=>`<span class="tg ${c}">${x}</span>`).join("");
-   const bar=(val,c)=>`<div class="pct">${val}%</div><div class="bar"><div class="${c}" style="width:${Math.min(val,100)}%"></div></div>`;
-   const sc=d.schol.startsWith("Very")||d.schol.startsWith("High")?"good":d.schol.startsWith("Med")?"med":"hrd";
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Reference tool covering the top 15 European MBA programs — school profile, admissions metrics, and employment outcomes. 2025–26 cycle data. Built for Indian applicants.">
+  <link rel="canonical" href="https://admissionwant.com/tools/top15_eu.html">
+  <meta property="og:site_name" content="AdmissionWant">
+  <meta property="og:title" content="Top 15 European MBA Programs — Reference Tool 2025–27 | AdmissionWant">
+  <meta property="og:description" content="Compare the top 15 European MBA programs across profile, admissions, and outcomes. 2025–26 verified data.">
+  <meta property="og:url" content="https://admissionwant.com/tools/top15_eu.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://admissionwant.com/assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Top 15 European MBA Programs — Reference Tool">
+  <meta name="twitter:description" content="Compare the top 15 European MBA programs across profile, admissions, and outcomes.">
+  <meta name="twitter:image" content="https://admissionwant.com/assets/og-preview.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Top 15 European MBA Programs Reference Tool",
+    "description": "Comparative reference tool for the 15 most relevant European MBA programs for Indian applicants — including HEC Paris, INSEAD, LBS, IESE, IMD, IE, SDA Bocconi, ESADE, Cambridge Judge, Oxford Saïd, and others. Covers school profile, admissions metrics (acceptance rates, GMAT/GRE ranges, application deadlines), and employment outcomes. 2025–26 cycle data verified against current school sources.",
+    "url": "https://admissionwant.com/tools/top15_eu.html",
+    "creator": {
+      "@type": "Person",
+      "name": "Kunj Behari Beriwala",
+      "url": "https://admissionwant.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AdmissionWant",
+      "url": "https://admissionwant.com/"
+    },
+    "isAccessibleForFree": true,
+    "license": "https://admissionwant.com/",
+    "temporalCoverage": "2025/2027",
+    "spatialCoverage": "Europe",
+    "keywords": ["MBA", "European MBA", "business school", "HEC Paris", "INSEAD", "LBS", "London Business School", "IESE", "IMD", "IE Business School", "SDA Bocconi", "ESADE", "Cambridge Judge", "Oxford Said", "RSM", "ESMT", "WHU", "Trinity"]
+  }
+  </script>
+  <title>Top 15 EU MBA Programs — AdmissionWant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #111;
+      --mid: #555;
+      --faint: #aaa;
+      --rule: #e0dedd;
+      --tb: #E6F1FB;
+      --ti: #0C447C;
+      --gb: #E1F5EE;
+      --gi: #085041;
+      --ab: #FAEEDA;
+      --ai: #633806;
+      --pb: #EEEDFE;
+      --pi: #3C3489;
+      --rb: #FCEBEB;
+      --ri: #791F1F;
+      --xb: #f0efed;
+      --xi: #555;
+      --good: #27500A;
+      --warn: #633806;
+      --bad: #A32D2D;
+    }
+
+    html {
+      font-size: 17px;
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    nav {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .nb {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .nl {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none
+    }
+
+    .nl a {
+      font-size: .78rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color .2s
+    }
+
+    .nl a:hover {
+      color: var(--ink)
+    }
+
+    .hdr {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 0 1.75rem
+    }
+
+    .eye {
+      font-size: .72rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: .6rem
+    }
+
+    .hdr h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: .6rem
+    }
+
+    .hdr h1 em {
+      font-style: italic
+    }
+
+    .hsub {
+      font-size: .9rem;
+      color: var(--mid);
+      margin-bottom: .85rem
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: .78rem;
+      color: var(--mid);
+      padding: .6rem 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin-top: .5rem
+    }
+
+    .legend strong {
+      color: var(--ink);
+      font-weight: 500
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem
+    }
+
+    .legend-item .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      font-size: 9px;
+      font-weight: 600
+    }
+
+    .bv {
+      background: #dbe9d7;
+      color: var(--good)
+    }
+
+    .bu {
+      background: #f5e1c2;
+      color: var(--warn)
+    }
+
+    .be {
+      background: #e8e7f5;
+      color: var(--pi)
+    }
+
+    .wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-bottom: 5rem
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .tab {
+      padding: .55rem 1.1rem .5rem;
+      font-family: 'EB Garamond', serif;
+      font-size: .78rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: var(--mid);
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: none;
+      transition: color .15s;
+      margin-bottom: -1px
+    }
+
+    .tab.on {
+      color: var(--ink);
+      border-bottom-color: var(--ink)
+    }
+
+    .tab:hover {
+      color: var(--ink)
+    }
+
+    .ctrl {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      padding: .9rem 0 .7rem;
+      align-items: center;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .ctrl input {
+      font-family: 'EB Garamond', serif;
+      font-size: .85rem;
+      padding: .35rem .7rem;
+      border: .5px solid var(--rule);
+      background: var(--bg);
+      color: var(--ink);
+      width: 230px;
+      outline: none;
+      transition: border-color .15s
+    }
+
+    .ctrl input:focus {
+      border-color: var(--ink)
+    }
+
+    .ctrl input::placeholder {
+      color: var(--faint)
+    }
+
+    .rg {
+      display: flex;
+      gap: .35rem;
+      flex-wrap: wrap
+    }
+
+    .rb {
+      font-family: 'EB Garamond', serif;
+      font-size: .74rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: .28rem .8rem;
+      border: .5px solid var(--faint);
+      cursor: pointer;
+      background: var(--bg);
+      color: var(--mid);
+      transition: all .15s
+    }
+
+    .rb.on {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink)
+    }
+
+    .rb:hover:not(.on) {
+      border-color: var(--ink);
+      color: var(--ink)
+    }
+
+    .cnt {
+      font-size: .7rem;
+      letter-spacing: .05em;
+      color: var(--faint);
+      margin-left: auto;
+      text-transform: uppercase
+    }
+
+    .to {
+      width: 100%;
+      overflow-x: auto
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1700px;
+      font-size: 12px;
+      font-family: 'EB Garamond', serif
+    }
+
+    thead tr {
+      border-bottom: 1.5px solid var(--ink)
+    }
+
+    th {
+      text-align: left;
+      padding: .45rem .55rem;
+      font-size: 9.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--mid);
+      white-space: nowrap
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--rule);
+      transition: background .1s
+    }
+
+    tbody tr:hover {
+      background: #f3f1ee
+    }
+
+    td {
+      padding: .55rem .55rem;
+      vertical-align: middle
+    }
+
+    .rk {
+      font-size: 10px;
+      color: var(--faint);
+      width: 26px;
+      text-align: center
+    }
+
+    .sn {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.3;
+      display: flex;
+      align-items: baseline;
+      gap: .3rem
+    }
+
+    .ss {
+      font-size: 10.5px;
+      color: var(--mid);
+      line-height: 1.3
+    }
+
+    .sub {
+      font-size: 11px;
+      color: var(--mid);
+      line-height: 1.5
+    }
+
+    .est {
+      font-size: 8px;
+      color: var(--faint);
+      vertical-align: super;
+      margin-left: 2px
+    }
+
+    .tg {
+      display: inline-block;
+      font-size: 10px;
+      padding: 1px 6px;
+      line-height: 1.7;
+      white-space: nowrap;
+      margin: 1px 2px 1px 0
+    }
+
+    .tb {
+      background: var(--tb);
+      color: var(--ti)
+    }
+
+    .tg2 {
+      background: var(--gb);
+      color: var(--gi)
+    }
+
+    .ta {
+      background: var(--ab);
+      color: var(--ai)
+    }
+
+    .tp {
+      background: var(--pb);
+      color: var(--pi)
+    }
+
+    .tr {
+      background: var(--rb);
+      color: var(--ri)
+    }
+
+    .tx {
+      background: var(--xb);
+      color: var(--xi)
+    }
+
+    .good {
+      color: var(--good)
+    }
+
+    .med {
+      color: var(--warn)
+    }
+
+    .hrd {
+      color: var(--bad)
+    }
+
+    .pct {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1
+    }
+
+    .bar {
+      height: 4px;
+      background: var(--rule);
+      margin-top: 3px;
+      min-width: 60px
+    }
+
+    .bf {
+      height: 100%;
+      background: var(--ti)
+    }
+
+    .bg2 {
+      height: 100%;
+      background: var(--good)
+    }
+
+    .tbd {
+      display: inline-block;
+      font-size: 10px;
+      padding: 1px 6px;
+      background: var(--xb);
+      color: var(--faint);
+      letter-spacing: .03em
+    }
+
+    .cl {
+      margin-bottom: 2px;
+      line-height: 1.4
+    }
+
+    .cl span.lbl {
+      font-size: 8.5px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-right: 4px
+    }
+
+    .vbadge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      font-size: 9px;
+      font-weight: 600;
+      flex-shrink: 0;
+      cursor: help
+    }
+
+    .vbadge.v {
+      background: #dbe9d7;
+      color: var(--good)
+    }
+
+    .vbadge.u {
+      background: #f5e1c2;
+      color: var(--warn)
+    }
+
+    .vbadge.e {
+      background: #e8e7f5;
+      color: var(--pi)
+    }
+
+    .prog {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.3
+    }
+
+    .prog-sub {
+      font-size: 10px;
+      color: var(--mid);
+      line-height: 1.4;
+      margin-top: 1px
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a class="nb" href="../index.html">AdmissionWant</a>
+    <ul class="nl">
+      <li><a href="top40_global.html">Top 40 Global</a></li>
+      <li><a href="top25_us.html">Top 25 US</a></li>
+      <li><a href="top15_eu.html">Top 15 EU</a></li>
+    </ul>
+  </nav>
+  <div class="hdr">
+    <p class="eye">AdmissionWant · European MBA Guide 2025–27</p>
+    <h1>Top 15 <em>European</em> MBA Programs</h1>
+    <p class="hsub">Reference tool covering School Profile, Admissions, and Outcomes. Data is being progressively
+      verified — hover the badge next to each school name to see verification status. Cycle data: 2025–26 confirmed
+      where verified, 2026–27 pending school release.</p>
+    <div class="legend">
+      <span><strong>Verification:</strong></span>
+      <span class="legend-item"><span class="badge bv">✓</span> Verified against current school sources</span>
+      <span class="legend-item"><span class="badge bu">⚠</span> Pending verification — best estimate</span>
+      <span class="legend-item"><span class="badge be">ⓘ</span> Estimate — derived from comparable peers</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tabs">
+      <button class="tab on" onclick="showTab(0,this)">School Profile</button>
+      <button class="tab" onclick="showTab(1,this)">Getting In</button>
+      <button class="tab" onclick="showTab(2,this)">Outcomes</button>
+    </div>
+    <div class="ctrl">
+      <input id="sq" type="text" placeholder="Search school, sector, location, program…" oninput="render()">
+      <div class="rg">
+        <button class="rb on" data-r="all" onclick="setReg(this)">All</button>
+        <button class="rb" data-r="uk" onclick="setReg(this)">United Kingdom</button>
+        <button class="rb" data-r="france" onclick="setReg(this)">France</button>
+        <button class="rb" data-r="spain" onclick="setReg(this)">Spain</button>
+        <button class="rb" data-r="dach" onclick="setReg(this)">DACH</button>
+        <button class="rb" data-r="nordic" onclick="setReg(this)">Nordic</button>
+        <button class="rb" data-r="other" onclick="setReg(this)">Other EU</button>
+      </div>
+      <span class="cnt" id="cnt"></span>
+    </div>
+    <div class="to">
+      <table>
+        <thead id="th"></thead>
+        <tbody id="tb2"></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    const schools = [{ "rank": 1, "name": "INSEAD", "sub": "Fontainebleau, France · Singapore", "r": "france", "usp": "World's largest MBA; 90+ nationalities; truly global 1-yr program; dual campuses", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 1000, "intl": 92, "ind": 12, "pri": "Consulting (MBB+)", "sec": "Finance / IB", "ter": "General Management", "tuition": "€103,500 (Aug '25) / €107,600 (Jan '26)", "living": "~€30–32K (10 mo)", "housing": "Fontainebleau + Singapore campus housing", "schol": "Medium", "scholn": "170+ scholarships; merit + need + diversity; ~30% receive aid", "gmatRange": "680–740 (avg ~710)", "greRange": "316–330", "greEst": true, "workex": "3–8 yrs (avg ~5.5)", "accept": 31, "intfmt": "Two alumni interviews (separate); 1 hr each + mandatory video essay", "invrate": "~40% of applicants", "r1_2526": "Sep 16 2025", "r2_2526": "Nov 4 2025", "r3_2526": "Jan 20 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6–8 wks after each round (rolling)", "essays": "7 essays (4 motivation, 3 personal) + 4 video essays", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€12,000 (first installment, non-refundable)", "emp3m": 88, "salary": "€113,400 base + ~€25K bonus", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / HSBC", "Amazon / Google / Meta"], "sectors": "Consulting #1 · Finance #2 · Tech #3", "program": "MBA (10–12 mo)", "programSub": "Aug intake (10 mo, no internship) · Jan intake (12 mo, with internship) · Also: GEMBA, EMFin, MIM", "verified": "v" }, { "rank": 2, "name": "London Business School", "sub": "London, UK", "r": "uk", "usp": "London finance hub; 15–21 month flexible length; strongest EU PE & IB placement", "focus": ["Finance / PE", "Consulting", "Technology"], "cls": 431, "intl": 90, "ind": 11, "pri": "Finance / PE / IB", "sec": "Consulting (MBB)", "ter": "Technology", "tuition": "£123,950 (2026 intake; covers full 15–21 mo)", "living": "~£25–30K (London)", "housing": "LBS accommodation + London private market", "schol": "Medium-High", "scholn": "175+ scholarships; admitted students auto-considered; ~30% receive aid", "gmatRange": "680–740 (avg 708)", "greRange": "320–333", "greEst": true, "workex": "~5.5 yrs (avg)", "accept": 20, "intfmt": "Alumni interview with case discussion component; 1 hr", "invrate": "~40% of applicants", "r1_2526": "Sep 5 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 23 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~8 wks after each round (rolling)", "essays": "2 essays + optional + reapplicant if applicable", "lors": "2 professional", "reapp": "Can reapply after 1 yr", "deposit": "£3,500 commitment + £6,500 reservation (£10K total)", "emp3m": 85, "salary": "£90K base (UK median) + bonus", "hiring": ["Goldman / JPM / Barclays", "McKinsey / BCG / Bain", "Blackstone / KKR / Advent"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "MBA (15–21 mo, flexible)", "programSub": "Also: EMBA · MiM · MFA · Sloan Masters · LBS-Columbia EMBA", "verified": "v" }, { "rank": 3, "name": "HEC Paris", "sub": "Paris, France", "r": "france", "usp": "Grande École prestige; #1 in France; luxury, consulting & finance; 16 months", "focus": ["Consulting", "Finance", "Luxury / FMCG"], "cls": 268, "intl": 95, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "Luxury / FMCG", "tuition": "€102,000 (12 or 16 mo, same price)", "living": "~€25–30K (16 mo)", "housing": "HEC campus residence + Paris off-campus", "schol": "Medium", "scholn": "Merit + need + diversity; ~25% receive aid; up to 50% tuition; €1M+ HEC Foundation/yr", "gmatRange": "650–730 (avg 690)", "greRange": "314–325", "greEst": true, "workex": "2–10 yrs (avg ~6)", "accept": 18, "intfmt": "Two separate alumni interviews; ~1 hr each; in-person or virtual", "invrate": "~35% of applicants", "r1_2526": "Sep 24 2025", "r2_2526": "Nov 12 2025", "r3_2526": "Jan 21 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after each round; rolling decisions", "essays": "3 essays + motivation letter + video questions", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€9,000 (first installment)", "emp3m": 75, "salary": "$109,847 base + $25,301 sign-on (avg)", "hiring": ["McKinsey / BCG / Bain", "LVMH / L'Oréal / Kering", "Goldman / BNP Paribas / Lazard"], "sectors": "Consulting #1 · Finance #2 · Luxury/FMCG #3", "program": "MBA (12 or 16 mo)", "programSub": "12-mo accelerated (Jan intake only) · 16-mo (both intakes) · Also: EMBA · MiM", "verified": "v" }, { "rank": 4, "name": "IMD", "sub": "Lausanne, Switzerland", "r": "dach", "usp": "Most experienced cohort globally; general management excellence; 1 yr; leadership-first", "focus": ["General Mgmt", "Consulting", "Industry / Ops"], "cls": 90, "intl": 97, "ind": 15, "pri": "General Management", "sec": "Consulting", "ter": "Industry / Operations", "tuition": "CHF 80,000 + CHF 17,500 mandatory fees (~CHF 97,500 total)", "living": "~CHF 35–55K (12 mo Lausanne)", "housing": "Lausanne private market only", "schol": "Medium", "scholn": "Merit, diversity, need-based; ~30% receive aid; Future Leaders, Women in Mgmt awards", "gmatRange": "555–755 (avg ~680)", "greRange": "310–325", "greEst": true, "workex": "~7 yrs (avg)", "accept": 30, "intfmt": "Full-day Assessment Day in Lausanne (group + individual + case + interview)", "invrate": "~25% of applicants", "r1_2526": "Sep 15 2025 (Jan '26 intake)", "r2_2526": "Oct 15 2025", "r3_2526": "Jan 15 2026 (Jan '27 intake R1)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after assessment day (rolling)", "essays": "3 essays + recommender questions", "lors": "3 professional (incl. direct supervisor)", "reapp": "Can reapply next year", "deposit": "CHF ~15,600 (1st installment, non-refundable)", "emp3m": 92, "salary": "$180K USD median post-MBA", "hiring": ["McKinsey / BCG / Roland Berger", "Nestlé / Novartis / ABB", "UBS / Julius Baer"], "sectors": "Consulting #1 · Industry/FMCG #2 · Finance #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · Master in Sustainability", "verified": "v" }, { "rank": 5, "name": "IESE", "sub": "Barcelona, Spain", "r": "spain", "usp": "Case method; values-driven leadership; 15 months; strong global alumni network", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 400, "intl": 85, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "General Management", "tuition": "€114,000 (2 yrs)", "living": "~€24–30K/yr (Barcelona)", "housing": "Barcelona private market; IESE housing support", "schol": "Medium-High", "scholn": "Merit + need + diversity; up to 50% tuition; ~50% receive aid", "gmatRange": "545–715 (avg ~680)", "greRange": "310–325", "greEst": true, "workex": "~5.4 yrs (avg)", "accept": 26, "intfmt": "By invitation; on Barcelona campus, video, or with travelling adcom", "invrate": "~40% of applicants", "r1_2526": "Sep 25 2025", "r2_2526": "Jan 9 2026", "r3_2526": "Mar 12 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~6 wks after submission (rolling, reviewed every 2 wks)", "essays": "3 essays + Kira video questions", "lors": "2 professional", "reapp": "Fresh application required", "deposit": "€4,500 commitment + €5,500 deposit (€10K total)", "emp3m": 94, "salary": "€99,500–101,600 base + €35K bonus", "hiring": ["McKinsey / BCG / Bain", "BBVA / Santander / Sabadell", "Airbus / Siemens / Inditex"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "Full-Time MBA (15–19 mo)", "programSub": "Also: EMBA · GEMBA · MiM · AMP", "verified": "v" }, { "rank": 6, "name": "Cambridge Judge", "sub": "Cambridge, UK", "r": "uk", "usp": "Cambridge brand; 1 yr; tech & entrepreneurship strength; Cambridge innovation ecosystem", "focus": ["Consulting", "Technology / VC", "Finance"], "cls": 244, "intl": 98, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Technology / VC", "ter": "Finance / Banking", "tuition": "£74,000 (2025-26) → £80,000 (2026-27)", "living": "~£19,860/yr (Cambridge)", "housing": "Cambridge college accommodation + private", "schol": "Medium", "scholn": "Multiple scholarships; Dean's £15K, Professional Diversity £32K; auto-considered", "gmatRange": "650–730 (avg 697)", "greRange": "315–328", "greEst": true, "workex": "~6 yrs (avg, age 29)", "accept": 28, "intfmt": "Interview by professor; on-campus or virtual; 30–45 min", "invrate": "~45% of applicants", "r1_2526": "Aug 26 2025", "r2_2526": "Oct 6 2025", "r3_2526": "Jan 5 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "~3 wks after interview; 5 rounds (R4: Mar 30 2026; R5: May 5 2026)", "essays": "3 essays (career objectives + 2 reflective) + recommender form", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "15% of program fee (~£11K) within 3 wks of offer", "emp3m": 79, "salary": "£76,138 base + £17K bonus = £93K total", "hiring": ["McKinsey / BCG / Deloitte", "Amazon / Google / Microsoft", "Goldman / Barclays / HSBC"], "sectors": "Consulting #1 · Tech #2 · Finance #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · MiM · MFin · MPhil programs", "verified": "v" }, { "rank": 7, "name": "Oxford Saïd", "sub": "Oxford, UK", "r": "uk", "usp": "Oxford brand; 1 yr; global health & social enterprise strength; vast alumni access", "focus": ["Finance", "Consulting", "Social Enterprise"], "cls": 332, "intl": 96, "ind": 10, "pri": "Finance / Banking", "sec": "Consulting (MBB+Big4)", "ter": "Social Enterprise / NGO", "tuition": "£88,800 (2025-26 1-yr program)", "living": "~£17,100–£24,420/yr (Oxford)", "housing": "Oxford college accommodation + private", "schol": "Medium", "scholn": "Up to £30K via Skoll, FORTÉ, Black Leaders; Stage 4 deadline for scholarships", "gmatRange": "650–720 (avg 690)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 20, "intfmt": "Interview by adcom + online assessment; ~45 min", "invrate": "~35% of applicants", "r1_2526": "Sep 1 2025", "r2_2526": "Oct 1 2025", "r3_2526": "Nov 3 2025", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "5 stages: Stage 4 (Jan 7 2026, scholarship) → Mar 6 | Stage 5 (Mar 16) → Apr 24 2026", "essays": "3 essays + online video assessment (Kira)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~£11K (within 1 month of offer)", "emp3m": 70, "salary": "£74,143 base avg (Class 2024)", "hiring": ["McKinsey / BCG / Deloitte", "Goldman / JP Morgan / Barclays", "Amazon / Google / Meta"], "sectors": "Finance #1 · Consulting #2 · Social Enterprise #3", "program": "MBA (1 yr)", "programSub": "Also: Executive MBA · MFE · 1+1 MBA · MSc Major Programme Mgmt", "verified": "v" }, { "rank": 8, "name": "IE Business School", "sub": "Madrid, Spain", "r": "spain", "usp": "Entrepreneurship-first; most diverse European MBA; 13 months; tech-driven curriculum", "focus": ["Entrepreneurship", "Technology", "Finance"], "cls": 400, "intl": 92, "ind": 15, "pri": "Entrepreneurship / VC", "sec": "Technology", "ter": "Finance / Banking", "tuition": "€82,300 (11/15-mo intl MBA) + €1,200 IE Foundation", "living": "~€10–20K/yr (Madrid)", "housing": "IE campus area + Madrid private market", "schol": "Medium-High", "scholn": "Merit + diversity awards up to 50% tuition; up to 3 scholarships per applicant (1 awarded)", "gmatRange": "640–720 (avg 680)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg, age 29; min 3 yrs req)", "accept": 35, "intfmt": "Interview + Kira video assessment; rolling, decisions in 1–3 wks after interview", "invrate": "~50% of applicants", "r1_2526": "Rolling (Sep 1 2025 final for Sep '25 intake)", "r2_2526": "Rolling (Dec 30 2025 final for Jan '26 intake)", "r3_2526": "Rolling — apply 6+ mo before intake for scholarships", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "1–3 wks after complete application + interview", "essays": "1 essay + Kira online assessment (1 written + 2 video)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~€8,000 reservation fee", "emp3m": 91, "salary": "€113,770 avg base (per ClearAdmit; varies by industry)", "hiring": ["McKinsey / BCG / Accenture", "Amazon / Google / Telefónica", "Santander / BBVA / CaixaBank"], "sectors": "Consulting #1 · Tech #2 · Finance #3", "program": "Global Online MBA / IE MBA (11–18 mo)", "programSub": "Also: Executive MBA · International MBA · MiM", "verified": "v" }, { "rank": 9, "name": "SDA Bocconi", "sub": "Milan, Italy", "r": "other", "usp": "Italian/EU business hub; luxury & fashion access; finance strength; 1 yr", "focus": ["Finance", "Luxury / Fashion", "Consulting"], "cls": 146, "intl": 79, "ind": 12, "pri": "Finance / Banking", "sec": "Luxury / Fashion", "ter": "Consulting", "tuition": "€82,000 total (4 installments)", "living": "~€20–30K (12–15 mo Milan)", "housing": "Bocconi campus area + Milan private market", "schol": "High", "scholn": "€1M annual budget; merit waivers 10–80%; women, athletes, diversity awards", "gmatRange": "620–700 (avg ~650)", "greRange": "310–325", "greEst": true, "workex": "~6 yrs (avg, age 29)", "accept": 38, "intfmt": "Adcom interview; on-campus, alumni or virtual; 45–60 min; pre-interview video", "invrate": "~50% of applicants", "r1_2526": "Nov 4 2025", "r2_2526": "Jan 13 2026", "r3_2526": "Mar 3 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "4 rounds (R4: May 18 2026); rolling decisions; final deadline Apr 15 2026", "essays": "Online form short answers + pre-interview video + 2 references", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€2,500 (within 4 wks of admission)", "emp3m": 79, "salary": "€110,000 avg total package + €24K bonus", "hiring": ["KPMG / Deloitte / Accenture", "LVMH / Prada / Gucci", "UniCredit / Mediobanca / Intesa"], "sectors": "Finance #1 · Luxury/Fashion #2 · Consulting #3", "program": "Full-Time MBA (12 mo)", "programSub": "Also: EMBA · MiM · MISB · MISM", "verified": "v" }, { "rank": 10, "name": "ESADE", "sub": "Barcelona, Spain", "r": "spain", "usp": "Values-based management; trilingual campus; strong consulting network; 15 months", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 190, "intl": 95, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / Banking", "ter": "General Management", "tuition": "€78,500 (2025-26)", "living": "~€14–28K/yr (Barcelona)", "housing": "Barcelona private market; ESADE housing service", "schol": "Medium", "scholn": "Scholarships cover 50–85% tuition; merit, women, diversity awards", "gmatRange": "610–710 (avg 660)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (min 2 yrs req)", "accept": 35, "intfmt": "Conversational interview by adcom; in-person or virtual; ~45–60 min", "invrate": "~50% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Nov 19 2025", "r3_2526": "Jan 14 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "9 rounds total through Jun 24 2026; rolling decisions", "essays": "4–5 essays (3,000 chars each) + optional + recommender", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "€2,500 reservation fee", "emp3m": 91, "salary": "€108,500 avg post-MBA (~$113,400)", "hiring": ["McKinsey / BCG / Deloitte", "Santander / CaixaBank / BBVA", "Amazon / Meta / Telefónica"], "sectors": "Consulting #1 · Finance #2 · Tech #3", "program": "Full-Time MBA (12, 15, or 18 mo)", "programSub": "Also: Executive MBA · MiM · MS programs", "verified": "v" }, { "rank": 11, "name": "RSM Rotterdam", "sub": "Rotterdam, Netherlands", "r": "other", "usp": "Sustainability focus; EU logistics hub; strong consulting pipeline; 1 yr", "focus": ["Consulting", "Finance", "Sustainability / ESG"], "cls": 100, "intl": 95, "ind": 15, "pri": "Consulting", "sec": "Finance / Banking", "ter": "Sustainability / ESG", "tuition": "€70,000 (Jan 2027 intake; was €65K prior)", "living": "~€21,600/yr (~€1,800/mo incl housing + insurance)", "housing": "RSM campus area + Rotterdam private market", "schol": "Medium-High", "scholn": "Erasmus MBA Scholarship up to 50%; RSM Fellows (3 × 50% per yr); various awards", "gmatRange": "610–700 (RSM BAT also accepted)", "greRange": "308–322", "greEst": true, "workex": "~5 yrs (avg)", "accept": 40, "intfmt": "Interview with adcom (in person or video); 35–60 min; conversational", "invrate": "~50% of applicants", "r1_2526": "Feb 11 2025", "r2_2526": "Apr 6 / Jun 8 / Aug 3 2025", "r3_2526": "Oct 5 / Nov 2 2025 (~6 rounds total for Jan 2026 intake)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~6 wks after submission; Jan 2027 intake rounds open Apr 2026", "essays": "3–4 essays (~500w each) + RSM BAT (2.5hr online; alternative to GMAT/GRE)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€5,000 (admissions fee, not waived)", "emp3m": 91, "salary": "~€63,200 (US$68,711) base avg (Class 2023)", "hiring": ["Deloitte / McKinsey / Accenture", "Shell / Unilever / Heineken", "ABN AMRO / ING / Rabobank"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "International Full-Time MBA (1 yr)", "programSub": "Also: Executive MBA · Global EMBA · Part-Time MBA", "verified": "v" }, { "rank": 12, "name": "Mannheim Business School", "sub": "Mannheim, Germany", "r": "dach", "usp": "Germany's most selective MBA; rigorous analytics; finance & consulting stronghold; 1 yr", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 60, "intl": 85, "ind": 15, "pri": "Consulting", "sec": "Finance / Banking", "ter": "Industry / Manufacturing", "tuition": "€47,000 (Sep 2026 intake; total cost €59–65K with living)", "living": "~€12–18K/yr (Mannheim)", "housing": "Mannheim private market; housing service", "schol": "Low-Medium", "scholn": "Industry Diversity (€2K each, top 3/industry); Women in Business; Outstanding Candidate; up to 50% tuition", "gmatRange": "600–700 (avg 640–660)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (avg, min 3 yrs postgrad)", "accept": 20, "intfmt": "Personal online consultation + interview with admissions manager; selection interviews online", "invrate": "~55% of applicants", "r1_2526": "Nov 30 2025 (EB1, €4K disc)", "r2_2526": "Jan 31 2026 (EB2, €3K) / Mar 31 2026 (EB3, €2K)", "r3_2526": "Apr 30 2026 (EB4, €1K) / Jun 30 2026 (final)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; scholarship deadline Jul 31 2026 for Sep 2026 intake", "essays": "2–3 essays + leadership/motivation prompts", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "€8,500 (within 3 wks of admission)", "emp3m": 95, "salary": "€85,000+ avg post-MBA (77% increase); ~US$110,264", "hiring": ["McKinsey / BCG / Roland Berger", "Bosch / SAP / BASF", "Deutsche Bank / Commerzbank"], "sectors": "Consulting #1 · Industry #2 · Finance #3", "program": "Full-Time MBA (12 mo)", "programSub": "Also: Mannheim & Tongji EMBA · ESSEC & Mannheim EMBA · Part-Time MBA", "verified": "v" }, { "rank": 13, "name": "WHU Otto Beisheim", "sub": "Vallendar, Germany", "r": "dach", "usp": "Germany's top private B-school; 1 yr; finance & consulting; strong German corporate ties", "focus": ["Finance", "Consulting", "Entrepreneurship"], "cls": 75, "intl": 85, "ind": 15, "pri": "Finance / Banking", "sec": "Consulting", "ter": "Entrepreneurship", "tuition": "€47,500–49,500 (12-mo program total)", "living": "~€12–15K/yr (Vallendar/Düsseldorf)", "housing": "Vallendar private market; WHU housing support", "schol": "Low-Medium", "scholn": "~20% receive aid; DAAD, Haniel Stiftung; Women, Diversity, GMAT-based scholarships", "gmatRange": "600–680 (recommended for scholarship)", "greRange": "310–325", "greEst": true, "workex": "~5 yrs (min 3 yrs preferred)", "accept": 35, "intfmt": "Admissions interview + WHU admission test; campus or online", "invrate": "~50% of applicants", "r1_2526": "Dec 15 2025 (final for Apr 2026 intake)", "r2_2526": "May 31 2026 (final for Sep 2026 intake)", "r3_2526": "Rolling between intake deadlines", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~4 wks after submission; both Sep and Apr intakes", "essays": "3 essays (300w each) + WHU questionnaire", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "€1,500–2,000 (acceptance)", "emp3m": 90, "salary": "~€85–110K avg post-MBA", "hiring": ["McKinsey / BCG / Oliver Wyman", "Deutsche Bank / Goldman Frankfurt", "Allianz / Munich Re / DHL"], "sectors": "Consulting #1 · Finance #2 · Industry #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Part-Time MBA · Kellogg-WHU EMBA", "verified": "v" }, { "rank": 14, "name": "Copenhagen Business School", "sub": "Copenhagen, Denmark", "r": "nordic", "usp": "Scandinavia's top MBA; sustainability & CSR expertise; EU market access; 1 yr", "focus": ["Finance", "Sustainability / ESG", "Consulting"], "cls": 45, "intl": 92, "ind": 15, "pri": "Finance / Banking", "sec": "Sustainability / ESG", "ter": "Consulting", "tuition": "DKK 330,000 (~€44,000) — 1-yr full-time MBA", "living": "~€16–20K/yr (Copenhagen; high)", "housing": "Copenhagen private market; CBS housing support", "schol": "Medium", "scholn": "~20% receive aid; sustainability-focused awards; merit-based", "gmatRange": "600–720 (avg 655); GRE avg 320", "greRange": "316–328", "greEst": false, "workex": "~7 yrs (avg, mature cohort)", "accept": 15, "intfmt": "Continuous review; admissions interview after profile assessment", "invrate": "~50% of applicants", "r1_2526": "Nov 10 2025 (R1)", "r2_2526": "Jan 10 2026 (R2)", "r3_2526": "Apr 10 2026 (R3); Jun 10 2026 (final non-EU); Jul 10 2026 (final EU)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; rolling scholarship awards", "essays": "Sustainability leadership essay + motivation + 2 references; CBS MBA Admissions Test alternative", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "~€8,000 (estimated)", "emp3m": 92, "salary": "DKK 660,000 median (~€88K, US$96K) + DKK 52,600 sign-on", "hiring": ["McKinsey / BCG / Deloitte", "Maersk / Novo Nordisk / Vestas", "Nordea / Danske Bank"], "sectors": "Finance #1 · Consulting #2 · Sustainability #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Executive MBA · Flex MBA · MSc programs", "verified": "v" }, { "rank": 15, "name": "Warwick Business School", "sub": "Coventry, UK", "r": "uk", "usp": "Finance & fintech focus; Gillmore Centre; top UK full-time MBA; strong corporate ties", "focus": ["Finance / Fintech", "Consulting", "General Mgmt"], "cls": 75, "intl": 85, "ind": 15, "pri": "Finance / Fintech", "sec": "Consulting", "ter": "General Management", "tuition": "£57,500 (Sep 2025); £59,500 (2026/27)", "living": "~£15–20K/yr (Coventry; affordable)", "housing": "Warwick campus + Coventry/Leamington private", "schol": "Medium-High", "scholn": "Up to £29,750 scholarships for Sep 2026 entry; merit + diversity", "gmatRange": "610–720 (avg 670, 10th ed; 615 Focus)", "greRange": "316–328 (160 V/Q)", "greEst": false, "workex": "~5 yrs (min 3 yrs req)", "accept": 30, "intfmt": "Adcom interview (in-person or virtual); ~40–45 min; conversational", "invrate": "~50% of applicants", "r1_2526": "Oct 5 2025 (R1)", "r2_2526": "6 rounds through Aug 2026", "r3_2526": "May 31 2026 (final intl) / Aug 2026 (final EU)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling; ~3–4 wks after each round; scholarships auto-considered", "essays": "Essays + 2 professional references; Warwick Test alternative to GMAT/GRE (selectively post-interview)", "lors": "2 professional", "reapp": "Can reapply next cycle", "deposit": "£2,500 within 4 weeks", "emp3m": 89, "salary": "$132,522 weighted avg (~£104K); 44% salary increase", "hiring": ["Deloitte / KPMG / PwC", "Barclays / HSBC / Lloyds", "Amazon / Jaguar Land Rover"], "sectors": "Finance/Fintech #1 · Consulting #2 · Industry #3", "program": "Full-Time MBA (1 yr)", "programSub": "Also: Distance Learning MBA · Executive MBA", "verified": "v" }];
+
+    function vb(v) {
+      if (!v) return '';
+      if (v === 'v') return '<span class="vbadge v" title="Verified against current school sources">\u2713</span>';
+      if (v === 'u') return '<span class="vbadge u" title="Pending verification \u2014 best estimate">\u26A0</span>';
+      if (v === 'e') return '<span class="vbadge e" title="Estimate \u2014 derived from comparable peers">\u24D8</span>';
+      return '';
+    }
+    const T = [
+      {
+        lbl: "School Profile",
+        ths: ["#", "School", "Program", "Location", "USP", "Focus Areas", "Class Size", "Intl %", "Indian %", "Primary Sector", "Secondary Sector", "Tertiary Sector", "Total Tuition", "Living Cost", "Housing", "Scholarship"],
+        row(d) {
+          const v = d.verified || 'u';
+          const tgs = (a, c) => a.map(x => `<span class="tg ${c}">${x}</span>`).join("");
+          const bar = (val, c) => `<div class="pct">${val}%</div><div class="bar"><div class="${c}" style="width:${Math.min(val, 100)}%"></div></div>`;
+          const sc = d.schol.startsWith("Very") || d.schol.startsWith("High") ? "good" : d.schol.startsWith("Med") ? "med" : "hrd";
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div></td>
 <td style="min-width:170px">${progHtml}</td>
 <td style="min-width:120px"><span class="sub">${d.sub}</span></td>
 <td style="min-width:180px"><span class="sub">${d.usp}</span></td>
-<td style="min-width:140px">${tgs(d.focus,"tb")}</td>
+<td style="min-width:140px">${tgs(d.focus, "tb")}</td>
 <td style="text-align:center;min-width:65px"><strong>${d.cls.toLocaleString()}</strong><div class="ss">/ class</div></td>
-<td style="min-width:85px">${bar(d.intl,"bf")}</td>
-<td style="min-width:85px">${bar(d.ind,"bg2")}</td>
+<td style="min-width:85px">${bar(d.intl, "bf")}</td>
+<td style="min-width:85px">${bar(d.ind, "bg2")}</td>
 <td style="min-width:120px"><span class="tg tp">${d.pri}</span></td>
 <td style="min-width:120px"><span class="tg tb">${d.sec}</span></td>
 <td style="min-width:120px"><span class="tg tg2">${d.ter}</span></td>
@@ -167,78 +620,79 @@ const T=[
 <td style="min-width:110px"><span class="sub">${d.living}</span></td>
 <td style="min-width:160px"><span class="sub">${d.housing}</span></td>
 <td style="min-width:140px"><span class="${sc}">${d.schol}</span><div class="sub">${d.scholn}</div></td>`;
-  }
- },
- {
-  lbl:"Getting In",
-  ths:["#","School","Program","Accept %","GMAT","GRE","Work Ex","Interview","Invite Rate","R1 Deadline","R2 Deadline","R3 Deadline","Notification","Essays","LORs","Reapplicant","Deposit"],
-  row(d){
-   const v=d.verified||'u';
-   const ac=d.accept<10?"hrd":d.accept<20?"med":"good";
-   const dl=(a,b)=>`<div class="cl"><span class="lbl">25\u201326</span><span class="tg ta">${a}</span></div><div class="cl"><span class="lbl">26\u201327</span><span class="${b==="TBD"?"tbd":"tg ta"}">${b}</span></div>`;
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+        }
+      },
+      {
+        lbl: "Getting In",
+        ths: ["#", "School", "Program", "Accept %", "GMAT", "GRE", "Work Ex", "Interview", "Invite Rate", "R1 Deadline", "R2 Deadline", "R3 Deadline", "Notification", "Essays", "LORs", "Reapplicant", "Deposit"],
+        row(d) {
+          const v = d.verified || 'u';
+          const ac = d.accept < 10 ? "hrd" : d.accept < 20 ? "med" : "good";
+          const dl = (a, b) => `<div class="cl"><span class="lbl">25\u201326</span><span class="tg ta">${a}</span></div><div class="cl"><span class="lbl">26\u201327</span><span class="${b === "TBD" ? "tbd" : "tg ta"}">${b}</span></div>`;
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div><div class="ss">${d.sub}</div></td>
 <td style="min-width:160px">${progHtml}</td>
 <td style="text-align:center;min-width:70px"><span class="${ac}" style="font-size:15px">${d.accept}%</span></td>
 <td style="text-align:center;min-width:85px"><strong>${d.gmatRange}</strong></td>
-<td style="text-align:center;min-width:90px"><strong>${d.greRange}</strong>${d.greEst?'<span class="est">est</span>':''}</td>
+<td style="text-align:center;min-width:90px"><strong>${d.greRange}</strong>${d.greEst ? '<span class="est">est</span>' : ''}</td>
 <td style="min-width:90px"><span class="sub">${d.workex}</span></td>
 <td style="min-width:200px"><span class="sub">${d.intfmt}</span></td>
 <td style="min-width:100px"><span class="sub">${d.invrate}</span></td>
-<td style="min-width:140px">${dl(d.r1_2526,d.r1_2627)}</td>
-<td style="min-width:140px">${dl(d.r2_2526,d.r2_2627)}</td>
-<td style="min-width:140px">${dl(d.r3_2526||"\u2014",d.r3_2627||"TBD")}</td>
+<td style="min-width:140px">${dl(d.r1_2526, d.r1_2627)}</td>
+<td style="min-width:140px">${dl(d.r2_2526, d.r2_2627)}</td>
+<td style="min-width:140px">${dl(d.r3_2526 || "\u2014", d.r3_2627 || "TBD")}</td>
 <td style="min-width:170px"><div class="cl"><span class="lbl">25\u201326</span><div class="sub">${d.notif_2526}</div></div><div class="cl"><span class="lbl">26\u201327</span><span class="tbd">TBD</span></div></td>
 <td style="min-width:160px"><span class="sub">${d.essays}</span></td>
 <td style="min-width:80px">${d.lors}</td>
 <td style="min-width:130px"><span class="sub">${d.reapp}</span></td>
 <td style="min-width:100px">${d.deposit}</td>`;
-  }
- },
- {
-  lbl:"Outcomes",
-  ths:["#","School","Program","Employed (3 mths)","Median Base Salary","Top Hiring Firms","Sector Breakdown"],
-  row(d){
-   const v=d.verified||'u';
-   const cl=d.emp3m>=90?"good":d.emp3m>=85?"med":"hrd";
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+        }
+      },
+      {
+        lbl: "Outcomes",
+        ths: ["#", "School", "Program", "Employed (3 mths)", "Median Base Salary", "Top Hiring Firms", "Sector Breakdown"],
+        row(d) {
+          const v = d.verified || 'u';
+          const cl = d.emp3m >= 90 ? "good" : d.emp3m >= 85 ? "med" : "hrd";
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div><div class="ss">${d.sub}</div></td>
 <td style="min-width:160px">${progHtml}</td>
 <td style="min-width:140px"><span class="${cl}" style="font-size:17px">${d.emp3m}%</span><div class="bar" style="min-width:80px;margin-top:4px"><div class="bg2" style="width:${d.emp3m}%"></div></div></td>
 <td style="min-width:170px"><strong>${d.salary}</strong></td>
-<td style="min-width:240px">${d.hiring.map(h=>`<div class="sub">\u00B7 ${h}</div>`).join("")}</td>
+<td style="min-width:240px">${d.hiring.map(h => `<div class="sub">\u00B7 ${h}</div>`).join("")}</td>
 <td style="min-width:200px"><span class="sub">${d.sectors}</span></td>`;
-  }
- }
-];
+        }
+      }
+    ];
 
-let cur=0,reg="all";
+    let cur = 0, reg = "all";
 
-function showTab(i,b){
-  cur=i;
-  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on");render();
-}
-function setReg(b){
-  document.querySelectorAll(".rb").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on");reg=b.dataset.r;render();
-}
-function render(){
-  const q=document.getElementById("sq").value.toLowerCase();
-  const rows=schools.filter(d=>{
-    const mr=reg==="all"||d.r===reg;
-    const str=(d.name+d.sub+(d.focus||[]).join(" ")+d.pri+d.sec+d.ter+(d.salary||"")+(d.sectors||"")+(d.program||"")).toLowerCase();
-    return mr&&(!q||str.includes(q));
-  });
-  document.getElementById("cnt").textContent=`Showing ${rows.length} of ${schools.length}`;
-  const t=T[cur];
-  document.getElementById("th").innerHTML=`<tr>${t.ths.map(h=>`<th>${h}</th>`).join("")}</tr>`;
-  document.getElementById("tb2").innerHTML=rows.map(d=>`<tr>${t.row(d)}</tr>`).join("");
-}
-render();
+    function showTab(i, b) {
+      cur = i;
+      document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+      b.classList.add("on"); render();
+    }
+    function setReg(b) {
+      document.querySelectorAll(".rb").forEach(x => x.classList.remove("on"));
+      b.classList.add("on"); reg = b.dataset.r; render();
+    }
+    function render() {
+      const q = document.getElementById("sq").value.toLowerCase();
+      const rows = schools.filter(d => {
+        const mr = reg === "all" || d.r === reg;
+        const str = (d.name + d.sub + (d.focus || []).join(" ") + d.pri + d.sec + d.ter + (d.salary || "") + (d.sectors || "") + (d.program || "")).toLowerCase();
+        return mr && (!q || str.includes(q));
+      });
+      document.getElementById("cnt").textContent = `Showing ${rows.length} of ${schools.length}`;
+      const t = T[cur];
+      document.getElementById("th").innerHTML = `<tr>${t.ths.map(h => `<th>${h}</th>`).join("")}</tr>`;
+      document.getElementById("tb2").innerHTML = rows.map(d => `<tr>${t.row(d)}</tr>`).join("");
+    }
+    render();
 
-</script>
+  </script>
 </body>
+
 </html>

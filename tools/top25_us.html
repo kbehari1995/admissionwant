@@ -1,163 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Top 25 US MBA Programs — AdmissionWant</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#faf9f7;--ink:#111;--mid:#555;--faint:#aaa;--rule:#e0dedd;
-  --tb:#E6F1FB;--ti:#0C447C;--gb:#E1F5EE;--gi:#085041;
-  --ab:#FAEEDA;--ai:#633806;--pb:#EEEDFE;--pi:#3C3489;
-  --rb:#FCEBEB;--ri:#791F1F;--xb:#f0efed;--xi:#555;
-  --good:#27500A;--warn:#633806;--bad:#A32D2D;
-}
-html{font-size:17px;scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'EB Garamond',Georgia,serif;line-height:1.7;padding:0 1.5rem;-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}
-nav{max-width:800px;margin:0 auto;padding:2rem 0 1.5rem;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule)}
-.nb{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
-.nl{display:flex;gap:1.75rem;list-style:none}
-.nl a{font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;color:var(--mid);transition:color .2s}
-.nl a:hover{color:var(--ink)}
-.hdr{max-width:900px;margin:0 auto;padding:3rem 0 1.75rem}
-.eye{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.6rem}
-.hdr h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:300;line-height:1.2;margin-bottom:.6rem}
-.hdr h1 em{font-style:italic}
-.hsub{font-size:.9rem;color:var(--mid);margin-bottom:.85rem}
-.legend{display:flex;flex-wrap:wrap;gap:1rem;font-size:.78rem;color:var(--mid);padding:.6rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:.5rem}
-.legend strong{color:var(--ink);font-weight:500}
-.legend-item{display:inline-flex;align-items:center;gap:.3rem}
-.legend-item .badge{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;border-radius:50%;font-size:9px;font-weight:600}
-.bv{background:#dbe9d7;color:var(--good)}
-.bu{background:#f5e1c2;color:var(--warn)}
-.be{background:#e8e7f5;color:var(--pi)}
-.wrap{max-width:1440px;margin:0 auto;padding-bottom:5rem}
-.tabs{display:flex;border-bottom:1px solid var(--rule)}
-.tab{padding:.55rem 1.1rem .5rem;font-family:'EB Garamond',serif;font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;color:var(--mid);border:none;border-bottom:2px solid transparent;background:none;transition:color .15s;margin-bottom:-1px}
-.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
-.tab:hover{color:var(--ink)}
-.ctrl{display:flex;gap:.6rem;flex-wrap:wrap;padding:.9rem 0 .7rem;align-items:center;border-bottom:1px solid var(--rule)}
-.ctrl input{font-family:'EB Garamond',serif;font-size:.85rem;padding:.35rem .7rem;border:.5px solid var(--rule);background:var(--bg);color:var(--ink);width:230px;outline:none;transition:border-color .15s}
-.ctrl input:focus{border-color:var(--ink)}
-.ctrl input::placeholder{color:var(--faint)}
-.rg{display:flex;gap:.35rem;flex-wrap:wrap}
-.rb{font-family:'EB Garamond',serif;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;padding:.28rem .8rem;border:.5px solid var(--faint);cursor:pointer;background:var(--bg);color:var(--mid);transition:all .15s}
-.rb.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.rb:hover:not(.on){border-color:var(--ink);color:var(--ink)}
-.cnt{font-size:.7rem;letter-spacing:.05em;color:var(--faint);margin-left:auto;text-transform:uppercase}
-.to{width:100%;overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:1700px;font-size:12px;font-family:'EB Garamond',serif}
-thead tr{border-bottom:1.5px solid var(--ink)}
-th{text-align:left;padding:.45rem .55rem;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;color:var(--mid);white-space:nowrap}
-tbody tr{border-bottom:1px solid var(--rule);transition:background .1s}
-tbody tr:hover{background:#f3f1ee}
-td{padding:.55rem .55rem;vertical-align:middle}
-.rk{font-size:10px;color:var(--faint);width:26px;text-align:center}
-.sn{font-weight:500;font-size:13px;line-height:1.3;display:flex;align-items:baseline;gap:.3rem}
-.ss{font-size:10.5px;color:var(--mid);line-height:1.3}
-.sub{font-size:11px;color:var(--mid);line-height:1.5}
-.est{font-size:8px;color:var(--faint);vertical-align:super;margin-left:2px}
-.tg{display:inline-block;font-size:10px;padding:1px 6px;line-height:1.7;white-space:nowrap;margin:1px 2px 1px 0}
-.tb{background:var(--tb);color:var(--ti)}
-.tg2{background:var(--gb);color:var(--gi)}
-.ta{background:var(--ab);color:var(--ai)}
-.tp{background:var(--pb);color:var(--pi)}
-.tr{background:var(--rb);color:var(--ri)}
-.tx{background:var(--xb);color:var(--xi)}
-.good{color:var(--good)}
-.med{color:var(--warn)}
-.hrd{color:var(--bad)}
-.pct{font-size:11px;font-weight:500;line-height:1}
-.bar{height:4px;background:var(--rule);margin-top:3px;min-width:60px}
-.bf{height:100%;background:var(--ti)}
-.bg2{height:100%;background:var(--good)}
-.tbd{display:inline-block;font-size:10px;padding:1px 6px;background:var(--xb);color:var(--faint);letter-spacing:.03em}
-.cl{margin-bottom:2px;line-height:1.4}
-.cl span.lbl{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-right:4px}
-.vbadge{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;font-size:9px;font-weight:600;flex-shrink:0;cursor:help}
-.vbadge.v{background:#dbe9d7;color:var(--good)}
-.vbadge.u{background:#f5e1c2;color:var(--warn)}
-.vbadge.e{background:#e8e7f5;color:var(--pi)}
-.prog{font-size:11px;font-weight:500;color:var(--ink);line-height:1.3}
-.prog-sub{font-size:10px;color:var(--mid);line-height:1.4;margin-top:1px}
-</style>
-</head>
-<body>
-<nav>
-  <a class="nb" href="../index.html">AdmissionWant</a>
-  <ul class="nl">
-    <li><a href="top40_global.html">Top 40 Global</a></li>
-    <li><a href="top25_us.html">Top 25 US</a></li>
-    <li><a href="top15_eu.html">Top 15 EU</a></li>
-  </ul>
-</nav>
-<div class="hdr">
-  <p class="eye">AdmissionWant · US MBA Guide 2025–27</p>
-  <h1>Top 25 <em>US</em> MBA Programs</h1>
-  <p class="hsub">Reference tool covering School Profile, Admissions, and Outcomes. Data is being progressively verified — hover the badge next to each school name to see verification status. Cycle data: 2025–26 confirmed where verified, 2026–27 pending school release.</p>
-  <div class="legend">
-  <span><strong>Verification:</strong></span>
-  <span class="legend-item"><span class="badge bv">✓</span> Verified against current school sources</span>
-  <span class="legend-item"><span class="badge bu">⚠</span> Pending verification — best estimate</span>
-  <span class="legend-item"><span class="badge be">ⓘ</span> Estimate — derived from comparable peers</span>
-</div>
-</div>
-<div class="wrap">
-  <div class="tabs">
-    <button class="tab on" onclick="showTab(0,this)">School Profile</button>
-    <button class="tab" onclick="showTab(1,this)">Getting In</button>
-    <button class="tab" onclick="showTab(2,this)">Outcomes</button>
-  </div>
-  <div class="ctrl">
-    <input id="sq" type="text" placeholder="Search school, sector, location, program…" oninput="render()">
-    <div class="rg">
-      <button class="rb on" data-r="all" onclick="setReg(this)">All</button>
-      <button class="rb" data-r="northeast" onclick="setReg(this)">Northeast</button>
-      <button class="rb" data-r="midwest" onclick="setReg(this)">Midwest</button>
-      <button class="rb" data-r="south" onclick="setReg(this)">South</button>
-      <button class="rb" data-r="west" onclick="setReg(this)">West</button>
-    </div>
-    <span class="cnt" id="cnt"></span>
-  </div>
-  <div class="to">
-    <table>
-      <thead id="th"></thead>
-      <tbody id="tb2"></tbody>
-    </table>
-  </div>
-</div>
-<script>
-const schools=[{"rank": 1, "name": "Harvard Business School", "sub": "Boston, MA", "r": "northeast", "usp": "Case method pioneer; Harvard brand; largest MBA alumni network; deepest alumni giving", "focus": ["Finance / PE", "Consulting", "Entrepreneurship"], "cls": 938, "intl": 35, "ind": 11, "pri": "Finance / PE", "sec": "Consulting (MBB)", "ter": "Entrepreneurship / VC", "tuition": "$157,400 (2 yrs)", "living": "~$28K/yr (single)", "housing": "HBS on-campus dorms + Boston/Cambridge off-campus", "schol": "High", "scholn": "Need-based only; ~50% receive aid; avg ~$50K/yr; 10% full-tuition", "gmatRange": "720–760 (avg ~735)", "greRange": "325–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 11, "intfmt": "Blind interview (PCP) by adcom; ~30 min; HBS campus or hub city", "invrate": "~20% of applicants", "r1_2526": "Sep 3 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 9 2025 | R2: Mar 24 2026 | R3: May 12 2026", "essays": "3 essays (~250–300w each) + post-interview reflection", "lors": "2 professional", "reapp": "Must address prior application", "deposit": "$2,000", "emp3m": 91, "salary": "$184,500 base (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / PE firms", "Amazon / Google / Apple"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: 2+2 deferred · Joint MD/MBA, JD/MBA", "verified": "v"}, {"rank": 2, "name": "Stanford GSB", "sub": "Stanford, CA", "r": "west", "usp": "Lowest admit rate globally; VC/startup capital of the world; 'Change Lives' ethos", "focus": ["Entrepreneurship / VC", "Technology", "Consulting"], "cls": 434, "intl": 39, "ind": 13, "pri": "Entrepreneurship / VC", "sec": "Technology", "ter": "Consulting (MBB)", "tuition": "$171,510 (2 yrs)", "living": "~$32–36K/yr (Bay Area)", "housing": "GSB on-campus + Palo Alto/Stanford off-campus", "schol": "High", "scholn": "Need-based fellowships; ~50% receive aid; avg ~$44K/yr", "gmatRange": "700–770 (avg 738)", "greRange": "328–340", "greEst": false, "workex": "~4–5 yrs (avg)", "accept": 7, "intfmt": "Two interviews (alumni); ~1 hr each; conducted in person/virtual", "invrate": "~12% of applicants", "r1_2526": "Sep 9 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 7 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 10 2025 | R2: Apr 2 2026 | R3: May 28 2026", "essays": "2 essays (Essay A 650w + Essay B 350w; max 1000w combined)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$3,500", "emp3m": 80, "salary": "~$185K base + bonuses (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Meta", "Sequoia / a16z / top VCs"], "sectors": "Tech/VC #1 · Consulting #2 · PE/Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MSx (1 yr) · Joint JD/MBA, MD/MBA, MS/MBA", "verified": "v"}, {"rank": 3, "name": "Wharton (UPenn)", "sub": "Philadelphia, PA", "r": "northeast", "usp": "#1 for finance globally; strongest quant curriculum; massive alumni network", "focus": ["Finance", "Consulting", "General Mgmt"], "cls": 866, "intl": 31, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB)", "ter": "General Management", "tuition": "$185,640 (2 yrs incl. fees)", "living": "~$28–32K/yr", "housing": "Wharton off-campus + Philadelphia private", "schol": "Medium-High", "scholn": "Merit + need; ~50% receive aid; Wharton fellowships auto-considered", "gmatRange": "680–770 (avg 732)", "greRange": "325–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 14, "intfmt": "Team-Based Discussion (TBD) + 1:1 reflection; ~45 min total", "invrate": "~30–35% of applicants", "r1_2526": "Sep 4 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 26 2026 | R3: May 14 2026", "essays": "2 essays (500w + 400w) + optional + reapplicant if applicable", "lors": "2 professional", "reapp": "Additional essay required", "deposit": "$2,000 (R1/R2) / $1,000 (R3)", "emp3m": 96, "salary": "$175K base (Class 2024 median)", "hiring": ["Goldman / JPM / Morgan Stanley", "McKinsey / BCG / Bain", "Blackstone / KKR / Apollo"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBA Healthcare Mgmt · MBA/MA Lauder · Moelis deferred", "verified": "v"}, {"rank": 4, "name": "Booth (UChicago)", "sub": "Chicago, IL", "r": "midwest", "usp": "Most Nobel laureates; rigorous finance/economics; flexible curriculum; Chicago Approach", "focus": ["Finance", "Consulting", "Economics / Data"], "cls": 632, "intl": 35, "ind": 12, "pri": "Finance / IB", "sec": "Consulting (MBB)", "ter": "Economics / Data Science", "tuition": "$174,708 (2 yrs)", "living": "~$32K/yr", "housing": "Hyde Park on/off-campus + Chicago private", "schol": "High", "scholn": "Merit-based only; ~60% receive aid; multiple full-tuition fellowships", "gmatRange": "700–760 (avg 729)", "greRange": "326–337", "greEst": true, "workex": "~5 yrs (avg)", "accept": 33, "intfmt": "Resume-based interview by alumni/staff; 30–60 min", "invrate": "~50% of applicants", "r1_2526": "Sep 16 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 2 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 4 2025 | R2: Mar 26 2026 | R3: May 21 2026", "essays": "2 essays (250w min each) + optional + reapplicant", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 87, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["Goldman / JPM / Citadel", "McKinsey / BCG / Bain", "Amazon / Google / Microsoft"], "sectors": "Finance #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening · Weekend · Executive MBA", "verified": "v"}, {"rank": 5, "name": "Kellogg (Northwestern)", "sub": "Evanston, IL", "r": "midwest", "usp": "#1 for marketing; collaborative culture; strong CPG, healthcare & consulting network", "focus": ["Marketing", "Consulting", "Finance"], "cls": 534, "intl": 40, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Marketing / CPG", "ter": "Finance / IB", "tuition": "$172,740 (2 yrs)", "living": "~$32K/yr", "housing": "Evanston on/off-campus + Chicago commute option", "schol": "High", "scholn": "Merit + need + industry/diversity; ~60% receive aid; F.C. Austin full-tuition awards", "gmatRange": "700–760 (avg 733)", "greRange": "326–340", "greEst": true, "workex": "~5.1 yrs (avg)", "accept": 33, "intfmt": "Virtual interview, resume-based; 30–45 min; ~all applicants interviewed", "invrate": "~95% of applicants", "r1_2526": "Sep 10 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 10 2025 | R2: Mar 25 2026 | R3: May 13 2026", "essays": "2 essays + 3 video essays + optional", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,500", "emp3m": 90, "salary": "$175K base + $30K bonus → $205K total comp (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "P&G / Unilever / PepsiCo", "Goldman / JP Morgan"], "sectors": "Consulting #1 · Marketing/CPG #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBAi (AI 2 yrs) · 1Y · MMM · MBA/JD · Evening/Weekend", "verified": "v"}, {"rank": 6, "name": "MIT Sloan", "sub": "Cambridge, MA", "r": "northeast", "usp": "Analytics & tech focus; MIT ecosystem; innovation hub; strongest quant+tech MBA", "focus": ["Technology", "Finance", "Entrepreneurship"], "cls": 450, "intl": 42, "ind": 12, "pri": "Technology / VC", "sec": "Finance / IB", "ter": "Entrepreneurship", "tuition": "$178,000 (2 yrs incl. $2,200/yr program fee)", "living": "~$33K/yr (Cambridge)", "housing": "MIT on-campus + Cambridge/Boston off-campus", "schol": "High", "scholn": "Need-blind; need-based + merit fellowships; ~50% receive aid", "gmatRange": "710–760 (avg 720)", "greRange": "325–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 17, "intfmt": "By invitation; behavioral, application-based; 30 min", "invrate": "~25% of applicants", "r1_2526": "Sep 29 2025", "r2_2526": "Jan 13 2026", "r3_2526": "Apr 6 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "—", "notif_2526": "R1: Dec 2025 | R2: Apr 2026 | R3: May 2026", "essays": "Cover letter (300w) + 2 video essays + organizational chart", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 90, "salary": "$170K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Amazon", "Sequoia / top VCs"], "sectors": "Tech #1 · Consulting #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MSMS · LGO (2 yrs MBA+MS) · Sloan Fellows · EMBA", "verified": "v"}, {"rank": 7, "name": "Columbia Business School", "sub": "New York, NY", "r": "northeast", "usp": "NYC location; strongest alumni on Wall Street; finance & media access; rolling admissions", "focus": ["Finance / IB", "Consulting", "Media / Tech"], "cls": 982, "intl": 41, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB)", "ter": "Media / Tech", "tuition": "$182,344 (2 yrs)", "living": "~$45K/yr (NYC)", "housing": "Morningside Heights + NYC private", "schol": "Medium-High", "scholn": "Need-blind US; merit fellowships auto-considered; awards $10K–$30K", "gmatRange": "700–760 (avg 734)", "greRange": "326–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 21, "intfmt": "Resume-based by alumni; 45–60 min", "invrate": "~40% of applicants", "r1_2526": "Sep 3 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Mar 26 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "—", "notif_2526": "R1: Dec 15 2025 | R2: Mar 31 2026 | R3: May 20 2026", "essays": "3 short answers + 3 essays (500/250/250w)", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000 (non-refundable)", "emp3m": 92, "salary": "$175K base + $39K bonus (Class 2025 median)", "hiring": ["Goldman / JPM / Morgan Stanley", "McKinsey / BCG / Bain", "Amazon / Google / Meta"], "sectors": "Finance/IB #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: J-Term (16 mo) · Executive MBA · MBA/JD", "verified": "v"}, {"rank": 8, "name": "Haas (UC Berkeley)", "sub": "Berkeley, CA", "r": "west", "usp": "Innovative mindset; Bay Area & VC access; tech focus; 'Defining Leadership' ethos", "focus": ["Technology", "Consulting", "Finance"], "cls": 285, "intl": 38, "ind": 11, "pri": "Technology / VC", "sec": "Consulting", "ter": "Finance", "tuition": "$170,812 (2 yrs non-resident)", "living": "~$36K/yr (Bay Area)", "housing": "Berkeley off-campus + Oakland/SF", "schol": "Medium", "scholn": "Merit + need; ~50% receive aid; competitive but limited funding", "gmatRange": "669–767 (avg 730)", "greRange": "322–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 17, "intfmt": "Resume-based by invitation; 30–45 min; pre-recorded or live", "invrate": "~45% of applicants", "r1_2526": "Sep 11 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Mar 31 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 26 2026 | R3: May 7 2026", "essays": "3 essays (300w each) + 1 video + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 94, "salary": "$155–165K base + $33K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Amazon", "Sequoia / Andreessen / top VCs"], "sectors": "Tech/VC #1 · Consulting #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening/Weekend · MBA/MEng · Berkeley MFE", "verified": "v"}, {"rank": 9, "name": "Yale SOM", "sub": "New Haven, CT", "r": "northeast", "usp": "Integrated curriculum; social enterprise & ESG focus; global outlook; Yale brand", "focus": ["Consulting", "Finance", "Social Enterprise / ESG"], "cls": 347, "intl": 48, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "Social Enterprise / ESG", "tuition": "$175,600 (2 yrs)", "living": "~$36K/yr (New Haven)", "housing": "New Haven off-campus + on-campus options", "schol": "High", "scholn": "62% receive aid; merit + need; 36 full-tuition awards/yr", "gmatRange": "700–760 (avg 720)", "greRange": "325–337", "greEst": false, "workex": "~4.9 yrs (avg)", "accept": 29, "intfmt": "Resume-based by invitation; alumni or 2nd-year student; 45–60 min", "invrate": "~50% of applicants", "r1_2526": "Sep 10 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 14 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 4 2025 | R2: Mar 19 2026 | R3: May 14 2026", "essays": "1 main essay (500w) + behavioral video assessment", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000", "emp3m": 88, "salary": "$170K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / Blackstone", "World Bank / United Nations"], "sectors": "Consulting #1 · Finance #2 · Social Enterprise #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Silver Scholars · MBA for Executives · 1-Yr MAM", "verified": "v"}, {"rank": 10, "name": "Tuck (Dartmouth)", "sub": "Hanover, NH", "r": "northeast", "usp": "Tight-knit cohort; general management excellence; strongest alumni giving; rural community", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 304, "intl": 34, "ind": 11, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "General Management", "tuition": "$168,500 (2 yrs)", "living": "~$45K/yr (Hanover; on-campus)", "housing": "Tuck on-campus residences (required yr 1) + Hanover", "schol": "Medium-High", "scholn": "Merit + need; auto-considered; ~50% receive aid", "gmatRange": "690–770 (avg 727)", "greRange": "325–337", "greEst": false, "workex": "~5.7 yrs (avg)", "accept": 31, "intfmt": "Resume-based; on-campus or virtual; guaranteed for early submitters", "invrate": "~80% of applicants (R1 early submission guaranteed)", "r1_2526": "Sep 25 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 25 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 19 2026 | R3: Apr 30 2026", "essays": "3 essays + optional + reapplicant", "lors": "2 professional", "reapp": "May reuse some materials", "deposit": "$2,000", "emp3m": 91, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / PE firms", "Amazon / Microsoft / General Mills"], "sectors": "Consulting #1 · Finance #2 · CPG/Industry #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Tuck offers only the FT MBA", "verified": "v"}, {"rank": 11, "name": "NYU Stern", "sub": "New York, NY", "r": "northeast", "usp": "NYC finance hub; quant strength; luxury & media access; MFin dual-degree options", "focus": ["Finance / IB", "Consulting", "Media / Luxury"], "cls": 340, "intl": 37, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB+Big4)", "ter": "Media / Luxury", "tuition": "$179,048 (2 yrs)", "living": "~$45K/yr (NYC)", "housing": "NYC off-campus (Gramercy/Brooklyn area)", "schol": "Medium", "scholn": "Merit + need; ~20–25% receive merit aid; Forte, AnBryce awards", "gmatRange": "700–760 (avg 720+)", "greRange": "322–337", "greEst": true, "workex": "~5 yrs (avg)", "accept": 25, "intfmt": "Application-based by invitation (adcom or alumni); ~45–60 min", "invrate": "~40% of applicants", "r1_2526": "Sep 15 2025", "r2_2526": "Oct 15 2025", "r3_2526": "Jan 15 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 1 2025 | R2: Jan 1 2026 | R3: Apr 1 2026 | R4: Jun 1 2026", "essays": "Short answer (150w) + 2 essays (350w + Pick Six)", "lors": "2 professional", "reapp": "Extra essay required", "deposit": "$2,000", "emp3m": 90, "salary": "~$170K base + $40K bonus → $200K+ total comp", "hiring": ["Goldman / JPM / Citi", "McKinsey / BCG / Deloitte", "LVMH / Condé Nast / NBCUniversal"], "sectors": "Finance/IB #1 · Consulting #2 · Media/Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Tech MBA (1 yr) · Fashion & Luxury MBA · Andre Koo MBA", "verified": "v"}, {"rank": 12, "name": "Fuqua (Duke)", "sub": "Durham, NC", "r": "south", "usp": "Team-based learning; healthcare & pharma stronghold; diverse class; 4-round rolling", "focus": ["Consulting", "Healthcare / Pharma", "Finance"], "cls": 426, "intl": 35, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Healthcare / Pharma", "ter": "Finance / IB", "tuition": "$155,850 (2 yrs)", "living": "~$35K/yr (Durham)", "housing": "Duke off-campus + Durham/Chapel Hill", "schol": "High", "scholn": "Merit-based; auto-considered; Keller (full tuition) awards", "gmatRange": "680–770 (avg ~715)", "greRange": "320–337", "greEst": false, "workex": "~5.8 yrs (avg)", "accept": 22, "intfmt": "Resume-based by invitation; alumni or 2nd-year student; 30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 30 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Feb 24 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 16 2025 | R1: Dec 11 2025 | R2: Mar 13 2026 | R3: Apr 10 2026 | R4: May 8 2026", "essays": "Short answer (100w) + 2 essays (25 random things + leadership)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 92, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "J&J / Pfizer / UnitedHealth", "Goldman / JPM"], "sectors": "Consulting #1 · Healthcare #2 · Finance #3", "program": "Daytime MBA (2 yrs)", "programSub": "Also: MMS (1 yr) · MQM · Cross-Continent · Weekend EMBA", "verified": "v"}, {"rank": 13, "name": "Ross (Michigan)", "sub": "Ann Arbor, MI", "r": "midwest", "usp": "Action-based learning; MAP project; Midwest powerhouse; strong auto & CPG ties", "focus": ["Consulting", "Finance", "Operations / Supply Chain"], "cls": 379, "intl": 40, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "Operations / Supply Chain", "tuition": "$162,304 (2 yrs non-resident)", "living": "~$32K/yr (Ann Arbor)", "housing": "Ann Arbor off-campus + university housing", "schol": "High", "scholn": "200+ merit scholarships; auto-considered; Dean's Impact (full+stipend), Health Innovation Scholars", "gmatRange": "700–770 (avg 731)", "greRange": "320–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 24, "intfmt": "Resume-based by invitation; alumni-led; 30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 8 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 23 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 5 2025 | R2: Mar 13 2026 | R3: May 1 2026 (R4: Apr 20 added)", "essays": "2 essays (300w each) + short answers", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000", "emp3m": 92, "salary": "$170K base + $30K bonus (median; 91% receive bonus)", "hiring": ["McKinsey / BCG / Bain", "GM / Ford / Amazon", "Goldman / JP Morgan"], "sectors": "Consulting #1 · Finance #2 · Operations/Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online MBA · Weekend MBA · MAcc · MM", "verified": "v"}, {"rank": 14, "name": "Darden (UVA)", "sub": "Charlottesville, VA", "r": "south", "usp": "Case method; general management focus; most rigorous first year; tight community", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 340, "intl": 35, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "General Management", "tuition": "$169,676 (2 yrs international; $168K non-res US)", "living": "~$36K/yr (Charlottesville)", "housing": "Darden off-campus + Charlottesville", "schol": "Medium-High", "scholn": "Merit auto-considered; Batten + Darden Worldwide; ~50% receive aid", "gmatRange": "700–760 (avg 725)", "greRange": "320–334", "greEst": false, "workex": "~5.7 yrs (avg)", "accept": 39, "intfmt": "By invitation (open slots in Early Action); on-campus or virtual; case-method-style", "invrate": "~60% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 2025 | R1: Dec 2025 | R2: Mar 2026 | R3: May 2026", "essays": "3 short answers + essay (Career w/ Purpose 200w + Inclusive Impact 300w + 100w)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$4,000 (non-refundable, applied to tuition)", "emp3m": 96, "salary": "$162,578 base + $36,906 sign-on bonus", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / Capital One", "Amazon / Deloitte / EY"], "sectors": "Consulting #1 · Finance #2 · General Management #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Executive MBA · Global MBA for Executives", "verified": "v"}, {"rank": 15, "name": "Tepper (CMU)", "sub": "Pittsburgh, PA", "r": "northeast", "usp": "Quantitative & analytical MBA; AI & tech integration; STEM OPT eligible; small cohort", "focus": ["Technology / Analytics", "Finance", "Consulting"], "cls": 144, "intl": 38, "ind": 15, "pri": "Technology / Analytics", "sec": "Finance / Quant", "ter": "Consulting", "tuition": "$162,680 (2 yrs)", "living": "~$35K/yr (Pittsburgh)", "housing": "Pittsburgh off-campus + Tepper housing support", "schol": "Medium", "scholn": "Merit auto-considered; partial tuition; no separate application", "gmatRange": "680–760 (avg 707, 10th ed); avg 659 (Focus)", "greRange": "315–328 (avg 322)", "greEst": false, "workex": "~5.2 yrs (avg)", "accept": 29, "intfmt": "Resume-based by invitation; behavioral; on-campus or virtual; ~30 min", "invrate": "~50% of applicants", "r1_2526": "Sep 30 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Mar 3 2026 (intl deadline)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 3 2025 | R2: Mar 3 2026 | R3: Apr 29 2026 | R4: Jun 3 2026 (domestic only)", "essays": "1 essay (500w; choice of 2 prompts) + goals video essay", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 91, "salary": "$159,330 base + $28,821 bonus (Class 2025)", "hiring": ["Goldman / JP Morgan / Citadel", "McKinsey / BCG / Accenture", "Google / Amazon / Microsoft"], "sectors": "Tech/Analytics #1 · Finance/Quant #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online Hybrid · Part-Time · MS Computational Finance", "verified": "v"}, {"rank": 16, "name": "Johnson (Cornell)", "sub": "Ithaca, NY", "r": "northeast", "usp": "Immersion programs; strong finance & PE; Cornell brand; small cohort; diverse curriculum", "focus": ["Finance / PE", "Consulting", "Technology"], "cls": 276, "intl": 42, "ind": 13, "pri": "Finance / PE", "sec": "Consulting", "ter": "Technology", "tuition": "$173,192 (2 yrs)", "living": "~$30K/yr (Ithaca)", "housing": "Ithaca off-campus + university housing", "schol": "Medium", "scholn": "~30% receive partial merit aid; Park Fellowship (25 full-tuition awards)", "gmatRange": "680–760 (median 710)", "greRange": "318–333", "greEst": true, "workex": "~5.3 yrs (avg)", "accept": 30, "intfmt": "Resume-based by invitation; alumni-led; ~45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 17 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Apr 7 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 5 2025 | R2: Mar 27 2026 | R3: May 22 2026", "essays": "Goals statement + 2 essays + Park Fellowship optional essay", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$3,000 ($1,500 initial + $1,500 by Jun 5 2026)", "emp3m": 81, "salary": "$163K base + $39K bonus (Class 2024 median)", "hiring": ["Goldman / JPM / Citi", "McKinsey / Deloitte / EY", "Amazon / Apple / Salesforce"], "sectors": "Finance #1 · Consulting #2 · Tech #3", "program": "Two-Year MBA", "programSub": "Also: One-Year MBA · Cornell Tech MBA · MBA/MD · Executive MBA", "verified": "v"}, {"rank": 17, "name": "Kenan-Flagler (UNC)", "sub": "Chapel Hill, NC", "r": "south", "usp": "Top sustainable business program; collaborative culture; in-state value; strong CPG", "focus": ["Consulting", "Sustainability / ESG", "Finance"], "cls": 249, "intl": 43, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Sustainability / ESG", "ter": "Finance", "tuition": "$148,276 (2 yrs out-of-state); $110,832 (in-state)", "living": "~$28K/yr (Chapel Hill)", "housing": "Chapel Hill off-campus", "schol": "High", "scholn": "~30–50% receive merit fellowships; auto-considered; partial to full tuition", "gmatRange": "680–740 (mean 707)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 38, "intfmt": "Resume-based by invitation; in-person or virtual", "invrate": "~50% of applicants", "r1_2526": "Oct 7 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Mar 3 2026 (intl deadline)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 17 2025 | R2: Mar 11 2026 | R3: Apr 22 2026 | R4: May 20 2026 (priority, domestic, test optional)", "essays": "2 essays (250w each) + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$1,500 non-refundable", "emp3m": 89, "salary": "$140–150K base + ~$30K bonus (varies by industry)", "hiring": ["McKinsey / BCG / Deloitte", "Bank of America / Wells Fargo", "Amazon / Google"], "sectors": "Consulting #1 · Finance #2 · Sustainability #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBA@UNC (online) · Executive MBA", "verified": "v"}, {"rank": 18, "name": "McDonough (Georgetown)", "sub": "Washington, DC", "r": "south", "usp": "DC policy & government ties; global mindset; strong international business focus", "focus": ["Consulting", "Finance", "International Business"], "cls": 248, "intl": 44, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "International Business / Government", "tuition": "$140,216 (2 yrs at $70,108/yr); COA ~$222,974 total", "living": "~$32K/yr (Washington DC; high)", "housing": "DC off-campus (expensive)", "schol": "Medium-High", "scholn": "~35% receive aid; Wallace F. Carroll Fellowship (full); Consortium; auto-considered; $20K to full tuition", "gmatRange": "660–740 (avg ~700)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 62, "intfmt": "Resume-based by invitation; alumni or adcom; ~30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 8 2025 (EA); Oct 1 2025 (R1)", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 29 2025 | R1: Dec 10 2025 | R2: Mar 20 2026 | R3: May 13 2026; rolling after Apr 20", "essays": "1 essay (500w; 1 of 4 prompts) + short answers; STEM-designated", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (Rolling Admissions period); $500 for MAAP deferred", "emp3m": 89, "salary": "$148,000 base + $33,854 sign-on (Class 2024 median)", "hiring": ["Deloitte / KPMG / Accenture", "World Bank / IMF / USAID", "Goldman / Citi / JP Morgan"], "sectors": "Consulting #1 · Finance #2 · Government/Intl #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Flex MBA · Executive MBA · MS programs", "verified": "v"}, {"rank": 19, "name": "Olin (WashU)", "sub": "St. Louis, MO", "r": "midwest", "usp": "Generous scholarships; healthcare & biotech access; strong quant finance; small cohort", "focus": ["Finance", "Healthcare / Biotech", "Consulting"], "cls": 103, "intl": 47, "ind": 15, "pri": "Finance", "sec": "Healthcare / Biotech", "ter": "Consulting", "tuition": "$140,500 (2 yrs at $35,125/sem); some sources $132,400 total", "living": "~$22K/yr (St. Louis; very low cost)", "housing": "WashU off-campus + St. Louis private", "schol": "High", "scholn": "~60% receive aid; very generous merit; full-tuition possible; Consortium; McDonnell Intl Scholars", "gmatRange": "550–780 (avg 670–706)", "greRange": "V164/Q166 median (~325 combined)", "greEst": false, "workex": "~4.3 yrs (avg, age 28)", "accept": 18, "intfmt": "Video assessment (Kira-style) + adcom interview ~35 min via Zoom", "invrate": "~55% of applicants", "r1_2526": "Oct 5 2025", "r2_2526": "Nov 1 2025 / Jan 5 2026", "r3_2526": "Mar 1 2026 / Apr 15 2026 (final/domestic only); rolling after", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; R1/R2 priority for scholarships", "essays": "2 essays (500w + 100w career); NO LORs required (one optional contact)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 non-refundable", "emp3m": 90, "salary": "$140K+ base avg", "hiring": ["Deloitte / KPMG / EY", "Aon / Emerson Electric / Edward Jones", "Boeing / Centene / Express Scripts"], "sectors": "Finance #1 · Healthcare #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Specialized MS · Professional MBA · EMBA", "verified": "v"}, {"rank": 20, "name": "McCombs (UT Austin)", "sub": "Austin, TX", "r": "south", "usp": "Austin tech ecosystem; energy sector access; strong in-state value; STEM-designated", "focus": ["Technology", "Finance", "Energy"], "cls": 235, "intl": 30, "ind": 15, "pri": "Technology / VC", "sec": "Finance", "ter": "Energy / Natural Resources", "tuition": "$122,428 (2 yrs out-of-state); $110,392 (in-state)", "living": "~$25K/yr (Austin)", "housing": "Austin off-campus", "schol": "High", "scholn": "Merit auto-considered; cash awards + out-of-state waivers; $2K to full tuition", "gmatRange": "615–695 (Focus 80%); avg 704 (10th ed)", "greRange": "310–332", "greEst": false, "workex": "~5.9 yrs (avg, age 29)", "accept": 38, "intfmt": "7-question Video Assessment in lieu of interview (3 min each, 7-day window)", "invrate": "100% complete video assessment", "r1_2526": "Oct 15 2025", "r2_2526": "Jan 15 2026", "r3_2526": "Apr 1 2026 (final intl)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 16 2025 | R2: Mar 26 2026 | R3: May 7 2026; rolling after", "essays": "2 essays (250w each) + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 non-refundable", "emp3m": 89, "salary": "$157,735 base + $32,915 bonus", "hiring": ["Amazon / Dell / Apple", "Goldman / JP Morgan / Capital One", "ExxonMobil / Chevron / ConocoPhillips"], "sectors": "Tech #1 · Finance #2 · Energy #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Working Professional MBA · Executive MBA · MS Finance", "verified": "v"}, {"rank": 21, "name": "Marshall (USC)", "sub": "Los Angeles, CA", "r": "west", "usp": "LA entertainment & media access; Pacific Rim ties; diverse cohort; STEM-designated", "focus": ["Entrepreneurship", "Finance", "Media / Entertainment"], "cls": 176, "intl": 43, "ind": 15, "pri": "Entrepreneurship / VC", "sec": "Finance", "ter": "Media / Entertainment", "tuition": "$157,599 (2 yrs tuition); $173K incl all fees", "living": "~$30K/yr (Los Angeles)", "housing": "LA off-campus (near USC Village)", "schol": "High", "scholn": "Merit fellowships; auto-considered; partial to full tuition; Dean's Scholarships in 2nd year", "gmatRange": "700–760 (avg 742, 10th ed)", "greRange": "320–334 (avg 323)", "greEst": false, "workex": "~5 yrs (avg)", "accept": 31, "intfmt": "Resume-based by invitation", "invrate": "~50% of applicants", "r1_2526": "Oct 15 2025", "r2_2526": "Jan 15 2026", "r3_2526": "Apr 15 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; R1/R2 priority for scholarships", "essays": "2 essays (100w + 600w) + optional 250w; NO LORs required or accepted", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "~$2,000 (incl PRIME global immersion fee $3,850)", "emp3m": 80, "salary": "$144,442 base + $32,524 bonus (Class 2024)", "hiring": ["NBCUniversal / Disney / Netflix", "Goldman / JPM / Citi", "Amazon / Google / Snapchat"], "sectors": "Entrepreneurship/VC #1 · Finance #2 · Media/Entertainment #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: IBEAR (1 yr) · MBA.PM (Online) · Executive MBA", "verified": "v"}, {"rank": 22, "name": "Foster (UW)", "sub": "Seattle, WA", "r": "west", "usp": "Amazon/Microsoft backyard; Pacific Northwest tech hub; strong in-state value; STEM", "focus": ["Technology", "Finance", "Entrepreneurship"], "cls": 102, "intl": 56, "ind": 15, "pri": "Technology", "sec": "Finance", "ter": "Entrepreneurship", "tuition": "$115,662 (2 yrs non-resident); $82,320 (resident)", "living": "~$36K/yr (Seattle; high cost)", "housing": "Seattle off-campus", "schol": "High", "scholn": "Merit awards range $15K to full tuition; auto-considered; 90%+ get aid", "gmatRange": "680–760 (median 720, 10th ed; 655 Focus)", "greRange": "320–334", "greEst": false, "workex": "~6 yrs (avg)", "accept": 28, "intfmt": "All applicants submit video interview; select get 1:1 Zoom with adcom", "invrate": "All complete video; selective for 1:1", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 6 2026 (final intl)", "r3_2526": "Mar 24 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 19 2025 | R2: Mar 27 2026 | R3: May 15 2026", "essays": "Career goals essay + short essays + video interview; test optional available", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$300 (estimated)", "emp3m": 94, "salary": "$151,322 starting (high; Seattle tech)", "hiring": ["Amazon / Microsoft / Boeing", "Goldman / JPM / Capital One", "Deloitte / KPMG / Accenture"], "sectors": "Tech #1 · Finance #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening MBA · Hybrid MBA · Executive MBA", "verified": "v"}, {"rank": 23, "name": "Goizueta (Emory)", "sub": "Atlanta, GA", "r": "south", "usp": "Atlanta business hub; CNN/Coca-Cola/CDC ties; healthcare & CPG strength; small cohort", "focus": ["Finance", "Healthcare / CPG", "Consulting"], "cls": 128, "intl": 35, "ind": 15, "pri": "Finance", "sec": "Healthcare / CPG", "ter": "Consulting", "tuition": "$153,800 (2 yrs) + $7,824 fees + $245 app fee", "living": "~$34,788/yr (Atlanta)", "housing": "Atlanta off-campus (affordable)", "schol": "High", "scholn": "Robert W. Woodruff Scholarship (full); Brown Family Scholars; merit + need; ~50% receive aid", "gmatRange": "680–760 (avg 723, 10th ed; 648 Focus)", "greRange": "320–334", "greEst": true, "workex": "~5–6 yrs (avg)", "accept": 30, "intfmt": "By invitation; alumni or 2nd-year student; 30–45 min via Kira or in-person", "invrate": "~50% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 7 2026 (last for full scholarship consideration)", "r3_2526": "Mar 18 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 3 2025 | R2: Mar 18 2026 | R3: May 6 2026; rolling thru Jul 6 2026", "essays": "3 short answers (40w each) + 1 essay (leadership) + Goizueta values prompts", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 97, "salary": "$152,317 base + $33,945 bonus", "hiring": ["Deloitte / KPMG / EY", "Coca-Cola / Delta / UPS", "Goldman / Wells Fargo"], "sectors": "Finance #1 · Healthcare/CPG #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: One-Year MBA · Evening MBA · Executive MBA", "verified": "v"}, {"rank": 24, "name": "Mendoza (Notre Dame)", "sub": "Notre Dame, IN", "r": "midwest", "usp": "Values-based leadership; tight community; investment banking strength; generous aid", "focus": ["Finance / IB", "Consulting", "General Mgmt"], "cls": 104, "intl": 35, "ind": 15, "pri": "Finance / IB", "sec": "Consulting", "ter": "General Management", "tuition": "$146,520 (2 yrs at $73,260/yr); 2026-27 rises to $75,460/yr", "living": "~$30K/yr (South Bend; very low cost)", "housing": "Notre Dame off-campus + South Bend", "schol": "High", "scholn": "97% receive scholarships (very generous!); merit + need; full-tuition Kenneth R. awards", "gmatRange": "640–700 (median 655)", "greRange": "310–322 (median 315)", "greEst": false, "workex": "~5 yrs (avg, age 28)", "accept": 48, "intfmt": "Kira Talent video + adcom + 2nd-year student panel; ~40 min conversational", "invrate": "~60% of applicants", "r1_2526": "Sep 4 2025 (Early Decision, non-binding, auto-interview)", "r2_2526": "Oct 14 2025 (R1)", "r3_2526": "Jan 8 2026 (R2, intl preferred); Mar 2026 (R3); Jul 6 2026 final", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "5 rounds rolling; ED gets early decision", "essays": "Career goals essay + 4-slide presentation + statement of purpose + video essays", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 90, "salary": "$136,573 avg (Class 2024); some classes ~$166K", "hiring": ["JPM / Goldman / Baird", "Deloitte / EY / PwC", "General Mills / P&G / Amazon"], "sectors": "Finance/IB #1 · Consulting #2 · CPG/Industry #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: 1-Year MBA · Executive MBA", "verified": "v"}, {"rank": 25, "name": "Kelley (Indiana)", "sub": "Bloomington, IN", "r": "midwest", "usp": "Outstanding value; Investment Banking Workshop; global supply chain strengths", "focus": ["Finance / IB", "Consulting", "Operations / Supply Chain"], "cls": 106, "intl": 42, "ind": 15, "pri": "Finance / IB", "sec": "Consulting", "ter": "Operations / Supply Chain", "tuition": "$111,390 (2 yrs non-resident at $55,695/yr); $59,146 (resident)", "living": "~$15,446/yr (Bloomington; very low cost)", "housing": "Bloomington off-campus (very affordable)", "schol": "Very High", "scholn": "90% receive merit aid (very generous!); awards $15K to full tuition; auto-considered", "gmatRange": "580–660 (avg 607 Focus); 666 (10th ed)", "greRange": "308–322", "greEst": true, "workex": "~6.25 yrs (avg, age 29)", "accept": 38, "intfmt": "Kira video interview; adcom or 2nd-year; ~30–45 min", "invrate": "~50% of applicants", "r1_2526": "Oct 15 2025 (priority for merit aid)", "r2_2526": "Jan 5 2026 (priority for merit aid)", "r3_2526": "Mar 1 2026 / Apr 15 2026 (4 rounds)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 20 2025 | R2: Mar 15 2026 | R3: Apr 30 2026 | R4: May 31 2026", "essays": "2 essays (career goals + leadership) + 1 LOR", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 94, "salary": "$133,129 base + $30,150 bonus (Class 2025)", "hiring": ["Goldman / JPM / Harris", "Deloitte / EY / PwC", "Amazon / Cummins / Eli Lilly"], "sectors": "Finance/IB #1 · Consulting #2 · Operations #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online Kelley Direct MBA · Evening MBA", "verified": "v"}];
 
-function vb(v){
-  if(!v) return '';
-  if(v==='v') return '<span class="vbadge v" title="Verified against current school sources">\u2713</span>';
-  if(v==='u') return '<span class="vbadge u" title="Pending verification \u2014 best estimate">\u26A0</span>';
-  if(v==='e') return '<span class="vbadge e" title="Estimate \u2014 derived from comparable peers">\u24D8</span>';
-  return '';
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Reference tool covering the top 25 US MBA programs — school profile, admissions metrics, and employment outcomes. 2025–26 cycle data. Built for Indian applicants.">
+  <link rel="canonical" href="https://admissionwant.com/tools/top25_us.html">
+  <meta property="og:site_name" content="AdmissionWant">
+  <meta property="og:title" content="Top 25 US MBA Programs — Reference Tool 2025–27 | AdmissionWant">
+  <meta property="og:description"
+    content="Compare the top 25 US MBA programs across profile, admissions, and outcomes. 2025–26 verified data.">
+  <meta property="og:url" content="https://admissionwant.com/tools/top25_us.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://admissionwant.com/assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Top 25 US MBA Programs — Reference Tool">
+  <meta name="twitter:description"
+    content="Compare the top 25 US MBA programs across profile, admissions, and outcomes.">
+  <meta name="twitter:image" content="https://admissionwant.com/assets/og-preview.png">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Top 25 US MBA Programs Reference Tool",
+  "description": "Comparative reference tool for the 25 most relevant US MBA programs for Indian applicants. Covers school profile, admissions metrics (acceptance rates, GMAT/GRE ranges, application deadlines), and employment outcomes. 2025–26 cycle data verified against current school sources.",
+  "url": "https://admissionwant.com/tools/top25_us.html",
+  "creator": {
+    "@type": "Person",
+    "name": "Kunj Behari Beriwala",
+    "url": "https://admissionwant.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AdmissionWant",
+    "url": "https://admissionwant.com/"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://admissionwant.com/",
+  "temporalCoverage": "2025/2027",
+  "spatialCoverage": "United States",
+  "keywords": ["MBA", "US MBA", "business school", "admissions", "Harvard Business School", "Stanford GSB", "Wharton", "MIT Sloan", "Kellogg", "Booth", "Columbia", "Yale SOM", "Tuck", "Darden", "Ross", "Haas", "Stern", "McCombs", "Anderson", "Fuqua"]
 }
-const T=[
- {
-  lbl:"School Profile",
-  ths:["#","School","Program","Location","USP","Focus Areas","Class Size","Intl %","Indian %","Primary Sector","Secondary Sector","Tertiary Sector","Total Tuition","Living Cost","Housing","Scholarship"],
-  row(d){
-   const v=d.verified||'u';
-   const tgs=(a,c)=>a.map(x=>`<span class="tg ${c}">${x}</span>`).join("");
-   const bar=(val,c)=>`<div class="pct">${val}%</div><div class="bar"><div class="${c}" style="width:${Math.min(val,100)}%"></div></div>`;
-   const sc=d.schol.startsWith("Very")||d.schol.startsWith("High")?"good":d.schol.startsWith("Med")?"med":"hrd";
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+</script>
+  <title>Top 25 US MBA Programs — AdmissionWant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --ink: #111;
+      --mid: #555;
+      --faint: #aaa;
+      --rule: #e0dedd;
+      --tb: #E6F1FB;
+      --ti: #0C447C;
+      --gb: #E1F5EE;
+      --gi: #085041;
+      --ab: #FAEEDA;
+      --ai: #633806;
+      --pb: #EEEDFE;
+      --pi: #3C3489;
+      --rb: #FCEBEB;
+      --ri: #791F1F;
+      --xb: #f0efed;
+      --xi: #555;
+      --good: #27500A;
+      --warn: #633806;
+      --bad: #A32D2D;
+    }
+
+    html {
+      font-size: 17px;
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    nav {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .nb {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .nl {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none
+    }
+
+    .nl a {
+      font-size: .78rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color .2s
+    }
+
+    .nl a:hover {
+      color: var(--ink)
+    }
+
+    .hdr {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 0 1.75rem
+    }
+
+    .eye {
+      font-size: .72rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: .6rem
+    }
+
+    .hdr h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: .6rem
+    }
+
+    .hdr h1 em {
+      font-style: italic
+    }
+
+    .hsub {
+      font-size: .9rem;
+      color: var(--mid);
+      margin-bottom: .85rem
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: .78rem;
+      color: var(--mid);
+      padding: .6rem 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      margin-top: .5rem
+    }
+
+    .legend strong {
+      color: var(--ink);
+      font-weight: 500
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem
+    }
+
+    .legend-item .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      font-size: 9px;
+      font-weight: 600
+    }
+
+    .bv {
+      background: #dbe9d7;
+      color: var(--good)
+    }
+
+    .bu {
+      background: #f5e1c2;
+      color: var(--warn)
+    }
+
+    .be {
+      background: #e8e7f5;
+      color: var(--pi)
+    }
+
+    .wrap {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding-bottom: 5rem
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .tab {
+      padding: .55rem 1.1rem .5rem;
+      font-family: 'EB Garamond', serif;
+      font-size: .78rem;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: var(--mid);
+      border: none;
+      border-bottom: 2px solid transparent;
+      background: none;
+      transition: color .15s;
+      margin-bottom: -1px
+    }
+
+    .tab.on {
+      color: var(--ink);
+      border-bottom-color: var(--ink)
+    }
+
+    .tab:hover {
+      color: var(--ink)
+    }
+
+    .ctrl {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+      padding: .9rem 0 .7rem;
+      align-items: center;
+      border-bottom: 1px solid var(--rule)
+    }
+
+    .ctrl input {
+      font-family: 'EB Garamond', serif;
+      font-size: .85rem;
+      padding: .35rem .7rem;
+      border: .5px solid var(--rule);
+      background: var(--bg);
+      color: var(--ink);
+      width: 230px;
+      outline: none;
+      transition: border-color .15s
+    }
+
+    .ctrl input:focus {
+      border-color: var(--ink)
+    }
+
+    .ctrl input::placeholder {
+      color: var(--faint)
+    }
+
+    .rg {
+      display: flex;
+      gap: .35rem;
+      flex-wrap: wrap
+    }
+
+    .rb {
+      font-family: 'EB Garamond', serif;
+      font-size: .74rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: .28rem .8rem;
+      border: .5px solid var(--faint);
+      cursor: pointer;
+      background: var(--bg);
+      color: var(--mid);
+      transition: all .15s
+    }
+
+    .rb.on {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink)
+    }
+
+    .rb:hover:not(.on) {
+      border-color: var(--ink);
+      color: var(--ink)
+    }
+
+    .cnt {
+      font-size: .7rem;
+      letter-spacing: .05em;
+      color: var(--faint);
+      margin-left: auto;
+      text-transform: uppercase
+    }
+
+    .to {
+      width: 100%;
+      overflow-x: auto
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1700px;
+      font-size: 12px;
+      font-family: 'EB Garamond', serif
+    }
+
+    thead tr {
+      border-bottom: 1.5px solid var(--ink)
+    }
+
+    th {
+      text-align: left;
+      padding: .45rem .55rem;
+      font-size: 9.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--mid);
+      white-space: nowrap
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--rule);
+      transition: background .1s
+    }
+
+    tbody tr:hover {
+      background: #f3f1ee
+    }
+
+    td {
+      padding: .55rem .55rem;
+      vertical-align: middle
+    }
+
+    .rk {
+      font-size: 10px;
+      color: var(--faint);
+      width: 26px;
+      text-align: center
+    }
+
+    .sn {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.3;
+      display: flex;
+      align-items: baseline;
+      gap: .3rem
+    }
+
+    .ss {
+      font-size: 10.5px;
+      color: var(--mid);
+      line-height: 1.3
+    }
+
+    .sub {
+      font-size: 11px;
+      color: var(--mid);
+      line-height: 1.5
+    }
+
+    .est {
+      font-size: 8px;
+      color: var(--faint);
+      vertical-align: super;
+      margin-left: 2px
+    }
+
+    .tg {
+      display: inline-block;
+      font-size: 10px;
+      padding: 1px 6px;
+      line-height: 1.7;
+      white-space: nowrap;
+      margin: 1px 2px 1px 0
+    }
+
+    .tb {
+      background: var(--tb);
+      color: var(--ti)
+    }
+
+    .tg2 {
+      background: var(--gb);
+      color: var(--gi)
+    }
+
+    .ta {
+      background: var(--ab);
+      color: var(--ai)
+    }
+
+    .tp {
+      background: var(--pb);
+      color: var(--pi)
+    }
+
+    .tr {
+      background: var(--rb);
+      color: var(--ri)
+    }
+
+    .tx {
+      background: var(--xb);
+      color: var(--xi)
+    }
+
+    .good {
+      color: var(--good)
+    }
+
+    .med {
+      color: var(--warn)
+    }
+
+    .hrd {
+      color: var(--bad)
+    }
+
+    .pct {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1
+    }
+
+    .bar {
+      height: 4px;
+      background: var(--rule);
+      margin-top: 3px;
+      min-width: 60px
+    }
+
+    .bf {
+      height: 100%;
+      background: var(--ti)
+    }
+
+    .bg2 {
+      height: 100%;
+      background: var(--good)
+    }
+
+    .tbd {
+      display: inline-block;
+      font-size: 10px;
+      padding: 1px 6px;
+      background: var(--xb);
+      color: var(--faint);
+      letter-spacing: .03em
+    }
+
+    .cl {
+      margin-bottom: 2px;
+      line-height: 1.4
+    }
+
+    .cl span.lbl {
+      font-size: 8.5px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-right: 4px
+    }
+
+    .vbadge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      font-size: 9px;
+      font-weight: 600;
+      flex-shrink: 0;
+      cursor: help
+    }
+
+    .vbadge.v {
+      background: #dbe9d7;
+      color: var(--good)
+    }
+
+    .vbadge.u {
+      background: #f5e1c2;
+      color: var(--warn)
+    }
+
+    .vbadge.e {
+      background: #e8e7f5;
+      color: var(--pi)
+    }
+
+    .prog {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.3
+    }
+
+    .prog-sub {
+      font-size: 10px;
+      color: var(--mid);
+      line-height: 1.4;
+      margin-top: 1px
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a class="nb" href="../index.html">AdmissionWant</a>
+    <ul class="nl">
+      <li><a href="top40_global.html">Top 40 Global</a></li>
+      <li><a href="top25_us.html">Top 25 US</a></li>
+      <li><a href="top15_eu.html">Top 15 EU</a></li>
+    </ul>
+  </nav>
+  <div class="hdr">
+    <p class="eye">AdmissionWant · US MBA Guide 2025–27</p>
+    <h1>Top 25 <em>US</em> MBA Programs</h1>
+    <p class="hsub">Reference tool covering School Profile, Admissions, and Outcomes. Data is being progressively
+      verified — hover the badge next to each school name to see verification status. Cycle data: 2025–26 confirmed
+      where verified, 2026–27 pending school release.</p>
+    <div class="legend">
+      <span><strong>Verification:</strong></span>
+      <span class="legend-item"><span class="badge bv">✓</span> Verified against current school sources</span>
+      <span class="legend-item"><span class="badge bu">⚠</span> Pending verification — best estimate</span>
+      <span class="legend-item"><span class="badge be">ⓘ</span> Estimate — derived from comparable peers</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="tabs">
+      <button class="tab on" onclick="showTab(0,this)">School Profile</button>
+      <button class="tab" onclick="showTab(1,this)">Getting In</button>
+      <button class="tab" onclick="showTab(2,this)">Outcomes</button>
+    </div>
+    <div class="ctrl">
+      <input id="sq" type="text" placeholder="Search school, sector, location, program…" oninput="render()">
+      <div class="rg">
+        <button class="rb on" data-r="all" onclick="setReg(this)">All</button>
+        <button class="rb" data-r="northeast" onclick="setReg(this)">Northeast</button>
+        <button class="rb" data-r="midwest" onclick="setReg(this)">Midwest</button>
+        <button class="rb" data-r="south" onclick="setReg(this)">South</button>
+        <button class="rb" data-r="west" onclick="setReg(this)">West</button>
+      </div>
+      <span class="cnt" id="cnt"></span>
+    </div>
+    <div class="to">
+      <table>
+        <thead id="th"></thead>
+        <tbody id="tb2"></tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    const schools = [{ "rank": 1, "name": "Harvard Business School", "sub": "Boston, MA", "r": "northeast", "usp": "Case method pioneer; Harvard brand; largest MBA alumni network; deepest alumni giving", "focus": ["Finance / PE", "Consulting", "Entrepreneurship"], "cls": 938, "intl": 35, "ind": 11, "pri": "Finance / PE", "sec": "Consulting (MBB)", "ter": "Entrepreneurship / VC", "tuition": "$157,400 (2 yrs)", "living": "~$28K/yr (single)", "housing": "HBS on-campus dorms + Boston/Cambridge off-campus", "schol": "High", "scholn": "Need-based only; ~50% receive aid; avg ~$50K/yr; 10% full-tuition", "gmatRange": "720–760 (avg ~735)", "greRange": "325–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 11, "intfmt": "Blind interview (PCP) by adcom; ~30 min; HBS campus or hub city", "invrate": "~20% of applicants", "r1_2526": "Sep 3 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 9 2025 | R2: Mar 24 2026 | R3: May 12 2026", "essays": "3 essays (~250–300w each) + post-interview reflection", "lors": "2 professional", "reapp": "Must address prior application", "deposit": "$2,000", "emp3m": 91, "salary": "$184,500 base (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / PE firms", "Amazon / Google / Apple"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: 2+2 deferred · Joint MD/MBA, JD/MBA", "verified": "v" }, { "rank": 2, "name": "Stanford GSB", "sub": "Stanford, CA", "r": "west", "usp": "Lowest admit rate globally; VC/startup capital of the world; 'Change Lives' ethos", "focus": ["Entrepreneurship / VC", "Technology", "Consulting"], "cls": 434, "intl": 39, "ind": 13, "pri": "Entrepreneurship / VC", "sec": "Technology", "ter": "Consulting (MBB)", "tuition": "$171,510 (2 yrs)", "living": "~$32–36K/yr (Bay Area)", "housing": "GSB on-campus + Palo Alto/Stanford off-campus", "schol": "High", "scholn": "Need-based fellowships; ~50% receive aid; avg ~$44K/yr", "gmatRange": "700–770 (avg 738)", "greRange": "328–340", "greEst": false, "workex": "~4–5 yrs (avg)", "accept": 7, "intfmt": "Two interviews (alumni); ~1 hr each; conducted in person/virtual", "invrate": "~12% of applicants", "r1_2526": "Sep 9 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 7 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 10 2025 | R2: Apr 2 2026 | R3: May 28 2026", "essays": "2 essays (Essay A 650w + Essay B 350w; max 1000w combined)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$3,500", "emp3m": 80, "salary": "~$185K base + bonuses (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Meta", "Sequoia / a16z / top VCs"], "sectors": "Tech/VC #1 · Consulting #2 · PE/Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MSx (1 yr) · Joint JD/MBA, MD/MBA, MS/MBA", "verified": "v" }, { "rank": 3, "name": "Wharton (UPenn)", "sub": "Philadelphia, PA", "r": "northeast", "usp": "#1 for finance globally; strongest quant curriculum; massive alumni network", "focus": ["Finance", "Consulting", "General Mgmt"], "cls": 866, "intl": 31, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB)", "ter": "General Management", "tuition": "$185,640 (2 yrs incl. fees)", "living": "~$28–32K/yr", "housing": "Wharton off-campus + Philadelphia private", "schol": "Medium-High", "scholn": "Merit + need; ~50% receive aid; Wharton fellowships auto-considered", "gmatRange": "680–770 (avg 732)", "greRange": "325–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 14, "intfmt": "Team-Based Discussion (TBD) + 1:1 reflection; ~45 min total", "invrate": "~30–35% of applicants", "r1_2526": "Sep 4 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 26 2026 | R3: May 14 2026", "essays": "2 essays (500w + 400w) + optional + reapplicant if applicable", "lors": "2 professional", "reapp": "Additional essay required", "deposit": "$2,000 (R1/R2) / $1,000 (R3)", "emp3m": 96, "salary": "$175K base (Class 2024 median)", "hiring": ["Goldman / JPM / Morgan Stanley", "McKinsey / BCG / Bain", "Blackstone / KKR / Apollo"], "sectors": "Finance/PE #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBA Healthcare Mgmt · MBA/MA Lauder · Moelis deferred", "verified": "v" }, { "rank": 4, "name": "Booth (UChicago)", "sub": "Chicago, IL", "r": "midwest", "usp": "Most Nobel laureates; rigorous finance/economics; flexible curriculum; Chicago Approach", "focus": ["Finance", "Consulting", "Economics / Data"], "cls": 632, "intl": 35, "ind": 12, "pri": "Finance / IB", "sec": "Consulting (MBB)", "ter": "Economics / Data Science", "tuition": "$174,708 (2 yrs)", "living": "~$32K/yr", "housing": "Hyde Park on/off-campus + Chicago private", "schol": "High", "scholn": "Merit-based only; ~60% receive aid; multiple full-tuition fellowships", "gmatRange": "700–760 (avg 729)", "greRange": "326–337", "greEst": true, "workex": "~5 yrs (avg)", "accept": 33, "intfmt": "Resume-based interview by alumni/staff; 30–60 min", "invrate": "~50% of applicants", "r1_2526": "Sep 16 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 2 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 4 2025 | R2: Mar 26 2026 | R3: May 21 2026", "essays": "2 essays (250w min each) + optional + reapplicant", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 87, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["Goldman / JPM / Citadel", "McKinsey / BCG / Bain", "Amazon / Google / Microsoft"], "sectors": "Finance #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening · Weekend · Executive MBA", "verified": "v" }, { "rank": 5, "name": "Kellogg (Northwestern)", "sub": "Evanston, IL", "r": "midwest", "usp": "#1 for marketing; collaborative culture; strong CPG, healthcare & consulting network", "focus": ["Marketing", "Consulting", "Finance"], "cls": 534, "intl": 40, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Marketing / CPG", "ter": "Finance / IB", "tuition": "$172,740 (2 yrs)", "living": "~$32K/yr", "housing": "Evanston on/off-campus + Chicago commute option", "schol": "High", "scholn": "Merit + need + industry/diversity; ~60% receive aid; F.C. Austin full-tuition awards", "gmatRange": "700–760 (avg 733)", "greRange": "326–340", "greEst": true, "workex": "~5.1 yrs (avg)", "accept": 33, "intfmt": "Virtual interview, resume-based; 30–45 min; ~all applicants interviewed", "invrate": "~95% of applicants", "r1_2526": "Sep 10 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 10 2025 | R2: Mar 25 2026 | R3: May 13 2026", "essays": "2 essays + 3 video essays + optional", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,500", "emp3m": 90, "salary": "$175K base + $30K bonus → $205K total comp (Class 2025)", "hiring": ["McKinsey / BCG / Bain", "P&G / Unilever / PepsiCo", "Goldman / JP Morgan"], "sectors": "Consulting #1 · Marketing/CPG #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBAi (AI 2 yrs) · 1Y · MMM · MBA/JD · Evening/Weekend", "verified": "v" }, { "rank": 6, "name": "MIT Sloan", "sub": "Cambridge, MA", "r": "northeast", "usp": "Analytics & tech focus; MIT ecosystem; innovation hub; strongest quant+tech MBA", "focus": ["Technology", "Finance", "Entrepreneurship"], "cls": 450, "intl": 42, "ind": 12, "pri": "Technology / VC", "sec": "Finance / IB", "ter": "Entrepreneurship", "tuition": "$178,000 (2 yrs incl. $2,200/yr program fee)", "living": "~$33K/yr (Cambridge)", "housing": "MIT on-campus + Cambridge/Boston off-campus", "schol": "High", "scholn": "Need-blind; need-based + merit fellowships; ~50% receive aid", "gmatRange": "710–760 (avg 720)", "greRange": "325–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 17, "intfmt": "By invitation; behavioral, application-based; 30 min", "invrate": "~25% of applicants", "r1_2526": "Sep 29 2025", "r2_2526": "Jan 13 2026", "r3_2526": "Apr 6 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "—", "notif_2526": "R1: Dec 2025 | R2: Apr 2026 | R3: May 2026", "essays": "Cover letter (300w) + 2 video essays + organizational chart", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 90, "salary": "$170K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Amazon", "Sequoia / top VCs"], "sectors": "Tech #1 · Consulting #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MSMS · LGO (2 yrs MBA+MS) · Sloan Fellows · EMBA", "verified": "v" }, { "rank": 7, "name": "Columbia Business School", "sub": "New York, NY", "r": "northeast", "usp": "NYC location; strongest alumni on Wall Street; finance & media access; rolling admissions", "focus": ["Finance / IB", "Consulting", "Media / Tech"], "cls": 982, "intl": 41, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB)", "ter": "Media / Tech", "tuition": "$182,344 (2 yrs)", "living": "~$45K/yr (NYC)", "housing": "Morningside Heights + NYC private", "schol": "Medium-High", "scholn": "Need-blind US; merit fellowships auto-considered; awards $10K–$30K", "gmatRange": "700–760 (avg 734)", "greRange": "326–340", "greEst": false, "workex": "~5 yrs (avg)", "accept": 21, "intfmt": "Resume-based by alumni; 45–60 min", "invrate": "~40% of applicants", "r1_2526": "Sep 3 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Mar 26 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "—", "notif_2526": "R1: Dec 15 2025 | R2: Mar 31 2026 | R3: May 20 2026", "essays": "3 short answers + 3 essays (500/250/250w)", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000 (non-refundable)", "emp3m": 92, "salary": "$175K base + $39K bonus (Class 2025 median)", "hiring": ["Goldman / JPM / Morgan Stanley", "McKinsey / BCG / Bain", "Amazon / Google / Meta"], "sectors": "Finance/IB #1 · Consulting #2 · Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: J-Term (16 mo) · Executive MBA · MBA/JD", "verified": "v" }, { "rank": 8, "name": "Haas (UC Berkeley)", "sub": "Berkeley, CA", "r": "west", "usp": "Innovative mindset; Bay Area & VC access; tech focus; 'Defining Leadership' ethos", "focus": ["Technology", "Consulting", "Finance"], "cls": 285, "intl": 38, "ind": 11, "pri": "Technology / VC", "sec": "Consulting", "ter": "Finance", "tuition": "$170,812 (2 yrs non-resident)", "living": "~$36K/yr (Bay Area)", "housing": "Berkeley off-campus + Oakland/SF", "schol": "Medium", "scholn": "Merit + need; ~50% receive aid; competitive but limited funding", "gmatRange": "669–767 (avg 730)", "greRange": "322–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 17, "intfmt": "Resume-based by invitation; 30–45 min; pre-recorded or live", "invrate": "~45% of applicants", "r1_2526": "Sep 11 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Mar 31 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 26 2026 | R3: May 7 2026", "essays": "3 essays (300w each) + 1 video + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 94, "salary": "$155–165K base + $33K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Google / Apple / Amazon", "Sequoia / Andreessen / top VCs"], "sectors": "Tech/VC #1 · Consulting #2 · Finance #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening/Weekend · MBA/MEng · Berkeley MFE", "verified": "v" }, { "rank": 9, "name": "Yale SOM", "sub": "New Haven, CT", "r": "northeast", "usp": "Integrated curriculum; social enterprise & ESG focus; global outlook; Yale brand", "focus": ["Consulting", "Finance", "Social Enterprise / ESG"], "cls": 347, "intl": 48, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "Social Enterprise / ESG", "tuition": "$175,600 (2 yrs)", "living": "~$36K/yr (New Haven)", "housing": "New Haven off-campus + on-campus options", "schol": "High", "scholn": "62% receive aid; merit + need; 36 full-tuition awards/yr", "gmatRange": "700–760 (avg 720)", "greRange": "325–337", "greEst": false, "workex": "~4.9 yrs (avg)", "accept": 29, "intfmt": "Resume-based by invitation; alumni or 2nd-year student; 45–60 min", "invrate": "~50% of applicants", "r1_2526": "Sep 10 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Apr 14 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 4 2025 | R2: Mar 19 2026 | R3: May 14 2026", "essays": "1 main essay (500w) + behavioral video assessment", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000", "emp3m": 88, "salary": "$170K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / Blackstone", "World Bank / United Nations"], "sectors": "Consulting #1 · Finance #2 · Social Enterprise #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Silver Scholars · MBA for Executives · 1-Yr MAM", "verified": "v" }, { "rank": 10, "name": "Tuck (Dartmouth)", "sub": "Hanover, NH", "r": "northeast", "usp": "Tight-knit cohort; general management excellence; strongest alumni giving; rural community", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 304, "intl": 34, "ind": 11, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "General Management", "tuition": "$168,500 (2 yrs)", "living": "~$45K/yr (Hanover; on-campus)", "housing": "Tuck on-campus residences (required yr 1) + Hanover", "schol": "Medium-High", "scholn": "Merit + need; auto-considered; ~50% receive aid", "gmatRange": "690–770 (avg 727)", "greRange": "325–337", "greEst": false, "workex": "~5.7 yrs (avg)", "accept": 31, "intfmt": "Resume-based; on-campus or virtual; guaranteed for early submitters", "invrate": "~80% of applicants (R1 early submission guaranteed)", "r1_2526": "Sep 25 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 25 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 11 2025 | R2: Mar 19 2026 | R3: Apr 30 2026", "essays": "3 essays + optional + reapplicant", "lors": "2 professional", "reapp": "May reuse some materials", "deposit": "$2,000", "emp3m": 91, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / PE firms", "Amazon / Microsoft / General Mills"], "sectors": "Consulting #1 · Finance #2 · CPG/Industry #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Tuck offers only the FT MBA", "verified": "v" }, { "rank": 11, "name": "NYU Stern", "sub": "New York, NY", "r": "northeast", "usp": "NYC finance hub; quant strength; luxury & media access; MFin dual-degree options", "focus": ["Finance / IB", "Consulting", "Media / Luxury"], "cls": 340, "intl": 37, "ind": 13, "pri": "Finance / IB / PE", "sec": "Consulting (MBB+Big4)", "ter": "Media / Luxury", "tuition": "$179,048 (2 yrs)", "living": "~$45K/yr (NYC)", "housing": "NYC off-campus (Gramercy/Brooklyn area)", "schol": "Medium", "scholn": "Merit + need; ~20–25% receive merit aid; Forte, AnBryce awards", "gmatRange": "700–760 (avg 720+)", "greRange": "322–337", "greEst": true, "workex": "~5 yrs (avg)", "accept": 25, "intfmt": "Application-based by invitation (adcom or alumni); ~45–60 min", "invrate": "~40% of applicants", "r1_2526": "Sep 15 2025", "r2_2526": "Oct 15 2025", "r3_2526": "Jan 15 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 1 2025 | R2: Jan 1 2026 | R3: Apr 1 2026 | R4: Jun 1 2026", "essays": "Short answer (150w) + 2 essays (350w + Pick Six)", "lors": "2 professional", "reapp": "Extra essay required", "deposit": "$2,000", "emp3m": 90, "salary": "~$170K base + $40K bonus → $200K+ total comp", "hiring": ["Goldman / JPM / Citi", "McKinsey / BCG / Deloitte", "LVMH / Condé Nast / NBCUniversal"], "sectors": "Finance/IB #1 · Consulting #2 · Media/Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Tech MBA (1 yr) · Fashion & Luxury MBA · Andre Koo MBA", "verified": "v" }, { "rank": 12, "name": "Fuqua (Duke)", "sub": "Durham, NC", "r": "south", "usp": "Team-based learning; healthcare & pharma stronghold; diverse class; 4-round rolling", "focus": ["Consulting", "Healthcare / Pharma", "Finance"], "cls": 426, "intl": 35, "ind": 13, "pri": "Consulting (MBB+Big4)", "sec": "Healthcare / Pharma", "ter": "Finance / IB", "tuition": "$155,850 (2 yrs)", "living": "~$35K/yr (Durham)", "housing": "Duke off-campus + Durham/Chapel Hill", "schol": "High", "scholn": "Merit-based; auto-considered; Keller (full tuition) awards", "gmatRange": "680–770 (avg ~715)", "greRange": "320–337", "greEst": false, "workex": "~5.8 yrs (avg)", "accept": 22, "intfmt": "Resume-based by invitation; alumni or 2nd-year student; 30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 30 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Feb 24 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 16 2025 | R1: Dec 11 2025 | R2: Mar 13 2026 | R3: Apr 10 2026 | R4: May 8 2026", "essays": "Short answer (100w) + 2 essays (25 random things + leadership)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 92, "salary": "$175K base + $30K bonus (Class 2024 median)", "hiring": ["McKinsey / BCG / Bain", "J&J / Pfizer / UnitedHealth", "Goldman / JPM"], "sectors": "Consulting #1 · Healthcare #2 · Finance #3", "program": "Daytime MBA (2 yrs)", "programSub": "Also: MMS (1 yr) · MQM · Cross-Continent · Weekend EMBA", "verified": "v" }, { "rank": 13, "name": "Ross (Michigan)", "sub": "Ann Arbor, MI", "r": "midwest", "usp": "Action-based learning; MAP project; Midwest powerhouse; strong auto & CPG ties", "focus": ["Consulting", "Finance", "Operations / Supply Chain"], "cls": 379, "intl": 40, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "Operations / Supply Chain", "tuition": "$162,304 (2 yrs non-resident)", "living": "~$32K/yr (Ann Arbor)", "housing": "Ann Arbor off-campus + university housing", "schol": "High", "scholn": "200+ merit scholarships; auto-considered; Dean's Impact (full+stipend), Health Innovation Scholars", "gmatRange": "700–770 (avg 731)", "greRange": "320–337", "greEst": false, "workex": "~5 yrs (avg)", "accept": 24, "intfmt": "Resume-based by invitation; alumni-led; 30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 8 2025", "r2_2526": "Jan 5 2026", "r3_2526": "Mar 23 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 5 2025 | R2: Mar 13 2026 | R3: May 1 2026 (R4: Apr 20 added)", "essays": "2 essays (300w each) + short answers", "lors": "2 professional", "reapp": "New essays required", "deposit": "$2,000", "emp3m": 92, "salary": "$170K base + $30K bonus (median; 91% receive bonus)", "hiring": ["McKinsey / BCG / Bain", "GM / Ford / Amazon", "Goldman / JP Morgan"], "sectors": "Consulting #1 · Finance #2 · Operations/Tech #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online MBA · Weekend MBA · MAcc · MM", "verified": "v" }, { "rank": 14, "name": "Darden (UVA)", "sub": "Charlottesville, VA", "r": "south", "usp": "Case method; general management focus; most rigorous first year; tight community", "focus": ["Consulting", "Finance", "General Mgmt"], "cls": 340, "intl": 35, "ind": 12, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "General Management", "tuition": "$169,676 (2 yrs international; $168K non-res US)", "living": "~$36K/yr (Charlottesville)", "housing": "Darden off-campus + Charlottesville", "schol": "Medium-High", "scholn": "Merit auto-considered; Batten + Darden Worldwide; ~50% receive aid", "gmatRange": "700–760 (avg 725)", "greRange": "320–334", "greEst": false, "workex": "~5.7 yrs (avg)", "accept": 39, "intfmt": "By invitation (open slots in Early Action); on-campus or virtual; case-method-style", "invrate": "~60% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 2025 | R1: Dec 2025 | R2: Mar 2026 | R3: May 2026", "essays": "3 short answers + essay (Career w/ Purpose 200w + Inclusive Impact 300w + 100w)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$4,000 (non-refundable, applied to tuition)", "emp3m": 96, "salary": "$162,578 base + $36,906 sign-on bonus", "hiring": ["McKinsey / BCG / Bain", "Goldman / JPM / Capital One", "Amazon / Deloitte / EY"], "sectors": "Consulting #1 · Finance #2 · General Management #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Executive MBA · Global MBA for Executives", "verified": "v" }, { "rank": 15, "name": "Tepper (CMU)", "sub": "Pittsburgh, PA", "r": "northeast", "usp": "Quantitative & analytical MBA; AI & tech integration; STEM OPT eligible; small cohort", "focus": ["Technology / Analytics", "Finance", "Consulting"], "cls": 144, "intl": 38, "ind": 15, "pri": "Technology / Analytics", "sec": "Finance / Quant", "ter": "Consulting", "tuition": "$162,680 (2 yrs)", "living": "~$35K/yr (Pittsburgh)", "housing": "Pittsburgh off-campus + Tepper housing support", "schol": "Medium", "scholn": "Merit auto-considered; partial tuition; no separate application", "gmatRange": "680–760 (avg 707, 10th ed); avg 659 (Focus)", "greRange": "315–328 (avg 322)", "greEst": false, "workex": "~5.2 yrs (avg)", "accept": 29, "intfmt": "Resume-based by invitation; behavioral; on-campus or virtual; ~30 min", "invrate": "~50% of applicants", "r1_2526": "Sep 30 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Mar 3 2026 (intl deadline)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 3 2025 | R2: Mar 3 2026 | R3: Apr 29 2026 | R4: Jun 3 2026 (domestic only)", "essays": "1 essay (500w; choice of 2 prompts) + goals video essay", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000", "emp3m": 91, "salary": "$159,330 base + $28,821 bonus (Class 2025)", "hiring": ["Goldman / JP Morgan / Citadel", "McKinsey / BCG / Accenture", "Google / Amazon / Microsoft"], "sectors": "Tech/Analytics #1 · Finance/Quant #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online Hybrid · Part-Time · MS Computational Finance", "verified": "v" }, { "rank": 16, "name": "Johnson (Cornell)", "sub": "Ithaca, NY", "r": "northeast", "usp": "Immersion programs; strong finance & PE; Cornell brand; small cohort; diverse curriculum", "focus": ["Finance / PE", "Consulting", "Technology"], "cls": 276, "intl": 42, "ind": 13, "pri": "Finance / PE", "sec": "Consulting", "ter": "Technology", "tuition": "$173,192 (2 yrs)", "living": "~$30K/yr (Ithaca)", "housing": "Ithaca off-campus + university housing", "schol": "Medium", "scholn": "~30% receive partial merit aid; Park Fellowship (25 full-tuition awards)", "gmatRange": "680–760 (median 710)", "greRange": "318–333", "greEst": true, "workex": "~5.3 yrs (avg)", "accept": 30, "intfmt": "Resume-based by invitation; alumni-led; ~45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 17 2025", "r2_2526": "Jan 8 2026", "r3_2526": "Apr 7 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 5 2025 | R2: Mar 27 2026 | R3: May 22 2026", "essays": "Goals statement + 2 essays + Park Fellowship optional essay", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$3,000 ($1,500 initial + $1,500 by Jun 5 2026)", "emp3m": 81, "salary": "$163K base + $39K bonus (Class 2024 median)", "hiring": ["Goldman / JPM / Citi", "McKinsey / Deloitte / EY", "Amazon / Apple / Salesforce"], "sectors": "Finance #1 · Consulting #2 · Tech #3", "program": "Two-Year MBA", "programSub": "Also: One-Year MBA · Cornell Tech MBA · MBA/MD · Executive MBA", "verified": "v" }, { "rank": 17, "name": "Kenan-Flagler (UNC)", "sub": "Chapel Hill, NC", "r": "south", "usp": "Top sustainable business program; collaborative culture; in-state value; strong CPG", "focus": ["Consulting", "Sustainability / ESG", "Finance"], "cls": 249, "intl": 43, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Sustainability / ESG", "ter": "Finance", "tuition": "$148,276 (2 yrs out-of-state); $110,832 (in-state)", "living": "~$28K/yr (Chapel Hill)", "housing": "Chapel Hill off-campus", "schol": "High", "scholn": "~30–50% receive merit fellowships; auto-considered; partial to full tuition", "gmatRange": "680–740 (mean 707)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 38, "intfmt": "Resume-based by invitation; in-person or virtual", "invrate": "~50% of applicants", "r1_2526": "Oct 7 2025", "r2_2526": "Jan 6 2026", "r3_2526": "Mar 3 2026 (intl deadline)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 17 2025 | R2: Mar 11 2026 | R3: Apr 22 2026 | R4: May 20 2026 (priority, domestic, test optional)", "essays": "2 essays (250w each) + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$1,500 non-refundable", "emp3m": 89, "salary": "$140–150K base + ~$30K bonus (varies by industry)", "hiring": ["McKinsey / BCG / Deloitte", "Bank of America / Wells Fargo", "Amazon / Google"], "sectors": "Consulting #1 · Finance #2 · Sustainability #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: MBA@UNC (online) · Executive MBA", "verified": "v" }, { "rank": 18, "name": "McDonough (Georgetown)", "sub": "Washington, DC", "r": "south", "usp": "DC policy & government ties; global mindset; strong international business focus", "focus": ["Consulting", "Finance", "International Business"], "cls": 248, "intl": 44, "ind": 15, "pri": "Consulting (MBB+Big4)", "sec": "Finance / IB", "ter": "International Business / Government", "tuition": "$140,216 (2 yrs at $70,108/yr); COA ~$222,974 total", "living": "~$32K/yr (Washington DC; high)", "housing": "DC off-campus (expensive)", "schol": "Medium-High", "scholn": "~35% receive aid; Wallace F. Carroll Fellowship (full); Consortium; auto-considered; $20K to full tuition", "gmatRange": "660–740 (avg ~700)", "greRange": "316–328", "greEst": true, "workex": "~5 yrs (avg)", "accept": 62, "intfmt": "Resume-based by invitation; alumni or adcom; ~30–45 min", "invrate": "~50% of applicants", "r1_2526": "Sep 8 2025 (EA); Oct 1 2025 (R1)", "r2_2526": "Jan 7 2026", "r3_2526": "Apr 1 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "EA: Oct 29 2025 | R1: Dec 10 2025 | R2: Mar 20 2026 | R3: May 13 2026; rolling after Apr 20", "essays": "1 essay (500w; 1 of 4 prompts) + short answers; STEM-designated", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (Rolling Admissions period); $500 for MAAP deferred", "emp3m": 89, "salary": "$148,000 base + $33,854 sign-on (Class 2024 median)", "hiring": ["Deloitte / KPMG / Accenture", "World Bank / IMF / USAID", "Goldman / Citi / JP Morgan"], "sectors": "Consulting #1 · Finance #2 · Government/Intl #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Flex MBA · Executive MBA · MS programs", "verified": "v" }, { "rank": 19, "name": "Olin (WashU)", "sub": "St. Louis, MO", "r": "midwest", "usp": "Generous scholarships; healthcare & biotech access; strong quant finance; small cohort", "focus": ["Finance", "Healthcare / Biotech", "Consulting"], "cls": 103, "intl": 47, "ind": 15, "pri": "Finance", "sec": "Healthcare / Biotech", "ter": "Consulting", "tuition": "$140,500 (2 yrs at $35,125/sem); some sources $132,400 total", "living": "~$22K/yr (St. Louis; very low cost)", "housing": "WashU off-campus + St. Louis private", "schol": "High", "scholn": "~60% receive aid; very generous merit; full-tuition possible; Consortium; McDonnell Intl Scholars", "gmatRange": "550–780 (avg 670–706)", "greRange": "V164/Q166 median (~325 combined)", "greEst": false, "workex": "~4.3 yrs (avg, age 28)", "accept": 18, "intfmt": "Video assessment (Kira-style) + adcom interview ~35 min via Zoom", "invrate": "~55% of applicants", "r1_2526": "Oct 5 2025", "r2_2526": "Nov 1 2025 / Jan 5 2026", "r3_2526": "Mar 1 2026 / Apr 15 2026 (final/domestic only); rolling after", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; R1/R2 priority for scholarships", "essays": "2 essays (500w + 100w career); NO LORs required (one optional contact)", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 non-refundable", "emp3m": 90, "salary": "$140K+ base avg", "hiring": ["Deloitte / KPMG / EY", "Aon / Emerson Electric / Edward Jones", "Boeing / Centene / Express Scripts"], "sectors": "Finance #1 · Healthcare #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Specialized MS · Professional MBA · EMBA", "verified": "v" }, { "rank": 20, "name": "McCombs (UT Austin)", "sub": "Austin, TX", "r": "south", "usp": "Austin tech ecosystem; energy sector access; strong in-state value; STEM-designated", "focus": ["Technology", "Finance", "Energy"], "cls": 235, "intl": 30, "ind": 15, "pri": "Technology / VC", "sec": "Finance", "ter": "Energy / Natural Resources", "tuition": "$122,428 (2 yrs out-of-state); $110,392 (in-state)", "living": "~$25K/yr (Austin)", "housing": "Austin off-campus", "schol": "High", "scholn": "Merit auto-considered; cash awards + out-of-state waivers; $2K to full tuition", "gmatRange": "615–695 (Focus 80%); avg 704 (10th ed)", "greRange": "310–332", "greEst": false, "workex": "~5.9 yrs (avg, age 29)", "accept": 38, "intfmt": "7-question Video Assessment in lieu of interview (3 min each, 7-day window)", "invrate": "100% complete video assessment", "r1_2526": "Oct 15 2025", "r2_2526": "Jan 15 2026", "r3_2526": "Apr 1 2026 (final intl)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 16 2025 | R2: Mar 26 2026 | R3: May 7 2026; rolling after", "essays": "2 essays (250w each) + optional", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 non-refundable", "emp3m": 89, "salary": "$157,735 base + $32,915 bonus", "hiring": ["Amazon / Dell / Apple", "Goldman / JP Morgan / Capital One", "ExxonMobil / Chevron / ConocoPhillips"], "sectors": "Tech #1 · Finance #2 · Energy #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Working Professional MBA · Executive MBA · MS Finance", "verified": "v" }, { "rank": 21, "name": "Marshall (USC)", "sub": "Los Angeles, CA", "r": "west", "usp": "LA entertainment & media access; Pacific Rim ties; diverse cohort; STEM-designated", "focus": ["Entrepreneurship", "Finance", "Media / Entertainment"], "cls": 176, "intl": 43, "ind": 15, "pri": "Entrepreneurship / VC", "sec": "Finance", "ter": "Media / Entertainment", "tuition": "$157,599 (2 yrs tuition); $173K incl all fees", "living": "~$30K/yr (Los Angeles)", "housing": "LA off-campus (near USC Village)", "schol": "High", "scholn": "Merit fellowships; auto-considered; partial to full tuition; Dean's Scholarships in 2nd year", "gmatRange": "700–760 (avg 742, 10th ed)", "greRange": "320–334 (avg 323)", "greEst": false, "workex": "~5 yrs (avg)", "accept": 31, "intfmt": "Resume-based by invitation", "invrate": "~50% of applicants", "r1_2526": "Oct 15 2025", "r2_2526": "Jan 15 2026", "r3_2526": "Apr 15 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "Rolling decisions; R1/R2 priority for scholarships", "essays": "2 essays (100w + 600w) + optional 250w; NO LORs required or accepted", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "~$2,000 (incl PRIME global immersion fee $3,850)", "emp3m": 80, "salary": "$144,442 base + $32,524 bonus (Class 2024)", "hiring": ["NBCUniversal / Disney / Netflix", "Goldman / JPM / Citi", "Amazon / Google / Snapchat"], "sectors": "Entrepreneurship/VC #1 · Finance #2 · Media/Entertainment #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: IBEAR (1 yr) · MBA.PM (Online) · Executive MBA", "verified": "v" }, { "rank": 22, "name": "Foster (UW)", "sub": "Seattle, WA", "r": "west", "usp": "Amazon/Microsoft backyard; Pacific Northwest tech hub; strong in-state value; STEM", "focus": ["Technology", "Finance", "Entrepreneurship"], "cls": 102, "intl": 56, "ind": 15, "pri": "Technology", "sec": "Finance", "ter": "Entrepreneurship", "tuition": "$115,662 (2 yrs non-resident); $82,320 (resident)", "living": "~$36K/yr (Seattle; high cost)", "housing": "Seattle off-campus", "schol": "High", "scholn": "Merit awards range $15K to full tuition; auto-considered; 90%+ get aid", "gmatRange": "680–760 (median 720, 10th ed; 655 Focus)", "greRange": "320–334", "greEst": false, "workex": "~6 yrs (avg)", "accept": 28, "intfmt": "All applicants submit video interview; select get 1:1 Zoom with adcom", "invrate": "All complete video; selective for 1:1", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 6 2026 (final intl)", "r3_2526": "Mar 24 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 19 2025 | R2: Mar 27 2026 | R3: May 15 2026", "essays": "Career goals essay + short essays + video interview; test optional available", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$300 (estimated)", "emp3m": 94, "salary": "$151,322 starting (high; Seattle tech)", "hiring": ["Amazon / Microsoft / Boeing", "Goldman / JPM / Capital One", "Deloitte / KPMG / Accenture"], "sectors": "Tech #1 · Finance #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Evening MBA · Hybrid MBA · Executive MBA", "verified": "v" }, { "rank": 23, "name": "Goizueta (Emory)", "sub": "Atlanta, GA", "r": "south", "usp": "Atlanta business hub; CNN/Coca-Cola/CDC ties; healthcare & CPG strength; small cohort", "focus": ["Finance", "Healthcare / CPG", "Consulting"], "cls": 128, "intl": 35, "ind": 15, "pri": "Finance", "sec": "Healthcare / CPG", "ter": "Consulting", "tuition": "$153,800 (2 yrs) + $7,824 fees + $245 app fee", "living": "~$34,788/yr (Atlanta)", "housing": "Atlanta off-campus (affordable)", "schol": "High", "scholn": "Robert W. Woodruff Scholarship (full); Brown Family Scholars; merit + need; ~50% receive aid", "gmatRange": "680–760 (avg 723, 10th ed; 648 Focus)", "greRange": "320–334", "greEst": true, "workex": "~5–6 yrs (avg)", "accept": 30, "intfmt": "By invitation; alumni or 2nd-year student; 30–45 min via Kira or in-person", "invrate": "~50% of applicants", "r1_2526": "Oct 1 2025", "r2_2526": "Jan 7 2026 (last for full scholarship consideration)", "r3_2526": "Mar 18 2026", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 3 2025 | R2: Mar 18 2026 | R3: May 6 2026; rolling thru Jul 6 2026", "essays": "3 short answers (40w each) + 1 essay (leadership) + Goizueta values prompts", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 97, "salary": "$152,317 base + $33,945 bonus", "hiring": ["Deloitte / KPMG / EY", "Coca-Cola / Delta / UPS", "Goldman / Wells Fargo"], "sectors": "Finance #1 · Healthcare/CPG #2 · Consulting #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: One-Year MBA · Evening MBA · Executive MBA", "verified": "v" }, { "rank": 24, "name": "Mendoza (Notre Dame)", "sub": "Notre Dame, IN", "r": "midwest", "usp": "Values-based leadership; tight community; investment banking strength; generous aid", "focus": ["Finance / IB", "Consulting", "General Mgmt"], "cls": 104, "intl": 35, "ind": 15, "pri": "Finance / IB", "sec": "Consulting", "ter": "General Management", "tuition": "$146,520 (2 yrs at $73,260/yr); 2026-27 rises to $75,460/yr", "living": "~$30K/yr (South Bend; very low cost)", "housing": "Notre Dame off-campus + South Bend", "schol": "High", "scholn": "97% receive scholarships (very generous!); merit + need; full-tuition Kenneth R. awards", "gmatRange": "640–700 (median 655)", "greRange": "310–322 (median 315)", "greEst": false, "workex": "~5 yrs (avg, age 28)", "accept": 48, "intfmt": "Kira Talent video + adcom + 2nd-year student panel; ~40 min conversational", "invrate": "~60% of applicants", "r1_2526": "Sep 4 2025 (Early Decision, non-binding, auto-interview)", "r2_2526": "Oct 14 2025 (R1)", "r3_2526": "Jan 8 2026 (R2, intl preferred); Mar 2026 (R3); Jul 6 2026 final", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "5 rounds rolling; ED gets early decision", "essays": "Career goals essay + 4-slide presentation + statement of purpose + video essays", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 90, "salary": "$136,573 avg (Class 2024); some classes ~$166K", "hiring": ["JPM / Goldman / Baird", "Deloitte / EY / PwC", "General Mills / P&G / Amazon"], "sectors": "Finance/IB #1 · Consulting #2 · CPG/Industry #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: 1-Year MBA · Executive MBA", "verified": "v" }, { "rank": 25, "name": "Kelley (Indiana)", "sub": "Bloomington, IN", "r": "midwest", "usp": "Outstanding value; Investment Banking Workshop; global supply chain strengths", "focus": ["Finance / IB", "Consulting", "Operations / Supply Chain"], "cls": 106, "intl": 42, "ind": 15, "pri": "Finance / IB", "sec": "Consulting", "ter": "Operations / Supply Chain", "tuition": "$111,390 (2 yrs non-resident at $55,695/yr); $59,146 (resident)", "living": "~$15,446/yr (Bloomington; very low cost)", "housing": "Bloomington off-campus (very affordable)", "schol": "Very High", "scholn": "90% receive merit aid (very generous!); awards $15K to full tuition; auto-considered", "gmatRange": "580–660 (avg 607 Focus); 666 (10th ed)", "greRange": "308–322", "greEst": true, "workex": "~6.25 yrs (avg, age 29)", "accept": 38, "intfmt": "Kira video interview; adcom or 2nd-year; ~30–45 min", "invrate": "~50% of applicants", "r1_2526": "Oct 15 2025 (priority for merit aid)", "r2_2526": "Jan 5 2026 (priority for merit aid)", "r3_2526": "Mar 1 2026 / Apr 15 2026 (4 rounds)", "r1_2627": "TBD", "r2_2627": "TBD", "r3_2627": "TBD", "notif_2526": "R1: Dec 20 2025 | R2: Mar 15 2026 | R3: Apr 30 2026 | R4: May 31 2026", "essays": "2 essays (career goals + leadership) + 1 LOR", "lors": "2 professional", "reapp": "No formal restriction", "deposit": "$2,000 (estimated)", "emp3m": 94, "salary": "$133,129 base + $30,150 bonus (Class 2025)", "hiring": ["Goldman / JPM / Harris", "Deloitte / EY / PwC", "Amazon / Cummins / Eli Lilly"], "sectors": "Finance/IB #1 · Consulting #2 · Operations #3", "program": "Full-Time MBA (2 yrs)", "programSub": "Also: Online Kelley Direct MBA · Evening MBA", "verified": "v" }];
+
+    function vb(v) {
+      if (!v) return '';
+      if (v === 'v') return '<span class="vbadge v" title="Verified against current school sources">\u2713</span>';
+      if (v === 'u') return '<span class="vbadge u" title="Pending verification \u2014 best estimate">\u26A0</span>';
+      if (v === 'e') return '<span class="vbadge e" title="Estimate \u2014 derived from comparable peers">\u24D8</span>';
+      return '';
+    }
+    const T = [
+      {
+        lbl: "School Profile",
+        ths: ["#", "School", "Program", "Location", "USP", "Focus Areas", "Class Size", "Intl %", "Indian %", "Primary Sector", "Secondary Sector", "Tertiary Sector", "Total Tuition", "Living Cost", "Housing", "Scholarship"],
+        row(d) {
+          const v = d.verified || 'u';
+          const tgs = (a, c) => a.map(x => `<span class="tg ${c}">${x}</span>`).join("");
+          const bar = (val, c) => `<div class="pct">${val}%</div><div class="bar"><div class="${c}" style="width:${Math.min(val, 100)}%"></div></div>`;
+          const sc = d.schol.startsWith("Very") || d.schol.startsWith("High") ? "good" : d.schol.startsWith("Med") ? "med" : "hrd";
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div></td>
 <td style="min-width:170px">${progHtml}</td>
 <td style="min-width:120px"><span class="sub">${d.sub}</span></td>
 <td style="min-width:180px"><span class="sub">${d.usp}</span></td>
-<td style="min-width:140px">${tgs(d.focus,"tb")}</td>
+<td style="min-width:140px">${tgs(d.focus, "tb")}</td>
 <td style="text-align:center;min-width:65px"><strong>${d.cls.toLocaleString()}</strong><div class="ss">/ class</div></td>
-<td style="min-width:85px">${bar(d.intl,"bf")}</td>
-<td style="min-width:85px">${bar(d.ind,"bg2")}</td>
+<td style="min-width:85px">${bar(d.intl, "bf")}</td>
+<td style="min-width:85px">${bar(d.ind, "bg2")}</td>
 <td style="min-width:120px"><span class="tg tp">${d.pri}</span></td>
 <td style="min-width:120px"><span class="tg tb">${d.sec}</span></td>
 <td style="min-width:120px"><span class="tg tg2">${d.ter}</span></td>
@@ -165,78 +621,79 @@ const T=[
 <td style="min-width:110px"><span class="sub">${d.living}</span></td>
 <td style="min-width:160px"><span class="sub">${d.housing}</span></td>
 <td style="min-width:140px"><span class="${sc}">${d.schol}</span><div class="sub">${d.scholn}</div></td>`;
-  }
- },
- {
-  lbl:"Getting In",
-  ths:["#","School","Program","Accept %","GMAT","GRE","Work Ex","Interview","Invite Rate","R1 Deadline","R2 Deadline","R3 Deadline","Notification","Essays","LORs","Reapplicant","Deposit"],
-  row(d){
-   const v=d.verified||'u';
-   const ac=d.accept<10?"hrd":d.accept<20?"med":"good";
-   const dl=(a,b)=>`<div class="cl"><span class="lbl">25\u201326</span><span class="tg ta">${a}</span></div><div class="cl"><span class="lbl">26\u201327</span><span class="${b==="TBD"?"tbd":"tg ta"}">${b}</span></div>`;
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+        }
+      },
+      {
+        lbl: "Getting In",
+        ths: ["#", "School", "Program", "Accept %", "GMAT", "GRE", "Work Ex", "Interview", "Invite Rate", "R1 Deadline", "R2 Deadline", "R3 Deadline", "Notification", "Essays", "LORs", "Reapplicant", "Deposit"],
+        row(d) {
+          const v = d.verified || 'u';
+          const ac = d.accept < 10 ? "hrd" : d.accept < 20 ? "med" : "good";
+          const dl = (a, b) => `<div class="cl"><span class="lbl">25\u201326</span><span class="tg ta">${a}</span></div><div class="cl"><span class="lbl">26\u201327</span><span class="${b === "TBD" ? "tbd" : "tg ta"}">${b}</span></div>`;
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div><div class="ss">${d.sub}</div></td>
 <td style="min-width:160px">${progHtml}</td>
 <td style="text-align:center;min-width:70px"><span class="${ac}" style="font-size:15px">${d.accept}%</span></td>
 <td style="text-align:center;min-width:85px"><strong>${d.gmatRange}</strong></td>
-<td style="text-align:center;min-width:90px"><strong>${d.greRange}</strong>${d.greEst?'<span class="est">est</span>':''}</td>
+<td style="text-align:center;min-width:90px"><strong>${d.greRange}</strong>${d.greEst ? '<span class="est">est</span>' : ''}</td>
 <td style="min-width:90px"><span class="sub">${d.workex}</span></td>
 <td style="min-width:200px"><span class="sub">${d.intfmt}</span></td>
 <td style="min-width:100px"><span class="sub">${d.invrate}</span></td>
-<td style="min-width:140px">${dl(d.r1_2526,d.r1_2627)}</td>
-<td style="min-width:140px">${dl(d.r2_2526,d.r2_2627)}</td>
-<td style="min-width:140px">${dl(d.r3_2526||"\u2014",d.r3_2627||"TBD")}</td>
+<td style="min-width:140px">${dl(d.r1_2526, d.r1_2627)}</td>
+<td style="min-width:140px">${dl(d.r2_2526, d.r2_2627)}</td>
+<td style="min-width:140px">${dl(d.r3_2526 || "\u2014", d.r3_2627 || "TBD")}</td>
 <td style="min-width:170px"><div class="cl"><span class="lbl">25\u201326</span><div class="sub">${d.notif_2526}</div></div><div class="cl"><span class="lbl">26\u201327</span><span class="tbd">TBD</span></div></td>
 <td style="min-width:160px"><span class="sub">${d.essays}</span></td>
 <td style="min-width:80px">${d.lors}</td>
 <td style="min-width:130px"><span class="sub">${d.reapp}</span></td>
 <td style="min-width:100px">${d.deposit}</td>`;
-  }
- },
- {
-  lbl:"Outcomes",
-  ths:["#","School","Program","Employed (3 mths)","Median Base Salary","Top Hiring Firms","Sector Breakdown"],
-  row(d){
-   const v=d.verified||'u';
-   const cl=d.emp3m>=90?"good":d.emp3m>=85?"med":"hrd";
-   const progHtml=d.program?`<div class="prog">${d.program}</div>${d.programSub?`<div class="prog-sub">${d.programSub}</div>`:''}`:`<span class="sub">\u2014</span>`;
-   return`<td class="rk">${d.rank}</td>
+        }
+      },
+      {
+        lbl: "Outcomes",
+        ths: ["#", "School", "Program", "Employed (3 mths)", "Median Base Salary", "Top Hiring Firms", "Sector Breakdown"],
+        row(d) {
+          const v = d.verified || 'u';
+          const cl = d.emp3m >= 90 ? "good" : d.emp3m >= 85 ? "med" : "hrd";
+          const progHtml = d.program ? `<div class="prog">${d.program}</div>${d.programSub ? `<div class="prog-sub">${d.programSub}</div>` : ''}` : `<span class="sub">\u2014</span>`;
+          return `<td class="rk">${d.rank}</td>
 <td><div class="sn">${d.name} ${vb(v)}</div><div class="ss">${d.sub}</div></td>
 <td style="min-width:160px">${progHtml}</td>
 <td style="min-width:140px"><span class="${cl}" style="font-size:17px">${d.emp3m}%</span><div class="bar" style="min-width:80px;margin-top:4px"><div class="bg2" style="width:${d.emp3m}%"></div></div></td>
 <td style="min-width:170px"><strong>${d.salary}</strong></td>
-<td style="min-width:240px">${d.hiring.map(h=>`<div class="sub">\u00B7 ${h}</div>`).join("")}</td>
+<td style="min-width:240px">${d.hiring.map(h => `<div class="sub">\u00B7 ${h}</div>`).join("")}</td>
 <td style="min-width:200px"><span class="sub">${d.sectors}</span></td>`;
-  }
- }
-];
+        }
+      }
+    ];
 
-let cur=0,reg="all";
+    let cur = 0, reg = "all";
 
-function showTab(i,b){
-  cur=i;
-  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on");render();
-}
-function setReg(b){
-  document.querySelectorAll(".rb").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on");reg=b.dataset.r;render();
-}
-function render(){
-  const q=document.getElementById("sq").value.toLowerCase();
-  const rows=schools.filter(d=>{
-    const mr=reg==="all"||d.r===reg;
-    const str=(d.name+d.sub+(d.focus||[]).join(" ")+d.pri+d.sec+d.ter+(d.salary||"")+(d.sectors||"")+(d.program||"")).toLowerCase();
-    return mr&&(!q||str.includes(q));
-  });
-  document.getElementById("cnt").textContent=`Showing ${rows.length} of ${schools.length}`;
-  const t=T[cur];
-  document.getElementById("th").innerHTML=`<tr>${t.ths.map(h=>`<th>${h}</th>`).join("")}</tr>`;
-  document.getElementById("tb2").innerHTML=rows.map(d=>`<tr>${t.row(d)}</tr>`).join("");
-}
-render();
+    function showTab(i, b) {
+      cur = i;
+      document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+      b.classList.add("on"); render();
+    }
+    function setReg(b) {
+      document.querySelectorAll(".rb").forEach(x => x.classList.remove("on"));
+      b.classList.add("on"); reg = b.dataset.r; render();
+    }
+    function render() {
+      const q = document.getElementById("sq").value.toLowerCase();
+      const rows = schools.filter(d => {
+        const mr = reg === "all" || d.r === reg;
+        const str = (d.name + d.sub + (d.focus || []).join(" ") + d.pri + d.sec + d.ter + (d.salary || "") + (d.sectors || "") + (d.program || "")).toLowerCase();
+        return mr && (!q || str.includes(q));
+      });
+      document.getElementById("cnt").textContent = `Showing ${rows.length} of ${schools.length}`;
+      const t = T[cur];
+      document.getElementById("th").innerHTML = `<tr>${t.ths.map(h => `<th>${h}</th>`).join("")}</tr>`;
+      document.getElementById("tb2").innerHTML = rows.map(d => `<tr>${t.row(d)}</tr>`).join("");
+    }
+    render();
 
-</script>
+  </script>
 </body>
+
 </html>

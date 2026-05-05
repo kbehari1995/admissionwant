@@ -429,6 +429,37 @@ footer {
   color: var(--ink);
 }
 
+/* ── FAQ ── */
+.faq {
+  margin: 2rem 0;
+}
+
+.faq-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.faq-item h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.faq-item p {
+  color: var(--mid);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.faq-item p em {
+  font-style: italic;
+}
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   nav {
@@ -588,3 +619,6 @@ footer {
   margin-bottom: 0.6rem !important;
   color: var(--ink);
 }
+
+
+

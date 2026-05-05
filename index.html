@@ -1,50 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AdmissionWant — MBA Admissions Consulting</title>
-  <meta name="description" content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs.">
+  <meta name="description"
+    content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs." />
 
   <!-- Open Graph / WhatsApp preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://admissionwant.com/">
-  <meta property="og:title" content="AdmissionWant — MBA Admissions Consulting">
-  <meta property="og:description" content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs.">
-  <meta property="og:image" content="https://admissionwant.com/assets/og-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://admissionwant.com/" />
+  <meta property="og:title" content="AdmissionWant — MBA Admissions Consulting" />
+  <meta property="og:description"
+    content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs." />
+  <meta property="og:image" content="https://admissionwant.com/assets/og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter / iMessage -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AdmissionWant — MBA Admissions Consulting">
-  <meta name="twitter:description" content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs.">
-  <meta name="twitter:image" content="https://admissionwant.com/assets/og-preview.png">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AdmissionWant — MBA Admissions Consulting" />
+  <meta name="twitter:description"
+    content="I find your MBA story. Then I obsess until it's perfect. Helping Indian professionals get into the world's top MBA programs." />
+  <meta name="twitter:image" content="https://admissionwant.com/assets/og-preview.png" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Structured data: business + founder -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://admissionwant.com/#business",
+            "name": "AdmissionWant",
+            "url": "https://admissionwant.com/",
+            "description": "MBA admissions consulting for Indian professionals applying to top global business schools, with deep focus on European one-year programs (HEC Paris, INSEAD, LBS, IESE) and ISB, Yale SOM, Wharton, Booth, Kellogg, MIT Sloan.",
+            "founder": { "@id": "https://admissionwant.com/#kunj" },
+            "areaServed": { "@type": "Country", "name": "India" },
+            "telephone": "+91-94157-29500",
+            "email": "kunj@admissionwant.com",
+            "priceRange": "₹40,000 – ₹3,15,000",
+            "serviceType": "MBA Admissions Consulting",
+            "image": "https://admissionwant.com/assets/og-preview.png",
+            "sameAs": []
+          },
+          {
+            "@type": "Person",
+            "@id": "https://admissionwant.com/#kunj",
+            "name": "Kunj Behari Beriwala",
+            "jobTitle": "MBA Admissions Consultant",
+            "description": "IIT Kanpur graduate (Material Science & Engineering, with minors in Marketing and Psychology) and Aalto University exchange alum, where he trained in storytelling under Bruce Oreck, the former US Ambassador to Finland. Today leads AI pre-sales at EXL, pitching AI transformation strategy to CXOs at major finance, insurance, and retail enterprises. Previously founded Prepleaf's analytics training arm — trained 500+ students with 90% placement before being acquired by Masai School. Selected for IC Square at the Startup Nexus accelerator (run by University of Texas at Austin, hosted at the U.S. Embassy in Delhi).",
+            "worksFor": { "@id": "https://admissionwant.com/#business" },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Indian Institute of Technology Kanpur"
+              },
+              { "@type": "CollegeOrUniversity", "name": "Aalto University" }
+            ],
+            "knowsAbout": [
+              "MBA Admissions",
+              "MBA Essays",
+              "MBA Interviews",
+              "Indian MBA Applicants",
+              "European MBA Programs",
+              "HEC Paris MBA",
+              "INSEAD MBA",
+              "ISB",
+              "Yale School of Management",
+              "Storytelling for Business School Applications"
+            ],
+            "url": "https://admissionwant.com/"
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://admissionwant.com/",
+            "name": "AdmissionWant",
+            "publisher": { "@id": "https://admissionwant.com/#business" }
+          }
+        ]
+      }
+    </script>
+  <!-- Structured data: FAQ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does an MBA admissions consultant cost in India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Premium MBA consultants in India typically charge between ₹1.5 lakh and ₹5 lakh per cycle. AdmissionWant uses an à la carte model — you pay per school, with school selection always free. A typical 3-school engagement runs about ₹1.75 lakh before interview prep. European applications (HEC Paris, INSEAD) are billed at ₹1 lakh each because of the deeper essay work they require."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I start working with an MBA consultant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ideally six to nine months before your earliest deadline. For Round 1 in September, that means starting work by January or February. The longer the runway, the more we can develop the narrative properly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a consultant if my GMAT is above 740?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A strong GMAT gets you read. It does not get you admitted. The schools you're targeting reject thousands of 740+ applicants every year. The work that makes the difference is on the essays, the recommender strategy, and the interview — none of which a high test score solves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between essay editing and ghostwriting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Editing means polishing what you've already written. Ghostwriting — what AdmissionWant does — means starting from your raw experiences and building the narrative with you, in your voice, from scratch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do European MBA applications cost more?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "European applications are substantially longer than US ones — more essays, more short answers, higher total word counts. They demand a deeper, more coherent story across every piece. Schools like HEC Paris and INSEAD also read applications with far more care than most US programs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which schools does AdmissionWant specialise in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HEC Paris, INSEAD, ISB, LBS, Yale SOM, and the broader European one-year programs. Recent 25–26 cycle results include a Yale SOM admit and two interview converts at HEC Paris. AdmissionWant also supports Wharton, MIT Sloan, Kellogg, Booth, and other top US programs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AdmissionWant help with reapplications and waitlists?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Reapplications need a different approach than first-time applications — the school will compare your two files and look for evidence of growth. Waitlist responses need to be measured and specific, not panicked."
+            }
+          }
+        ]
+      }
+  </script>
+  <!-- Structured data: services + pricing -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "MBA Admissions Consulting",
+        "provider": { "@id": "https://admissionwant.com/#business" },
+        "areaServed": { "@type": "Country", "name": "India" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "MBA Application Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "School Selection & Strategy",
+              "price": "0",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Essay — School #1",
+              "price": "60000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Essay — School #2",
+              "price": "50000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Essay — Schools #3, #4, #5",
+              "price": "40000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Essay — Schools #6 & #7",
+              "price": "0",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "HEC Paris / INSEAD / Extended European Applications",
+              "price": "100000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Resume & LOR Guidance",
+              "price": "25000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Interview Preparation (per interview)",
+              "price": "25000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "name": "Interview Preparation (returning client)",
+              "price": "15000",
+              "priceCurrency": "INR"
+            }
+          ]
+        }
+      }
+    </script>
 </head>
-<body>
 
+<body>
   <nav>
     <a class="nav-brand" href="index.html">AdmissionWant</a>
     <ul class="nav-links">
       <li><a href="resources.html">Resources</a></li>
       <li><a href="signup.html">Sign Up</a></li>
-      <li><a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard" target="_blank">Book a Call</a></li>
+      <li>
+        <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard"
+          target="_blank">Book a Call</a>
+      </li>
     </ul>
   </nav>
 
   <div class="container">
-
     <!-- Hero -->
     <div class="hero">
       <p class="hero-eyebrow">MBA Admissions Consulting</p>
-      <h1>I obsess over your application<br><em>more than you do.</em></h1>
+      <h1>I obsess over your application<br /><em>more than you do.</em></h1>
       <p class="hero-sub">
-        Most consultants will review your essays. I find the narrative you didn't know you had, build it into a complete application, and won't stop until it's genuinely great.
+        Most consultants will review your essays. I find the narrative you
+        didn't know you had, build it into a complete application, and won't
+        stop until it's genuinely great.
       </p>
       <div class="cta-group">
-        <a class="btn" href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard" target="_blank">Book a Free Strategy Call</a>
+        <a class="btn"
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard"
+          target="_blank">Book a Free Strategy Call</a>
         <a class="btn btn-ghost" href="https://wa.me/919415729500" target="_blank">WhatsApp</a>
       </div>
     </div>
@@ -75,7 +277,9 @@
           </span>
         </div>
       </div>
-      <p style="font-size: 0.85rem; color: var(--mid); font-style: italic;">Results updated each application cycle.</p>
+      <p style="font-size: 0.85rem; color: var(--mid); font-style: italic">
+        Results updated each application cycle.
+      </p>
     </section>
 
     <!-- The Problem -->
@@ -83,13 +287,20 @@
       <p class="section-label">Why Most Applications Fail</p>
       <h2>Strong profiles get rejected every year.</h2>
       <p>
-        Top MBA programs receive thousands of applications from IIT and NIT graduates with strong GMAT scores and real work experience. That profile alone no longer differentiates anyone.
+        Top MBA programs receive thousands of applications from IIT and NIT
+        graduates with strong GMAT scores and real work experience. That
+        profile alone no longer differentiates anyone.
       </p>
       <p>
-        What separates admits from rejects is almost never the resume. It's a <em>Why MBA</em> essay that actually says something. A career narrative that feels intentional, not opportunistic. Interview answers that are honest and compelling — not rehearsed.
+        What separates admits from rejects is almost never the resume. It's a
+        <em>Why MBA</em> essay that actually says something. A career
+        narrative that feels intentional, not opportunistic. Interview answers
+        that are honest and compelling — not rehearsed.
       </p>
       <p>
-        This is harder than it looks. Most applicants have a great story buried in their profile. They just don't know how to find it, or how to say it in a language that top programs respect.
+        This is harder than it looks. Most applicants have a great story
+        buried in their profile. They just don't know how to find it, or how
+        to say it in a language that top programs respect.
       </p>
       <p>I do both.</p>
     </section>
@@ -100,43 +311,79 @@
       <h2>Built for the Indian MBA applicant.</h2>
 
       <p>
-        I'm Kunj and I was trained to tell stories under unusual pressure. An IIT Kanpur graduate (Material Science &amp; Engineering, with minors in Marketing and Psychology) and an exchange alum from Aalto University, Finland, where I trained in storytelling under <a href="https://www.google.com/search?q=Bruce+Oreck+US+Ambassador+Finland" target="_blank">Bruce Oreck</a>, the former U.S. Ambassador to Finland — on a pedestal, improvising on the go. At Aalto, I also completed courses in Marketing and Strategy through IME — the foundation of what I now call MBA speak.
+        I'm Kunj and I was trained to tell stories under unusual pressure. An
+        IIT Kanpur graduate (Material Science &amp; Engineering, with minors
+        in Marketing and Psychology) and an exchange alum from Aalto
+        University, Finland, where I trained in storytelling under
+        <a href="https://www.google.com/search?q=Bruce+Oreck+US+Ambassador+Finland" target="_blank">Bruce Oreck</a>, the
+        former U.S. Ambassador to Finland — on a pedestal, improvising
+        on the go. At Aalto, I also completed courses in Marketing and
+        Strategy through IME — the foundation of what I now call MBA speak.
       </p>
 
       <p>
-        I do this professionally, at the highest level. Today I lead AI pre-sales at EXL. My job is to walk into a CXO's room and make a strategy deck digestible — AI transformation, digital consulting, operations — pitched to senior leaders at major finance, insurance and retail enterprises. Persuading busy senior people isn't a hobby — it's my job.
+        I do this professionally, at the highest level. Today I lead AI
+        pre-sales at EXL. My job is to walk into a CXO's room and make a
+        strategy deck digestible — AI transformation, digital consulting,
+        operations — pitched to senior leaders at major finance, insurance and
+        retail enterprises. Persuading busy senior people isn't a hobby — it's
+        my job.
       </p>
 
       <p>
-        I've built things and got them to say yes. Before EXL, I founded Prepleaf's analytics training arm — trained 500+ students, hit 90% placement, and saw it acquired by Masai School. That included running <a href="https://www.youtube.com/watch?v=-zF9nQVRD4g&list=PLQqfhrN5hwqq2cc-00lE4lad1DWmd1_4c" target="_blank">interview and resume training</a> that helped hundreds of students land jobs — the same instinct I bring to MBA applicants today.
+        I've built things and got them to say yes. Before EXL, I founded
+        Prepleaf's analytics training arm — trained 500+ students, hit 90%
+        placement, and saw it acquired by Masai School. That included running
+        <a href="https://www.youtube.com/watch?v=-zF9nQVRD4g&list=PLQqfhrN5hwqq2cc-00lE4lad1DWmd1_4c"
+          target="_blank">interview and resume training</a>
+        that helped hundreds of students land jobs — the same instinct I bring
+        to MBA applicants today.
       </p>
 
       <p>
-        I was also selected for IC Square at the <a href="https://www.facebook.com/nexusdelhi" target="_blank">Startup Nexus</a> program — run by the University of Texas at Austin, hosted at the U.S. Embassy in Delhi — where I pitched our startup to the U.S. Ambassador to India after an eight-week accelerator. That program, combined with my Marketing minor, gave me frameworks across the full lifecycle of a business — not just how to pitch, but how to think about strategy, positioning, and the story underneath the numbers.
+        I was also selected for IC Square at the
+        <a href="https://www.facebook.com/nexusdelhi" target="_blank">Startup Nexus</a>
+        program — run by the University of Texas at Austin, hosted at the U.S.
+        Embassy in Delhi — where I pitched our startup to the U.S. Ambassador
+        to India after an eight-week accelerator. That program, combined with
+        my Marketing minor, gave me frameworks across the full lifecycle of a
+        business — not just how to pitch, but how to think about strategy,
+        positioning, and the story underneath the numbers.
       </p>
 
       <p>
-        It's one skill, not many. The corporate selling, the startup building, the student coaching — all of it is the same thing in a different room: building a story that gets a senior person to say yes. My psychology minor sharpens the same instinct — understanding how people actually make decisions.
+        It's one skill, not many. The corporate selling, the startup building,
+        the student coaching — all of it is the same thing in a different
+        room: building a story that gets a senior person to say yes. My
+        psychology minor sharpens the same instinct — understanding how people
+        actually make decisions.
       </p>
 
       <p>
-        I've turned that instinct into teachable frameworks. Not better sentences. Clearer thinking. I also coach interview answers in what I call MBA speak — the specific logic top programs expect you to demonstrate. It's learnable. Most applicants are just never taught this.
+        I've turned that instinct into teachable frameworks. Not better
+        sentences. Clearer thinking. I also coach interview answers in what I
+        call MBA speak — the specific logic top programs expect you to
+        demonstrate. It's learnable. Most applicants are just never taught
+        this.
       </p>
 
       <p>
-        I know what's on the other side. I'm a tech professional who earned his way into a European program on exchange. I know what lands and why.
+        I know what's on the other side. I'm a tech professional who earned
+        his way into a European program on exchange. I know what lands and
+        why.
       </p>
 
       <p>
-        I work with a small number of clients each cycle so every application gets the attention it deserves.
+        I work with a small number of clients each cycle so every application
+        gets the attention it deserves.
       </p>
 
       <blockquote>
-        I will not hand something back until I believe it's done. That's not a promise — it's just how I'm wired.
+        I will not hand something back until I believe it's done. That's not a
+        promise — it's just how I'm wired.
         <cite>— Kunj Behari Beriwala</cite>
       </blockquote>
     </section>
-
 
     <!-- How I Help -->
     <section>
@@ -144,30 +391,62 @@
       <div class="services-grid">
         <div class="service-item">
           <h3>School Selection &amp; Strategy</h3>
-          <p>I help you build a balanced mix — realistic schools where you have a strong chance, and moonshot bets worth swinging at — along with a round-by-round plan for how to sequence them. This is entirely free.</p>
-          <div style="margin-top: 1rem;">
-            <a class="btn" href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard" target="_blank">Start with a Free Strategy Call</a>
+          <p>
+            I help you build a balanced mix — realistic schools where you have
+            a strong chance, and moonshot bets worth swinging at — along with
+            a round-by-round plan for how to sequence them. This is entirely
+            free.
+          </p>
+          <div style="margin-top: 1rem">
+            <a class="btn"
+              href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard"
+              target="_blank">Start with a Free Strategy Call</a>
           </div>
         </div>
         <div class="service-item">
           <h3>Essay Development</h3>
-          <p>From blank page to final draft. I ghostwrite — meaning I dig into your career, your decisions, your ambitions, and find the narrative thread that makes your application coherent and unmistakably you.</p>
+          <p>
+            From blank page to final draft. I ghostwrite — meaning I dig into
+            your career, your decisions, your ambitions, and find the
+            narrative thread that makes your application coherent and
+            unmistakably you.
+          </p>
         </div>
         <div class="service-item">
           <h3>Resume &amp; LOR</h3>
-          <p>I take full ownership. Your resume, essays, and LORs are built together — not in silos — so the same narrative shows up in every piece of your application. That's how adcoms read coherent candidates. You pay once per cycle.</p>
+          <p>
+            I take full ownership. Your resume, essays, and LORs are built
+            together — not in silos — so the same narrative shows up in every
+            piece of your application. That's how adcoms read coherent
+            candidates. You pay once per cycle.
+          </p>
         </div>
         <div class="service-item">
           <h3>Application Review &amp; Short Answers</h3>
-          <p>Beyond the essays, there are dozens of small free-form fields — goals, activities, short descriptions — that most applicants treat as filler. I review the full application end-to-end and help you write these so they reinforce your story instead of flattening it. I won't fill forms on your behalf, but every word that reaches the adcom will have been thought through.</p>
+          <p>
+            Beyond the essays, there are dozens of small free-form fields —
+            goals, activities, short descriptions — that most applicants treat
+            as filler. I review the full application end-to-end and help you
+            write these so they reinforce your story instead of flattening it.
+            I won't fill forms on your behalf, but every word that reaches the
+            adcom will have been thought through.
+          </p>
         </div>
         <div class="service-item">
           <h3>Interview Preparation</h3>
-          <p>Hyper-personalised prep built around your profile and the specific school's interview format. I teach you how admissions committees actually think — the frameworks, the vocabulary, the logic. You pay this only when you get an interview call.</p>
+          <p>
+            Hyper-personalised prep built around your profile and the specific
+            school's interview format. I teach you how admissions committees
+            actually think — the frameworks, the vocabulary, the logic. You
+            pay this only when you get an interview call.
+          </p>
         </div>
         <div class="service-item">
           <h3>Waitlist &amp; Reapplicant Strategy</h3>
-          <p>If you've been waitlisted or rejected before, there's a right way to respond. I'll help you do it without panic.</p>
+          <p>
+            If you've been waitlisted or rejected before, there's a right way
+            to respond. I'll help you do it without panic.
+          </p>
         </div>
       </div>
     </section>
@@ -175,12 +454,12 @@
     <!-- Pricing -->
     <section>
       <p class="section-label">Pricing</p>
-      <h2>Transparent. À la carte.<br>You pay for what you use.</h2>
+      <h2>Transparent. À la carte.<br />You pay for what you use.</h2>
 
       <table class="pricing-table">
         <colgroup>
-          <col style="width:72%">
-          <col style="width:28%">
+          <col style="width: 72%" />
+          <col style="width: 28%" />
         </colgroup>
         <tr>
           <td>School Selection &amp; Strategy</td>
@@ -203,166 +482,413 @@
           <td>Free</td>
         </tr>
         <tr>
-          <td>HEC Paris / INSEAD &amp; extended European applications <a href="#" class="why-link" onclick="toggleWhy(event)">Why?</a></td>
+          <td>
+            HEC Paris / INSEAD &amp; extended European applications
+            <a href="#" class="why-link" onclick="toggleWhy(event)">Why?</a>
+          </td>
           <td>₹1,00,000</td>
         </tr>
         <tr>
-          <td>Resume &amp; LOR <span style="font-size:0.8rem; color: var(--mid);">(once per cycle)</span></td>
+          <td>
+            Resume &amp; LOR
+            <span style="font-size: 0.8rem; color: var(--mid)">(once per cycle)</span>
+          </td>
           <td>₹25,000</td>
         </tr>
         <tr>
-          <td>Interview Preparation <span style="font-size:0.8rem; color: var(--mid);">(per interview)</span></td>
+          <td>
+            Interview Preparation
+            <span style="font-size: 0.8rem; color: var(--mid)">(per interview)</span>
+          </td>
           <td>₹25,000 *</td>
         </tr>
       </table>
 
       <div class="why-popup" id="whyPopup">
         <p class="why-title">Why European applications cost more</p>
-        <p>· European applications are substantially longer than US ones — more essays, more short answers, higher total word counts.</p>
-        <p>· They demand a much deeper, more coherent story built across every piece, not a strong <em>Why MBA</em> alone.</p>
-        <p>· Positioning has to be more strategic. Schools like HEC and INSEAD read applications with far more care than most US programs, and weak positioning is caught instantly.</p>
+        <p>
+          · European applications are substantially longer than US ones — more
+          essays, more short answers, higher total word counts.
+        </p>
+        <p>
+          · They demand a much deeper, more coherent story built across every
+          piece, not a strong <em>Why MBA</em> alone.
+        </p>
+        <p>
+          · Positioning has to be more strategic. Schools like HEC and INSEAD
+          read applications with far more care than most US programs, and weak
+          positioning is caught instantly.
+        </p>
       </div>
 
       <p class="pricing-note">
-        Interview prep is billed only when you receive an interview invitation. No interview, no charge.
+        Interview prep is billed only when you receive an interview
+        invitation. No interview, no charge.
       </p>
 
       <p class="pricing-note">
-        * If you've already prepped with me for a previous interview, the rate is ₹15,000 — not ₹25,000.
+        * If you've already prepped with me for a previous interview, the rate
+        is ₹15,000 — not ₹25,000.
       </p>
 
-      <div style="margin-top: 2rem;">
-        <a class="btn" href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard" target="_blank">Start with a Free Strategy Call</a>
+      <div style="margin-top: 2rem">
+        <a class="btn"
+          href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard"
+          target="_blank">Start with a Free Strategy Call</a>
       </div>
     </section>
 
     <!-- Writing teaser -->
     <section>
       <p class="section-label">Writing</p>
-      <h2>Frameworks. Observations.<br>Things worth knowing.</h2>
+      <h2>Frameworks. Observations.<br />Things worth knowing.</h2>
       <p>
-        I write about the frameworks I use with clients, the patterns I notice across applications, and the things about MBA admissions that most people get wrong. No generic tips. No listicles.
+        I write about the frameworks I use with clients, the patterns I notice
+        across applications, and the things about MBA admissions that most
+        people get wrong. No generic tips. No listicles.
       </p>
-      <div style="margin-top: 1.5rem;">
+      <div style="margin-top: 1.5rem">
         <a class="btn btn-ghost" href="blog/index.html">Read the Writing</a>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section>
+      <p class="section-label">Frequently Asked</p>
+      <h2>What you're probably wondering.</h2>
+
+      <div class="faq">
+
+        <div class="faq-item">
+          <h3>How much does an MBA admissions consultant cost in India?</h3>
+          <p>Premium MBA consultants in India typically charge between ₹1.5 lakh and ₹5 lakh per cycle, depending on the
+            number of schools and services included. AdmissionWant uses an à la carte model — you pay per school, with
+            school selection always free. A typical 3-school engagement runs about ₹1.75 lakh before interview prep.
+            European applications (HEC Paris, INSEAD) are billed at ₹1 lakh each because of the deeper essay work they
+            require.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>When should I start working with an MBA consultant?</h3>
+          <p>Ideally six to nine months before your earliest deadline. For Round 1 in September, that means starting
+            work by January or February. The longer the runway, the more we can develop the narrative properly.
+            Last-minute engagements are possible but rarely produce the strongest applications.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I need a consultant if my GMAT is above 740?</h3>
+          <p>A strong GMAT gets you read. It does not get you admitted. The schools you're targeting reject thousands of
+            740+ applicants every year. The work that makes the difference is on the essays, the recommender strategy,
+            and the interview — none of which a high test score solves.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What's the difference between essay editing and ghostwriting?</h3>
+          <p>Editing means polishing what you've already written. Ghostwriting — what AdmissionWant does — means
+            starting from your raw experiences and building the narrative with you, in your voice, from scratch. Most
+            applicants do not need editing. They need someone to find the story they didn't know was there.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why do European MBA applications cost more?</h3>
+          <p>European applications are substantially longer than US ones — more essays, more short answers, higher total
+            word counts. They demand a deeper, more coherent story across every piece, not a single strong <em>Why
+              MBA</em>. Schools like HEC Paris and INSEAD also read applications with far more care than most US
+            programs, and weak positioning is caught instantly. The flat ₹1 lakh fee covers this depth.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Which schools do you specialise in?</h3>
+          <p>HEC Paris, INSEAD, ISB, LBS, Yale SOM, and the broader European one-year programs are where most of our
+            work happens. Recent results in the 25–26 cycle include a Yale SOM admit and two interview converts at HEC
+            Paris. We also support Wharton, MIT Sloan, Kellogg, Booth, and other top US programs.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you help with reapplications and waitlists?</h3>
+          <p>Yes. Reapplications need a different approach than first-time applications — the school will compare your
+            two files and look for evidence of growth. Waitlist responses need to be measured and specific, not
+            panicked. There's a right way to handle both.</p>
+        </div>
+
       </div>
     </section>
 
     <!-- Contact form -->
     <section id="contact">
       <p class="section-label">Get in Touch</p>
-      <h2>Have a question?<br><em>Write to me directly.</em></h2>
+      <h2>Have a question?<br /><em>Write to me directly.</em></h2>
       <p>
-        Fill in the form and I'll get back to you within 24 hours. If your question is time-sensitive, WhatsApp works faster.
+        Fill in the form and I'll get back to you within 24 hours. If your
+        question is time-sensitive, WhatsApp works faster.
       </p>
 
-      <form id="contact-form" style="margin-top: 2rem;">
-        <input type="hidden" name="fi-text-formType" value="Homepage Inquiry">
+      <form id="contact-form" style="margin-top: 2rem">
+        <input type="hidden" name="fi-text-formType" value="Homepage Inquiry" />
 
-        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;" class="contact-grid-2">
+        <div style="display: flex; flex-direction: column; gap: 1.25rem">
+          <div style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.25rem;
+              " class="contact-grid-2">
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">First Name</label>
-              <input type="text" name="fi-sender-firstName" required
-                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+              <label style="
+                    display: block;
+                    font-size: 0.78rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--mid);
+                    margin-bottom: 0.5rem;
+                  ">First Name</label>
+              <input type="text" name="fi-sender-firstName" required style="
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid var(--rule);
+                    padding: 0.5rem 0;
+                    font-family: &quot;EB Garamond&quot;, serif;
+                    font-size: 1rem;
+                    color: var(--ink);
+                    outline: none;
+                    transition: border-color 0.2s;
+                  " onfocus="this.style.borderColor = 'var(--ink)'" onblur="this.style.borderColor = 'var(--rule)'" />
             </div>
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Last Name</label>
-              <input type="text" name="fi-sender-lastName"
-                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+              <label style="
+                    display: block;
+                    font-size: 0.78rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--mid);
+                    margin-bottom: 0.5rem;
+                  ">Last Name</label>
+              <input type="text" name="fi-sender-lastName" style="
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid var(--rule);
+                    padding: 0.5rem 0;
+                    font-family: &quot;EB Garamond&quot;, serif;
+                    font-size: 1rem;
+                    color: var(--ink);
+                    outline: none;
+                    transition: border-color 0.2s;
+                  " onfocus="this.style.borderColor = 'var(--ink)'" onblur="this.style.borderColor = 'var(--rule)'" />
             </div>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;" class="contact-grid-2">
+          <div style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.25rem;
+              " class="contact-grid-2">
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Email</label>
-              <input type="email" name="fi-sender-email" required
-                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+              <label style="
+                    display: block;
+                    font-size: 0.78rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--mid);
+                    margin-bottom: 0.5rem;
+                  ">Email</label>
+              <input type="email" name="fi-sender-email" required style="
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid var(--rule);
+                    padding: 0.5rem 0;
+                    font-family: &quot;EB Garamond&quot;, serif;
+                    font-size: 1rem;
+                    color: var(--ink);
+                    outline: none;
+                    transition: border-color 0.2s;
+                  " onfocus="this.style.borderColor = 'var(--ink)'" onblur="this.style.borderColor = 'var(--rule)'" />
             </div>
             <div>
-              <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Phone Number</label>
-              <input type="tel" name="fi-sender-phone" placeholder="+91 98765 43210"
-                style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-                onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
-              <p style="font-size: 0.72rem; color: var(--mid); margin-top: 0.35rem; margin-bottom: 0; font-style: italic;">Include country code — e.g. +91 for India</p>
+              <label style="
+                    display: block;
+                    font-size: 0.78rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--mid);
+                    margin-bottom: 0.5rem;
+                  ">Phone Number</label>
+              <input type="tel" name="fi-sender-phone" placeholder="+91 98765 43210" style="
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid var(--rule);
+                    padding: 0.5rem 0;
+                    font-family: &quot;EB Garamond&quot;, serif;
+                    font-size: 1rem;
+                    color: var(--ink);
+                    outline: none;
+                    transition: border-color 0.2s;
+                  " onfocus="this.style.borderColor = 'var(--ink)'" onblur="this.style.borderColor = 'var(--rule)'" />
+              <p style="
+                    font-size: 0.72rem;
+                    color: var(--mid);
+                    margin-top: 0.35rem;
+                    margin-bottom: 0;
+                    font-style: italic;
+                  ">
+                Include country code — e.g. +91 for India
+              </p>
             </div>
           </div>
 
           <div>
-            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Subject</label>
-            <input type="text" name="fi-text-subject" placeholder="e.g. HEC Paris application, GMAT planning"
-              style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s;"
-              onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'">
+            <label style="
+                  display: block;
+                  font-size: 0.78rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--mid);
+                  margin-bottom: 0.5rem;
+                ">Subject</label>
+            <input type="text" name="fi-text-subject" placeholder="e.g. HEC Paris application, GMAT planning" style="
+                  width: 100%;
+                  background: transparent;
+                  border: none;
+                  border-bottom: 1px solid var(--rule);
+                  padding: 0.5rem 0;
+                  font-family: &quot;EB Garamond&quot;, serif;
+                  font-size: 1rem;
+                  color: var(--ink);
+                  outline: none;
+                  transition: border-color 0.2s;
+                " onfocus="this.style.borderColor = 'var(--ink)'" onblur="this.style.borderColor = 'var(--rule)'" />
           </div>
 
           <div>
-            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Your Message</label>
-            <textarea name="fi-text-message" rows="5" required
-              style="width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; font-family: 'EB Garamond', serif; font-size: 1rem; color: var(--ink); outline: none; resize: none; transition: border-color 0.2s;"
-              onfocus="this.style.borderColor='var(--ink)'" onblur="this.style.borderColor='var(--rule)'"></textarea>
+            <label style="
+                  display: block;
+                  font-size: 0.78rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--mid);
+                  margin-bottom: 0.5rem;
+                ">Your Message</label>
+            <textarea name="fi-text-message" rows="5" required style="
+                  width: 100%;
+                  background: transparent;
+                  border: none;
+                  border-bottom: 1px solid var(--rule);
+                  padding: 0.5rem 0;
+                  font-family: &quot;EB Garamond&quot;, serif;
+                  font-size: 1rem;
+                  color: var(--ink);
+                  outline: none;
+                  resize: none;
+                  transition: border-color 0.2s;
+                " onfocus="this.style.borderColor = 'var(--ink)'"
+              onblur="this.style.borderColor = 'var(--rule)'"></textarea>
           </div>
 
           <div>
-            <label style="display: block; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.5rem;">Attachment <span style="text-transform: none; letter-spacing: 0; font-style: italic;">— optional</span></label>
-            <input type="file" name="fi-file-attachment"
-              style="width: 100%; font-family: 'EB Garamond', serif; font-size: 0.9rem; color: var(--mid); padding: 0.4rem 0; border: none; border-bottom: 1px solid var(--rule); background: transparent; outline: none; cursor: pointer;">
-            <p style="font-size: 0.78rem; color: var(--mid); margin-top: 0.4rem; margin-bottom: 0;">Resume, transcript, or anything relevant. Max 25 MB.</p>
+            <label style="
+                  display: block;
+                  font-size: 0.78rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  color: var(--mid);
+                  margin-bottom: 0.5rem;
+                ">Attachment
+              <span style="
+                    text-transform: none;
+                    letter-spacing: 0;
+                    font-style: italic;
+                  ">— optional</span></label>
+            <input type="file" name="fi-file-attachment" style="
+                  width: 100%;
+                  font-family: &quot;EB Garamond&quot;, serif;
+                  font-size: 0.9rem;
+                  color: var(--mid);
+                  padding: 0.4rem 0;
+                  border: none;
+                  border-bottom: 1px solid var(--rule);
+                  background: transparent;
+                  outline: none;
+                  cursor: pointer;
+                " />
+            <p style="
+                  font-size: 0.78rem;
+                  color: var(--mid);
+                  margin-top: 0.4rem;
+                  margin-bottom: 0;
+                ">
+              Resume, transcript, or anything relevant. Max 25 MB.
+            </p>
           </div>
 
-          <div style="margin-top: 0.5rem;">
-            <button type="submit" id="contact-submit" class="btn" style="cursor: pointer; background: transparent; font-family: 'EB Garamond', serif;">Send Message</button>
+          <div style="margin-top: 0.5rem">
+            <button type="submit" id="contact-submit" class="btn" style="
+                  cursor: pointer;
+                  background: transparent;
+                  font-family: &quot;EB Garamond&quot;, serif;
+                ">
+              Send Message
+            </button>
           </div>
 
-          <p id="contact-status" style="font-size: 0.9rem; color: var(--mid); font-style: italic; display: none;"></p>
-
+          <p id="contact-status" style="
+                font-size: 0.9rem;
+                color: var(--mid);
+                font-style: italic;
+                display: none;
+              "></p>
         </div>
       </form>
 
       <style>
         @media (max-width: 600px) {
-          .contact-grid-2 { grid-template-columns: 1fr !important; }
+          .contact-grid-2 {
+            grid-template-columns: 1fr !important;
+          }
         }
       </style>
 
       <script src="https://forminit.com/sdk/v1/forminit.js"></script>
       <script>
         const forminit = new Forminit();
-        document.getElementById('contact-form').addEventListener('submit', async function(e) {
-          e.preventDefault();
-          const btn = document.getElementById('contact-submit');
-          const status = document.getElementById('contact-status');
-          btn.textContent = 'Sending...';
-          btn.disabled = true;
-          status.style.display = 'none';
-          const { data, error } = await forminit.submit('zvchmc1gjtq', new FormData(e.target));
-          if (error) {
-            status.textContent = 'Something went wrong. Please try WhatsApp or email directly.';
-            status.style.color = '#A32D2D';
-            status.style.display = 'block';
-            btn.textContent = 'Send Message';
-            btn.disabled = false;
-            return;
-          }
-          status.textContent = 'Sent. I\'ll be in touch within 24 hours.';
-          status.style.color = 'var(--mid)';
-          status.style.display = 'block';
-          btn.style.display = 'none';
-          e.target.reset();
-        });
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const btn = document.getElementById("contact-submit");
+            const status = document.getElementById("contact-status");
+            btn.textContent = "Sending...";
+            btn.disabled = true;
+            status.style.display = "none";
+            const { data, error } = await forminit.submit(
+              "zvchmc1gjtq",
+              new FormData(e.target),
+            );
+            if (error) {
+              status.textContent =
+                "Something went wrong. Please try WhatsApp or email directly.";
+              status.style.color = "#A32D2D";
+              status.style.display = "block";
+              btn.textContent = "Send Message";
+              btn.disabled = false;
+              return;
+            }
+            status.textContent = "Sent. I'll be in touch within 24 hours.";
+            status.style.color = "var(--mid)";
+            status.style.display = "block";
+            btn.style.display = "none";
+            e.target.reset();
+          });
       </script>
-
     </section>
-
   </div>
 
   <footer>
     <span class="footer-brand">AdmissionWant</span>
     <div class="footer-links">
-      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard" target="_blank">Book a Strategy Call</a>
+      <a href="https://outlook.office.com/bookwithme/user/531597352c684e22af726ff88f7266ea@admissionwant.com?anonymous&ismsaljsauthenabled&ep=pcard"
+        target="_blank">Book a Strategy Call</a>
       <a href="mailto:kunj@admissionwant.com">kunj@admissionwant.com</a>
       <a href="https://wa.me/919415729500" target="_blank">WhatsApp +91 94157 29500</a>
       <a href="blog/index.html">Writing</a>
@@ -373,31 +899,33 @@
   <!-- Review lightbox -->
   <div id="reviewModal" class="review-modal" onclick="closeReview(event)">
     <div class="review-modal-inner" onclick="event.stopPropagation()">
-      <button class="review-modal-close" onclick="closeReview(event)" aria-label="Close">&times;</button>
-      <img id="reviewImg" src="" alt="Client testimonial">
+      <button class="review-modal-close" onclick="closeReview(event)" aria-label="Close">
+        &times;
+      </button>
+      <img id="reviewImg" src="" alt="Client testimonial" />
     </div>
   </div>
 
   <script>
     function toggleWhy(e) {
       e.preventDefault();
-      document.getElementById('whyPopup').classList.toggle('open');
+      document.getElementById("whyPopup").classList.toggle("open");
     }
     function openReview(e, src) {
       if (e) e.preventDefault();
-      document.getElementById('reviewImg').src = src;
-      document.getElementById('reviewModal').classList.add('open');
-      document.body.style.overflow = 'hidden';
+      document.getElementById("reviewImg").src = src;
+      document.getElementById("reviewModal").classList.add("open");
+      document.body.style.overflow = "hidden";
     }
     function closeReview(e) {
       if (e) e.preventDefault();
-      document.getElementById('reviewModal').classList.remove('open');
-      document.body.style.overflow = '';
+      document.getElementById("reviewModal").classList.remove("open");
+      document.body.style.overflow = "";
     }
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeReview();
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeReview();
     });
   </script>
-
 </body>
+
 </html>
